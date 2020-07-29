@@ -8,8 +8,6 @@ FAIMS Mobile Platform Documentation
 -   [App install Guide](App+install+Guide/)
     -   [Changing the Admin
         Password](Changing+the+Admin+Password/)
--   [Enabling Android
-    Synchronisation](Enabling+Android+Synchronisation/)
 -   [FAIMS GIS Instructions](FAIMS+GIS+Instructions/)
     -   [Creating Shapes](Creating+Shapes/)
     -   [Editing and Deleting
@@ -22,9 +20,23 @@ FAIMS Mobile Platform Documentation
     -   [Navigation](Navigation/)
     -   [Preparation of Layers outside the Mobile
         App](Preparation+of+Layers+outside+the+Mobile+App/)
--   [How-to articles](How-to+articles/)
-    -   [Create a Module on the
-        Server](Create+a+Module+on+the+Server/)
+-   [Howto Guides and Handout](Handout/)
+	- [FAIMS101: Getting Started](Handout/#faims101-getting-started)
+		- [FAIMS102: Coolest Features](Handout/#faims102-coolest-features)
+		- [FAIMS103: Deploy a Module](Handout/#faims103-deploy-a-module)
+		- [FAIMS104: Switching Servers](Handout/#faims104-switching-servers)
+		- [FAIMS105: Update a Module](Handout/#faims105-update-a-module)
+		- [FAIMS106: Attach a Sketch](Handout/#faims106-attach-a-sketch)
+		- [FAIMS107: External GPS](Handout/#faims107-external-gps)
+	- [FAIMS200: Server Work](Handout/#faims200-server-work)
+		- [FAIMS201: Work with Data](Handout/#faims201-work-with-data)
+		- [FAIMS202: Edit the Module](Handout/#faims202-edit-the-module)
+		- [FAIMS203: User Admin](Handout/#faims203-user-admin)
+		- [FAIMS204: Edit Vocabularies](Handout/#faims204-edit-vocabularies)
+		- [FAIMS205: Pushing Files](Handout/#faims205-pushing-files)
+		- [FAIMS206: Module Backup](Handout/#faims206-module-backup)
+		- [FAIMS207: Emergency Backup](Handout/#faims207-emergency-backup)
+		- [FAIMS208: Export Data](Handout/#faims208-export-data)
 -   [Install and Run the FAIMS
     Server](Install+and+Run+the+FAIMS+Server/)
 -   [Known Issues and
