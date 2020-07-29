@@ -1,4 +1,4 @@
-FAIMS Mobile Platform Documentation (FAIMS): Changing the Admin Password
+Changing the Admin Password
 ========================================================================
 
 If you're logged in as any user, choose change password from the menu

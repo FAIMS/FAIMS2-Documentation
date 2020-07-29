@@ -1,13 +1,9 @@
-FAIMS Mobile Platform Documentation (FAIMS): Map Zoom
+Map Zoom
 =====================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Shaun Muscat (Unlicensed) () - 2015-03-11T02:58:24.342Z
 
-Last Updated: Shaun Muscat (Unlicensed) () - 2015-03-11T04:47:16.374Z
-:::
 
-<div>
+
 
 Map zoom in the Faims app using the Nutiteq library appears to scale in
 the following way: 
@@ -21,6 +17,3 @@ the following way: 
 -   Zoom set to 10.0, Map scale is 20.0 km with half bar
 
 </div>
-
-Attachments
------------

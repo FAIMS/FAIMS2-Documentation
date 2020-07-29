@@ -1,16 +1,9 @@
-FAIMS Mobile Platform Documentation (FAIMS): Program Logic Support
+Program Logic Support
 ==================================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Former user (Deleted) () - 2013-08-19T17:55:29.397Z
 
-Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian\@fedarch.org) - 2017-11-27T05:06:10.696Z
-:::
 
-<div>
-
-### Persist Functionality {#ProgramLogicSupport-PersistFunctionality}
+### Persist Functionality 
 
 When android runs low on resources the module activity can be destroyed
 if its in a suspended state and then restored when its resumed. This
@@ -24,7 +17,7 @@ this function please look at the cookbook.
 
 **persistObject(String name) ;**
 
-### Tab / Tab Group Functionality {#ProgramLogicSupport-Tab/TabGroupFunctionality}
+### Tab / Tab Group Functionality 
 
 Show the tab group with the following reference and clear all values in
 the tab group.
@@ -180,7 +173,7 @@ third argument: a boolean to denote whether or not changes had occurred.
 **saveTabGroup(String ref, String id, List geometry, List attributes,
 SaveForceCallback callback, boolean enableAutoSave);**
 
-<div>
+
 
 **\
 **
@@ -223,7 +216,7 @@ executed.
 
 **void triggerAutoSave()**
 
-<div>
+
 
 **\
 **
@@ -377,7 +370,7 @@ Create View definition
 
 **createViewDef() ;**
 
-### Dialog Functionality {#ProgramLogicSupport-DialogFunctionality}
+### Dialog Functionality 
 
 Show a toast to the user with the given message, the toast will last for
 about 1 second.
@@ -493,54 +486,54 @@ from the last time alert shown.
 \
 
 [Show a dialog to the user allowing them to sign in to a password
-protected, signup-enabled module.]{style="color: rgb(0,0,0);"}
+protected, signup-enabled module.]
 
--   **[successCallback]{style="color: rgb(0,0,0);"}**[ the callback to
+-   **[successCallback]**[ the callback to
     execute if the user provided email address and password match
     what\'s recorded in the module\'s database, typically the newTab()
     call made in non-password protected modules when a user is
-    selected]{style="color: rgb(0,0,0);"}[\
-    ]{style="color: rgb(0,0,0);"}
+    selected][\
+    ]
 
 [Caveats: The module database\'s user table must contain password and
 email fields.  The implemented selectUser() method in the module\'s
 ui\_logic.bsh must retrieve the password field in addition to the email
 field.  The Select User dropdown must be populated before calling this
 so the user can select their account - the dialog only prompts for the
-password.]{style="color: rgb(0,0,0);"}[\
-]{style="color: rgb(0,0,0);"}
+password.][\
+]
 
 **[**showVerifyUserDialog(String
-successCallback);**]{style="color: rgb(0,0,0);"}**
+successCallback);**]**
 
 \
 
-[Show]{style="color: rgb(0,0,0);"}[ a dialog to the user allowing them
+[Show][ a dialog to the user allowing them
 to create an account within the module and protect it with a
-password.]{style="color: rgb(0,0,0);"}
+password.]
 
--   **[successCallback]{style="color: rgb(0,0,0);"}**[ the callback to
+-   **[successCallback]**[ the callback to
     execute if the signup process succeeds.  Typically this would the
     same call to populate the user dropdown list so the new account
     appears immediately and they can select it to log
-    in.]{style="color: rgb(0,0,0);"}
+    in.]
 
 Caveats: [The module database\'s user table must contain password and
 email fields.  The implemented selectUser() method in the module\'s
 ui\_logic.bsh must retrieve the password field in addition to the email
-field.]{style="color: rgb(0,0,0);"}
+field.]
 
 [Syncing must be enabled in order for the user to be created. If syncing
 is disabled, user creation may appear to hang, however the user will be
 created and the **successCallback** will be called when syncing is
-re-enabled.]{style="color: rgb(0,0,0);"}
+re-enabled.]
 
 **[showCreateUserDialog(String
-successCallback);]{style="color: rgb(0,0,0);"}**
+successCallback);]**
 
 \
 
-### Setter / Getter Functionality {#ProgramLogicSupport-Setter/GetterFunctionality}
+### Setter / Getter Functionality 
 
 Set the field with the following reference to the given value. If the
 field reference is not found a logic error dialog will appear.
@@ -626,7 +619,7 @@ Clear a dirty field with the following reference
 
 **clearFieldDirty(String ref) ;**
 
-### Event Callback Functionality {#ProgramLogicSupport-EventCallbackFunctionality}
+### Event Callback Functionality 
 
 Binding an event to the field with the given reference. If the field
 reference is not found a logic error dialog will appear.
@@ -651,7 +644,7 @@ field reference is not found a logic error dialog will appear.
 
 **onFocus(String ref, String focusCallback, String blurCallback) ;**
 
-### User Functionality {#ProgramLogicSupport-UserFunctionality}
+### User Functionality 
 
 Set the current user of the application. Is a requirement for insert
 records into the database.
@@ -660,7 +653,7 @@ records into the database.
 
 **setUser(User user);**
 
-### Archaeological Entity / Relationship Functionality {#ProgramLogicSupport-ArchaeologicalEntity/RelationshipFunctionality}
+### Archaeological Entity / Relationship Functionality 
 
 Insert a new or update an existing archaeological entity record and
 return the id of the saved record.
@@ -1205,14 +1198,14 @@ identifier of the relationship.
 
 **fetchRelationshipList(String type, FetchCallback callback);**
 
-### Navigation Functionality {#ProgramLogicSupport-NavigationFunctionality}
+### Navigation Functionality 
 
 Provide functionality to go back as if the user press the hardware back
 button.
 
 **goBack();**
 
-### GPS Functionality {#ProgramLogicSupport-GPSFunctionality}
+### GPS Functionality 
 
 Set the GPS update interval to determine how often the GPS should
 update. Default value is 10 seconds.
@@ -1344,7 +1337,7 @@ Stop the GPS track log.
 
 **stopTrackingGPS();**
 
-### Bluetooth Functionality {#ProgramLogicSupport-BluetoothFunctionality}
+### Bluetooth Functionality 
 
 Create bluetooth connection to read input and write output.
 
@@ -1390,7 +1383,7 @@ Get the bluetooth message.
 
 **getBluetoothMessage();**
 
-### Map Functionality {#ProgramLogicSupport-MapFunctionality}
+### Map Functionality 
 
 Bind map click and select events to the map with the following
 reference.
@@ -2064,7 +2057,7 @@ Refresh all the layers of the map.
 
 **refreshMap(String ref) ;**
 
-### Sync Functionality {#ProgramLogicSupport-SyncFunctionality}
+### Sync Functionality 
 
 Push the full database from the app to the server and execute the
 callback when finished.
@@ -2151,7 +2144,7 @@ Set whether files should also be synced with the database.
 
 **boolean isFileSyncEnabled() ;**
 
-### Static Data Functionality {#ProgramLogicSupport-StaticDataFunctionality}
+### Static Data Functionality 
 
 Get the static data for current module name.
 
@@ -2279,7 +2272,7 @@ Get the static data for whether containing sensitive data or not.
 
 **public String hasSensitiveData() ;**
 
-### File attachment Functionality {#ProgramLogicSupport-FileattachmentFunctionality}
+### File attachment Functionality 
 
 Show the file browser and execute the callback once a file is selected.
 
@@ -2567,7 +2560,7 @@ Add file to checkbox group.
 
 **addVideo(String ref, String file) ;**
 
-### MISC {#ProgramLogicSupport-MISC}
+### MISC 
 
 Executes a given string of code.
 
@@ -2693,7 +2686,7 @@ Helper method to test if a value is null or empty.
 
 **isNull(List value) ;**
 
-<div>
+
 
 **\
 **
@@ -2701,6 +2694,3 @@ Helper method to test if a value is null or empty.
 </div>
 
 </div>
-
-Attachments
------------

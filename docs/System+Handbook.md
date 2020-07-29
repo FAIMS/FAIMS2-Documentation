@@ -1,16 +1,9 @@
-FAIMS Mobile Platform Documentation (FAIMS): System Handbook
+System Handbook
 ============================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Anonymous (None) - 2013-08-26T16:55:07.179Z
 
-Last Updated: Brian Ballsun-Stanton (brian\@faims.edu.au) -
-2015-06-24T12:03:47.644Z
-:::
 
-<div>
-
-Overview {#SystemHandbook-Overview}
+Overview 
 --------
 
 [The FAIMS Mobile Platform is an Android application and Ruby server
@@ -18,17 +11,17 @@ built by intersect for the Federated Archaeological Information
 Management Systems (FAIMS) Project, funded by the National eResearch
 Collaboration Tools and Resources (NeCTAR) program. FAIMS is used by
 Archaeologists to collect Survey and GIS data in the
-field.]{style="color: rgb(38,38,38);"}
+field.]
 
-Components {#SystemHandbook-Components}
+Components 
 ----------
 
 See <https://github.com/IntersectAustralia/faims-web/wiki/Product-Overview>
 
-Source Code Repositories {#SystemHandbook-SourceCodeRepositories}
+Source Code Repositories 
 ------------------------
 
-::: {.table-wrap}
+::: 
 +-----------------------------------+-----------------------------------+
 | Component                         | Location                          |
 +===================================+===================================+
@@ -40,10 +33,10 @@ Source Code Repositories {#SystemHandbook-SourceCodeRepositories}
 +-----------------------------------+-----------------------------------+
 :::
 
-Dependencies & Hardware {#SystemHandbook-Dependencies&Hardware}
+Dependencies & Hardware 
 -----------------------
 
-::: {.table-wrap}
+::: 
 +-----------------------+-----------------------+-----------------------+
 | Component             | Dependencies          | Minimum Hardware      |
 +=======================+=======================+=======================+
@@ -63,31 +56,31 @@ Dependencies & Hardware {#SystemHandbook-Dependencies&Hardware}
 +-----------------------+-----------------------+-----------------------+
 :::
 
-Deployment {#SystemHandbook-Deployment}
+Deployment 
 ----------
 
-#### Deployment Procedures {#SystemHandbook-DeploymentProcedures}
+#### Deployment Procedures 
 
 See [System Handbook](../FAIMS/System+Handbook.html)
 
-#### Post Release Verification {#SystemHandbook-PostReleaseVerification}
+#### Post Release Verification 
 
 See [System Handbook](../FAIMS/System+Handbook.html)
 
-#### Monitoring and Maintenance {#SystemHandbook-MonitoringandMaintenance}
+#### Monitoring and Maintenance 
 
 [*What monitoring and maintenance are in place or need to be regularly
-performed. Who does it?*]{style="color: rgb(0,0,0);"}
+performed. Who does it?*]
 
-Support {#SystemHandbook-Support}
+Support 
 -------
 
 See [System Handbook](../FAIMS/System+Handbook.html)
 
-Production Environment(s) {#SystemHandbook-ProductionEnvironment(s)}
+Production Environment(s) 
 -------------------------
 
-::: {.table-wrap}
+::: 
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Component | Location  | Owner     | Who at    | Version   | Notes     |
 |           |           |           | Intersect | deployed  |           |
@@ -109,8 +102,7 @@ Production Environment(s) {#SystemHandbook-ProductionEnvironment(s)}
 |           |           |           |           |           | ntersectA |
 |           |           |           |           |           | ustralia/ |
 |           |           |           |           |           | faims-web |
-|           |           |           |           |           | ){.extern |
-|           |           |           |           |           | al-link}  |
+|           |           |           |           |           | )  |
 |           |           |           |           |           | repositor |
 |           |           |           |           |           | y         |
 |           |           |           |           |           | tag as a  |
@@ -127,20 +119,17 @@ Production Environment(s) {#SystemHandbook-ProductionEnvironment(s)}
 +-----------+-----------+-----------+-----------+-----------+-----------+
 :::
 
-Release Notes {#SystemHandbook-ReleaseNotes}
+Release Notes 
 -------------
 
 See [Release Notes](../FAIMS/Release+Notes.html)
 
-[Test/Demo Environments]{style="color: rgb(255,51,0);"}
+[Test/Demo Environments]
 
 ~~See QA Handbook~~
 
-[Developer Setup]{style="color: rgb(255,51,0);"}
+[Developer Setup]
 
 See [Developer Setup](../FAIMS/Developer+Setup.html)
 
 </div>
-
-Attachments
------------

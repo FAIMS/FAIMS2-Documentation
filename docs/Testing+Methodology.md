@@ -1,17 +1,13 @@
-FAIMS Mobile Platform Documentation (FAIMS): Testing Methodology
+Testing Methodology
 ================================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Pierre Estephan (Unlicensed) () - 2014-02-24T16:50:29.503Z
 
-Last Updated: Pierre Estephan (Unlicensed) () - 2014-02-24T16:50:29.503Z
-:::
 
-<div>
+
 
 This guide specifies the method used for testing a completed module.
 
-Step-by-step guide {#TestingMethodology-Step-by-stepguide}
+Step-by-step guide 
 ------------------
 
 1.  Begin by thoroughly cleaning up the code. Note that all unused code
@@ -32,18 +28,14 @@ Step-by-step guide {#TestingMethodology-Step-by-stepguide}
     with each element on the Android device, and ensuring that the code
     instructs that element to behave as is expected.
 
--   <div>
+-   
 
-    [Page:]{.icon .aui-icon .aui-icon-small .aui-iconfont-page-default
-    title="Page"}
+    [Page:]
 
     </div>
 
-    ::: {.details}
+    ::: 
     [Testing Methodology](../FAIMS/Testing+Methodology.html)
     :::
 
 </div>
-
-Attachments
------------

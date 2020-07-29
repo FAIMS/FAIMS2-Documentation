@@ -1,4 +1,4 @@
-FAIMS Mobile Platform Documentation (FAIMS): FAIMS GIS Instructions
+FAIMS GIS Instructions
 ===================================================================
 
 

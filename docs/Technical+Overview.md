@@ -1,15 +1,11 @@
-FAIMS Mobile Platform Documentation (FAIMS): Technical Overview
+Technical Overview
 ===============================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Former user (Deleted) () - 2013-10-28T22:06:49.137Z
 
-Last Updated: Former user (Deleted) () - 2013-10-28T22:06:49.137Z
-:::
 
-<div>
 
-Product Overview {#TechnicalOverview-ProductOverview}
+
+Product Overview 
 ================
 
 The FAIMS Mobile Platform is an Android application and Ruby server
@@ -21,20 +17,20 @@ Collaboration Tools and Resources (NeCTAR) program.
 FAIMS is used by Archaeologists, Humanists, and Scientists to collect
 Survey and GIS data in the field.
 
- Problem Statement {#TechnicalOverview-ProblemStatement}
+ Problem Statement 
 =================
 
-The problem of {#TechnicalOverview-Theproblemof}
+The problem of 
 --------------
 
 Archaeologists collecting field data on paper
 
-Affects {#TechnicalOverview-Affects}
+Affects 
 -------
 
 Archaeology team members
 
-The impact of which is {#TechnicalOverview-Theimpactofwhichis}
+The impact of which is 
 ----------------------
 
  
@@ -51,7 +47,7 @@ The impact of which is {#TechnicalOverview-Theimpactofwhichis}
 -   Digital data from devices such as Total Stations or GPSs is separate
     to the manually collected data
 
-A successful solution would {#TechnicalOverview-Asuccessfulsolutionwould}
+A successful solution would 
 ---------------------------
 
  
@@ -66,10 +62,10 @@ A successful solution would {#TechnicalOverview-Asuccessfulsolutionwould}
 
 -   Free up time for the Archaeologists to do more valuable work
 
-Components {#TechnicalOverview-Components}
+Components 
 ==========
 
-Web Application {#TechnicalOverview-WebApplication}
+Web Application 
 ---------------
 
 The web application serves as the central hub for data collection. A
@@ -83,14 +79,14 @@ their data in the field.\
 The web application also allows administrators to cleanup the collected
 data usually at the end of day.
 
-Android Application {#TechnicalOverview-AndroidApplication}
+Android Application 
 -------------------
 
 The android application serves as the collector of data. Users can
 download a project from the web application and then start collecting
 data in the field.
 
-### Key Features {#TechnicalOverview-KeyFeatures}
+### Key Features 
 
 -   Customisable UI
 
@@ -112,6 +108,3 @@ data in the field.
 -   GPS tracking
 
 </div>
-
-Attachments
------------

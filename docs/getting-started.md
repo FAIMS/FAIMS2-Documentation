@@ -19,7 +19,7 @@ Step-by-Step
 1.  Get your hands on a device running Android 5.x (or higher version)
     > device (if you are thinking of buying one for your fieldwork,
     > check out our [[list of
-    > recommendations]{.underline}](https://www.fedarch.org/news/2016Devices/))
+    > recommendations]](https://www.fedarch.org/news/2016Devices/))
 
 2.  Install the FAIMS app using one of the following two methods:
 
@@ -30,7 +30,7 @@ Step-by-Step
     b.  Connect your Android device to your computer and install the
         > FAIMS app from Google Play by visiting the [[FAIMS page on the
         > Google Play
-        > Store]{.underline}](https://play.google.com/store/apps/details?id=au.org.intersect.faims.android&hl=en)
+        > Store]](https://play.google.com/store/apps/details?id=au.org.intersect.faims.android&hl=en)
         > ![Screen Shot 2015-03-06 at 12.03.17
         > pm.png](img/media/image9.png)
 
@@ -107,9 +107,9 @@ User Guidelines
 For Guidelines on how to use the Mobile Platform (create, edit, modify
 and administer the modules as well as the server), please refer to our
 [[online User
-Guide.]{.underline}](https://faimsproject.atlassian.net/wiki/display/MobileUser/Home)
+Guide.]](https://faimsproject.atlassian.net/wiki/display/MobileUser/Home)
 Alternative path to these manuals exists via the Support tab on our
-website [[www.fedarch.org]{.underline}](http://www.fedarch.org/) or by
+website [[www.fedarch.org]](http://www.fedarch.org/) or by
 using the Getting Started button on the Mobile Platform subsections
 located throughout.
 
@@ -129,7 +129,7 @@ below).
 *Software check:* Is your device running Android 4.3 - 5.0.1? Check the
 make of device and your Android kernel by going to Settings > About
 Phone ( the label may differ by device) and copy the Android version to
-us at [[support@fedarch.org]{.underline}](mailto:support@fedarch.org).
+us at [[support@fedarch.org]](mailto:support@fedarch.org).
 The info should look like this: Model number (e.g.Nexus 7), Android
 version (e.g. 4.4), Kernel version (e.g. 3.1.10-gee1aob2). Feel free to
 send a screenshot if that's easier (most phones can take a screenshot
@@ -146,7 +146,7 @@ list of applications. Check that you have good wifi connection, open the
 app and try again. If problems (wifi is sporadic) persist, try again
 when you have reliable wifi. If problems persist with good wifi, shoot
 an email to
-[[support@fedarch.org]{.underline}](mailto:support@fedarch.org) The
+[[support@fedarch.org]](mailto:support@fedarch.org) The
 Demo server is hosted on Australian national infrastructure, which is
 subject to downtimes for maintenance, which can take 24 hrs or more. If
 the Demo server is being maintained we will send you information to
@@ -194,7 +194,7 @@ you have specific needs and requirements, please contact us.
 
 To learn more about FAIMS project in general, please see [[Australian
 Archaeology 2013 (77)
-article]{.underline}](http://search.informit.com.au/documentSummary;dn=721992925861948;res=IELHSS)*,*
+article]](http://search.informit.com.au/documentSummary;dn=721992925861948;res=IELHSS)*,*
 titled *Creating eResearch tools for archaeologists: The federated
 archaeological information management systems project.*
 
@@ -202,7 +202,7 @@ Contact
 --------
 
 Thank you for trialling FAIMS Mobile Platform! Email us at
-[[enquiries@fedarch.org]{.underline}](mailto:enquiries@fedarch.org) if
+[[enquiries@fedarch.org]](mailto:enquiries@fedarch.org) if
 you have any questions
 
 [^1]: Check that your wifi is not coming through a proxy. Also if you

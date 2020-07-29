@@ -1,20 +1,13 @@
-FAIMS Mobile Platform Documentation (FAIMS): Known Issues and Limitations
+Known Issues and Limitations
 =========================================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Former user (Deleted) () - 2013-11-05T17:39:41.537Z
 
-Last Updated: Brian Ballsun-Stanton (brian\@faims.edu.au) -
-2015-06-24T12:06:39.065Z
-:::
-
-<div>
 
 This page was requested by Brian to detail known limitations of the
 hardware and software associated with FAIMS. (This includes all known
 bugs within the FAIMS system as of 29/10/2013)
 
-### Tablet Software: {#KnownIssuesandLimitations-TabletSoftware:}
+### Tablet Software: 
 
 -   Android 4.0.3 on the Samsung 10\"  does not work (supported Android
     versions are only those from 4.4.X upwards)
@@ -26,7 +19,7 @@ bugs within the FAIMS system as of 29/10/2013)
 -   Depending on tablet, file selection for attachment may be restricted
     to the files contained on the SD card only
 
-### Web App: {#KnownIssuesandLimitations-WebApp:}
+### Web App: 
 
 -   If all entities/relationships are deleted, there is no option to
     view deleted entities
@@ -36,22 +29,22 @@ bugs within the FAIMS system as of 29/10/2013)
     a long period of time for it to be a problem\
     \
 
-### Using web app on a tablet browser: {#KnownIssuesandLimitations-Usingwebapponatabletbrowser:}
+### Using web app on a tablet browser: 
 
 -   Don\'t. 
 -   [Attaching files to records may
-    fail.]{style="line-height: 1.4285715;"}
+    fail.]
 -   [Certain versions of the Chrome browser will not download files from
     the web app correctly from an Android device (download unsuccessful
     error). Use the Firefox browser to download files
-    instead]{style="line-height: 1.4285715;"}
+    instead]
 
-### Data schema: {#KnownIssuesandLimitations-Dataschema:}
+### Data schema: 
 
 -   Two attributes with the same name are treated as the same therefore
     only the first attribute defined will be used
 
-### Map UI/performance: {#KnownIssuesandLimitations-MapUI/performance:}
+### Map UI/performance: 
 
 -   Large map file sizes/large numbers of geometry etc. causes
     significant performance issues depending on the speed of the tablet.
@@ -75,6 +68,3 @@ bugs within the FAIMS system as of 29/10/2013)
     despite not being visible
 
 </div>
-
-Attachments
------------

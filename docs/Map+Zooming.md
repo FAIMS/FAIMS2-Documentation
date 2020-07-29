@@ -1,15 +1,11 @@
-FAIMS Mobile Platform Documentation (FAIMS): Map Zooming
+Map Zooming
 ========================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Former user (Deleted) () - 2013-08-19T21:52:35.378Z
 
-Last Updated: Former user (Deleted) () - 2013-08-19T21:52:35.378Z
-:::
 
-<div>
 
-[Zoom]{style="color: rgb(102,102,102);"}
+
+[Zoom]
 
 -   zoom in by tapping the screen with two fingers and slowly spreading
     them apart. Notice the changing scale in the bottom frame.
@@ -19,6 +15,3 @@ Last Updated: Former user (Deleted) () - 2013-08-19T21:52:35.378Z
     constantly 
 
 </div>
-
-Attachments
------------

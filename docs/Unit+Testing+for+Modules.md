@@ -1,17 +1,9 @@
-FAIMS Mobile Platform Documentation (FAIMS): Unit Testing for Modules
+Unit Testing for Modules
 =====================================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
-Created: Christian Nassif-Haynes (Unlicensed) (christian\@fedarch.org) -
-2017-11-02T02:33:50.053Z
 
-Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian\@fedarch.org) - 2017-11-10T06:09:45.552Z
-:::
 
-<div>
-
-Overview {#UnitTestingforModules-Overview}
+Overview 
 ========
 
 This wiki article describes how to implement unit tests for modules
@@ -42,12 +34,12 @@ compiled. These are placed in the `tests` directory, relative to your
 Of note are `mock.bsh` and `test.bsh`. (`ModuleUtil.java` is used for UI
 testing, which is outside the scope of this wiki article.)
 
-mock.bsh {#UnitTestingforModules-mock.bsh}
+mock.bsh 
 --------
 
 `mock.bsh` contains function and class definitions. For modules that run
 within the FAIMS APK, these functions would ordinarily be defined by
-[ui\_commands.bsh](https://github.com/FAIMS/faims-android/blob/master/faimsandroidapp/src/main/assets/ui_commands.bsh){.external-link}.
+[ui\_commands.bsh](https://github.com/FAIMS/faims-android/blob/master/faimsandroidapp/src/main/assets/ui_commands.bsh).
 However, instead of running in the FAIMS APK, unit tests run on the
 desktop, directly from within the Beanshell interpreter.
 
@@ -56,7 +48,7 @@ primary purpose of this file is to allow the module\'s `ui_logic.bsh`
 file to run during a test without triggering exceptions due to undefined
 functions.
 
-test.bsh {#UnitTestingforModules-test.bsh}
+test.bsh 
 --------
 
 `test.bsh` executes the unit tests. (This involves running the scripts
@@ -64,7 +56,7 @@ test.bsh {#UnitTestingforModules-test.bsh}
 script itself should be invoked by running `test.sh` (which initialises
 Java\'s `CLASSPATH` variable.)
 
-Running a Trivial Test {#UnitTestingforModules-RunningaTrivialTest}
+Running a Trivial Test 
 ======================
 
 Suppose that our module has the following directory structure:
@@ -140,7 +132,7 @@ chance to execute. If we replace `assert("false")` with
     c
     === ALL TESTS PASSED ===
 
-Testing Code from ui\_logic.bsh {#UnitTestingforModules-TestingCodefromui_logic.bsh}
+Testing Code from ui\_logic.bsh 
 ===============================
 
 Because `test.bsh` runs the code from `ui_logic.bsh` before running
@@ -155,30 +147,24 @@ following:
     assert("ew"    .equals(banana("spinach")));
     assert("ew"    .equals(banana("BANANA!")));
 
-Mocking by Redefining Functions {#UnitTestingforModules-MockingbyRedefiningFunctions}
+Mocking by Redefining Functions 
 ===============================
 
 Functions in Beanshell can be redefined. This allows their functionality
 to be mocked at test time. It is often useful to write something like
 the following in unit tests:
 
-    {
-      boolean mockedFunction() {
-        return true; // Let's see how returning TRUE affects dependent code
-      }
+    
       // Call functions which depend on mockedFunction
       // Assert stuff
     }
 
-    {
-      boolean mockedFunction() {
-        return false; // Now let's see how returning FALSE affects dependent code
-      }
+    
       // Call functions which depend on mockedFunction again
       // Assert more stuff
     }
 
-Useful Functions {#UnitTestingforModules-UsefulFunctions}
+Useful Functions 
 ================
 
 -   `assert(boolean)` -- Defined in `ui_logic.bsh`. Verifies that a
@@ -196,7 +182,7 @@ Useful Functions {#UnitTestingforModules-UsefulFunctions}
     during execution of the `Callable` argument and returns it as a
     string. This is useful for capturing the output of functions which
     would normally produce messages in logcat. A [Beanshell scripted
-    object](http://www.beanshell.org/manual/objects.html){.external-link}
+    object](http://www.beanshell.org/manual/objects.html)
     can be used in place of a `Callable` as long as it defines a
     `void run()` method.
 -   `setFieldValue(String, Object)` -- Defined in `mock.bsh`. Allows a
@@ -218,7 +204,7 @@ Useful Functions {#UnitTestingforModules-UsefulFunctions}
 Many of the functions defined by the autogen under the \"DOCUMENT OBJECT
 MODEL\" section of `ui_logic.bsh` are useful.
 
-Advantages of This Unit Testing Methodology {#UnitTestingforModules-AdvantagesofThisUnitTestingMethodology}
+Advantages of This Unit Testing Methodology 
 ===========================================
 
 Testing as described herein confers all the usual befits of unit
@@ -229,7 +215,7 @@ some caveats) the `ui_logic.bsh` file is run on the development machine.
 Not having to upload the logic to a server and download it to a device
 allows for vastly hastened development, especially on large modules.
 
-Limitations of This Unit Testing Methodology {#UnitTestingforModules-LimitationsofThisUnitTestingMethodology}
+Limitations of This Unit Testing Methodology 
 ============================================
 
 A major limitation of this testing approach is that records cannot be
@@ -243,6 +229,3 @@ upon the developer to ensure that the mocked functions really do mock
 the desired behaviour of the FAIMS APK.
 
 </div>
-
-Attachments
------------

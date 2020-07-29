@@ -184,7 +184,7 @@ As our demo server comes with no guarantees or privacy, you'll want to switch to
 
 -  An Android 7+ device with the FAIMS app
 -  A local or online FAIMS server
--  Hostname for your server (e.g. {\tt demo.fedarch.org}) 
+-  Hostname for your server (e.g. ) 
 -  A local or internet connection to that server
 
 

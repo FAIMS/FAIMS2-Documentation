@@ -1,7 +1,7 @@
-FAIMS Mobile Platform Documentation (FAIMS): Installing Spatialite Tool on Windows
+Installing Spatialite Tool on Windows
 ==================================================================================
 
-::: {style="font-size:70%; color:#444; font-style: italic"}
+::: 
 Created: Christian Nassif-Haynes (Unlicensed) (christian\@fedarch.org) -
 2018-06-13T11:09:06.150Z
 
@@ -9,21 +9,20 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
 (christian\@fedarch.org) - 2018-06-13T11:19:07.447Z
 :::
 
-<div>
+
 
 \
 
-::: {.confluence-information-macro .confluence-information-macro-information .conf-macro .output-block data-hasbody="true" data-macro-name="info" data-macro-id="74a92c17-7ec8-465f-93c0-cedc6440230f"}
-[ ]{.aui-icon .aui-icon-small .aui-iconfont-info
-.confluence-information-macro-icon}
+::: 
+[ ]
 
-::: {.confluence-information-macro-body}
+::: 
 *Note: This was tested on Windows 10.*
 :::
 :::
 
 1.  Download the zip file which contains the [spatialite tool
-    binaries](http://www.gaia-gis.it/gaia-sins/windows-bin-x86/spatialite_tool-4.3.0a-win-x86.7z){.external-link}.
+    binaries](http://www.gaia-gis.it/gaia-sins/windows-bin-x86/spatialite_tool-4.3.0a-win-x86.7z).
 2.  Extract the contents of the downloaded zip file to a directory
     called **`C:\Program Files (x86)\Spatialite Tool`**. (You will
     probably have to make this directory.) After completing this step,
@@ -32,14 +31,14 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
 3.  Once the installer is finished, add the directory
     **`C:\Program Files (x86)\Spatialite Tool`** to your system path. A
     tutorial for adding directories to your system path can be found
-    [here](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){.external-link}.
+    [here](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/).
 4.  Test your installation by opening a new Command Prompt window,
     typing `spatialite_tool --help` and pressing enter. If you see
     something like the following, installation was successful:
 
-    ::: {.code .panel .pdl .conf-macro .output-block style="border-width: 1px;" data-hasbody="true" data-macro-name="code" data-macro-id="e458217e-a525-4759-a386-93d195fd54f8"}
-    ::: {.codeContent .panelContent .pdl}
-    ``` {.syntaxhighlighter-pre data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence"}
+    ::: 
+    ::: 
+    ``` 
     C:\Users\mq20151400>spatialite_tool --help
 
 
@@ -78,6 +77,3 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
     :::
 
 </div>
-
-Attachments
------------
