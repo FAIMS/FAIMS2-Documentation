@@ -1,0 +1,7 @@
+site_name: FAIMS 2.6 User and Module Documentation
+nav:  
+  - Home: /
+  - Getting started: /Getting+started+with+FAIMS+-+an+overview/
+  - Developer Usage: /Developer+Usage/
+  - Cookbook: /FAIMS+Data%2C+UI+and+Logic+Cook-Book/
+  - Module API: /Program+Logic+Support/
