@@ -5,21 +5,20 @@ Developer Setup
 
 
 
-Android App Development 
+Android App Development
 =======================
 
-### Requirements 
+### Requirements
 
 -   Android Studio
 -   Oracle Java JDK 1.7
 -   Git
 
-### Instructions 
+### Instructions
 
 1.  Install JDK
 2.  Install Git
-3.  Checkout faims-android repo *(git clone
-    <https://github.com/FAIMS/faims-android> ./faims-android)*\
+3.  Checkout [faims-android repo](https://github.com/FAIMS/faims-android)  
     *Make sure you use the correct branch you are developing/testing
     for.*
 4.  Install android studio
@@ -38,7 +37,7 @@ Android App Development
 11. Run a Clean *(Build \> Clean Project)*
 12. Run a Build *(Build \> Rebuild Project Project)*
 
-### Build App 
+### Build App
 
 1.  Connect android device via USB
 2.  Make sure android device has USB Debugging enabled
@@ -50,7 +49,7 @@ Android App Development
     *./faimsandroidapp/src/androidTest/java/au/org/intersect/faims/android/test*
     you which to use and select Run
 
-### Build a community apk 
+### Build a community apk
 
 1.  Setup a faims server with your community module
 2.  Run *packageModule.rb* with options for your community module and
@@ -62,10 +61,10 @@ Android App Development
 6.  Run Build APK or Generate Signed APK (*Build \> Build APK or
     Generate Signed APK*)
 
-Web App Development 
+Web App Development
 ===================
 
-### Requirements 
+### Requirements
 
 -   [Installing Spatialite on
     Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+on+Ubuntu)
@@ -75,29 +74,23 @@ Web App Development
     Tools](https://wiki.intersect.org.au/display/FAIMS/Installing+GDAL+Tools)
 -   You will need to have RVM installed on your system.
 
-::: 
-::: 
-``` 
+
+
+```
 \curl -L https://get.rvm.io | bash -s stable --ruby
 ```
-:::
-:::
 
-::: 
-[ ]
 
-::: 
 You should check for rvm requirements and install them!
-:::
-:::
 
-### Install Server 
+
+### Install Server
 
 -   Install Server
 
-::: 
-::: 
-``` 
+
+
+```
 rvm install ruby-1.9.3-p286
 rvm use 1.9.3-p286@faims --create
 gem install bundler
@@ -105,34 +98,30 @@ git clone git@github.com:IntersectAustralia/faims-web.git
 cd faims-web
 bundle install
 ```
-:::
-:::
+
+
 
 -   Setup and Start Server
 
-::: 
-::: 
-``` 
+
+
+```
 cd faims-web
 rake db:drop db:create db:migrate db:seed projects:setup projects:clean db:test:prepare
 foreman start
 ```
-:::
-:::
+
+
 
 -   For more server usage commands follow the [Developer
     Setup](../FAIMS/Developer+Setup.html) guide
 
-### Troubleshooting 
+### Troubleshooting
 
-::: 
-[ ]
 
-::: 
+
 This is no longer relevant as Unicorn is used as the dev and production
 server.
-:::
-:::
 
 -   If webrick seems to be taking way to long to serve documents try
     editing its config (and if you use rvm that will be somewhere that

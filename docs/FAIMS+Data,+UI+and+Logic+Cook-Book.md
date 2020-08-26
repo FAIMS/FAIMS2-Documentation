@@ -1,5 +1,5 @@
 
-FAIMS Data, UI and Logic Cook-Book 
+FAIMS Data, UI and Logic Cook-Book
 ==================================
 
 Use this guide to help create your own modules by following the examples
@@ -7,7 +7,7 @@ below.
 
 [TOC]
 
-Module Creation 
+Module Creation
 ---------------
 
 When creating module there are some files that are needed to create the
@@ -26,7 +26,7 @@ In addition there are some optional files such as:
 Below is the example of a creation for simple module by providing
 required files
 
-### Simple Module 
+### Simple Module
 
 This is an example of a simple module that renders a single text view
 
@@ -34,7 +34,7 @@ This is an example of a simple module that renders a single text view
 
 
 
-``` 
+```
 <?xml version="1.0" ?>
 <?xml-stylesheet type="text/xsl" href="data_schema.xsl"?>
 <dataSchema name="SimpleModule" preparer="Your Name">
@@ -47,7 +47,7 @@ This is an example of a simple module that renders a single text view
 
 
 
-``` 
+```
 <h:html xmlns="http://www.w3.org/2002/xforms"
         xmlns:h="http://www.w3.org/1999/xhtml"
         xmlns:ev="http://www.w3.org/2001/xml-events"
@@ -90,13 +90,13 @@ This is an example of a simple module that renders a single text view
 
 
 
-``` 
+```
 setFieldValue("tabgroup1/tab1/text", "Hello World!");
 ```
 
 
 
-### How it works 
+### How it works
 
 -   Use the module files to create a module on the server. Then download
     the module onto the android app.
@@ -111,18 +111,18 @@ setFieldValue("tabgroup1/tab1/text", "Hello World!");
     with the database. Current this example simply sets the value of the
     text view to \"Hello World!\".
 
-### Data Schema Construction 
+### Data Schema Construction
 
 This section will explain about the structure of the data schema. An
 example of data schema:
 
 
 
-``` 
+```
 <?xml version="1.0" ?>
 <?xml-stylesheet type="text/xsl" href="sampleDataXML.xsl"?>
 <dataSchema name="SyncExample" preparer="Nobody">
-    
+
    <RelationshipElement name="AboveBelow" type="hierarchy">
     <description>
       Indicates that one element is above or below another element.
@@ -146,7 +146,7 @@ example of data schema:
       </lookup>
     </property>
   </RelationshipElement>
-  
+
   <ArchaeologicalElement name="small">
     <description>
       An small entity
@@ -186,7 +186,7 @@ RelationshipElement and ArchaeologicalElement. Relationship element
 defines the schema of a relationship while archaeological element
 defines the schema of a archaeological entity.
 
-### Relationship Element 
+### Relationship Element
 
 A relationship element has both name and type attributes. Type states
 the nature of the relationship of which there are three which are
@@ -198,11 +198,10 @@ contained in a relationship element:
 3.  child: defines the verb for the child entity
 4.  property: a data attribute of a relationship; properties have both
     name and type attributes:
-
--   -   bundle: ?
+   -   bundle: ?
     -   lookup: list vocabulary terms for the property
 
-### Archaeological Element 
+### Archaeological Element
 
 An archaeological element has a type attribute. There are also child
 elements contained in a archaeological element:
@@ -210,18 +209,17 @@ elements contained in a archaeological element:
 1.  description: the description of the archaeological element
 2.  property: a data attribute of the archaeological entity; properties
     have both name and type attributes:
-
--   -   bundle: ?
+   -   bundle: ?
     -   lookup: list vocabulary terms for the property
 
-Static UI 
+Static UI
 ---------
 
 The following examples of UI elements demonstrate how these UI elements
 (known as views) can be statically embedded within the ui\_schema.xml
 file.
 
-### Constructing a UI 
+### Constructing a UI
 
 This example will teach you how to construct a ui and bind it with
 logic.
@@ -245,7 +243,7 @@ views. The full list of supported views are:
 -   Table
 -   Web View
 
-### Creating a Text View 
+### Creating a Text View
 
 The ui\_schema.xml is used to define what to render on screen. There are
 two parts to the ui schema. The first part defines the overall structure
@@ -256,7 +254,7 @@ comments.
 
 
 
-``` 
+```
 <h:html xmlns="http://www.w3.org/2002/xforms"
         xmlns:h="http://www.w3.org/1999/xhtml"
         xmlns:ev="http://www.w3.org/2001/xml-events"
@@ -302,7 +300,7 @@ inside the tabgroup called \"tab1\" and a text element inside the tab
 called \"text\".
 
 
-[ ]
+
 
 
 The names for the tabgroup, tab and element can be called anything that
@@ -314,7 +312,7 @@ In the second part it defines how the structure is to be rendered.
 
 
 
-``` 
+```
 <group ref="tabgroup1">
   <label></label>
 ```
@@ -328,7 +326,7 @@ valid ui schema.
 
 
 
-``` 
+```
 <group ref="tab1">
   <label>Tab 1</label>
 ```
@@ -340,7 +338,7 @@ group element \"tab1\" which will be used to rendered it as a tab. The
 label is used to label the tab in the ui.
 
 
-[ ]
+
 
 
 The faims android app ui must use tabgroups and tabs in this way or else
@@ -351,7 +349,7 @@ group elements define label elements which is a requirement
 
 
 
-``` 
+```
 <input ref="text">
   <label>Text:</label>
 </input>
@@ -362,14 +360,14 @@ group elements define label elements which is a requirement
 Finally these lines of code define an input element for text. The label
 is used to label the text element.
 
-### Creating a Number Text View 
+### Creating a Number Text View
 
 Following from the previous example the example below defines an
 additional text view \"number\" that is of decimal format.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -402,7 +400,7 @@ additional text view \"number\" that is of decimal format.
 
 
 
-``` 
+```
 <bind nodeset="/faims/tabgroup1/tab1/number" type="decimal"/>
 ```
 
@@ -413,13 +411,13 @@ view as a number only text view. Notice that the nodeset value follows
 the ordering of the xml elements. This is used to ref number text view
 uniquely.
 
-### Creating a Dropdown 
+### Creating a Dropdown
 
 This example creates a drop down.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -472,7 +470,7 @@ This example creates a drop down.
 
 
 
-``` 
+```
 <item>
   <label>Item A</label>
   <value>0</value>
@@ -486,7 +484,7 @@ label is the text that shows up in the drop down and value is the value
 using logic calls (more on that later).
 
 
-[ ]
+
 
 
 Drop downs or any list views must include at least 1 item in ui schema
@@ -494,13 +492,13 @@ even if later in ui logic you remove them.
 
 
 
-### Creating a Checkbox Group 
+### Creating a Checkbox Group
 
 This example creates a checkbox group.
 
 
 
-``` 
+```
 ...
          <select ref="itemList">
             <label>Item List:</label>
@@ -527,20 +525,20 @@ This example creates a checkbox group.
 
 
 
-[ ]
+
 
 
 Notice that select is used instead of select1.
 
 
 
-### Creating a RadioButton Group 
+### Creating a RadioButton Group
 
 This example creates a radio button group.
 
 
 
-``` 
+```
 ...
          <select1 ref="itemList" appearance="full">
             <label>Item List:</label>
@@ -567,20 +565,20 @@ This example creates a radio button group.
 
 
 
-[ ]
+
 
 
 Notice that the select1 has appearance set to full.
 
 
 
-### Creating a List View 
+### Creating a List View
 
 This example creates a list view.
 
 
 
-``` 
+```
 ...
      <group ref="tab1" faims_scrollable="false">
        <label>Tab 1</label>
@@ -610,7 +608,7 @@ This example creates a list view.
 
 
 
-[ ]
+
 
 
 Notice that the select1 has appearance set to compact.
@@ -619,7 +617,7 @@ Notice that the select1 has appearance set to compact.
 
 
 
-``` 
+```
 <group ref="tab1" faims_scrollable="false">
  <label>Tab 1</label>
 ```
@@ -630,13 +628,13 @@ Since list are scrollable views they cannot be placed into normal tabs
 as tabs themselves are scrollable. Therefore you set tabs to not scroll
 by using the faims\_scrollable attribute to make a tab not scroll.
 
-### Creating a Date Picker 
+### Creating a Date Picker
 
 This example creates a date picker.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -663,20 +661,20 @@ This example creates a date picker.
 
 
 
-[ ]
+
 
 
 Notice the binding of date to type date.
 
 
 
-### Creating a Time Picker 
+### Creating a Time Picker
 
 This example creates a time picker.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -703,20 +701,20 @@ This example creates a time picker.
 
 
 
-[ ]
+
 
 
 Notice the binding of time to type time.
 
 
 
-### Creating a Map View 
+### Creating a Map View
 
 This example creates a map view.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -742,20 +740,20 @@ This example creates a map view.
 
 
 
-[ ]
+
 
 
 Notice set faims\_map to true to make it a map view.
 
 
 
-### Creating a Picture Gallery 
+### Creating a Picture Gallery
 
 This example creates a picture gallery.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -784,13 +782,13 @@ This example creates a picture gallery.
 
 
 
-### Creating a Camera Gallery 
+### Creating a Camera Gallery
 
 This example creates a camera gallery slider.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -820,7 +818,7 @@ This example creates a camera gallery slider.
 
 
 
-[ ]
+
 
 
 Notice that the camera and is a select not select1 as the picture
@@ -828,13 +826,13 @@ gallery
 
 
 
-### Creating a Video Gallery 
+### Creating a Video Gallery
 
 This example creates a video gallery slider.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -864,20 +862,20 @@ This example creates a video gallery slider.
 
 
 
-[ ]
+
 
 
 Notice that the video and is a select not select1 as the picture gallery
 
 
 
-### Creating a Files List 
+### Creating a Files List
 
 This example creates a files list.
 
 
 
-``` 
+```
 ...
          <select ref="files" type="file">
             <label>Files:</label>
@@ -904,20 +902,20 @@ This example creates a files list.
 
 
 
-[ ]
+
 
 
 Notice that select is used instead of select1.
 
 
 
-### Creating a Button 
+### Creating a Button
 
 This example creates a button.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -942,13 +940,13 @@ This example creates a button.
 
 
 
-### Creating a Table 
+### Creating a Table
 
 This example creates a table.
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -973,13 +971,13 @@ This example creates a table.
 
 
 
-### Creating a Web View 
+### Creating a Web View
 
 This example creates a web view
 
 
 
-``` 
+```
 ...
         <faims id="simple_example">
           <!-- PART 1: Define ui structure -->
@@ -1004,17 +1002,17 @@ This example creates a web view
 
 
 
-[\
-]
 
-Dynamic UI 
+
+
+Dynamic UI
 ----------
 
 The following shows how to create dynamic UI in the module via logic.
 
 
-[\
-]
+
+
 
 
 Note: Any attributes for dynamic views that are to be autosaved with a
@@ -1027,7 +1025,9 @@ entity with all static and dynamic (view) attributes set to null.
 
 
 
-[CreateView]
+CreateView
+
+
 
 First to make any changes to ui by either creating or removing views you
 must first run these commands inside a view task. Then to create a view
@@ -1039,20 +1039,20 @@ some options
 
 
 
-``` 
-executeViewTask(new ViewTask() 
+```
+executeViewTask(new ViewTask()
 });
 ```
 
 
 
-### Create TextField 
+### Create TextField
 
 Use the following to create a textfield.
 
 
 
-``` 
+```
 // to create a normal textfield  
 textDef = createViewDef().createTextField();
 // to create integer textfield
@@ -1070,189 +1070,189 @@ createView("tabgroup1/tab1/text", textDef);
 
 
 
-### Create DatePicker 
+### Create DatePicker
 
 Use the following to create a date picker.
 
 
 
-``` 
+```
 dateDef = createViewDef().createDatePicker();
 createView("tabgroup1/tab1/date", dateDef);
 ```
 
 
 
-### Create TimePicker 
+### Create TimePicker
 
 Use the following to create a time picker.
 
 
 
-``` 
+```
 timeDef = createViewDef().createTimePicker();
 createView("tabgroup1/tab1/time", timeDef);
 ```
 
 
 
-### Create Picture Gallery 
+### Create Picture Gallery
 
 Use the following to create a picture gallery.
 
 
 
-``` 
+```
 galleryDef = createViewDef().createPictureGallery();
 createView("tabgroup1/tab1/gallery", galleryDef);
 ```
 
 
 
-### Create RadioGroup 
+### Create RadioGroup
 
 Use the following to create a radio group.
 
 
 
-``` 
+```
 radioDef = createViewDef().createRadioGroup();
 createView("tabgroup1/tab1/radio", radioDef);
 ```
 
 
 
-### Create DropDown 
+### Create DropDown
 
 Use the following to create a dropdown.
 
 
 
-``` 
+```
 dropDef = createViewDef().createDropDown();
 createView("tabgroup1/tab1/drop", dropDef);
 ```
 
 
 
-### Create Checkbox Group 
+### Create Checkbox Group
 
 Use the following to create a checkbox group.
 
 
 
-``` 
+```
 checkDef = createViewDef().createCheckboxGroup();
 createView("tabgroup1/tab1/check", checkDef);
 ```
 
 
 
-### Create Camera Gallery 
+### Create Camera Gallery
 
 Use the following to create a camera gallery.
 
 
 
-``` 
+```
 cameraDef = createViewDef().createCameraGallery();
 createView("tabgroup1/tab1/camera", cameraDef);
 ```
 
 
 
-### Create Video Gallery 
+### Create Video Gallery
 
 Use the following to create a video gallery.
 
 
 
-``` 
+```
 videoDef = createViewDef().createVideoGallery();
 createView("tabgroup1/tab1/video", videoDef);
 ```
 
 
 
-### Create File Group 
+### Create File Group
 
 Use the following to create a file group.
 
 
 
-``` 
+```
 fileDef = createViewDef().createFileGroup();
 createView("tabgroup1/tab1/file", fileDef);
 ```
 
 
 
-### Create Button 
+### Create Button
 
 Use the following to create a button.
 
 
 
-``` 
+```
 buttonDef = createViewDef().createButton();
 createView("tabgroup1/tab1/button", buttonDef);
 ```
 
 
 
-### Create List 
+### Create List
 
 Use the following to create a list.
 
 
 
-``` 
+```
 listDef = createViewDef().createList();
 createView("tabgroup1/tab1/list", listDef);
 ```
 
 
 
-### Create Map 
+### Create Map
 
 Use the following to create a map.
 
 
 
-``` 
+```
 mapDef = createViewDef().createMap();
 createView("tabgroup1/tab1/list", mapDef);
 ```
 
 
 
-### Create Table 
+### Create Table
 
 Use the following to create a table.
 
 
 
-``` 
+```
 tableDef = createViewDef().createTable();
 createView("tabgroup1/tab1/table", tableDef);
 ```
 
 
 
-### Create Web View 
+### Create Web View
 
 Use the following to create a web view.
 
 
 
-``` 
+```
 webDef = createViewDef().createWebView();
 createView("tablegroup1/tab1/web", webDef);
 ```
 
 
 
-### Create Container 
+### Create Container
 
 Containers allow views to be group inside a layout. Use the following to
 create a container with styling to group some views together. You can
@@ -1260,7 +1260,7 @@ reference containers just like views using the normal path string.
 
 
 
-``` 
+```
 style1 = "orientation";
 style2 = "even";
 createContainer("tabgroup1/tab1/container", "orientation");
@@ -1272,20 +1272,20 @@ createView("tabgroup1/tab1/text2", createViewDef().createTextField(), "tabgroup1
 
 
 
-### Remove View 
+### Remove View
 
 To remove views that have been created dynamically use the following.
 Note: you cannot remove views create via the ui schema.
 
 
 
-``` 
+```
 removeView("tabgroup1/tab1/text1");
 ```
 
 
 
-### Remove Container 
+### Remove Container
 
 To remove containers that have been created dynamically use the
 following. Note: you cannot remove containers created via the ui schema.
@@ -1294,26 +1294,26 @@ you will have to remove those views as well.
 
 
 
-``` 
+```
 removeContainer("tabgroup1/tab1/container");
 ```
 
 
 
-### Clear All Dynamic Views and Containers 
+### Clear All Dynamic Views and Containers
 
 To remove all dynamic views and containers in a tab group use the
 following.
 
 
 
-``` 
+```
 removeAllViewsAndContainers("tabgroup1");
 ```
 
 
 
-### Update CSS Styling for a Tab Group 
+### Update CSS Styling for a Tab Group
 
 When dynamically creating views you will need to use the following API
 call to update styling for the tabgroup and apply any styling to the
@@ -1321,30 +1321,28 @@ newly added views. 
 
 
 
-``` 
+```
 refreshTabgroupCSS("tabgroup1");
 ```
 
 
 
-[\
-]
 
-[Customising the UI] 
+Customising the UI
 ---------------------------------------------------
 
 Now that you know how to construct the UI here are some examples on how
 to customise the ui so you can facilitate automatic loading of data from
 the database, hiding tabs, making readonly elements etc
 
-### Hiding labels 
+### Hiding labels
 
 Labels can be hidden for views by creating an empty label node. You must
 include an empty label node for the ui schema to be valid.
 
 
 
-``` 
+```
 ...
       <input ref="text">
          <label></label>
@@ -1352,7 +1350,7 @@ include an empty label node for the ui schema to be valid.
 
 
 
-### Tab Scrolling 
+### Tab Scrolling
 
 Tabs are set to scroll by default but to make them stop scrolling then
 set the faims\_scrollable attribute in the tab group element to false.
@@ -1360,7 +1358,7 @@ e.g.
 
 
 
-``` 
+```
 ...
       <group ref="tab1" faims_scrollable="false">
          <label>Tab 1</label>
@@ -1368,27 +1366,27 @@ e.g.
 
 
 
-### Hiding Tabs 
+### Hiding Tabs
 
 To hide tabs when they are first shown you can use the faims\_hidden
 attribute to make tabs hidden. By default tabs are visible.
 
 
 
-``` 
+```
 <group ref="tab1" faims_hidden="true">
 ```
 
 
 
-### Making Text Views readonly 
+### Making Text Views readonly
 
 Text views can be made readonly by setting faims\_readonly attribute to
 true.
 
 
 
-``` 
+```
 ...
 <input ref="text" faims_read_only="true">
   <label>Text:</label>
@@ -1398,7 +1396,7 @@ true.
 
 
 
-### Binding Tabgroup to Arch Entity 
+### Binding Tabgroup to Arch Entity
 
 Binding a TabGroup to an arch entity allows you to do automatic loading
 and saving of the entity defined within a TabGroup via the logic script.
@@ -1407,14 +1405,14 @@ faims\_archent\_type attribute to specify the entity type.
 
 
 
-``` 
+```
 <group ref="tabgroup1" faims_archent_type="simple">
 ```
 
 
 
 
-[ ]
+
 
 
 The entity type must match an entity type defined in the data schema.
@@ -1422,7 +1420,7 @@ This will be shown in the saving and loading entities example.
 
 
 
-### Binding Tabgroup to Relationship 
+### Binding Tabgroup to Relationship
 
 Binding a TabGroup to a relationship allows you to do automatic loading
 and saving of the relationship defined within a TabGroup via the logic
@@ -1431,14 +1429,14 @@ use the faims\_rel\_type attribute to specify the entity type.
 
 
 
-``` 
+```
 <group ref="tabgroup1" faims_rel_type="abovebelow">
 ```
 
 
 
 
-[ ]
+
 
 
 The relationship type must match an relationship type defined in the
@@ -1447,7 +1445,7 @@ example.
 
 
 
-### Binding Views to Entity/Relationship Attributes 
+### Binding Views to Entity/Relationship Attributes
 
 Once a TabGroup is bound to an entity/relationship type you need to
 specify how the views map to the attributes of the entity/relationship.
@@ -1456,14 +1454,14 @@ faims\_attribute\_type.
 
 
 
-``` 
+```
 <input ref="text" faims_attribute_name="name" faims_attribute_type="freetext">
 ```
 
 
 
 
-[ ]
+
 
 
 Here text view maps to the name attribute which will store in the
@@ -1474,7 +1472,7 @@ entities/relationships example.
 
 
 
-### Disabling Certainty Buttons on views 
+### Disabling Certainty Buttons on views
 
 By default all views in TabGroups that are bound to entities or
 relationships show an certainty button. This button allows views to set
@@ -1483,13 +1481,13 @@ the faims\_certainty attribute of the view to false.
 
 
 
-``` 
+```
 <input ref="text" faims_certainty="false">
 ```
 
 
 
-### Disabling Annotation Buttons on views 
+### Disabling Annotation Buttons on views
 
 By default all non-text views in TabGroups that are bound to entities or
 relationships show an annotation button. This button allows views to set
@@ -1498,13 +1496,13 @@ set the faims\_annotation attribute of the view to false.
 
 
 
-``` 
+```
 <input ref="text" faims_annotation="false">
 ```
 
 
 
-### Syncing files 
+### Syncing files
 
 For view that are bound to attributes that a file type then you can
 specify a faims\_sync attribute to indicate if those files are to sync
@@ -1513,14 +1511,14 @@ and loading entities/relationships example.
 
 
 
-``` 
+```
 <select ref="files" type="file" faims_attribute_name="files" faims_attribute_type="freetext" faims_sync="true">
 ```
 
 
 
 
-[ ]
+
 
 
 A sync attribute must also be added to the data schema. This is for the
@@ -1529,7 +1527,7 @@ synced to devices or not.
 
 
 
-``` 
+```
 <property type="something" name="pictures" file="true" thumbnail="true" sync="true">
   <bundle>DOI</bundle>
 </property>
@@ -1539,14 +1537,14 @@ synced to devices or not.
 
 
 
-### Styling 
+### Styling
 
 The styling can be defined and applied from the ui schema. It needs to
 be defined at the top of the tabgroup definition.
 
 
 
-``` 
+```
 ...
     <faims id="simple_example">
         <style>
@@ -1625,19 +1623,19 @@ container with certain orientation and certain layout weight to divide
 it even. The styling should be applied to the using the attribute
 faims\_style to the group tag.
 
-Using Logic 
+Using Logic
 ===========
 
 This section will provide examples on how to the logic file to add
 interaction between ui logic and data storage.
 
-### Saving/Loading Arch Entity 
+### Saving/Loading Arch Entity
 
 Define a archaeological entity in the data schema.
 
 
 
-``` 
+```
 <?xml version="1.0" ?>
 <?xml-stylesheet type="text/xsl" href="data_schema.xsl"?>
 <dataSchema name="SimpleModule" preparer="Your Name">
@@ -1664,7 +1662,7 @@ Now we define a ui schema to save this entity.
 
 
 
-``` 
+```
 <h:html xmlns="http://www.w3.org/2002/xforms"
         xmlns:h="http://www.w3.org/1999/xhtml"
         xmlns:ev="http://www.w3.org/2001/xml-events"
@@ -1738,7 +1736,7 @@ database.
 
 
 
-``` 
+```
 // add click events for buttons
 onEvent("tabgroup1/tab1/save", "click", "saveEntity()");
 onEvent("tabgroup1/tab1/clear", "click", "clearEntity()");
@@ -1749,7 +1747,7 @@ update()
 }
 
 entity_id = null;
-saveEntity() 
+saveEntity()
       update();
     }
   });
@@ -1758,14 +1756,14 @@ saveEntity()
 loadEntity() );
 }
 
-clearEntity() 
+clearEntity()
 
 update();
 ```
 
 
 
-### How it works 
+### How it works
 
 -   The data schema has defined a archaeological entity with two
     attributes name and value. These are specified using property
@@ -1780,7 +1778,7 @@ update();
     save the data to the database and load data back from the database.
 
 
-[ ]
+
 
 
 Note that the saveTabGroup api call only triggers a save if the value of
@@ -1790,15 +1788,15 @@ not been changed, use the saveArchEnt api call.
 
 
 
-\
 
-### Saving/Loading Relationships 
+
+### Saving/Loading Relationships
 
 Define a relationship in the data schema.
 
 
 
-``` 
+```
 <?xml version="1.0" ?>
 <?xml-stylesheet type="text/xsl" href="data_schema.xsl"?>
 <dataSchema name="SimpleModule" preparer="Your Name">
@@ -1828,7 +1826,7 @@ Now we define a ui schema to save this relationship.
 
 
 
-``` 
+```
 <h:html xmlns="http://www.w3.org/2002/xforms"
         xmlns:h="http://www.w3.org/1999/xhtml"
         xmlns:ev="http://www.w3.org/2001/xml-events"
@@ -1897,33 +1895,33 @@ database.
 
 
 
-``` 
+```
 // add click events for buttons
 onEvent("tabgroup1/tab1/save", "click", "saveRelationship()");
 onEvent("tabgroup1/tab1/clear", "click", "clearRelationship()");
 onEvent("tabgroup1/tab2/load", "click", "loadRelationship()");
 
-update() 
+update()
   });
 }
 
 rel_id = null;
-saveRelationship() 
+saveRelationship()
   });
 }
 
-loadRelationship() 
+loadRelationship()
   });
 }
 
-clearRelationship() 
+clearRelationship()
 
 update();
 ```
 
 
 
-### Automated TabGroup Saving 
+### Automated TabGroup Saving
 
 With automated saving you don\'t require the users to manually click a
 button to call the saveTabGroup api call. You just need to call the
@@ -1936,14 +1934,14 @@ Use the following to turn on automated saving.
 
 
 
-``` 
+```
 enable_autosave = true
 saveTabGroup("tabgroup1", entity_id, null, null, callback, enable_autosave);
 ```
 
 
 
-### Keep Changes in TabGroup 
+### Keep Changes in TabGroup
 
 With autosaving you might sometimes set default inputs for the fields
 your tabgroup and not want to save the tabgroup unless the user makes a
@@ -1952,13 +1950,13 @@ ignore the current state of the tabgroup.
 
 
 
-``` 
+```
 keepTabGroupChanges("tabgroup1");
 ```
 
 
 
-### Fetching Entities and Relationships 
+### Fetching Entities and Relationships
 
 To load entities manually use the following.
 
@@ -1966,10 +1964,10 @@ e.g. fetchArchEnt
 
 
 
-``` 
-fetchArchEnt("10000112441409729", new FetchCallback() 
-  
-  onError(message) 
+```
+fetchArchEnt("10000112441409729", new FetchCallback()
+
+  onError(message)
 });
 ```
 
@@ -1984,10 +1982,10 @@ e.g. fetchRel
 
 
 
-``` 
+```
 fetchRel("10000112441409730", new FetchCallback()   
 
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2002,10 +2000,10 @@ e.g. fetchOne
 
 
 
-``` 
-fetchOne("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback() 
+```
+fetchOne("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2018,10 +2016,10 @@ e.g. fetchAll
 
 
 
-``` 
-fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback() 
+```
+fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2033,10 +2031,10 @@ e.g. fetchEntityList
 
 
 
-``` 
-fetchEntityList("small", new FetchCallback() 
+```
+fetchEntityList("small", new FetchCallback()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2051,10 +2049,10 @@ e.g. fetchRelationshipList
 
 
 
-``` 
-fetchRelationshipList("abovebelow", new FetchCallback() 
+```
+fetchRelationshipList("abovebelow", new FetchCallback()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2065,7 +2063,7 @@ row having the first item equal the id of the relationship and the
 second item equal the identifier of the relationship. This is useful to
 populate list and dropdowns etc.
 
-### Saving Archaeological Entities and Relationships 
+### Saving Archaeological Entities and Relationships
 
 To save entities manually use the following.
 
@@ -2073,7 +2071,7 @@ e.g. saveArchEnt
 
 
 
-``` 
+```
 attributes = createAttributeList();
 entityId = null;
 name = "name";
@@ -2083,10 +2081,10 @@ measure = null;
 certainty = null;
 geometry = null;
 attributes.add(createEntityAttribute(name, text, vocab, measure, certainty));
-saveArchEnt(entityId, "small", geometry, attributes, new SaveCallback() 
+saveArchEnt(entityId, "small", geometry, attributes, new SaveCallback()
  
-  onError(message) 
-}); 
+  onError(message)
+});
 ```
 
 
@@ -2097,7 +2095,7 @@ e.g saveRel
 
 
 
-``` 
+```
 attributes = null;
 relationshipId = null;
 name = "name";
@@ -2107,15 +2105,15 @@ certainty = null;
 geometry = null;
 # attributes are deprecated for relationships
 # attributes.add(createRelationshipAttribute(name, text, vocab, certainty));
-saveRel(relationshipId, "abovebelow", geometry, attributes, new SaveCallback() 
+saveRel(relationshipId, "abovebelow", geometry, attributes, new SaveCallback()
  
-  onError(message) 
-}); 
+  onError(message)
+});
 ```
 
 
 
-### Deleting Archaeological Entities and Relationships 
+### Deleting Archaeological Entities and Relationships
 
 There are a couple of apis to delete entities and relationships from the
 database.
@@ -2124,10 +2122,10 @@ e.g. deleteArchEnt
 
 
 
-``` 
-deleteArchEnt('10000112441409729', new DeleteCallback() 
+```
+deleteArchEnt('10000112441409729', new DeleteCallback()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2139,10 +2137,10 @@ e.g. deleteRel
 
 
 
-``` 
-deleteRel('10000112441409730', new DeleteCallback() 
+```
+deleteRel('10000112441409730', new DeleteCallback()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2150,7 +2148,7 @@ deleteRel('10000112441409730', new DeleteCallback()
 
 This will delete the relationship with relationshipid 10000112441409730
 
-### Deleting Attributes 
+### Deleting Attributes
 
 To delete a particular attribute of an entity or relationship you can
 used the overloaded createEntityAttribute and
@@ -2161,7 +2159,7 @@ e.g. createEntityAttribute
 
 
 
-``` 
+```
 attribute = createEntityAttribute('name', null, null, null, null, true);
 ```
 
@@ -2175,7 +2173,7 @@ e.g. createRelationshipAttribute
 
 
 
-``` 
+```
 attribute = createRelationshipAttribute('name', null, null, null, true);
 ```
 
@@ -2185,7 +2183,7 @@ This will create an attribute for \'name\' with deleted set to true. Add
 this to the attribute list when you save the relationship and it will
 mark the name attribute as deleted.
 
-### Relating Entities 
+### Relating Entities
 
 To add an existing entity to an existing relationship use the addReln
 api.
@@ -2194,10 +2192,10 @@ e.g. addReln
 
 
 
-``` 
-addReln('10000112441409729', '10000112441409730', 'Above', new SaveCallbac() 
+```
+addReln('10000112441409729', '10000112441409730', 'Above', new SaveCallbac()
  
-  onError(message) 
+  onError(message)
 });
 ```
 
@@ -2206,7 +2204,7 @@ addReln('10000112441409729', '10000112441409730', 'Above', new SaveCallbac()
 This will add entity with uuid 10000112441409729 to relationship with
 relationshipid 10000112441409730 with the verb \'Above\'.
 
-### Getting Field Values, Annotations and Certainty 
+### Getting Field Values, Annotations and Certainty
 
 Given the saving and loading examples provided getting field values,
 annotations and certainty are done by using the api calls getFieldValue,
@@ -2216,17 +2214,17 @@ e.g. getFieldValue
 
 
 
-``` 
+```
 String value = getFieldValue("tabgroup1/tab1/name");
 
 List pairs = getFieldValue("tabgroup1/tab1/pictures");
-for (NameValuePair pair : pairs) 
+for (NameValuePair pair : pairs)
 ```
 
 
 
 
-[ ]
+
 
 
 For views like checkbox group, files list, camera picture gallery and
@@ -2239,7 +2237,7 @@ e.g. getFieldAnnotation
 
 
 
-``` 
+```
 getFieldAnnotation("tabgroup1/tab1/name")
 ```
 
@@ -2249,7 +2247,7 @@ e.g. getFieldCertainty
 
 
 
-``` 
+```
 getFieldCertainty("tabgroup1/tab1/name")
 ```
 
@@ -2261,7 +2259,7 @@ functions do please refer to the api calls
 provided [here](https://wiki.intersect.org.au/display/FAIMS/Program+Logic+Support#ProgramLogicSupport-FieldValues).
 
 
-[ ]
+
 
 
 Note that since not all fields supports certainty and annotation, all
@@ -2270,7 +2268,7 @@ will result in showing a warning dialog.
 
 
 
-### Setting Field Values, Annotations and Certainty 
+### Setting Field Values, Annotations and Certainty
 
 The value of the fields can also be set by using  the logic by calling
 setFieldValue, setFieldAnnotation, and setCertainty.
@@ -2279,7 +2277,7 @@ e.g. setFieldValue
 
 
 
-``` 
+```
 setFieldValue("tabgroup1/tab1/name","value1")
 
 List pairs = new ArrayList();
@@ -2294,7 +2292,7 @@ e.g. setFieldAnnotation
 
 
 
-``` 
+```
 setFieldAnnotation("tabgroup1/tab1/name","value1")
 ```
 
@@ -2304,14 +2302,14 @@ e.g. setFieldCertainty
 
 
 
-``` 
+```
 setFieldCertainty("tabgroup1/tab1/name","0.5")
 ```
 
 
 
 
-[ ]
+
 
 
 Note that since not all fields supports certainty and annotation, all
@@ -2320,7 +2318,7 @@ will result in showing a warning dialog.
 
 
 
-### Event Handling 
+### Event Handling
 
 Referring to the saving / loading examples provided above adding events
 to the ui are done using the following.
@@ -2329,7 +2327,7 @@ e.g. onEvent
 
 
 
-``` 
+```
 onEvent("tabgroup1/tab1/save", "click", "saveEntity()");
 ```
 
@@ -2348,7 +2346,7 @@ e.g. onFocus
 
 
 
-``` 
+```
 onFocus("tabgroup1/tab1/name","showWarning(\"focus\",\"it is focus\")", "showWarning(\"blur\",\"it is blur\")");
 ```
 
@@ -2360,7 +2358,7 @@ will appear, meanwhile when it is blurred, the warning dialog \"blur\"
 will appear.
 
 
-[ ]
+
 
 
 Note that if the focus callback or blur callback is not defined, the
@@ -2368,7 +2366,7 @@ callback would not be executed.
 
 
 
-### Customising the Action Bar Menu 
+### Customising the Action Bar Menu
 
 The menu in the action bar at the top right of the app can be customised
 with dynamic items. They can be either single ever-present items or
@@ -2376,20 +2374,20 @@ toggle items. Both examples can be seen below:
 
 
 
-``` 
+```
 // standard item
-addActionBarItem("about", new ActionButtonCallback() 
-    
-    actionOn() 
+addActionBarItem("about", new ActionButtonCallback()
+
+    actionOn()
 });
  
  
 // Toggle item
-addActionBarItem("sync", new ToggleActionButtonCallback() 
-    actionOn() 
-    isActionOff() 
-    actionOffLabel() 
-    actionOff() 
+addActionBarItem("sync", new ToggleActionButtonCallback()
+    actionOn()
+    isActionOff()
+    actionOffLabel()
+    actionOff()
 });
 ```
 
@@ -2406,13 +2404,13 @@ determine which of the two states to show. In this example, it checks
 whether sync is enabled and shows a \"Turn on\" or \"Turn off\" action
 item as required
 
-### Customising the Navigation Drawer Menu 
+### Customising the Navigation Drawer Menu
 
 To add custom actions to the navigation drawer use the following.
 
 
 
-``` 
+```
 // Primary Buttons (blue color)
 addNavigationButton("test1", new ActionButtonCallback() ";
   }
@@ -2441,7 +2439,7 @@ addNavigationButton("test4", new ActionButtonCallback() ";
 
 
 
-### Alert, Toast, Busy and Warning 
+### Alert, Toast, Busy and Warning
 
 Alert, toast, and warning are useful to show information to the user.
 
@@ -2449,7 +2447,7 @@ e.g. showAlert
 
 
 
-``` 
+```
 showAlert("alert", "Do you want to navigate to the next page?", "goToNextPage()", "stayInCurrentPage()")
 ```
 
@@ -2466,7 +2464,7 @@ e.g. showToast
 
 
 
-``` 
+```
 showToast("Starting GPS")
 ```
 
@@ -2480,7 +2478,7 @@ e.g. showWarning
 
 
 
-``` 
+```
 showWarning("warning","This is a warning")
 ```
 
@@ -2494,7 +2492,7 @@ e.g showBusy
 
 
 
-``` 
+```
 dialog = showBusy("loading module", "please wait")
 ...
 dialog.dismiss(); // to close the dialog
@@ -2507,7 +2505,7 @@ and message as specified in the function. The user can only close the
 dialog by dismissing it in the logic.
 
 
-[ ]
+
 
 
 
@@ -2516,27 +2514,27 @@ such as clicking elsewhere on the screen. To make the dialog
 non-cancellable use the following:
 
 
-\
+
 
 
 +-----------------------------------------------------------------------+
-| 
-| 
+|
+|
 | `dialog = showBusy(``"loading module"``, ``"please wait"``)`                                                               |
-| 
+|
 |                                                                       |
-| 
+|
 | `dialog.setCancelable(``false``);`                                           |
-| 
+|
 |                                                                       |
-| 
+|
 | `...`                                                   |
-| 
+|
 |                                                                       |
-| 
+|
 | `dialog.dismiss(); ``// to close the dialog`                                                            |
-| 
-| 
+|
+|
 +-----------------------------------------------------------------------+
 
 
@@ -2548,10 +2546,10 @@ e.g showTextAlert
 
 
 
-``` 
+```
 showTextAlert("Alert", "Entity to Load:", "loadAlertEntity()", "showToast(\"Dialog cancelled\")")
 ...
-loadAlertEntity() 
+loadAlertEntity()
 ```
 
 
@@ -2572,7 +2570,7 @@ e.g showDateAlert
 
 
 
-``` 
+```
 showDateAlert("Alert", "Set Date:", "showToast(getLastDateAlertInput())", "showToast(\"Dialog cancelled\")")
 ```
 
@@ -2584,7 +2582,7 @@ e.g showTimeAlert
 
 
 
-``` 
+```
 showTimeAlert("Alert", "Set Time:", "showToast(getLastTimeAlertInput())", "showToast(\"Dialog cancelled\")")
 ```
 
@@ -2592,7 +2590,7 @@ showTimeAlert("Alert", "Set Time:", "showToast(getLastTimeAlertInput())", "showT
 
 This behaves similar to showTextAlert.
 
-### Drop Downs, Radio Button Groups, CheckBox Groups, Lists, Picture Gallery, Tables, WebViews 
+### Drop Downs, Radio Button Groups, CheckBox Groups, Lists, Picture Gallery, Tables, WebViews
 
 The api populateDropDown, populateRadioGroup,  populateCheckBoxGroup,
 populateTableRaw, populateTablePivot adds the ability to set selection
@@ -2602,7 +2600,7 @@ e.g. populateDropDown
 
 
 
-``` 
+```
 fetchAll("select uuid, uuid from archentity where uuid || aenttimestamp in ( select uuid || max(aenttimestamp) from archentity group by uuid having deleted is null);", new FetchCallback()  
 });
 
@@ -2627,7 +2625,7 @@ dropdown with values
 
 
 
-``` 
+```
 list = new ArrayList();
 list.add("Item 1");
 list.add("Item 2");
@@ -2643,8 +2641,8 @@ e.g. populateRadioGroup
 
 
 
-``` 
-fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback() 
+```
+fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback()
 });
 ```
 
@@ -2654,8 +2652,8 @@ e.g. populateCheckBoxGroup
 
 
 
-``` 
-fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'location';", new FetchCallback() 
+```
+fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'location';", new FetchCallback()
 });
 ```
 
@@ -2665,8 +2663,8 @@ e.g. populateList and getListItemValue
 
 
 
-``` 
-fetchAll("select userid,(fname || ' ' || lname) as name from user where userdeleted is NULL;", new FetchCallback() 
+```
+fetchAll("select userid,(fname || ' ' || lname) as name from user where userdeleted is NULL;", new FetchCallback()
 });
 
 onEvent("user/tab1/userlist","click","showToast(\"getListItemValue()\")"
@@ -2691,7 +2689,7 @@ e.g. populateCursorList
 
 
 
-``` 
+```
 populateCursorList("user/tab1/users", "select uuid, freetext from latestNonDeletedArchentIdentifiers limit ? offset ?;", 25);
 ```
 
@@ -2724,12 +2722,12 @@ e.g. populatePictureGallery
 
 
 
-``` 
-fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback() 
+```
+fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback()
 });
 
  
-fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback() 
+fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback()
 });
 ```
 
@@ -2750,36 +2748,36 @@ me be modified to preserve a specific order.
 
 
 +-----------------------------------------------------------------------+
-| 
-| 
+|
+|
 | `fetchAll(``"select vocabid, vocabname, pictureurl from vocabulary left j |
 | oin attributekey using (attributeid) where attributename = 'picture'  |
 | order by vocabcountorder;"``, ``new`                       |
 | `FetchCallback()                                      |
-| 
+|
 |                                                                       |
-| 
+|
 | `  ``onFetch(pictures)                 |
-| 
+|
 |                                                                       |
-| 
+|
 | `    ``populatePictureGallery(``"tabgroup1/tab1/picture"``, pictures);`                                                               |
-| 
+|
 |                                                                       |
-| 
+|
 | `  ``}`                                  |
-| 
+|
 |                                                                       |
-| 
+|
 | `});`                                                   |
-| 
+|
 |                                                                       |
 |                                                                  |
 |                                                                       |
 | ``                                                      |
 |                                                                       |
 | </div>                                                                |
-| 
+|
 +-----------------------------------------------------------------------+
 
 
@@ -2795,7 +2793,7 @@ root directory.
 
 
 
-``` 
+```
 ...
 <property type="dropdown" name="picture" minCardinality="1" maxCardinality="1">
       <bundle>DOI</bundle>
@@ -2825,7 +2823,7 @@ eg. populateFileList
 
 
 
-``` 
+```
 ArrayList files = new ArrayList();
 files.add(getAttachedFilePath("attachment1.xml"));
 populateFileList("tabgroup1/tab1/files", files);
@@ -2849,7 +2847,7 @@ e.g. populateCameraPictureGallery and populateVideoGallery
 
 
 
-``` 
+```
 photos = new ArrayList();
 photos.add(photoUrl);
 populateCameraPictureGallery("tabgroup1/tab1/photos", photos);
@@ -2879,7 +2877,7 @@ e.g. populateTableRaw
 
 
 
-``` 
+```
 query = "select ...";
 headers = new ArrayList();
 headers.add("header1");
@@ -2899,7 +2897,7 @@ e.g. populateTablePivot
 
 
 
-``` 
+```
 query = "select ...";
 headers = new ArrayList();
 headers.add("header1");
@@ -2918,7 +2916,7 @@ e.g. populateWebView, populateWebViewHtml
 
 
 
-``` 
+```
 htmlFile = getAttachedFilePath("files/data/webfile.html");
 populateWebView("tabgroup1/tab1/web", htmlFile);
 ...
@@ -2927,13 +2925,13 @@ populateWebViewHtml("tabgroup1/tab1/web", "<h2>Module Info</h2><p>This module ha
 
 
 
-### Table Events 
+### Table Events
 
 To use table actions use the following.
 
 
 
-``` 
+```
 query = "select ...";
 headers = new ArrayList();
 headers.add("header1");
@@ -2943,32 +2941,32 @@ actionColumn = 2;
 actionCallback = "onClicked()"
 populateTablePivot("tabgroup1/tab1/table", query, headers, actionName, actionColumn, actionCallback);
  
-onClicked() 
+onClicked()
 ```
 
 
 
-### Web View Events 
+### Web View Events
 
 A web view can be called to navigate back (emulating a browser\'s back
 button)
 
 
 
-``` 
+```
 onEvent("tabgroup1/tab2/back", "click", "navigateWebViewBack(\"tabgroup1/tab2/web\")");
 ```
 
 
 
-### Dropdown and Picture Gallery Select Events 
+### Dropdown and Picture Gallery Select Events
 
 Dropdowns and picture galleries (and their hierarchical counterparts)
 and radio groups all support \"select events\" e.g.
 
 
 
-``` 
+```
 onEvent("tabgroup1/tab1/gallery", "select", "selectEvent()");
 ```
 
@@ -2978,7 +2976,7 @@ This is different to a click event in that the event is only executed
 when an option is selected and then changed. i.e It will not execute if
 the the selected option is selected again
 
-### Showing Tabs & Tab Groups 
+### Showing Tabs & Tab Groups
 
 To show tabs or tab groups use the following apis.
 
@@ -2986,7 +2984,7 @@ e.g. newTab
 
 
 
-``` 
+```
 newTab("tabgroup1/tab2")
 ```
 
@@ -3000,7 +2998,7 @@ e.g. newTabGroup
 
 
 
-``` 
+```
 newTabGroup("tabgroup1")
 ```
 
@@ -3013,7 +3011,7 @@ e.g. showTab
 
 
 
-``` 
+```
 showTab("tabgroup1/tab1")
 ```
 
@@ -3027,7 +3025,7 @@ e.g. showTab with uuid
 
 
 
-``` 
+```
 showTab("tabgroup1/tab1","100001242124")
 ```
 
@@ -3042,7 +3040,7 @@ e.g. showTabGroup
 
 
 
-``` 
+```
 showTabGroup("tabgroup1")
 ```
 
@@ -3056,7 +3054,7 @@ e.g. showTabGroup with uuid
 
 
 
-``` 
+```
 showTabGroup("tabgroup1","100001242124", new FetchCallback()  
  
   onError(message)  
@@ -3086,53 +3084,53 @@ e.g.
 
 
 +-----------------------------------------------------------------------+
-| 
+|
 | align: baseline;" title="Hint: double-click to select code"}          |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `onEvent(``"tabgroup"``, ``"show"``, ``"onShow()"``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 |                                                                       |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `onShow()                               |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``showTab(``"tabgroup/tab"``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``cancelTab(``"tabgroup/tab"``, ``true``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `}`                              |
-| 
-| 
+|
+|
 +-----------------------------------------------------------------------+
 
 
@@ -3141,7 +3139,7 @@ e.g.
 
 
 
-### Closing Tabs and Tab Groups 
+### Closing Tabs and Tab Groups
 
 To close tabs and tabgroups the cancelTab and cancelTabGroup apis are
 available.
@@ -3150,7 +3148,7 @@ e.g. cancelTab
 
 
 
-``` 
+```
 cancelTab("tabgroup1/tab1", true)
 ```
 
@@ -3177,7 +3175,7 @@ e.g. cancelTabGroup
 
 
 
-``` 
+```
 cancelTabGroup("tabgroup1", true)
 ```
 
@@ -3204,53 +3202,53 @@ e.g.
 
 
 +-----------------------------------------------------------------------+
-| 
+|
 | align: baseline;" title="Hint: double-click to select code"}          |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `onEvent(``"tabgroup"``, ``"show"``, ``"onShow()"``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 |                                                                       |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `onShow()                               |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``showTab(``"tabgroup/tab"``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``cancelTab(``"tabgroup/tab"``, ``true``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `}`                              |
-| 
-| 
+|
+|
 +-----------------------------------------------------------------------+
 
 
@@ -3261,7 +3259,7 @@ e.g.
 
 \
 
-### Date & Time 
+### Date & Time
 
 There is a special method to show the current time to the ui that can be
 specified from the logic by calling getCurrentTime. GetCurrentTime
@@ -3272,7 +3270,7 @@ e.g. getCurrentTime
 
 
 
-``` 
+```
 time = getCurrentTime();
 setFieldValue("tabgroup5/tab3/lastsuccess", time);
 ```
@@ -3283,7 +3281,7 @@ The example shows that we can set a field with the current time and the
 field should have faims\_read\_only attribute set to be true since the
 current time should not be editable by the user.
 
-### Module Metadata 
+### Module Metadata
 
 Module metadata can be shown on the UI by calling the following apis.
 
@@ -3291,7 +3289,7 @@ e.g. Module metadata example
 
 
 
-``` 
+```
 setFieldValue("tabgroup1/tab1/name", getModuleName());
 setFieldValue("tabgroup1/tab1/version", getModuleVersion());
 setFieldValue("tabgroup1/tab1/id", getModuleId());
@@ -3319,7 +3317,7 @@ the device.
 
 The server will have the ability to edit the module metadata.
 
-### Connected Server 
+### Connected Server
 
 The currently connected server can be obtained by using the following
 call. It will return something similar to
@@ -3327,7 +3325,7 @@ call. It will return something similar to
 
 
 
-``` 
+```
 getConnectedServer();
 ```
 
@@ -3337,19 +3335,19 @@ NOTE: This is the server currently specified in the settings as being
 connected, it does not check whether it is active i.e if connection
 signal has been lost etc.
 
-Maps and GIS 
+Maps and GIS
 ============
 
 The following examples will show how to render maps, vectors and draw
 geometry.
 
-### Rendering map 
+### Rendering map
 
 Given the following map view defined in the ui schema. 
 
 
 
-``` 
+```
 ...
    <tab1>
      <map></map>
@@ -3365,7 +3363,7 @@ Given the following map view defined in the ui schema. 
 
 
 
-### Saving and loading map from config 
+### Saving and loading map from config
 
 To save the current map view configuration (i.e. orientation, layers,
 tool styles, selections, global style) use the following. It will save
@@ -3373,7 +3371,7 @@ all the configuration as a json file as specified in the API call:
 
 
 
-``` 
+```
 file = getAttachedFilePath("files/data/saved_config.json");
 saveMapViewConfiguration("main/map/map", file, "showToast(\"Saved map configuration\")");
 ```
@@ -3387,21 +3385,21 @@ To load a map view up with an existing configuration use the following:
 
 
 
-``` 
+```
 jsonFile = getAttachedFilePath("files/data/saved_config.json");
 loadMapViewConfiguration("main/map/map", jsonFile, "showToast(\"Loaded map configuration\")");
 ```
 
 
 
-### Add base map 
+### Add base map
 
 To add a base raster layer use the following. There can only be a single
 base layer.
 
 
 
-``` 
+```
 showBaseMap("tabgroup1/tab1/map", "raster map" "map.tif");
 ```
 
@@ -3423,20 +3421,20 @@ map.tif url is relative to the root of the modules folder
 
 
 
-### Add raster map 
+### Add raster map
 
 To add a raster layer use the following. You can have multiple raster
 layers.
 
 
 
-``` 
+```
 showRasterLayer("tabgroup1/tab1/map", "raster map" "map.tif");
 ```
 
 
 
-### Add shape vector layer 
+### Add shape vector layer
 
 
 [ ]
@@ -3452,7 +3450,7 @@ To add a shape vector layer use the following.
 
 
 
-``` 
+```
 ps = createPointStyle(10, Color.BLUE, 0.2f, 0.5f);
 ls = createLineStyle(10, Color.GREEN, 0.05f, 0.3f, null);
 pos = createPolygonStyle(10, Color.parseColor("#440000FF"), createLineStyle(10, Color.parseColor("#AA000000"), 0.01f, 0.3f, null));
@@ -3470,13 +3468,13 @@ The shape file must be in projection EPSG:3857
 
 
 
-### Add spatial vector layer 
+### Add spatial vector layer
 
 To add a spatial vector layer use the following.
 
 
 
-``` 
+```
 ps = createPointStyle(10, Color.BLUE, 0.2f, 0.5f);
 ls = createLineStyle(10, Color.GREEN, 0.05f, 0.3f, null);
 pos = createPolygonStyle(10, Color.parseColor("#440000FF"), createLineStyle(10, Color.parseColor("#AA000000"), 0.01f, 0.3f, null));
@@ -3497,13 +3495,13 @@ The spatial database must be in projection EPSG:3857
 
 
 
-### Add database vector layer 
+### Add database vector layer
 
 To add a database vector layer use the following.
 
 
 
-``` 
+```
 ps = createPointStyle(10, Color.BLUE, 0.2f, 0.5f);
 ls = createLineStyle(10, Color.GREEN, 0.05f, 0.3f, null);
 pos = createPolygonStyle(10, Color.parseColor("#440000FF"), createLineStyle(10, Color.parseColor("#AA000000"), 0.01f, 0.3f, null));
@@ -3516,13 +3514,13 @@ showDatabaseLayer("tabgroup1/tab1/map", "Database Layer", isEntity, queryName, q
 
 
 
-### Add canvas layer 
+### Add canvas layer
 
 You can create canvas layers to draw geometry onto using the following.
 
 
 
-``` 
+```
 layerId = createCanvasLayer("tabgroup1/tab1/map", "Canvas Layer");
 ```
 
@@ -3537,13 +3535,13 @@ be used to draw points onto the layer or removing the layer entirely.
 
 
 
-### Map Controls 
+### Map Controls
 
 To set the map focus point use the following:
 
 
 
-``` 
+```
 // australia
 lon = 151.23f
 lat = -33.58f
@@ -3566,7 +3564,7 @@ To set the map rotation use the following.
 
 
 
-``` 
+```
 setMapRotation("tabgroup1/tab1/map", 90.0f);
 ```
 
@@ -3576,7 +3574,7 @@ To set the map tilt use the following
 
 
 
-``` 
+```
 setMapTilt("tabgroup1/tab1/map", 90.0f);
 ```
 
@@ -3594,7 +3592,7 @@ To set the map zoom use the following.
 
 
 
-``` 
+```
 setMapZoom("tabgroup1/tab1/map", 17.0f);
 ```
 
@@ -3609,26 +3607,26 @@ levels above 18 might not rendered as well.
 
 
 
-### Center map using GPS 
+### Center map using GPS
 
 To center the map the GPS position use the following.
 
 
 
-``` 
+```
 centerOnCurrentPosition("tabgroup1/tab1/map");
 ```
 
 
 
-### Locking / Unlocking the map 
+### Locking / Unlocking the map
 
 Locking the map keeps the map at a 2D perspective. This is useful when
 drawing geometry on to the map. To lock the map use the following.
 
 
 
-``` 
+```
 lockMapView("tabgroup1/tab1/map", true);
 ```
 
@@ -3638,13 +3636,13 @@ To unlock the map use the following.
 
 
 
-``` 
+```
 lockMapView("tabgroup1/tab1/map", false);
 ```
 
 
 
-### Adding map event listeners 
+### Adding map event listeners
 
 To be able to draw points on the map or select geometry on the map you
 can add a map event listener. To add click and select listener to the
@@ -3652,12 +3650,12 @@ map use the following.
 
 
 
-``` 
+```
 onMapEvent("tabgroup1/tab1/map", "clickCallback()", "selectCallback()");
 
-clickCallback() 
+clickCallback()
 
-selectCallback() 
+selectCallback()
 ```
 
 
@@ -3666,7 +3664,7 @@ The getMapPointClicked method will hold the last clicked value on the
 map and the getMapGeometrySelected method will hold the last selected
 geometry on the map.
 
-### Styling Vectors 
+### Styling Vectors
 
 Styling is used when loading vector layers or creating geometry. Use the
 following to create point, line, polygon and text styles.
@@ -3675,7 +3673,7 @@ e.g. point style
 
 
 
-``` 
+```
 minZoom = 10;
 color = Color.RED;
 size = 0.1f;
@@ -3689,7 +3687,7 @@ e.g. line style
 
 
 
-``` 
+```
 minZoom = 10;
 color = Color.RED;
 width = 0.1f;
@@ -3703,7 +3701,7 @@ e.g. polygon style
 
 
 
-``` 
+```
 minZoom = 10;
 color = Color.RED;
 pointStyle = createPolygonStyle(minZoom, color, lineStyle); // note: line style can be null
@@ -3715,23 +3713,23 @@ e.g. text style
 
 
 
-``` 
+```
 minZoom = 10;
 color = Color.RED;
 fontSize = 40;
 font = Typeface.SANS_SERIF;
-textStyle = createTextStyle(minZoom, color, fontSize, font); 
+textStyle = createTextStyle(minZoom, color, fontSize, font);
 ```
 
 
 
-### Drawing points 
+### Drawing points
 
 To draw a point on the map you can use the following.
 
 
 
-``` 
+```
 lon = 151.23f
 lat = -33.58f
 point = createPoint(lon, lat);
@@ -3751,13 +3749,13 @@ The points must be in the modules projection.
 
 
 
-### Drawing lines 
+### Drawing lines
 
 To draw a line on the map you can use the following.
 
 
 
-``` 
+```
 points = new ArrayList();
 points.add(createPoint(x1, y1));
 points.add(createPoint(x2, y2));
@@ -3778,13 +3776,13 @@ The lines must be in the modules projection.
 
 
 
-### Drawing polygons 
+### Drawing polygons
 
 To draw a polygon on the map you can use the following.
 
 
 
-``` 
+```
 points = new ArrayList();
 points.add(createPoint(x1, y1));
 points.add(createPoint(x2, y2));
@@ -3805,7 +3803,7 @@ The polygons must be in the modules projection.
 
 
 
-### Moving vector geometry 
+### Moving vector geometry
 
 To move a vector on the map you must first highlight it, then call
 prepareHighlightTransform, move the vector then call
@@ -3813,10 +3811,10 @@ doHighlightTransform.
 
 
 
-``` 
+```
 onMapEvent("tabgroup1/tab1/map", "onMapClick()", "onMapSelect()");
 
-onMapSelect() 
+onMapSelect()
 ```
 
 
@@ -3828,20 +3826,20 @@ selected geometry by replacing it using the following.
 
 
 
-``` 
+```
 doHighlightTransform("tabgroup1/tab1/map"); // transform the vector to its new position
 removeGeometryHighlight("tabgroup1/tab1/map", geomId) // remove the geometry highlight, or call clearGeometryHighlights("tabgroup1/tab1/map") to clear all highlights
 ```
 
 
 
-### Clearing Geometry 
+### Clearing Geometry
 
 To clear a single geometry from the map use the following.
 
 
 
-``` 
+```
 clearGeometry("tabgroup1/tab1/map", geomId);
 ```
 
@@ -3851,20 +3849,20 @@ To clear a list of geometry use the following.
 
 
 
-``` 
+```
 clearGeometryList("tabgroup1/tab1/map", geomIdList);
 ```
 
 
 
-### Saving GIS to Entities / Relationships 
+### Saving GIS to Entities / Relationships
 
 Referring to the save entities / relationships examples above. To save
 GIS data you can use the following.
 
 
 
-``` 
+```
 ...
 collection = getGeometryHighlights();
 ...
@@ -3878,7 +3876,7 @@ following.
 
 
 
-``` 
+```
 ...
 collection = getGeometryList("tabgroup1/tab1/map", layerId);
 ...
@@ -3887,15 +3885,15 @@ saveArchEnt(entityId, "simple", collection, attributes);
 
 
 
-### Loading GIS from Entities / Relationships 
+### Loading GIS from Entities / Relationships
 
 Referring to the load entities / relationships examples above. To load
 GIS data you can use the following.
 
 
 
-``` 
-fetchArchEnt(entityId, new FetchCallback()  else if (geom instanceof Line)  else if (geom instanceof Point) 
+```
+fetchArchEnt(entityId, new FetchCallback()  else if (geom instanceof Line)  else if (geom instanceof Point)
     }
   }
 });
@@ -3903,68 +3901,68 @@ fetchArchEnt(entityId, new FetchCallback()  else if (geom instanceof Line)  else
 
 
 
-### Add Database Layer Queries 
+### Add Database Layer Queries
 
 To add database layer queries to load database layers via the layer
 manager use the following.
 
 
 
-``` 
+```
 isEntity = true;
 queryName = "All entities";
 querySQL =
-    "SELECT uuid, max(aenttimestamp) as aenttimestamp\n" + 
+    "SELECT uuid, max(aenttimestamp) as aenttimestamp\n" +
     " FROM archentity join aenttype using (aenttypeid)\n" +
-    " where archentity.deleted is null\n" + 
-    "   and lower(aenttypename) != lower('gps_track')\n" + 
-    " group by uuid\n" + 
+    " where archentity.deleted is null\n" +
+    "   and lower(aenttypename) != lower('gps_track')\n" +
+    " group by uuid\n" +
     " having max(aenttimestamp)";
 addDatabaseLayerQuery("control/map/map", queryName, querySQL);
 ```
 
 
 
-### Add TrackLog layer Queries 
+### Add TrackLog layer Queries
 
 To add track log layer queries to load track log layers via the layer
 manager use the following.
 
 
 
-``` 
-addTrackLogLayerQuery("control/map/map", "track log entities", 
-    "SELECT uuid, max(aenttimestamp) as aenttimestamp\n" + 
+```
+addTrackLogLayerQuery("control/map/map", "track log entities",
+    "SELECT uuid, max(aenttimestamp) as aenttimestamp\n" +
     " FROM archentity join aenttype using (aenttypeid)\n" +
-    " where archentity.deleted is null\n" + 
-    "   and lower(aenttypename) = lower('gps_track')\n" + 
-    " group by uuid\n" + 
+    " where archentity.deleted is null\n" +
+    "   and lower(aenttypename) = lower('gps_track')\n" +
+    " group by uuid\n" +
     " having max(aenttimestamp)");
 ```
 
 
 
-### Adding Selection Tool Queries 
+### Adding Selection Tool Queries
 
 To add database and legacy selection queries use the following.
 
 
 
-``` 
+```
 // create a query builder
 queryBuilder = createQueryBuilder(
-        "select uuid\n" + 
-        "  from latestNonDeletedArchent\n" + 
-        "  JOIN latestNonDeletedAentValue using (uuid)\n" + 
-        "  join aenttype using (aenttypeid)\n" + 
-        "  LEFT OUTER JOIN vocabulary using (vocabid, attributeid) \n" + 
-        "  where lower(aenttypename) = lower(?) \n" + 
+        "select uuid\n" +
+        "  from latestNonDeletedArchent\n" +
+        "  JOIN latestNonDeletedAentValue using (uuid)\n" +
+        "  join aenttype using (aenttypeid)\n" +
+        "  LEFT OUTER JOIN vocabulary using (vocabid, attributeid) \n" +
+        "  where lower(aenttypename) = lower(?) \n" +
         "   group by uuid");
  
 // add a parameter type with default argument
 queryBuilder.addParameter("Type", "Structure");
  
-// add the query builder 
+// add the query builder
 addSelectQueryBuilder("control/map/map", "Select entity by type", queryBuilder);
 
 // similar process for legacy data
@@ -3977,26 +3975,26 @@ addLegacySelectQueryBuilder("control/map/map", "Select geometry by id", "files/d
 
 
 
-### Set layer visiblility 
+### Set layer visiblility
 
 To change the visibility of a map layer use the following
 
 
 
-``` 
+```
  setLayerVisible("tabgroup1/tab1/map", true);
 ```
 
 
 
-### Setting selected layer 
+### Setting selected layer
 
 To set the currently selected layer on the map, use the following, by
 passing in either the layer ID or the name of the layer
 
 
 
-``` 
+```
 // By ID
 setSelectedLayer("tabgroup1/tab1/map", 1);
  
@@ -4006,32 +4004,32 @@ setSelectedLayer("tabgroup1/tab1/map", "Data Entry Layer");
 
 
 
-### Convert projection of points 
+### Convert projection of points
 
 To convert a point from one projection to another use the following.
 
 
 
-``` 
+```
 MapPos p = new MapPos(x, y);
 MapPos np = convertFromProjToProj("4326", "3875", p);
 ```
 
 
 
-### Enable / Disable tools view 
+### Enable / Disable tools view
 
 To enable or disable the tools bar and layers bar use the following
 
 
 
-``` 
+```
  setToolsEnabled(MAP_REF, true);
 ```
 
 
 
-### Bind events to tools 
+### Bind events to tools
 
 The create point, line and polygon tools trigger the tool create event
 when a geometry is created and the Load tool triggers a tool load event
@@ -4040,18 +4038,18 @@ events.
 
 
 
-``` 
+```
 onToolEvent("tabgroup1/tab1/map", "create", "onCreate");
 onToolEvent("tabgroup1/tab1/map", "load", "onLoad");
  
-onCreate() 
+onCreate()
  
-onLoad() 
+onLoad()
 ```
 
 
 
-### Refresh map 
+### Refresh map
 
 Refreshing the map will cause all layer to re-render themselves. This is
 useful if you have made changes that could effect the map.
@@ -4060,60 +4058,60 @@ e.g. refreshMap
 
 
 
-``` 
+```
 refreshMap("tabgroup1/tab1/map");
 ```
 
 
 
-GPS 
+GPS
 ===
 
 The following examples will show how to use GPS.
 
-### Start Internal GPS 
+### Start Internal GPS
 
 To start internal GPS use the following.
 
 
 
-``` 
+```
 startInternalGPS();
 ```
 
 
 
-### Start External GPS 
+### Start External GPS
 
 To start external GPS use the following.
 
 
 
-``` 
+```
 startExternalGPS();
 ```
 
 
 
-### Stop GPS 
+### Stop GPS
 
 To Start internal gps use the following.
 
 
 
-``` 
+```
 stopGPS();
 ```
 
 
 
-### Get GPS position 
+### Get GPS position
 
 To get the current GPS position use the following.
 
 
 
-``` 
+```
 location = getGPSPosition();
 lon = location.getLongitude();
 lat = location.getLatitude();
@@ -4126,19 +4124,19 @@ use the following
 
 
 
-``` 
+```
 location = getGPSPositionProjected();
 ```
 
 
 
-### Get GPS accuracy 
+### Get GPS accuracy
 
 To get the current GPS estimated accuracy use the following.
 
 
 
-``` 
+```
 accuracy = getGPSEstimatedAccuracy();
 ```
 
@@ -4149,19 +4147,19 @@ following
 
 
 
-``` 
+```
 accuracy = getGPSEstimatedAccuracy("internal");
 ```
 
 
 
-### Get GPS heading 
+### Get GPS heading
 
 To get the current GPS heading use the following.
 
 
 
-``` 
+```
 heading = getGPSHeading();
 ```
 
@@ -4172,25 +4170,25 @@ following
 
 
 
-``` 
+```
 heading = getGPSHeading("internal");
 ```
 
 
 
-### Set GPS interval 
+### Set GPS interval
 
 To configure the delay between GPS updates you can use the following.
 
 
 
-``` 
+```
 setGPSUpdateInterval(5);
 ```
 
 
 
-### Setup Track Logs 
+### Setup Track Logs
 
 The track log allows the user to track their progression throughout the
 day. The track log has two modes time and distance. The time mode allows
@@ -4202,16 +4200,16 @@ e.g. startTrackingGPS and stopTrackingGPS
 
 
 
-``` 
+```
 onEvent("controls/tab1/starttrackingtime", "click", "startTrackingGPS(\"time\", 10, \"saveTimeGPSTrack()\")");
 onEvent("controls/tab1/starttrackingdistance", "click", "startTrackingGPS(\"distance\", 10, \"saveDistanceGPSTrack()\")");
 onEvent("controls/tab1/stoptracking", "click", "stopTrackingGPS()");
 
-saveTimeGPSTrack() 
+saveTimeGPSTrack()
 
-saveDistanceGPSTrack() 
+saveDistanceGPSTrack()
 
-saveGPSTrack(List attributes) 
+saveGPSTrack(List attributes)
 ```
 
 
@@ -4219,13 +4217,13 @@ saveGPSTrack(List attributes)
 The following example setups a time and distance track log and saves an
 entity to the database each time the callback is triggered.
 
-Bluetooth 
+Bluetooth
 =========
 
 The following examples will show how to create a connect and communicate
 to a paired Bluetooth device.
 
-### Connect to Bluetooth device 
+### Connect to Bluetooth device
 
 Before  you can connect to a Bluetooth device you must pair the device.
 Once you have paired the device use the following to create a
@@ -4237,12 +4235,12 @@ control when new reads from the device are initiated.
 
 
 
-``` 
+```
 callback = "onBluetoothInput()";
 delay = 1;
 createBluetoothConnection(callback, delay);
  
-onBluetoothInput() 
+onBluetoothInput()
 ```
 
 
@@ -4252,14 +4250,14 @@ pass in a delay of 0. e.g.
 
 
 
-``` 
+```
 callback = "onBluetoothInput()";
 createBluetoothConnection(callback, 0);
 ```
 
 
 
-### Read messages 
+### Read messages
 
 [ ]To manually initiate a read from the
 Bluetooth device use the following. This will trigger a read from the
@@ -4268,83 +4266,83 @@ connection.
 
 
 
-``` 
+```
 readBluetoothMessage();
 ```
 
 
 
-### Write messages 
+### Write messages
 
 [ ]To initiate a write to the
 Bluetooth device use the following.
 
 
 
-``` 
+```
 message = "This is a write message";
 writeBluetoothMessage(message);
 ```
 
 
 
-### Clear messages 
+### Clear messages
 
 [ ]To clear messages currently in the
 Bluetooth device buffer use the following.
 
 
 
-``` 
+```
 clearBluetoothMessages();
 ```
 
 
 
-Syncing 
+Syncing
 =======
 
 The following examples will show how to sync the database and files with
 the server and other apps.
 
-### Pull database from server 
+### Pull database from server
 
 To pull the entire server database onto the app use the following api.
 
 
 
-``` 
+```
 pullDatabaseFromServer("onComplete()");
 
  
-onComplete() 
+onComplete()
 ```
 
 
 
-### Push Database to server 
+### Push Database to server
 
 To push the entire app database to the server use the following api.
 
 
 
-``` 
+```
 pushDatabaseToServer("onComplete()");
 
  
-onComplete() 
+onComplete()
 ```
 
 
 
-### Database syncing 
+### Database syncing
 
 To use database syncing you must first enable it using the following
 code.
 
 
 
-``` 
+```
 setSyncEnabled(true);
 ```
 
@@ -4359,7 +4357,7 @@ To adjust sync intervals and delays use the following.
 
 
 
-``` 
+```
 setSyncMinInterval(10.0f);
 setSyncMaxInterval(20.0f);
 setSyncDelay(5.0f);
@@ -4376,64 +4374,64 @@ in 20 secs etc. The sync max interval sets the limit for the maximum
 sync interval. Once a sync completes successfully the sync interval is
 reset the minimum sync interval.
 
-### Stop syncing 
+### Stop syncing
 
 To stop syncing use the following.
 
 
 
-``` 
+```
 setSyncEnabled(false);
 ```
 
 
 
-### Sync Event 
+### Sync Event
 
 To track sync progress in logic you can bind to the sync event.
 
 
 
-``` 
+```
 onSyncEvent("onSyncStart()", "onSyncSuccess()", "onSyncFailure()");
 
  
-onSyncStart() 
+onSyncStart()
  
-onSyncSuccess() 
+onSyncSuccess()
  
-onSyncFailure() 
+onSyncFailure()
 ```
 
 
 
-### File syncing 
+### File syncing
 
 To use file syncing you must first enable normal syncing and then enable
 file syncing. Use the following to enable database syncing.
 
 
 
-``` 
+```
 setSyncEnabled(true);
 setFileSyncEnabled(true);
 ```
 
 
 
-File Attachments 
+File Attachments
 ================
 
 To attach files, photos, videos and audios use the following apis.
 
-### Saving Files to Records 
+### Saving Files to Records
 
 To save files to an entity modify the data\_schema.xml to have the file
 attribute set to true. e.g.
 
 
 
-``` 
+```
     <property type="something" name="sketches" file="true">
       <bundle>DOI</bundle>
     </property>
@@ -4441,14 +4439,14 @@ attribute set to true. e.g.
 
 
 
-### Image and Video Thumbnails 
+### Image and Video Thumbnails
 
 To generate a thumbnail for an image or video attribute set the
 thumbnail attribute to true. e.g.
 
 
 
-``` 
+```
    <property type="something" name="pictures" file="true" thumbnail="true" sync="true">
       <bundle>DOI</bundle>
     </property>
@@ -4467,16 +4465,16 @@ video. By default the raw files are transferred between devices.
 
 
 
-### Selecting files 
+### Selecting files
 
 To select a file you need to bring up the file chooser popup.
 
 
 
-``` 
+```
 showFileBrowser("saveFile()");
 
-saveFile() 
+saveFile()
 ```
 
 
@@ -4490,16 +4488,16 @@ the absolute path to the file.
 
 
 
-### Taking Photos 
+### Taking Photos
 
 To take a photo use the following.
 
 
 
-``` 
+```
 openCamera("savePhoto()");
 
-savePhoto() 
+savePhoto()
 ```
 
 
@@ -4512,16 +4510,16 @@ The url is the absolute path to the file.
 
 
 
-### Recording Video 
+### Recording Video
 
 To record a video use the following.
 
 
 
-``` 
+```
 openVideo("saveVideo()");
 
-saveVideo() 
+saveVideo()
 ```
 
 
@@ -4534,16 +4532,16 @@ The url is the absolute path to the file.
 
 
 
-### Recording Audio 
+### Recording Audio
 
 To record audio use the following.
 
 
 
-``` 
+```
 recordAudio("saveAudio()");
 
-saveAudio() 
+saveAudio()
 ```
 
 
@@ -4556,7 +4554,7 @@ The url is the absolute path to the file.
 
 
 
-### Saving / Loading Files, Photos, Videos and Audio 
+### Saving / Loading Files, Photos, Videos and Audio
 
 Here is an example to quickly setup saving photos, videos, audios and
 files.
@@ -4566,7 +4564,7 @@ with type \'file\'.
 
 
 
-``` 
+```
 // attach files to file list view
 onEvent("tabgroup1/tab1/attachFile", "attachFileTo(\"tabgroup1/tab1/files\");");
  
@@ -4582,7 +4580,7 @@ onEvent("tabgroup1/tab1/attachVideo", "attachVideoTo(\"tabgroup1/tab1/videos\");
 
 
 
-### View Attached Files 
+### View Attached Files
 
 To view attached files for an entity or relationship used the following
 api.
@@ -4591,7 +4589,7 @@ e.g. viewArchEntAttachedFiles
 
 
 
-``` 
+```
 viewArchEntAttachedFiles("10000112441409729");
 ```
 
@@ -4604,7 +4602,7 @@ e.g. viewRelAttachedFiles
 
 
 
-``` 
+```
 viewRelAttachedFiles("10000112441409730");
 ```
 
@@ -4613,14 +4611,14 @@ viewRelAttachedFiles("10000112441409730");
 This will show the attached files for an relationship with
 relationshipid 10000112441409730.
 
-### Deleting Synced Files 
+### Deleting Synced Files
 
 To delete files that have already been synced to the server in order to
 clean up space on your device use the following:
 
 
 
-``` 
+```
 cleanSyncedFiles();
 ```
 
@@ -4630,17 +4628,17 @@ This will bring up a dialog with options to delete all synced files or
 all synced files which have thumbnails. It will also detail how much
 space will be gained from deleting said files.
 
-### Scan Barcodes and QR Codes 
+### Scan Barcodes and QR Codes
 
 To scan a barcode or QR code and pass the result to a callback use the
 following:
 
 
 
-``` 
+```
 scanCode("codeScannerCallback()");
  
-codeScannerCallback() 
+codeScannerCallback()
 ```
 
 
@@ -4653,7 +4651,7 @@ contents is the result of the scan
 
 
 
-Capturing Hardware Keyboard Events 
+Capturing Hardware Keyboard Events
 ==================================
 
 To capture keyboard events from a USB device, use the following API
@@ -4661,10 +4659,10 @@ call:
 
 
 
-``` 
+```
 captureHardware("Microsoft Wired Keyboard 600", "\n", "showHardwareBuffer()");
  
-showHardwareBuffer() 
+showHardwareBuffer()
 ```
 
 
@@ -4683,7 +4681,7 @@ keyboard, volume buttons etc):
 
 
 
-``` 
+```
 getHardwareDevices()
 ```
 
@@ -4695,7 +4693,7 @@ to discover the names of attached input devices:
 
 
 
-``` 
+```
 debugHardwareDevices(true);
 ```
 
@@ -4704,16 +4702,16 @@ debugHardwareDevices(true);
 The default for this is false, so only needs to be specified to turn
 this feature on.
 
-Misc 
+Misc
 ====
 
-### Set User 
+### Set User
 
 Use the following api to set the current user of the app.
 
 
 
-``` 
+```
 // create a new user with id 1, with first and last names
 user = new User("1", "John", "Doe", "John@john.com");
 setUser(user);
@@ -4721,23 +4719,23 @@ setUser(user);
 
 
 
-### Execute code 
+### Execute code
 
 Use the following to execute code.
 
 
 
-``` 
+```
 callback = "showToast(\"this is a test\")";
 execute(callback);
 ```
 
 
 
-Users 
+Users
 =====
 
-### Enabling User Signup Example 
+### Enabling User Signup Example
 
 Firstly, define the Signup UI elements in ui\_schema.xml so the \'Sign
 up\' button appears in the User tab along with the \'Select User\'
@@ -4751,7 +4749,7 @@ below.
 
 
 
-``` 
+```
 <User>
   <User>
     <Select_User/>
@@ -4786,7 +4784,7 @@ below.
 
 
 
-``` 
+```
 Signup=Sign up
 ```
 
@@ -4798,7 +4796,7 @@ Signup=Sign up
 
 
 
-``` 
+```
 Signup=Regístrate
 ```
 
@@ -4816,17 +4814,17 @@ re-populate the Select User dropdown if account creation is successful
 
 
 
-``` 
+```
 addOnEvent("User/User/Signup", "click", "onClickUserSignup()");
 
-onClickUserSignup () 
+onClickUserSignup ()
 ```
 
 
 
 \
 
-### Enabling User Authentication Example 
+### Enabling User Authentication Example
 
 Add a Login button UI element to ui\_schema.xml and its related trigger
 definition.  This can also be labelled via Arch16n as with the Sign Up
@@ -4838,7 +4836,7 @@ button in the section above using the Login label name.
 
 
 
-``` 
+```
 <User>
   <User>
     <Select_User/>
@@ -4882,8 +4880,8 @@ verify the user provided password matches.
 
 
 
-``` 
-selectUser () 
+```
+selectUser ()
   };
 
   fetchOne(userQ, callback);
@@ -4903,21 +4901,21 @@ the callback to run when authentication is successful
 
 
 
-``` 
+```
 addOnEvent("User/User/Login", "click", "onClickUserLogin()");
 
 
-onClickUserLogin () 
+onClickUserLogin ()
 
 
-doUserLogin () 
+doUserLogin ()
 ```
 
 
 
 \
 
-Validation 
+Validation
 ==========
 
 Adding a validation schema file to the module will allow you to validate
@@ -4927,7 +4925,7 @@ Here is an example of a validation schema.
 
 
 
-``` 
+```
 <ValidationSchema>
 
      <RelationshipElement name='AboveBelow'>
@@ -5089,7 +5087,7 @@ Here is an example of a validation schema.
 
 
 
-### How it works 
+### How it works
 
 To specify validation for a relationship or archaeological entity
 defined in the data schema you simply need add validation on the
@@ -5099,7 +5097,7 @@ e.g. add validation for the AboveBelow relationship
 
 
 
-``` 
+```
 ...
     <RelationshipElement name='AboveBelow'>
 ...
@@ -5111,7 +5109,7 @@ e.g. add validation for the small archaeological entity
 
 
 
-``` 
+```
 ...
     <ArchaeologicalElement name='small'>
 ...
@@ -5126,7 +5124,7 @@ e.g. add validation to the name property of relationship
 
 
 
-``` 
+```
 ...
     <RelationshipElement name='AboveBelow'>
 
@@ -5140,7 +5138,7 @@ e.g. add validation to the name property of archaeological entity
 
 
 
-``` 
+```
 ...
     <ArchaeologicalElement name='small'>
 
@@ -5157,7 +5155,7 @@ e.g 
 
 
 
-``` 
+```
 ...
             <validator type='evaluator' cmd='spell.sh ?'>
                 <param type='field' value='freetext' />
@@ -5181,7 +5179,7 @@ Examples have been provided above in the commented our sections.
 
 
 
-### Evaluator 
+### Evaluator
 
 This runs a program against the given params
 
@@ -5193,7 +5191,7 @@ Examples have been provided above in the commented out sections.
 
 
 
-### Blank Checker 
+### Blank Checker
 
 This checks if the values are not null, or an empty string against the
 given params
@@ -5206,7 +5204,7 @@ Examples have been provided above in the commented out sections.
 
 
 
-### Type Checker 
+### Type Checker
 
 This checks if the values are integer, real or text against the given
 params.
@@ -5219,7 +5217,7 @@ Examples have been provided above in the commented out sections.
 
 
 
-### Query Checker 
+### Query Checker
 
 This checks if the values are valid when running a query against the
 given params.
@@ -5464,7 +5462,7 @@ just lookup xml attribute string restrictions
 
 
 
-CSS Styling 
+CSS Styling
 ===========
 
 Adding a css styling file to the module will allow you to customise the
@@ -5474,22 +5472,22 @@ Here is an example of a css styling file.
 
 
 
-``` 
-.gallery 
-.gallery-item 
+```
+.gallery
+.gallery-item
  
-.button 
+.button
  
-.custom 
+.custom
  
-#tabgroup1/tab1/save 
-#tabgroup1/tab1/save-label 
-#tabgroup1/tab1/clear 
+#tabgroup1/tab1/save
+#tabgroup1/tab1/save-label
+#tabgroup1/tab1/clear
 ```
 
 
 
-### Selecting views 
+### Selecting views
 
 To add styling to views you just need to add the desired styling to the
 selector of the view. A view can be selected in 3 different ways:
@@ -5606,9 +5604,9 @@ with labels having \"-label\" appended:
 
 
 
-``` 
-#tabgroup1/tab1/save 
-#tabgroup1/tab1/save-label 
+```
+#tabgroup1/tab1/save
+#tabgroup1/tab1/save-label
 ```
 
 
@@ -5625,7 +5623,7 @@ to a view. Labels for this view will have the same class name but with
 
 
 
-``` 
+```
 <trigger ref="save" faims_style_class="save">
   <label>Save</label>
 </trigger>
@@ -5638,17 +5636,17 @@ full stop followed by the class name:
 
 
 
-``` 
-.save 
+```
+.save
  
-.save-label 
+.save-label
 ```
 
 
 
 \
 
-### Applying Styling 
+### Applying Styling
 
 There are a number of different types of styling that can be applied to
 a view. These are:
@@ -5664,14 +5662,14 @@ a view. These are:
 -   text-shadow
 -   font-family, font-size, font-style, font-weight
 
-### Styling Table Views 
+### Styling Table Views
 
 Table views cannot be styled using the same method as above. To style a
 table view, you can use the styleTable API call, passing in a css file.
 
 
 
-``` 
+```
 css = getAttachedFilePath("files/app/table.css");
 styleTable("tabgroup5/tab1/table", css);
 ```
@@ -5680,7 +5678,7 @@ styleTable("tabgroup5/tab1/table", css);
 
 \
 
-Arch16n translations 
+Arch16n translations
 ====================
 
 Adding Arch16n properties file to the module will allow you to translate
@@ -5695,7 +5693,7 @@ filenames of the files in the form:
 
 
 
-``` 
+```
 orthodox.2.properties
 unorthodox.3.properties
 default.1.properties
@@ -5712,7 +5710,7 @@ Below is an example of an arch16n file.
 
 
 
-``` 
+```
 entity=Arch16n Entity
 name=Arch16n Name
 value=Arch16n Value
@@ -5745,7 +5743,7 @@ To replace terms in the ui schema use the following.
 
 
 
-``` 
+```
 ...
  <group ref="tabgroup1" faims_archent_type="simple">
       <label>Simple Entity Example</label>
@@ -5766,7 +5764,7 @@ To replace terms in the data schema use the following.
 
 
 
-``` 
+```
  ...
 <property type="checklist" name="type">
       <bundle>DOI</bundle>
@@ -5788,7 +5786,7 @@ To replace terms in the ui logic use the following.
 
 
 
-``` 
+```
 setFieldValue("tabgroup1/tab1/name","")
 ```
 
@@ -5796,7 +5794,7 @@ setFieldValue("tabgroup1/tab1/name","")
 
 In this example the name field will be set the value Arch16n Type C.
 
-Exporters 
+Exporters
 =========
 
 To create an exporter to install you will need to create a tarball with
@@ -5811,7 +5809,7 @@ the following:
     -   uninstall.sh
     -   export.sh
 
-### config.json 
+### config.json
 
 This file contains the configuration properties of the exporter
 specified as json. The properties include:
@@ -5827,10 +5825,10 @@ e.g.
 
 
 
-``` 
+```
 ,
     ,
-    
+
   ]
 }
 ```
@@ -5850,7 +5848,7 @@ parse to the export script:
 
 
 
-``` 
+```
 
 ```
 
@@ -5858,18 +5856,18 @@ parse to the export script:
 
 \
 
-### install.sh 
+### install.sh
 
 To add custom actions to install the exporter added them to this script.
 This will be executed after the exporter is installed on the web server.
 
-### uninstall.sh 
+### uninstall.sh
 
 To add custom actions to uninstall the exporter add them to this script.
 This will be executed before the exporter is uninstalled from the web
 server.
 
-### export.sh 
+### export.sh
 
 This script will be called to export the module on the web server. The
 script can expect the following arguments in order.
@@ -5890,7 +5888,7 @@ e.g.
 
 
 
-``` 
+```
 #!/bin/bash
  
 # $1 module directory e.g. /var/www/faims/modules/b28ea04f-2e6b-421a-a3fd-8be4c6c50259
@@ -5920,13 +5918,13 @@ database into another database via sqlite.
 
 
 
-### Update Exporter 
+### Update Exporter
 
 To update an exporter just update the files and set the version number
 to a higher number. Then re-tar the exporter and upload it to the
 server.
 
-### Create Self-Updating Exporter 
+### Create Self-Updating Exporter
 
 It is possible to create an exporter that can be updated via the
 plugin-manager without the need to re-upload a new tarball.
@@ -5937,7 +5935,7 @@ plugin-manager without the need to re-upload a new tarball.
 
 
 
-``` 
+```
 git clone https://github.com/<Account>/exporter-test.git
 cd exporter-test
 # add your exporter files
@@ -5951,7 +5949,7 @@ git push -u origin master
 
 
 
-``` 
+```
 cd ..
 tar jcf exporter-test.tar.gz exporter-test
 ```
@@ -5962,7 +5960,7 @@ tar jcf exporter-test.tar.gz exporter-test
 button in the plugin-manager. This will pull from the master branch the
 latest changes and re-run the installer on the exporter.
 
-Attribute Format String 
+Attribute Format String
 =======================
 
 The attribute format string allows you to control how each attribute in
@@ -5974,7 +5972,7 @@ format string for the name attribute.
 
 
 
-``` 
+```
 <property name="name" type="string">
 <formatString><![CDATA[ } ]]></formatString>
 </property>
@@ -5982,7 +5980,7 @@ format string for the name attribute.
 
 
 
-Appending Character String 
+Appending Character String
 --------------------------
 
 For attributes that have multiple values you can specify how to append
@@ -5990,7 +5988,7 @@ that attributes together using the data schema as below.
 
 
 
-``` 
+```
 <property name="name" type="string">
 <formatString><![CDATA[ } ]]></formatString>
 <appendCharacterString><![CDATA[ & ]]></appendCharacterString>
@@ -5999,7 +5997,7 @@ that attributes together using the data schema as below.
 
 
 
-Format String Syntax 
+Format String Syntax
 --------------------
 
 Each attribute format string must conform to a confined syntax and
@@ -6144,14 +6142,14 @@ examples.
 +-------------+-------------+-------------+-------------+-------------+
 
 
-### Railroad Diagram 
+### Railroad Diagram
 
 The railroad diagram below shows how to construct a conditional
 statement.
 
 ![](attachments/3014726_attachments_faims_format_box_diagram%20(1).jpg)]
 
-### Format Statement Functions 
+### Format Statement Functions
 
 You can use the following functions in your format string described
 above.
@@ -6178,7 +6176,7 @@ above.
 +-----------------------------------+-----------------------------------+
 
 
-### Examples 
+### Examples
 
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -6232,7 +6230,7 @@ above.
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Duplicate TabGroup 
+Duplicate TabGroup
 ==================
 
 Use the following to duplicate a TabGroup. When duplicating a TabGroup
@@ -6241,7 +6239,7 @@ attributes that are in the exclusion list.
 
 
 
-``` 
+```
 // This geometry will be added to the new entity
 geometry = ...
  
@@ -6253,26 +6251,26 @@ extraAttributes.add(createEntityAttribute(...));
 excludeAttributes = new ArrayList();
 excludeAttributes.add("name"); // Note: this list only contains the name of the attribute to exclude
  
-saveCallback = new SaveCallback() 
+saveCallback = new SaveCallback()
 }
 duplicateTabGroup("tabgroup1", geometry, extraAttributes, excludeAttributes, saveCallback);
 ```
 
 
 
-### Disable AutoSave 
+### Disable AutoSave
 
 Use the following to disable autosave. 
 
 
 
-``` 
+```
 disableAutoSave("tabgroup1");
 ```
 
 
 
-Display Custom HTML Descriptions in view Info tab 
+Display Custom HTML Descriptions in view Info tab
 =================================================
 
 To display custom info tab then you must first change the data schema
@@ -6284,7 +6282,7 @@ which will then generate a predefined html template for the info tab.
 
 
 
-``` 
+```
 <property name="Attribute1" type="vocab">
             <description><![CDATA[
 
@@ -6298,11 +6296,11 @@ which will then generate a predefined html template for the info tab.
                     Vocab1
                     <description><![CDATA[
 
-    
+
         <img style="width:100%;" src="files/data/vocab1.png" alt="vocab1"/>
     </div>
-    
-        
+
+
             <p><b>Vocab1</b></p>
             <p>Vocab1 description</p>
         </div>
@@ -6326,7 +6324,7 @@ true.
 
 
 
-``` 
+```
 <select1 ref="attribute1" type="image" faims_attribute_name="Attribute 1" faims_attribute_type="vocab" faims_html_description="true">
     <label>Attribute 1</label>
         <item>
@@ -6342,7 +6340,7 @@ If using dynamic ui then you must set html descriptions to be true.
 
 
 
-``` 
+```
 viewDef = createViewDef();
 viewDef.createTextField()   
 viewDef.setLabel(...);
@@ -6369,53 +6367,53 @@ e.g.
 
 
 +-----------------------------------------------------------------------+
-| 
+|
 | align: baseline;" title="Hint: double-click to select code"}          |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `onEvent(``"tabgroup"``, ``"show"``, ``"onShow()"``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 |                                                                       |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `onShow()                               |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``showTab(``"tabgroup/tab"``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``cancelTab(``"tabgroup/tab"``, ``true``);`                              |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `  ``// ...`                            |
-| 
+|
 |                                                                       |
-| 
+|
 | ht: auto;vertical-align: baseline;background-image: none;"}           |
 | `}`                              |
-| 
-| 
+|
+|
 +-----------------------------------------------------------------------+
 
 
@@ -6426,7 +6424,7 @@ e.g.
 
 \
 
-#### Arch16n 
+#### Arch16n
 
 </div>
 -   [3014726\_attachments\_faims\_format\_box\_diagram
