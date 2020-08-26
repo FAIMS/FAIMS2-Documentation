@@ -74,56 +74,52 @@ camera. 
 
 **Synchronisation server**
 
-[A small portable server (eg. battery operated all-in-one wireless
+A small portable server (eg. battery operated all-in-one wireless
 server, possibly with solar recharger) or a laptop with a Wireless
 Access Point. The server needs to run Ubuntu Linux. You can also use an
 Internet server if the field house/lab is Internet connected, which
 today is often the case except in remote
-locations]
+locations.
 
-[[![ASUS EeeBox
-EB1012P](http://www.simplybetterit.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/b/eb10071_2.jpg)]. ] [![Product
-Size](http://www.solarjoos.com/wp-content/uploads/2010/06/product-image-4.jpg)]
+![](http://www.simplybetterit.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/b/eb10071_2.jpg)
+
+![](http://www.solarjoos.com/wp-content/uploads/2010/06/product-image-4.jpg)]
 
 Software
 --------
 
-**[FAIMS data collection
-app]**[ ]
+**FAIMS data collectionapp**
 
-[\
+
 The free FAIMS app for Android has strong mapping capabilities and
 internal/external sensor capture (GPS, camera, video, total station
-etc.), feeding an SQLite database.\
-]
+etc.), feeding an SQLite database.
 
-**[FAIMS server application]**
 
-\
+**FAIMS server application**
 
-\
 
-[The free FAIMS server application for Ubuntu provides database creation
+
+
+
+The free FAIMS server application for Ubuntu provides database creation
 and wireless synchronisation of multiple Android tablets running the
-FAIMS app.]
+FAIMS app.
 
-\
+
 
 Installing the software
 -----------------------
 
-[Follow instructions at the following web
-sites:]
+Follow instructions at the following web sites:
 
-[FAIMS app[ ]       [[Install
-Instructions.](../MobileUser/Getting+Started.html)]]
+FAIMS app      [Install Instructions.](../MobileUser/Getting+Started.html)
 
-[FAIMS server[ ]   (For now, you should probably use
+FAIMS server   (For now, you should probably use
 demo.fedarch.org. Once you\'re comfortable with that, see the
-instructions at the [server install
-guide](../FAIMS/Install+and+Run+the+FAIMS+Server.html))]
+instructions at the [server install guide](../FAIMSInstall+and+Run+the+FAIMS+Server.html))
 
-\
+
 
 Getting started
 ---------------
@@ -132,6 +128,4 @@ See [getting started with FAIMS
 Guide](../MobileUser/Get+to+know+FAIMS+with+the+Demo+Library.html)
 
  
-
-</div>
--   [3014705\_attachments\_FAIMS-GettingstartedwithFAIMS-anoverview-150814-0336-6.pdf](attachments/3014705_attachments_FAIMS-GettingstartedwithFAIMS-anoverview-150814-0336-6.pdf)
+-  [Download PDF](attachments\3014705_attachments_FAIMS-GettingstartedwithFAIMS-anoverview-150814-0336-6.pdf).
