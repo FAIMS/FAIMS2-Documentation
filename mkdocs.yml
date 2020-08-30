@@ -1,5 +1,5 @@
 site_name: FAIMS 2.6 User and Module Documentation
-nav:  
+nav:
   - Home: /
   - User Documentation and Handouts: Handout
   - Developer Usage: Developer+Usage/

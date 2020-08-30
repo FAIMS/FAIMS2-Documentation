@@ -1,13 +1,13 @@
 Testing modules without mobile device (via ARC Welder)
 ===================================================================================================
 
-::: 
+
 Created: Brian Ballsun-Stanton (brian\@faims.edu.au) -
 2015-06-12T00:40:41.841Z
 
 Last Updated: Adela Sobotkova (adela\@faims.edu.au) -
 2015-06-12T00:54:14.400Z
-:::
+
 
 
 
@@ -22,7 +22,7 @@ have a laptop and internet connection. You need to do three things:
 2.  load the APK (i.e. the FAIMS Android app) and
 3.  load your module
 
-### **Install ARC Welder** 
+### **Install ARC Welder**
 
 
 
@@ -41,7 +41,7 @@ you to download and install Chrome.)
 
 </div>
 
-### **Load the FAIMS APK (i.e. Android app)** 
+### **Load the FAIMS APK (i.e. Android app)**
 
 
 
@@ -56,7 +56,7 @@ you to download and install Chrome.)
 
 4.  Click the \"Launch App\" button.
 
-### Load the FAIMS module 
+### Load the FAIMS module
 
 </div>
 

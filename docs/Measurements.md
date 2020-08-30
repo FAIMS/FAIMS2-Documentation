@@ -5,25 +5,23 @@ Measurements
 
 
 
-Measurements 
+Measurements
 ------------
 
-[To measure distances between points use the
-"Measure" ]![](https://lh4.googleusercontent.com/WtUB9y6QlscOjWH3uiDWmr5JNALrVwpZO_F94Z2SnTPSH-Ye_EYzkH0wzS4NHVR3qDg2aCxTXczOXWHrhqYBj5d8lOK5VRm1DNchGF4dADc6mphB43fsD6YI)][tool
+To measure distances between points use the
+"Measure" ![](https://lh4.googleusercontent.com/WtUB9y6QlscOjWH3uiDWmr5JNALrVwpZO_F94Z2SnTPSH-Ye_EYzkH0wzS4NHVR3qDg2aCxTXczOXWHrhqYBj5d8lOK5VRm1DNchGF4dADc6mphB43fsD6YI)tool
 in the top tool bar. Hold it down to see the selection of measurement
 tools. The app currently calculates the distance between two points, the
 azimuth between two points, the length of a line and the area of
-polygon.]
+polygon.
 
  
 
-[Point Distance]
+Point Distance
 
  
 
--   Select "Point
-    Distance" ![](https://lh6.googleusercontent.com/xYKcbhIePpGnVjePD0I97czcRWW3a19lqGPMVx9nZiDRxQk4Auc4w-wtBRdYo6BerfPwJgPMyFsuSL8uiS7HaS4EYMhxVT9xGbNYPMjfdBQ2vbio_LZOQJaz)    from
-    the Measure tool dropdown
+-   Select "Point     Distance" ![](https://lh6.googleusercontent.com/xYKcbhIePpGnVjePD0I97czcRWW3a19lqGPMVx9nZiDRxQk4Auc4w-wtBRdYo6BerfPwJgPMyFsuSL8uiS7HaS4EYMhxVT9xGbNYPMjfdBQ2vbio_LZOQJaz)    from the Measure tool dropdown
 
 -   Tap the two points that you want to measure in your mapview (if they
     are no longer there, reload their layer or make it visible)
@@ -35,7 +33,7 @@ polygon.]
 
 -   Click "Clear" to clear the calculation
 
- [Azimuth between point A and B.]
+ Azimuth between point A and B.
 
  
 
@@ -58,8 +56,7 @@ polygon.]
 
  
 
--   Select "Line Distance"
-    tool ![](https://lh5.googleusercontent.com/u0gR1R22u2qubZYXnqqfQF0BCQRYo0BUiehYSF_H6Co2ofN-mqRjh4l2S9SRFz52jZdCOZGXBM5cpYnY45D0T1Zm7fALw0KMeFj3irzB30C9jTUst_U7oyParw)    from
+-   Select "Line Distance" tool ![](https://lh5.googleusercontent.com/u0gR1R22u2qubZYXnqqfQF0BCQRYo0BUiehYSF_H6Co2ofN-mqRjh4l2S9SRFz52jZdCOZGXBM5cpYnY45D0T1Zm7fALw0KMeFj3irzB30C9jTUst_U7oyParw)    from
     the Measure tool dropdown
 
 -   Tap on the line in your mapview that you want to measure. You can
@@ -70,7 +67,7 @@ polygon.]
 
 -   Click "Clear" to clear the calculation 
 
-[Area of the polygon]
+Area of the polygon
 
  
 
@@ -89,9 +86,6 @@ polygon.]
 
  
 
-\
-[ ]
 
- 
 
 </div>

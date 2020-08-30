@@ -2,13 +2,11 @@
 title: FAIMS User Handouts
 ---
 
-You can download these instructions from the [handout](../handout.pdf) in case you need them on the go. 
+You can download these instructions from the [handout](../handout.pdf) in case you need them on the go.
 
-[TOC]
+# FAIMS101: Getting Started
 
-# FAIMS101: Getting Started 
-
-* [FAIMS101 - Getting Started - with pictures](../getting-started) 
+* [FAIMS101 - Getting Started - with pictures](../getting-started)
 
 This guide shows you how to install the FAIMS app and try our sample recording modules.
 
@@ -28,7 +26,7 @@ This guide shows you how to install the FAIMS app and try our sample recording m
 -  Open the app, click 'Connect to Demo server' on the bottom left.
 -  You should now see a scrolling list of the available 'modules'. modules are FAIMS digital recording forms that can be tailored to specific projects and unique research workflows.
 -  Click on any module and download it to your device (may take minutes).
--  Press 'Load the module' and explore the module! 
+-  Press 'Load the module' and explore the module!
 -  After module download, switch off the radios, as the app works offline.
 
 
@@ -49,56 +47,56 @@ This guide shows you how to install the FAIMS app and try our sample recording m
 ### Where does the module live on your device?
 
 
--  The module sits in a folder with a long hexadecimal identifier in 'FAIMS' > 'modules'. 
--  Deleting the module folder deletes the module off your device. 
+-  The module sits in a folder with a long hexadecimal identifier in 'FAIMS' > 'modules'.
+-  Deleting the module folder deletes the module off your device.
 -  *Deleting the folder deletes all unsynced data.*
 
 
 ### Helpful notes
 
--  In a module, note the bar at the top of the screen indicating GPS and syncing status. 
+-  In a module, note the bar at the top of the screen indicating GPS and syncing status.
 -  Each module has a side bar (swipe right from the left edge of the screen); it orients you within the module and contains action buttons like 'New' or'Delete record'.
 
 
 
 # FAIMS102: Coolest Features
 
-Raise your data collection to a new level! 
+Raise your data collection to a new level!
 
 ## Annotations:
 
 Digital 'scribbling on the margin' lets you collect additional info about your observations. Use it to enrich your data, or to collect metadata.
 
-## Certainty sliders: 
+## Certainty sliders:
 
 Let you set the confidence with which you made your observation. Use when you are not 100\% sure about the value of a given attribute.
 
-## Info Buttons: 
+## Info Buttons:
 
 Provide additional information about attributes, as specified by the user during design to help in the field.
 
-## Picture Galleries: 
+## Picture Galleries:
 
 Let you pick a value using pictures, each of which represents controlled vocab term.
 
-## Hierarchical Dropdowns: 
+## Hierarchical Dropdowns:
 
 Allow you to progress through a series of embedded dropdown lists until you reach the desired term. Hierarchical dropdowns can use picture galleries!
 
 
-## Instantaneous Translation: 
+## Instantaneous Translation:
 
 Modules can be deployed in multiple languages. On the 'Load Module' screen, available translations appear in a dropdown. Each user can choose a preferred language.
 
-## Attach Photos to Records (\& vice versa): 
+## Attach Photos to Records (\& vice versa):
 
 'Take a Picture' button connects you to the device's camera to snap a as many shots as you like. Pictures are attached to your record and inherit its data upon export. To delete an attached picture, press it and hold, go to 'Picture management' and 'Delete'
 
-## Add Drawings to Records: 
+## Add Drawings to Records:
 
 An 'Attach a File' button lets you attach one or more existing files to a record. See our 'Attach a Sketch' workflow #106 to produce digital sketches and tie them to records.
 
-## Duplicate a Record: 
+## Duplicate a Record:
 
 Use this button in the sidebar to make a duplicate record with automatically assigned new ID number. Pictures and attachments are usually not replicated. Save your effort when recording similar objects or situations!
 
@@ -113,7 +111,7 @@ Deploy an existing module to all your devices.
 
 -  Module definition packet (see other side)
 -  Android 7+ devices with the FAIMS app
--  Admin access to a FAIMS server 
+-  Admin access to a FAIMS server
 -  A local or internet connection to that server
 -  10 minutes
 
@@ -121,11 +119,11 @@ Deploy an existing module to all your devices.
 ## How to Instantiate a Module on the Server:
 
 
--  Login into your FAIMS server with your username. The defaults are: 
+-  Login into your FAIMS server with your username. The defaults are:
 	-  Username: `faimsadmin@intersect.org.au`
 	-  Password: `Pass.123`
 -  Click the 'Create Module' button on top left
--  On the left side in the 'Static data' section, enter module name and metadata about your project. 
+-  On the left side in the 'Static data' section, enter module name and metadata about your project.
 -  On the right side, upload the definition documents in their respective slots:
 
 
@@ -136,7 +134,7 @@ Deploy an existing module to all your devices.
 -  Validation file and CSS files (optional)
 
 
--  Push the 'Submit' button. 
+-  Push the 'Submit' button.
 -  Connect your devices to the server; download your module (see Guide#101)
 
 
@@ -145,14 +143,14 @@ Deploy an existing module to all your devices.
 
 ## What is a 'definition packet'?
 
-FAIMS modules are compiled from a set of 'definition files' uploaded to the server. 
+FAIMS modules are compiled from a set of 'definition files' uploaded to the server.
 
-The definition packet can have from four to seven files: 
+The definition packet can have from four to seven files:
 
 
--  Data Definition Schema 
--  User Interface Schema 
--  User Interface Logic 
+-  Data Definition Schema
+-  User Interface Schema
+-  User Interface Logic
 -  Translation('Arch16n') file(s)
 -  Validation file (optional)
 -  User Stylesheet (optional)
@@ -184,7 +182,7 @@ As our demo server comes with no guarantees or privacy, you'll want to switch to
 
 -  An Android 7+ device with the FAIMS app
 -  A local or online FAIMS server
--  Hostname for your server (e.g. ) 
+-  Hostname for your server (e.g. )
 -  A local or internet connection to that server
 
 
@@ -192,11 +190,11 @@ As our demo server comes with no guarantees or privacy, you'll want to switch to
 
 Follow these steps if you have just downloaded or reinstalled the FAIMS app.
 
--  Open the FAIMS app. 
--  Press 'Enter Server Details'. If the button is missing, turn this page. 
+-  Open the FAIMS app.
+-  Press 'Enter Server Details'. If the button is missing, turn this page.
 -  On the 'Select Server' screen, use the dropdown to switch to a new server (or auto-discover the server if it is local)
--  Type the new server hostname into the 'Server Host' field. 
--  Press 'Test Connection'. If you see 'Connection test succeeded', you have established a connection. 
+-  Type the new server hostname into the 'Server Host' field.
+-  Press 'Test Connection'. If you see 'Connection test succeeded', you have established a connection.
 -  Press 'Connect' to connect to the new server and bring up a list of modules.
 -  You have successfully connected to a different server!
 
@@ -205,12 +203,12 @@ Follow these steps if you have just downloaded or reinstalled the FAIMS app.
 ## Existing Users of FAIMS:
 
 
--  Open the FAIMS app. 
+-  Open the FAIMS app.
 -  Press 'Show Modules'. If the button is missing, turn this page.
 -  Above the 'List of modules', you can see you are still connected to your original server. To change that, press the 'Settings' button (three dots or a hardware button whose exact position varies with every device).
--  On the 'Select server' screen, select 'New Server' from the dropdown. 
+-  On the 'Select server' screen, select 'New Server' from the dropdown.
 -  Type the new server hostname in the 'Server Host' field.
--  Press 'Test Connection'. If you get 'Connection test succeeded', you have established a connection. 
+-  Press 'Test Connection'. If you get 'Connection test succeeded', you have established a connection.
 -  Press 'Connect' to connect to the new server and bring up the list of modules.
 
 
@@ -238,7 +236,7 @@ If anyone makes changes (structural or administrative) to your module on a serve
 -  An 'Update or Restore module' screen pops up. Three options appear:
 -  'Update' updates the structure of the module (users, vocabularies) and does not effect recorded data.
 -  'Restore' re-downloads the entire module, updating the structure and files (e.g. maps) in the process. It deletes all records that have not been synced with the server. Beware, you can lose unsynced data!
--  'Cancel' returns you to module without any changes. 
+-  'Cancel' returns you to module without any changes.
 
 
 
@@ -312,11 +310,11 @@ Improve the quality of your spatial data by connecting to an External Bluetooth 
 ## Tips and Tricks:
 
 -  Start Bluetooth and pair your GPS before you start the FAIMS app
--  Do not switch between different external GPSs. 
+-  Do not switch between different external GPSs.
 -  If you are having trouble, restart all devices and start over.
 -  Keep the GPS close so you don’t lose the bluetooth connection.
 -  If not sure about pairing code, check with your GPS provider.
--  If GPS loses signal, you will see 'toasts' (pop-up warnings) like 'no valid signal', 'no bluetooth', etc. 
+-  If GPS loses signal, you will see 'toasts' (pop-up warnings) like 'no valid signal', 'no bluetooth', etc.
 -  This workflow may work with all Bluetooth devices
 -  Using an external GPS extends the tablet’s battery life, improves performance when the sky is partly blocked, and speeds up position fixes
 
@@ -329,7 +327,7 @@ Improve the quality of your spatial data by connecting to an External Bluetooth 
 
 
 The FAIMS server is an essential component of the FAIMS Mobile Platform. It allows authorised users to customise and deploy field recording modules, synchronize multiple devices in the field, manage module users, resolve conflicts, merge duplicates, view and revert record history and export your data in a structured format.
- 
+
 ## What you need:
 
 -  A local or online server
@@ -341,9 +339,9 @@ The FAIMS server is an essential component of the FAIMS Mobile Platform. It allo
 ## Working on the Server
 
 -  On your computer, connect to the faims in a box local network or to the internet.
--  Open the browser and go to the server. Log in to the server. Make sure to use your own login if you have one. 
+-  Open the browser and go to the server. Log in to the server. Make sure to use your own login if you have one.
 
-  Defaults: 
+  Defaults:
 
 -   Username: `faimsadmin@intersect.org.au`
 -   Password: `Pass.123`
@@ -380,10 +378,10 @@ On the server, you can search, view, compare, edit, and delete your records. You
 ## Editing your Data on the Server
 
 -  On the server, click on your module. On the module page select the 'Search Entity Records' button under module details.
--  In the 'Search Entity' screen you can see a list of all synced entities, author, creation date, and modification date. 
--  To view and edit the record, click on it in the list. Scroll to the bottom of page for pictures and files. 
--  To batch delete records, return to entity list, check multiple records and push 'Delete' button at the bottom of the page. 
--  If you want to compare or merge records, check two desired records, and click the 'compare' button. 
+-  In the 'Search Entity' screen you can see a list of all synced entities, author, creation date, and modification date.
+-  To view and edit the record, click on it in the list. Scroll to the bottom of page for pictures and files.
+-  To batch delete records, return to entity list, check multiple records and push 'Delete' button at the bottom of the page.
+-  If you want to compare or merge records, check two desired records, and click the 'compare' button.
 -  To see the complete history of edits in a single record, press the 'View History' button on top of a record's individual page. You may now revert any deletion or change.
 
 
@@ -394,7 +392,7 @@ On the server, you can search, view, compare, edit, and delete your records. You
 -  Without a server you can only edit and delete records one by one in your app interface.
 -  Without a server you cannot resolve conflicts, merge duplicates or view record history.
 -  When looking for a particular record, search for it by entering a string in the search box.
--  Use a filtering dropdown to filter records by entity type or user or literal search string. 
+-  Use a filtering dropdown to filter records by entity type or user or literal search string.
 
 
 
@@ -413,7 +411,7 @@ Use the server to edit your module's metadata and update its UI or Logic.
 
 
 -  On the server, navigate to your module.
--  Select 'Edit Module' button under module actions. 
+-  Select 'Edit Module' button under module actions.
 -  On the 'Edit Module' page you can modify module metadata, including updating your spatial reference (SRID) in the 'Static Data' section.
 -  On the 'Edit Module' page you can alter the module ui, logic, translation files, validation, or styling by uploading new definition files. To do so, upload new file in its slot and press 'Update'.
 -  Make sure to update the module on your device to implement the changes (for details see reverse).
@@ -440,7 +438,7 @@ If anyone commits changes to your module on a server, you need to connect your d
 -  An 'Update or Restore module' screen pops up. Three options appear:
 -  'Update' updates the module's structure (ui, logic, static pictures, vocabularies, or maps) and does not effect recorded data.
 -  'Restore' re-downloads the entire module, updating the structure and files (e.g. maps) in the process. It deletes all records that have not been synced with the server. Beware, you *will* lose unsynced data!
--  'Cancel' returns you to module without any changes. 
+-  'Cancel' returns you to module without any changes.
 
 
 
@@ -460,7 +458,7 @@ Use the server to add and administer your module users. You need 'superuser' sta
 
 -  On the 'Module Actions' screen, select the 'Edit Users' button. If you cannot see the 'Add Users' field you do not have superuser privileges. Check with project admin staff.
 -  Go to the User Management section on the top black ribbon. You need to first create new users on your server and assign them user roles.
--  When finished, navigate back to 'Module Actions' in a given module and select 'Edit Users'. Add users to your module via the dropdown. 
+-  When finished, navigate back to 'Module Actions' in a given module and select 'Edit Users'. Add users to your module via the dropdown.
 -  Make sure to create user accounts before fieldwork. They cannot be created on a device.
 -  To delete users, use the same screen as when adding. After you 'update module settings' the deleted users will no longer appear as users in your module.
 
@@ -486,7 +484,7 @@ If anyone commits changes to your module on a server, you need to connect your d
 -  An 'Update or Restore module' screen pops up. Three options appear:
 -  'Update' updates the module's structure (ui, logic, static pictures, vocabularies, or maps) and does not effect recorded data.
 -  'Restore' re-downloads the entire module, updating the structure and files (e.g. maps) in the process. It deletes all records that have not been synced with the server. Beware, you *will* lose unsynced data!
--  'Cancel' returns you to module without any changes. 
+-  'Cancel' returns you to module without any changes.
 
 
 
@@ -502,10 +500,10 @@ Use the server to edit your module's controlled vocabularies!
 
 ## Step by Step
 
--  Start from the Module page and select 'Edit Vocabulary' under Module Actions. 
+-  Start from the Module page and select 'Edit Vocabulary' under Module Actions.
 -  If you 'Select Attribute' you want to change, you can then edit existing or add more items to controlled vocabularies.
--  You can update labels, and/or descriptions which will appear as Info/Help text next to the attribute in the app. 
--  You can affect the vocabulary ordering as it appears in the app, edit hierarchies, or urls of picture galleries. 
+-  You can update labels, and/or descriptions which will appear as Info/Help text next to the attribute in the app.
+-  You can affect the vocabulary ordering as it appears in the app, edit hierarchies, or urls of picture galleries.
 -  You need to 'update settings' on all devices with this module to deploy the changes.
 
 
@@ -531,7 +529,7 @@ If anyone commits changes to your module on a server, you need to connect your d
 -  An 'Update or Restore module' screen pops up. Three options appear:
 -  'Update' updates the module's structure (ui, logic, static pictures, vocabularies, or maps) and does not effect recorded data.
 -  'Restore' re-downloads the entire module, updating the structure and files (e.g. maps) in the process. It deletes all records that have not been synced with the server. Beware, you *will* lose unsynced data!
--  'Cancel' returns you to module without any changes. 
+-  'Cancel' returns you to module without any changes.
 
 
 
@@ -575,7 +573,7 @@ If anyone commits changes to your module on a server, you need to connect your d
 -  An 'Update or Restore module' screen pops up. Three options appear:
 -  'Update' updates the module's structure (ui, logic, static pictures, vocabularies, or maps) and does not effect recorded data.
 -  'Restore' re-downloads the entire module, updating the structure and files (e.g. maps) in the process. It deletes all records that have not been synced with the server. Beware, you *will* lose unsynced data!
--  'Cancel' returns you to module without any changes. 
+-  'Cancel' returns you to module without any changes.
 
 
 
@@ -603,7 +601,7 @@ Use the server to safely backup your team's work! This procedure will download t
 
 
 
-This tarball may be used to instantiate *the exact same module* onto another server. Be careful not to sync with multiple servers. 
+This tarball may be used to instantiate *the exact same module* onto another server. Be careful not to sync with multiple servers.
 
 
 
@@ -635,7 +633,7 @@ In case of emergency, you can manually backup your individual device onto an SD 
 # FAIMS208: Export Data
 
 
-Use the server to export your data in a default or custom-made well-structured format! 
+Use the server to export your data in a default or custom-made well-structured format!
 
 ## What you need:
 
@@ -645,7 +643,7 @@ Use the server to export your data in a default or custom-made well-structured f
 
 ## Step by Step
 
--  On the nodule page click 'Export Module'. 
+-  On the nodule page click 'Export Module'.
 -  On 'Export Module', choose an available exporter from the dropdown.
 -  For the generalised exporter, we include csvs, shapefiles (if geometries exist), and a sqlite database by default. Tick the checkbox if you want to download images as well and press 'Export'.
 -  Press 'Download' button to download the archive with structured data.
@@ -656,14 +654,6 @@ Use the server to export your data in a default or custom-made well-structured f
 ## Tips and Tricks
 
 -  The 'Export' button exports only the data, not the data definition files.
--  The default exporter makes shapefiles (.shp) out of your spatial data, puts all records in .csv by Entity, and renames all your Photos by your identifier. Data gets written into the shapefile attributes as well as exif data in your Photos. 
+-  The default exporter makes shapefiles (.shp) out of your spatial data, puts all records in .csv by Entity, and renames all your Photos by your identifier. Data gets written into the shapefile attributes as well as exif data in your Photos.
 -  The archive also contains a sqlite database which houses all your raw data.
 -  Contact FAIMS if you need to export your data in different format than .shp or .csv
-
-
-
-
-
-
-
-

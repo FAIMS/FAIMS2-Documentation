@@ -5,16 +5,12 @@ Label Control
 
 
 
-\
-[ ]
 
-Switch off the labels in the Vector layer. 
+Switch off the labels in the Vector layer.
 ------------------------------------------
 
-\
-[ ]
 
-[To turn the labels off:]
+To turn the labels off:
 
 -   Press the Layers icon on the bottom bar
 
@@ -25,10 +21,8 @@ Switch off the labels in the Vector layer.
 
 -   Tap on the back arrow to return to the map
 
-[If you later want to turn the labels on again, just follow this same
-path and click "Show labels".]
+If you later want to turn the labels on again, just follow this same
+path and click "Show labels".
 
-\
-[ ]
 
 </div>

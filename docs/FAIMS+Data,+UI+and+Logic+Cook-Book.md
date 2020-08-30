@@ -2411,7 +2411,7 @@ To add custom actions to the navigation drawer use the following.
 
 
 ```
-// Primary Buttons (blue color)
+Primary Buttons (blue color)
 addNavigationButton("test1", new ActionButtonCallback() ";
   }
   actionOn() ");
@@ -2515,31 +2515,12 @@ non-cancellable use the following:
 
 
 
-
-
-+-----------------------------------------------------------------------+
-|
-|
-| `dialog = showBusy(``"loading module"``, ``"please wait"``)`                                                               |
-|
-|                                                                       |
-|
-| `dialog.setCancelable(``false``);`                                           |
-|
-|                                                                       |
-|
-| `...`                                                   |
-|
-|                                                                       |
-|
-| `dialog.dismiss(); ``// to close the dialog`                                                            |
-|
-|
-+-----------------------------------------------------------------------+
-
-
-
-
+```
+dialog = showBusy(loading module", "please wait")
+dialog.setCancelable(false);                                                                                     
+...                                                  
+dialog.dismiss(); // to close the dialog
+```
 
 
 e.g showTextAlert
@@ -2601,12 +2582,10 @@ e.g. populateDropDown
 
 
 ```
-fetchAll("select uuid, uuid from archentity where uuid || aenttimestamp in ( select uuid || max(aenttimestamp) from archentity group by uuid having deleted is null);", new FetchCallback()  
-});
+fetchAll("select uuid, uuid from archentity where uuid || aenttimestamp in ( select uuid || max(aenttimestamp) from archentity group by uuid having deleted is null);", new FetchCallback();
 
  
-fetchAll("select uuid, uuid from archentity where uuid || aenttimestamp in ( select uuid || max(aenttimestamp) from archentity group by uuid having deleted is null);", new FetchCallback()  
-});
+fetchAll("select uuid, uuid from archentity where uuid || aenttimestamp in ( select uuid || max(aenttimestamp) from archentity group by uuid having deleted is null);", new FetchCallback();
  
 populateHierarchicalDropDown("tabgroup1/tab1/rocks", "rocks");
  
@@ -2616,7 +2595,6 @@ populateHierarchicalDropDown("tabgroup1/tab1/rocks", "rocks", true); // populate
 
 
 
-[ ]
 
 
 You can no longer populate dropdowns via the ui schema instead you must
@@ -2642,8 +2620,7 @@ e.g. populateRadioGroup
 
 
 ```
-fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback()
-});
+fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'type';", new FetchCallback();
 ```
 
 
@@ -2653,8 +2630,7 @@ e.g. populateCheckBoxGroup
 
 
 ```
-fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'location';", new FetchCallback()
-});
+fetchAll("select vocabid, vocabname from vocabulary left join attributekey using (attributeid) where attributename = 'location';", new FetchCallback();
 ```
 
 
@@ -2664,8 +2640,7 @@ e.g. populateList and getListItemValue
 
 
 ```
-fetchAll("select userid,(fname || ' ' || lname) as name from user where userdeleted is NULL;", new FetchCallback()
-});
+fetchAll("select userid,(fname || ' ' || lname) as name from user where userdeleted is NULL;", new FetchCallback();
 
 onEvent("user/tab1/userlist","click","showToast(\"getListItemValue()\")"
 ```
@@ -2678,7 +2653,7 @@ it will execute the callback which in this case show a toast containing
 the value of the clicked by calling the getListItemValue.
 
 
-[ ]
+
 
 
 getListItemValue returns the last selected item on the clicked list.
@@ -2702,7 +2677,7 @@ further 25 items are appended dynamically. The query passed into the api
 needs to specify limit and offset as above.
 
 
-[ ]
+
 
 
 If the module has css styling and lists are being called to populate
@@ -2723,18 +2698,14 @@ e.g. populatePictureGallery
 
 
 ```
-fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback()
-});
+fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback();
 
  
-fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback()
-});
+fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture';", new FetchCallback();
 ```
 
 
 
-
-[ ]
 
 
 
@@ -2744,48 +2715,12 @@ have the same order as defined in the data\_schema, the query needs to
 me be modified to preserve a specific order.
 
 
-\
-
-
-+-----------------------------------------------------------------------+
-|
-|
-| `fetchAll(``"select vocabid, vocabname, pictureurl from vocabulary left j |
-| oin attributekey using (attributeid) where attributename = 'picture'  |
-| order by vocabcountorder;"``, ``new`                       |
-| `FetchCallback()                                      |
-|
-|                                                                       |
-|
-| `  ``onFetch(pictures)                 |
-|
-|                                                                       |
-|
-| `    ``populatePictureGallery(``"tabgroup1/tab1/picture"``, pictures);`                                                               |
-|
-|                                                                       |
-|
-| `  ``}`                                  |
-|
-|                                                                       |
-|
-| `});`                                                   |
-|
-|                                                                       |
-|                                                                  |
-|                                                                       |
-| ``                                                      |
-|                                                                       |
-| </div>                                                                |
-|
-+-----------------------------------------------------------------------+
-
-
-
-
-
-
-\
+```
+fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attributekey using (attributeid) where attributename = 'picture'  
+order by vocabcountorder;", new FetchCallback()                                      
+onFetch(pictures)                 
+populatePictureGallery("tabgroup1/tab1/picture", pictures);                                                              
+```
 
 For this to work you need to add the picture urls to the vocab in the
 data schema as follows. The picture urls are relative to the modules
@@ -2794,22 +2729,16 @@ root directory.
 
 
 ```
-...
 <property type="dropdown" name="picture" minCardinality="1" maxCardinality="1">
       <bundle>DOI</bundle>
       <lookup>
         <term pictureURL="pictures/cugl69808.jpg">cugl69808.jpg</term>
         <term pictureURL="pictures/cugl69807a.jpg">cugl69807a.jpg</term>
         <term>None</term>
-...
     </property>
-...
 ```
 
 
-
-
-[ ]
 
 
 Note that the collection pictures should contain of the vocabid,
@@ -2832,14 +2761,11 @@ populateFileList("tabgroup1/tab1/files", files);
 
 
 
-[ ]
-
 
 Note that the file paths need to be full paths
 
 
 
-\
 
 To populate a camera or video gallery use the following.
 
@@ -2861,7 +2787,6 @@ populateVideoGallery("tabgroup1/tab1/videos", videos);
 
 
 
-[ ]
 
 
 The photo and video urls need to be absolute path urls. For a better
@@ -2869,7 +2794,6 @@ example look at the file attachment examples below.
 
 
 
-\
 
 To populate a table from sql use the following
 
@@ -2881,13 +2805,11 @@ e.g. populateTableRaw
 query = "select ...";
 headers = new ArrayList();
 headers.add("header1");
-...
 populateTableRaw("tabgroup1/tab1/table", query, headers, null, -1, null);
 ```
 
 
 
-\
 
 To populate a table from sql and pivot the table use the following.
 Remember the pivot sql must be return columns in order as id, name,
@@ -2901,13 +2823,11 @@ e.g. populateTablePivot
 query = "select ...";
 headers = new ArrayList();
 headers.add("header1");
-...
 populateTablePivot("tabgroup1/tab1/table", query, headers, "Click Me", 2, "onClicked()");
 ```
 
 
 
-\
 
 To populate a web view with data from a html file or html string use the
 following. The html file can be attached as part of the module
@@ -2919,7 +2839,6 @@ e.g. populateWebView, populateWebViewHtml
 ```
 htmlFile = getAttachedFilePath("files/data/webfile.html");
 populateWebView("tabgroup1/tab1/web", htmlFile);
-...
 populateWebViewHtml("tabgroup1/tab1/web", "<h2>Module Info</h2><p>This module has been created by ...</p>");
 ```
 
@@ -2935,12 +2854,10 @@ To use table actions use the following.
 query = "select ...";
 headers = new ArrayList();
 headers.add("header1");
-...
 actionName = "ClickMe";
 actionColumn = 2;
 actionCallback = "onClicked()"
 populateTablePivot("tabgroup1/tab1/table", query, headers, actionName, actionColumn, actionCallback);
- 
 onClicked()
 ```
 
@@ -3068,7 +2985,7 @@ The showTabGroup with uuid will open the tab group specified in the path
 id to the related fields in the tabgroup.
 
 
-[ ]
+
 
 
 Tab showing and closing actions generally should be embedded within an
@@ -3079,62 +2996,22 @@ e.g.
 
 
 
-
-\
-
-
-+-----------------------------------------------------------------------+
-|
-| align: baseline;" title="Hint: double-click to select code"}          |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `onEvent(``"tabgroup"``, ``"show"``, ``"onShow()"``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-|                                                                       |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `onShow()                               |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``showTab(``"tabgroup/tab"``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``cancelTab(``"tabgroup/tab"``, ``true``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `}`                              |
-|
-|
-+-----------------------------------------------------------------------+
-
-
-
+```
+align: baseline;" title="Hint: double-click to select code"        
+ht: auto;vertical-align: baseline;background-image: none;         
+onEvent("tabgroup", "show", onShow()"");                             
+ht: auto;vertical-align: baseline;background-image: none;          
+ht: auto;vertical-align: baseline;background-image: none;          
+onShow()                               
+ht: auto;vertical-align: baseline;background-image: none;          
+ht: auto;vertical-align: baseline;background-image: none;          
+showTab("tabgroup/tab");                              
+ht: auto;vertical-align: baseline;background-image: none;        
+ht: auto;vertical-align: baseline;background-image: none;           
+cancelTab("tabgroup/tab", true;
+ht: auto;vertical-align: baseline;background-image: none;          
+ht: auto;vertical-align: baseline;background-image: none;           
+```
 
 
 
@@ -3163,7 +3040,6 @@ open. If the warn argument is set to false then tab will be closed
 regardless of any changes in the tab.
 
 
-[ ]
 
 
 Its best practice after calling cancelTab to use showTab to open a new
@@ -3186,7 +3062,6 @@ The cancelTabGroup will close the tab group specified in the path
 the tab it closes the entire tab group.
 
 
-[ ]
 
 
 Tab showing and closing actions generally should be embedded within an
@@ -3198,66 +3073,23 @@ e.g.
 
 
 
-\
+```
+align: baseline;" title="Hint: double-click to select code         
+ht: auto;vertical-align: baseline;background-image: none;          
+`onEvent("tabgroup", "show", "onShow()");                              
+ht: auto;vertical-align: baseline;background-image: none;         
+ht: auto;vertical-align: baseline;background-image: none;           
+ht: auto;vertical-align: baseline;background-image: none;          
+ht: auto;vertical-align: baseline;background-image: none;       
+showTab("tabgroup/tab");                             
+ht: auto;vertical-align: baseline;background-image: none;         
+ht: auto;vertical-align: baseline;background-image: none;          
+cancelTab("tabgroup/tab", true);                             
+ht: auto;vertical-align: baseline;background-image: none;          
+ht: auto;vertical-align: baseline;background-image: none;        
+```
 
 
-+-----------------------------------------------------------------------+
-|
-| align: baseline;" title="Hint: double-click to select code"}          |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `onEvent(``"tabgroup"``, ``"show"``, ``"onShow()"``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-|                                                                       |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `onShow()                               |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``showTab(``"tabgroup/tab"``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``cancelTab(``"tabgroup/tab"``, ``true``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `}`                              |
-|
-|
-+-----------------------------------------------------------------------+
-
-
-
-
-
-
-
-\
 
 ### Date & Time
 
@@ -3406,15 +3238,12 @@ showBaseMap("tabgroup1/tab1/map", "raster map" "map.tif");
 
 
 
-[ ]
-
 
 The raster map must be in projection EPSG:3857
 
 
 
 
-[ ]
 
 
 map.tif url is relative to the root of the modules folder
@@ -3437,14 +3266,12 @@ showRasterLayer("tabgroup1/tab1/map", "raster map" "map.tif");
 ### Add shape vector layer
 
 
-[ ]
 
 
 This has been deprecated by spatial layer
 
 
 
-\
 
 To add a shape vector layer use the following.
 
@@ -3460,8 +3287,6 @@ showShapeLayer("tabgroup1/tab1/map", "Shape Layer", "shape.shp", ps, ls, pos, ts
 
 
 
-
-[ ]
 
 
 The shape file must be in projection EPSG:3857
@@ -3486,9 +3311,6 @@ showSpatialLayer("tabgroup1/tab1/map", "Spatial Layer", "spatial.sqlite", table,
 ```
 
 
-
-
-[ ]
 
 
 The spatial database must be in projection EPSG:3857
@@ -3527,7 +3349,6 @@ layerId = createCanvasLayer("tabgroup1/tab1/map", "Canvas Layer");
 
 
 
-[ ]
 
 
 Keep a reference to the layerId returned by createVectorLayer. This can
@@ -3553,7 +3374,6 @@ setMapFocusPoint("tabgroup1/tab1/map", lon, lat);
 Value could be double or float.
 
 
-[ ]
 
 
 The point must be in module projection.
@@ -3581,9 +3401,6 @@ setMapTilt("tabgroup1/tab1/map", 90.0f);
 
 
 
-[ ]
-
-
 The minimum tilt is 30.0f
 
 
@@ -3597,9 +3414,6 @@ setMapZoom("tabgroup1/tab1/map", 17.0f);
 ```
 
 
-
-
-[ ]
 
 
 There are 18 levels of zoom defined for the raster map therefore zoom
@@ -3742,8 +3556,6 @@ Keep a reference to the geomId so you can later clear the geometry or
 draw overlays for it.
 
 
-[ ]
-
 
 The points must be in the modules projection.
 
@@ -3769,8 +3581,6 @@ Keep a reference to the geomId so you can later clear the geometry or
 draw overlays for it.
 
 
-[ ]
-
 
 The lines must be in the modules projection.
 
@@ -3795,8 +3605,6 @@ drawPolygon("tabgroup1/tab1/map", layerId, points, polygonStyle);
 Keep a reference to the geomId so you can later clear the geometry or
 draw overlays for it.
 
-
-[ ]
 
 
 The polygons must be in the modules projection.
@@ -3863,9 +3671,7 @@ GIS data you can use the following.
 
 
 ```
-...
 collection = getGeometryHighlights();
-...
 saveArchEnt(entityId, "simple", collection, attributes);
 ```
 
@@ -3877,9 +3683,7 @@ following.
 
 
 ```
-...
 collection = getGeometryList("tabgroup1/tab1/map", layerId);
-...
 saveArchEnt(entityId, "simple", collection, attributes);
 ```
 
@@ -3893,10 +3697,7 @@ GIS data you can use the following.
 
 
 ```
-fetchArchEnt(entityId, new FetchCallback()  else if (geom instanceof Line)  else if (geom instanceof Point)
-    }
-  }
-});
+fetchArchEnt(entityId, new FetchCallback()  else if (geom instanceof Line)  else if (geom instanceof Point);
 ```
 
 
@@ -4259,7 +4060,7 @@ createBluetoothConnection(callback, 0);
 
 ### Read messages
 
-[ ]To manually initiate a read from the
+To manually initiate a read from the
 Bluetooth device use the following. This will trigger a read from the
 device and execute the callback passed in when you created the
 connection.
@@ -4274,7 +4075,7 @@ readBluetoothMessage();
 
 ### Write messages
 
-[ ]To initiate a write to the
+To initiate a write to the
 Bluetooth device use the following.
 
 
@@ -4288,7 +4089,7 @@ writeBluetoothMessage(message);
 
 ### Clear messages
 
-[ ]To clear messages currently in the
+To clear messages currently in the
 Bluetooth device buffer use the following.
 
 
@@ -4454,10 +4255,6 @@ thumbnail attribute to true. e.g.
 
 
 
-
-[ ]
-
-
 This is useful for entity attributes that are set to sync between
 devices. By setting thumbnail to true it saves file transfers between
 devices by sharing smaller thumbnail files instead of the full image or
@@ -4480,9 +4277,6 @@ saveFile()
 
 
 
-[ ]
-
-
 The filename contains only the files name where the filepath contains
 the absolute path to the file.
 
@@ -4501,9 +4295,6 @@ savePhoto()
 ```
 
 
-
-
-[ ]
 
 
 The url is the absolute path to the file.
@@ -4525,8 +4316,6 @@ saveVideo()
 
 
 
-[ ]
-
 
 The url is the absolute path to the file.
 
@@ -4545,9 +4334,6 @@ saveAudio()
 ```
 
 
-
-
-[ ]
 
 
 The url is the absolute path to the file.
@@ -4642,9 +4428,6 @@ codeScannerCallback()
 ```
 
 
-
-
-[ ]
 
 
 contents is the result of the scan
@@ -4802,8 +4585,6 @@ Signup=Regístrate
 
 
 
-\
-
 Secondly, implement the logic to drive the new button element and cause
 the user signup dialog to be displayed when it is clicked, as well as
 re-populate the Select User dropdown if account creation is successful
@@ -4822,7 +4603,6 @@ onClickUserSignup ()
 
 
 
-\
 
 ### Enabling User Authentication Example
 
@@ -4868,8 +4648,6 @@ button in the section above using the Login label name.
 
 
 
-\
-
 In the module logic, ensure selectUser() retrieves the password and
 email fields.  This will be needed by the authentication dialog to
 verify the user provided password matches.
@@ -4890,7 +4668,6 @@ selectUser ()
 
 
 
-\
 
 Additionally, implement the logic to drive the Login button and define
 the callback to run when authentication is successful
@@ -4912,8 +4689,6 @@ doUserLogin ()
 ```
 
 
-
-\
 
 Validation
 ==========
@@ -5098,9 +4873,7 @@ e.g. add validation for the AboveBelow relationship
 
 
 ```
-...
     <RelationshipElement name='AboveBelow'>
-...
 ```
 
 
@@ -5110,9 +4883,7 @@ e.g. add validation for the small archaeological entity
 
 
 ```
-...
     <ArchaeologicalElement name='small'>
-...
 ```
 
 
@@ -5125,11 +4896,9 @@ e.g. add validation to the name property of relationship
 
 
 ```
-...
     <RelationshipElement name='AboveBelow'>
 
         <property name='name'>
-...
 ```
 
 
@@ -5139,11 +4908,9 @@ e.g. add validation to the name property of archaeological entity
 
 
 ```
-...
     <ArchaeologicalElement name='small'>
 
         <property name='name'>
-...
 ```
 
 
@@ -5156,11 +4923,9 @@ e.g 
 
 
 ```
-...
             <validator type='evaluator' cmd='spell.sh ?'>
                 <param type='field' value='freetext' />
             </validator>
-...
 ```
 
 
@@ -5172,8 +4937,6 @@ or queries which run query to return a value. You can also specify
 multiple params for a single evaluator.
 
 
-[ ]
-
 
 Examples have been provided above in the commented our sections.
 
@@ -5182,9 +4945,6 @@ Examples have been provided above in the commented our sections.
 ### Evaluator
 
 This runs a program against the given params
-
-
-[ ]
 
 
 Examples have been provided above in the commented out sections.
@@ -5197,9 +4957,6 @@ This checks if the values are not null, or an empty string against the
 given params
 
 
-[ ]
-
-
 Examples have been provided above in the commented out sections.
 
 
@@ -5209,8 +4966,6 @@ Examples have been provided above in the commented out sections.
 This checks if the values are integer, real or text against the given
 params.
 
-
-[ ]
 
 
 Examples have been provided above in the commented out sections.
@@ -5223,13 +4978,6 @@ This checks if the values are valid when running a query against the
 given params.
 
 
-[ ]
-
-
-
-
-
-
 
 
 
@@ -5240,25 +4988,7 @@ if your query returns nothing it fails
 
 
 
-
-
-
-
-
-
-
-
-
 you probably need to do a count
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5282,17 +5012,6 @@ the first argument resolve to 0 / non-zero?
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 if the first value is false then it raises an error
 
 
@@ -5301,15 +5020,6 @@ if the first value is false then it raises an error
 
 or causes the validator to output the second value which is the error
 string
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5328,16 +5038,6 @@ or do I need to write an outer query?
 
 
 
-
-
-
-
-
-
-
-
-
-
 so when you construct a validator of type queryChecker
 
 
@@ -5351,25 +5051,7 @@ and column2 with (validation string)
 
 
 
-
-
-
-
-
-
-
-
-
-
 the query I pass with \<query\> foo \</query\> ?
-
-
-
-
-
-
-
-
 
 
 
@@ -5384,15 +5066,6 @@ its inputs are the param values
 
 
 
-
-
-
-
-
-
-
-
-
 so therefore, to pass uuid as an input, I have to do the shennagans
 I\'ve already done (a param that exports the uuid)
 
@@ -5400,26 +5073,7 @@ I\'ve already done (a param that exports the uuid)
 
 
 
-
-
-
-
-
-
-
-
-
-
 And query=\"foo\" is equivalent to the query tag
-
-
-
-
-
-
-
-
-
 
 
 
@@ -5436,26 +5090,12 @@ string data where as the attribute string has restrictions on it 
 
 
 
-
-
-
-
-
-
-
 just lookup xml attribute string restrictions
 
 
 
 
 
-
-
-
-
-
-
-[[Now]]
 
 
 
@@ -5594,7 +5234,6 @@ what stylings work for each are:
 
 Examples of this can be seen in the example CSS styling file above.
 
-\
 
 e.g. by id reference
 
@@ -5611,7 +5250,6 @@ with labels having \"-label\" appended:
 
 
 
-\
 
 e.g. by custom class name
 
@@ -5644,7 +5282,6 @@ full stop followed by the class name:
 
 
 
-\
 
 ### Applying Styling
 
@@ -5676,7 +5313,6 @@ styleTable("tabgroup5/tab1/table", css);
 
 
 
-\
 
 Arch16n translations
 ====================
@@ -5704,7 +5340,7 @@ default.1.properties
 The above set of arch16n files would appear in the dropdown as Default,
 Orthodox, Unorthodox, based on the sort orders of 1, 2, 3
 
-\
+
 
 Below is an example of an arch16n file.
 
@@ -5730,8 +5366,6 @@ typeD=Arch16n Type D
 
 
 
-
-[ ]
 
 
 This is a standard java properties file so make sure the left hand side
@@ -5829,8 +5463,8 @@ e.g.
 ,
     ,
 
-  ]
-}
+
+
 ```
 
 
@@ -5854,7 +5488,6 @@ parse to the export script:
 
 
 
-\
 
 ### install.sh
 
@@ -5906,10 +5539,6 @@ python export.py $1/db.sqlite3 json > $3/export.csv
 echo "Exported **CSV**" >> $4
 ```
 
-
-
-
-[ ]
 
 
 Do not copy the db.sqlite3 file inside the module directory directly as
@@ -6360,72 +5989,27 @@ after the code is read.
 
 e.g.
 
+```
+align: baseline;" title="Hint: double-click to select code"         
+ht: auto;vertical-align: baseline;background-image: none;           
+onEvent("tabgroup", "show" "onShow()")                              
+ht: auto;vertical-align: baseline;background-image: none;
+ht: auto;vertical-align: baseline;background-image: none;          
+onShow()                               
+ht: auto;vertical-align: baseline;background-image: none;         
+ht: auto;vertical-align: baseline;background-image: none;           
+showTab("tabgroup/tab"                             
+ht: auto;vertical-align: baseline;background-image: none;
+ht: auto;vertical-align: baseline;background-image: none;
+cancelTab("tabgroup/tab", true);                            
+ht: auto;vertical-align: baseline;background-image: none;          
+ht: auto;vertical-align: baseline;background-image: none;          
+```
 
 
-
-\
-
-
-+-----------------------------------------------------------------------+
-|
-| align: baseline;" title="Hint: double-click to select code"}          |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `onEvent(``"tabgroup"``, ``"show"``, ``"onShow()"``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-|                                                                       |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `onShow()                               |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``showTab(``"tabgroup/tab"``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``cancelTab(``"tabgroup/tab"``, ``true``);`                              |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `  ``// ...`                            |
-|
-|                                                                       |
-|
-| ht: auto;vertical-align: baseline;background-image: none;"}           |
-| `}`                              |
-|
-|
-+-----------------------------------------------------------------------+
-
-
-
-
-
-
-
-\
 
 #### Arch16n
 
-</div>
--   [3014726\_attachments\_faims\_format\_box\_diagram
+
+-   ![3014726\_attachments\_faims\_format\_box\_diagram
     (1).jpg](attachments/3014726_attachments_faims_format_box_diagram%20%281%29.jpg)

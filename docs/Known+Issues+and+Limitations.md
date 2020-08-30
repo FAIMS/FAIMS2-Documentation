@@ -7,7 +7,7 @@ This page was requested by Brian to detail known limitations of the
 hardware and software associated with FAIMS. (This includes all known
 bugs within the FAIMS system as of 29/10/2013)
 
-### Tablet Software: 
+### Tablet Software:
 
 -   Android 4.0.3 on the Samsung 10\"  does not work (supported Android
     versions are only those from 4.4.X upwards)
@@ -19,27 +19,26 @@ bugs within the FAIMS system as of 29/10/2013)
 -   Depending on tablet, file selection for attachment may be restricted
     to the files contained on the SD card only
 
-### Web App: 
+### Web App:
 
 -   If all entities/relationships are deleted, there is no option to
     view deleted entities
 -   Syncing devices while the server is locked (ie. when archiving a
     project, creating a project etc.) will sometimes slow the server
     down till it no longer loads anything. Server needs to be locked for
-    a long period of time for it to be a problem\
-    \
+    a long period of time for it to be a problem
 
-### Using web app on a tablet browser: 
+
+### Using web app on a tablet browser:
 
 -   Don\'t. 
--   [Attaching files to records may
-    fail.]
--   [Certain versions of the Chrome browser will not download files from
+-   Attaching files to records may fail.
+-   Certain versions of the Chrome browser will not download files from
     the web app correctly from an Android device (download unsuccessful
     error). Use the Firefox browser to download files
-    instead]
+    instead
 
-### Data schema: 
+### Data schema:
 
 -   Two attributes with the same name are treated as the same therefore
     only the first attribute defined will be used

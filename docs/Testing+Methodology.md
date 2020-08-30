@@ -7,7 +7,7 @@ Testing Methodology
 
 This guide specifies the method used for testing a completed module.
 
-Step-by-step guide 
+Step-by-step guide
 ------------------
 
 1.  Begin by thoroughly cleaning up the code. Note that all unused code
@@ -16,7 +16,7 @@ Step-by-step guide
     grouped together. Ensure your code is commented (at minimum
     describing each section).
 2.  Next, we should begin exploratory testing of the UI. This will
-    involve;\
+    involve;
     1.  Creating a new module on the server (to ensure we are working on
         a clean database).
     2.  Ensuring we are testing on the debug version of the apk
@@ -30,12 +30,11 @@ Step-by-step guide
 
 -   
 
-    [Page:]
+    Page:
 
     </div>
 
-    ::: 
     [Testing Methodology](../FAIMS/Testing+Methodology.html)
-    :::
+
 
 </div>

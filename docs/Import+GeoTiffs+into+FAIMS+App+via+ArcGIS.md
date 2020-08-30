@@ -4,7 +4,7 @@ Import GeoTiffs into FAIMS App via ArcGIS
 *For ArcGIS 10.1 users, here are the instructions on how to prepare
 GeoTiffs for use in the FAIMS app using the ArcGIS tools.*
 
-Step-by-step guide 
+Step-by-step guide
 ------------------
 
 The preparation of rasters in ArcGIS for FAIMS deployment comprises
@@ -48,13 +48,8 @@ software.
     first. This route is explained in the note below. It is
     **disrecommended** for multiple reasons and may cause problems with
     your raster rendering, please use it as the last resort.\
-    \
-    \
 
-::: 
-[ ]
 
-::: 
 *Note that you can also transfer the ArcGIS raster files from your
 desktop onto the USB-connected device *via a File Explorer. You need to*
 navigate to the appropriate FAIMS Module folder on your Device (Internal
@@ -68,57 +63,26 @@ screen, click on Layers \> Add Raster file \> navigate to the folder
 where you deposited the files \> click one of the files and watch it
 render. Again, this is a **disrecommended** option. Use it as the last
 resort, if you use one and only one device in the field, or if your
-network connection fails fatally.*
-:::
-:::
+network connection fails fatally.
 
-Related articles 
+Related articles
 ----------------
 
--   
-
-    [Page:]
-
-    </div>
-
-    ::: 
-    [Install and Run the FAIMS
+-      [Install and Run the FAIMS
     Server](../FAIMS/Install+and+Run+the+FAIMS+Server.html)
-    :::
 
--   
 
-    [Page:]
-
-    </div>
-
-    ::: 
-    [Create a Module on the
+-       [Create a Module on the
     Server](../FAIMS/Create+a+Module+on+the+Server.html)
-    :::
 
--   
 
-    [Page:]
-
-    </div>
-
-    ::: 
-    [Import GeoTiffs into FAIMS App via
+-       [Import GeoTiffs into FAIMS App via
     ArcGIS](../FAIMS/Import+GeoTiffs+into+FAIMS+App+via+ArcGIS.html)
-    :::
 
--   
 
-    [Page:]
+-      [Testing Methodology](../FAIMS/Testing+Methodology.html)
 
-    </div>
 
-    ::: 
-    [Testing Methodology](../FAIMS/Testing+Methodology.html)
-    :::
-
-</div>
 -   [3014710\_attachments\_FilesArrow.png](attachments/3014710_attachments_FilesArrow.png)
 -   [3014710\_attachments\_UploadFilesArrow.png](attachments/3014710_attachments_UploadFilesArrow.png)
 -   [3014710\_attachments\_Files.png](attachments/3014710_attachments_Files.png)

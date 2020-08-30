@@ -5,7 +5,7 @@ Technical Overview
 
 
 
-Product Overview 
+Product Overview
 ================
 
 The FAIMS Mobile Platform is an Android application and Ruby server
@@ -13,24 +13,24 @@ built by intersect for the Federated Archaeological Information
 Management Systems (FAIMS) Project, funded by the National eResearch
 Collaboration Tools and Resources (NeCTAR) program.
 
-\
+
 FAIMS is used by Archaeologists, Humanists, and Scientists to collect
 Survey and GIS data in the field.
 
- Problem Statement 
+ Problem Statement
 =================
 
-The problem of 
+The problem of
 --------------
 
 Archaeologists collecting field data on paper
 
-Affects 
+Affects
 -------
 
 Archaeology team members
 
-The impact of which is 
+The impact of which is
 ----------------------
 
  
@@ -47,7 +47,7 @@ The impact of which is
 -   Digital data from devices such as Total Stations or GPSs is separate
     to the manually collected data
 
-A successful solution would 
+A successful solution would
 ---------------------------
 
  
@@ -62,31 +62,31 @@ A successful solution would
 
 -   Free up time for the Archaeologists to do more valuable work
 
-Components 
+Components
 ==========
 
-Web Application 
+Web Application
 ---------------
 
 The web application serves as the central hub for data collection. A
 user would create a project on the web app and then android users would
 download the project onto their device and start collecting data in the
-field.\
+field.
 The android application has the ability to synchronise the data
 collected in the field with the web app which in turn will be propagated
 to other android users. This is meant to keep all users up to date with
-their data in the field.\
+their data in the field.
 The web application also allows administrators to cleanup the collected
 data usually at the end of day.
 
-Android Application 
+Android Application
 -------------------
 
 The android application serves as the collector of data. Users can
 download a project from the web application and then start collecting
 data in the field.
 
-### Key Features 
+### Key Features
 
 -   Customisable UI
 

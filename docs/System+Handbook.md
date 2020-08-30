@@ -3,7 +3,7 @@ System Handbook
 
 
 
-Overview 
+Overview
 --------
 
 [The FAIMS Mobile Platform is an Android application and Ruby server
@@ -13,30 +13,24 @@ Collaboration Tools and Resources (NeCTAR) program. FAIMS is used by
 Archaeologists to collect Survey and GIS data in the
 field.]
 
-Components 
+Components
 ----------
 
 See <https://github.com/IntersectAustralia/faims-web/wiki/Product-Overview>
 
-Source Code Repositories 
+Source Code Repositories
 ------------------------
 
-::: 
-+-----------------------------------+-----------------------------------+
-| Component                         | Location                          |
-+===================================+===================================+
-| Ruby on Rails application         | <https://github.com/IntersectAust |
-|                                   | ralia/faims-web>                  |
-+-----------------------------------+-----------------------------------+
-| Android application               | <https://github.com/IntersectAust |
-|                                   | ralia/faims-android>              |
-+-----------------------------------+-----------------------------------+
-:::
+```
+Component                 | Location                          
+Ruby on Rails application | <https://github.com/IntersectAustralia/faims-web>                 
+Android application       | <https://github.com/IntersectAustralia/faims-android>              
+```
 
-Dependencies & Hardware 
+Dependencies & Hardware
 -----------------------
 
-::: 
+```
 +-----------------------+-----------------------+-----------------------+
 | Component             | Dependencies          | Minimum Hardware      |
 +=======================+=======================+=======================+
@@ -54,33 +48,33 @@ Dependencies & Hardware
 |                       |                       |                       |
 |                       |                       | SDCard: ?             |
 +-----------------------+-----------------------+-----------------------+
-:::
+```
 
-Deployment 
+Deployment
 ----------
 
-#### Deployment Procedures 
+#### Deployment Procedures
 
 See [System Handbook](../FAIMS/System+Handbook.html)
 
-#### Post Release Verification 
+#### Post Release Verification
 
 See [System Handbook](../FAIMS/System+Handbook.html)
 
-#### Monitoring and Maintenance 
+#### Monitoring and Maintenance
 
-[*What monitoring and maintenance are in place or need to be regularly
-performed. Who does it?*]
+*What monitoring and maintenance are in place or need to be regularly
+performed. Who does it?*
 
-Support 
+Support
 -------
 
 See [System Handbook](../FAIMS/System+Handbook.html)
 
-Production Environment(s) 
+Production Environment(s)
 -------------------------
 
-::: 
+```
 +-----------+-----------+-----------+-----------+-----------+-----------+
 | Component | Location  | Owner     | Who at    | Version   | Notes     |
 |           |           |           | Intersect | deployed  |           |
@@ -117,18 +111,18 @@ Production Environment(s)
 |           |           |           |           |           | play      |
 |           |           |           |           |           | store.    |
 +-----------+-----------+-----------+-----------+-----------+-----------+
-:::
+```
 
-Release Notes 
+Release Notes
 -------------
 
 See [Release Notes](../FAIMS/Release+Notes.html)
 
-[Test/Demo Environments]
+Test/Demo Environments
 
 ~~See QA Handbook~~
 
-[Developer Setup]
+Developer Setup
 
 See [Developer Setup](../FAIMS/Developer+Setup.html)
 

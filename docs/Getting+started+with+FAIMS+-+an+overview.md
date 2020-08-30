@@ -124,8 +124,7 @@ instructions at the [server install guide](../FAIMSInstall+and+Run+the+FAIMS+Ser
 Getting started
 ---------------
 
-See [getting started with FAIMS
-Guide](../MobileUser/Get+to+know+FAIMS+with+the+Demo+Library.html)
+See [getting started with FAIMS Guide](../MobileUser/Get+to+know+FAIMS+with+the+Demo+Library.html)
 
  
 -  [Download PDF](attachments\3014705_attachments_FAIMS-GettingstartedwithFAIMS-anoverview-150814-0336-6.pdf).

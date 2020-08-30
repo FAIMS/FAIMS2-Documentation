@@ -3,7 +3,7 @@ Program Logic Support
 
 
 
-### Persist Functionality 
+### Persist Functionality
 
 When android runs low on resources the module activity can be destroyed
 if its in a suspended state and then restored when its resumed. This
@@ -17,7 +17,7 @@ this function please look at the cookbook.
 
 **persistObject(String name) ;**
 
-### Tab / Tab Group Functionality 
+### Tab / Tab Group Functionality
 
 Show the tab group with the following reference and clear all values in
 the tab group.
@@ -26,7 +26,7 @@ the tab group.
 
 **newTabGroup(String ref) ;**
 
-\
+
 
 Show the tab with the following reference and clear all values in the
 tab.
@@ -35,7 +35,7 @@ tab.
 
 **newTab(String ref) ;**
 
-\
+
 
 Show the tab group with the following reference. This will retain all
 the current values in the tab group.
@@ -44,7 +44,7 @@ the current values in the tab group.
 
 **showTabGroup(String ref);**
 
-\
+
 
 Show the tab group with the following reference and load the values of
 the supplied entity or relationship id into the tab group.
@@ -54,7 +54,7 @@ the supplied entity or relationship id into the tab group.
 
 **showTabGroup(String ref, String id);**
 
-\
+
 
 Show the tab group with the following reference and load the values of
 the supplied entity or relationship id into the tab group.
@@ -65,7 +65,7 @@ the supplied entity or relationship id into the tab group.
 
 **showTabGroup(String ref, String id, FetchCallback callback);**
 
-\
+
 
 Show the tab with the following reference. This will retain all the
 current values in the tab.
@@ -73,8 +73,6 @@ current values in the tab.
 -   **ref **the reference to the tab
 
 **showTab(String ref) ;**
-
-\
 
 Show the tab with the following reference and load the values of the
 supplied entity or relationship id into the tab.
@@ -84,7 +82,7 @@ supplied entity or relationship id into the tab.
 
 **showTab(String ref, String id) ;**
 
-\
+
 
 Show the tab with the following reference and load the values of the
 supplied entity or relationship id into the tab.
@@ -95,7 +93,7 @@ supplied entity or relationship id into the tab.
 
 **showTab(String ref, String id, FetchCallback callback) ;**
 
-\
+
 
 Save the tab group with the following reference.
 
@@ -107,7 +105,7 @@ Save the tab group with the following reference.
 
 **saveTabGroup(String ref, String id, List geometry, List attributes);**
 
-\
+
 
 Save the tab group with the following reference.
 
@@ -121,7 +119,7 @@ Save the tab group with the following reference.
 **saveTabGroup(String ref, String id, List geometry, List attributes,
 SaveCallback callback);**
 
-\
+
 
 Save the tab group with the following reference.
 
@@ -136,7 +134,7 @@ Save the tab group with the following reference.
 **saveTabGroup(String ref, String id, List geometry, List attributes,
 SaveCallback callback, boolean enableAutoSave);**
 
-\
+
 
 Save the tab group with the following reference.  Passing a
 SaveForceCallback causes the callback to be executed regardless of there
@@ -154,7 +152,7 @@ third argument: a boolean to denote whether or not changes had occurred.
 **saveTabGroup(String ref, String id, List geometry, List attributes,
 SaveForceCallback callback);**
 
-\
+
 
 Save the tab group with the following reference.  Passing a
 SaveForceCallback causes the callback to be executed regardless of there
@@ -175,12 +173,10 @@ SaveForceCallback callback, boolean enableAutoSave);**
 
 
 
-**\
-**
 
 </div>
 
-\
+
 
 Duplicate the tab group with the following reference.
 
@@ -188,15 +184,12 @@ Duplicate the tab group with the following reference.
 -   **geometry **the geometry list of the record
 -   **attributes **additional attributes attributes to save for the
     record
--   **excludeAttributes** exclude attributes from being saved to the
+-   **excludeAttributes **exclude attributes from being saved to the
     record
 -   **callback **code to execute when saving is finished
 
-**duplicateTabGroup(String ref, List geometry, List
-attributes, **List**excludeAttributes**, SaveCallback callback**);**
+**duplicateTabGroup(String ref, List geometry, List attributes, **List**excludeAttributes**, SaveCallback callback**);**
 
-**\
-**
 
 Disable autosave for tabgroup. If there are any unsaved changes, they
 are saved before autosave is disabled. If a save occurs,
@@ -207,9 +200,6 @@ executed.
 
 **disableAutoSave(String ref)**
 
-**\
-**
-
 Force an autosave for the tabgroup which currently has autosaving
 enabled. The **SaveCallback** passed to the **saveTabGroup** is
 executed.
@@ -217,9 +207,6 @@ executed.
 **void triggerAutoSave()**
 
 
-
-**\
-**
 
 </div>
 
@@ -233,7 +220,6 @@ Save the tab with the following reference.
 
 **saveTab(String ref, String id, List geometry, List attributes);**
 
-\
 
 Save the tab with the following reference.
 
@@ -247,7 +233,7 @@ Save the tab with the following reference.
 **saveTab(String ref, String id, List geometry, List attributes,
 SaveCallback callback);**
 
-\
+
 
 Keep the current changes on the tab group so auto saving is not
 triggerred when tab group checks if something needs to be saved.
@@ -256,13 +242,13 @@ triggerred when tab group checks if something needs to be saved.
 
 **keepTabGroupChanges(String ref) ;**
 
-\
 
-\
+
+
 
 **boolean isAutosaveEnabled() ;**
 
-\
+
 
 Close the tab group with the following reference with an option to show
 a warning dialog if there are changes that haven\'t been saved.
@@ -273,7 +259,7 @@ a warning dialog if there are changes that haven\'t been saved.
 
 **cancelTabGroup(String ref, boolean warn);**
 
-\
+
 
 Close the tab with the following reference with an option to show a
 warning dialog if there are changes that haven\'t been saved.
@@ -284,7 +270,7 @@ warning dialog if there are changes that haven\'t been saved.
 
 **cancelTab(String ref, boolean warn);**
 
-\
+
 
 Refreshes the CSS styling for a tabgroup
 
@@ -292,7 +278,7 @@ Refreshes the CSS styling for a tabgroup
 
 **refreshTabgroupCSS(String ref) ;**
 
-\
+
 
 Execute a view task to process view changes.
 
@@ -300,7 +286,7 @@ Execute a view task to process view changes.
 
 **executeViewTask(ViewTask task) ;**
 
-\
+
 
 Create a new view.
 
@@ -309,7 +295,6 @@ Create a new view.
 
 **createView(String ref, FormInputDef inputDef) ;**
 
-\
 
 create a new view.
 
@@ -319,7 +304,7 @@ create a new view.
 
 **createView(String ref, FormInputDef inputDef, String containerRef) ;**
 
-\
+
 
 Remove view.
 
@@ -327,7 +312,7 @@ Remove view.
 
 **removeView(String ref) ;**
 
-\
+
 
 Create a new container.
 
@@ -336,7 +321,6 @@ Create a new container.
 
 **createContainer(String ref, String style) ;**
 
-\
 
 Create a new container.
 
@@ -346,7 +330,7 @@ Create a new container.
 
 **createContainer(String ref, String style, String containerRef) ;**
 
-\
+
 
 Remove container.
 
@@ -354,7 +338,7 @@ Remove container.
 
 **removeContainer(String ref) ;**
 
-\
+
 
 Remove all non static views and containers in tabgroup.
 
@@ -362,7 +346,7 @@ Remove all non static views and containers in tabgroup.
 
 **removeAllViewsAndContainers(String ref) ;**
 
-\
+
 
 Create View definition
 
@@ -370,7 +354,7 @@ Create View definition
 
 **createViewDef() ;**
 
-### Dialog Functionality 
+### Dialog Functionality
 
 Show a toast to the user with the given message, the toast will last for
 about 1 second.
@@ -379,7 +363,7 @@ about 1 second.
 
 **showToast(String message) ;**
 
-\
+
 
 Show an alert dialog to the user with the given message.
 
@@ -390,10 +374,8 @@ Show an alert dialog to the user with the given message.
 -   **cancelCallback **the callback that is executed when Cancel button
     is pressed
 
-**showAlert(String title, String message, String okCallback, String
-cancelCallback);**
+**showAlert(String title, String message, String okCallback, String cancelCallback);**
 
-\
 
 Show a warning dialog to the user with the given message.
 
@@ -402,7 +384,7 @@ Show a warning dialog to the user with the given message.
 
 **showWarning(String title, String message) ;**
 
-\
+
 
 Show a busy dialog to the user with the given message.
 
@@ -411,7 +393,7 @@ Show a busy dialog to the user with the given message.
 
 **showBusy(String title, String message) ;**
 
-\
+
 
 Show an alert dialog to the user with the given message and a text box
 for input.
@@ -426,7 +408,7 @@ for input.
 **showTextAlert(String title, String message, String okCallback, String
 cancelCallback) ;**
 
-\
+
 
 This is used in conjunction with showTextAlert. This returns the input
 from the last text alert shown.
@@ -435,7 +417,7 @@ from the last text alert shown.
 
 **String getLastTextAlertInput() ;**
 
-\
+
 
 Show an alert dialog to the user with the given message and a date
 picker for input.
@@ -450,7 +432,7 @@ picker for input.
 **showDateAlert(String title, String message, String okCallback, String
 cancelCallback) ;**
 
-\
+
 
 This is used in conjunction with showDateAlert. This returns the input
 from the last date alert shown.
@@ -459,7 +441,7 @@ from the last date alert shown.
 
 **String getLastDateAlertInput() ;**
 
-\
+
 
 Show an alert dialog to the user with the given message and a time
 picker for input.
@@ -471,10 +453,8 @@ picker for input.
 -   **cancelCallback **the callback that is executed when Cancel button
     is pressed
 
-**showTimeAlert(String title, String message, String okCallback, String
-cancelCallback) ;**
+**showTimeAlert(String title, String message, String okCallback, String cancelCallback) ;**
 
-\
 
 This is used in conjunction with showTimeAlert. This returns the input
 from the last time alert shown.
@@ -483,30 +463,23 @@ from the last time alert shown.
 
 **String getLastTimeAlertInput() ;**
 
-\
 
 [Show a dialog to the user allowing them to sign in to a password
 protected, signup-enabled module.]
 
--   **[successCallback]**[ the callback to
-    execute if the user provided email address and password match
-    what\'s recorded in the module\'s database, typically the newTab()
-    call made in non-password protected modules when a user is
-    selected][\
-    ]
+-   **[successCallback]**[ the callback to execute if the user provided email address and password match what\'s recorded in the module\'s database, typically the newTab() call made in non-password protected modules when a user is selected]
 
 [Caveats: The module database\'s user table must contain password and
 email fields.  The implemented selectUser() method in the module\'s
 ui\_logic.bsh must retrieve the password field in addition to the email
 field.  The Select User dropdown must be populated before calling this
 so the user can select their account - the dialog only prompts for the
-password.][\
-]
+password.]
 
 **[**showVerifyUserDialog(String
 successCallback);**]**
 
-\
+
 
 [Show][ a dialog to the user allowing them
 to create an account within the module and protect it with a
@@ -531,9 +504,9 @@ re-enabled.]
 **[showCreateUserDialog(String
 successCallback);]**
 
-\
 
-### Setter / Getter Functionality 
+
+### Setter / Getter Functionality
 
 Set the field with the following reference to the given value. If the
 field reference is not found a logic error dialog will appear.
@@ -548,7 +521,7 @@ cookbook.
 
 **setFieldValue(String ref, Object value);**
 
-\
+
 
 Set the certainty of the field with the following reference to the given
 value If the field reference is not found a logic error dialog will
@@ -559,7 +532,7 @@ appear.
 
 **setFieldCertainty(String ref, Object value);**
 
-\
+
 
 Set the annotation of the field with the following reference to the
 given value If the field reference is not found a logic error dialog
@@ -570,8 +543,6 @@ will appear.
 
 **setFieldAnnotation(String ref, Object value);**
 
-\
-
 Get value of the field with the following reference. If the field
 reference is not found a logic error dialog will appear.
 
@@ -581,7 +552,7 @@ reference is not found a logic error dialog will appear.
 
 **Object getFieldValue(String ref);**
 
-\
+
 
 Get certainty of the field with the following reference. If the field
 reference is not found a logic error dialog will appear.
@@ -592,7 +563,7 @@ reference is not found a logic error dialog will appear.
 
 **Object getFieldCertainty(String ref);**
 
-\
+
 
 Get annotation of the field with the following reference. If the field
 reference is not found a logic error dialog will appear.
@@ -603,7 +574,7 @@ reference is not found a logic error dialog will appear.
 
 **Object getFieldAnnotation(String ref);**
 
-\
+
 
 Get the current time of the application
 
@@ -611,7 +582,6 @@ Get the current time of the application
 
 **String getCurrentTime();**
 
-\
 
 Clear a dirty field with the following reference
 
@@ -619,7 +589,7 @@ Clear a dirty field with the following reference
 
 **clearFieldDirty(String ref) ;**
 
-### Event Callback Functionality 
+### Event Callback Functionality
 
 Binding an event to the field with the given reference. If the field
 reference is not found a logic error dialog will appear.
@@ -631,7 +601,7 @@ reference is not found a logic error dialog will appear.
 
 **onEvent(String ref, String type, String callback) ;**
 
-\
+
 
 Binding a focus/blur event to the field with the given reference. If the
 field reference is not found a logic error dialog will appear.
@@ -644,7 +614,7 @@ field reference is not found a logic error dialog will appear.
 
 **onFocus(String ref, String focusCallback, String blurCallback) ;**
 
-### User Functionality 
+### User Functionality
 
 Set the current user of the application. Is a requirement for insert
 records into the database.
@@ -653,7 +623,7 @@ records into the database.
 
 **setUser(User user);**
 
-### Archaeological Entity / Relationship Functionality 
+### Archaeological Entity / Relationship Functionality
 
 Insert a new or update an existing archaeological entity record and
 return the id of the saved record.
@@ -669,7 +639,7 @@ return the id of the saved record.
 **saveArchEnt(String entityId, String entityType, List geometry, List
 attributes) ;**
 
-\
+
 
 Insert a new or update an existing archaeological entity record and
 return the id of the saved record.
@@ -686,7 +656,7 @@ return the id of the saved record.
 **saveArchEnt(String entityId, String entityType, List geometry, List
 attributes, SaveCallback callback) ;**
 
-\
+
 
 Insert a new or update an existing relationship record and return the id
 of the saved record.
@@ -703,7 +673,7 @@ of the saved record.
 **saveRel(String relationshipId, String relationshipType, List geometry,
 List attributes) ;**
 
-\
+
 
 Insert a new or update an existing relationship record and return the id
 of the saved record.
@@ -721,7 +691,7 @@ of the saved record.
 **saveRel(String relationshipId, String relationshipType, List geometry,
 List attributes, SaveCallback callback) ;**
 
-\
+
 
 Deletes the specified archaeological entity.
 
@@ -729,7 +699,7 @@ Deletes the specified archaeological entity.
 
 **deleteArchEnt(String entityId);**
 
-\
+
 
 Deletes the specified archaeological entity.
 
@@ -738,7 +708,7 @@ Deletes the specified archaeological entity.
 
 **deleteArchEnt(String entityId, DeleteCallback callback);**
 
-\
+
 
 Deletes the specified relationship.
 
@@ -746,7 +716,6 @@ Deletes the specified relationship.
 
 **deleteRel(String relationshipId);**
 
-\
 
 Deletes the specified relationship.
 
@@ -755,7 +724,7 @@ Deletes the specified relationship.
 
 **deleteRel(String relationshipId, DeleteCallback callback);**
 
-\
+
 
 Add an existing archaeological entity to an existing relationship and
 the verb of the relation.
@@ -767,7 +736,7 @@ the verb of the relation.
 
 **addReln(String entityId, String relationshipId, String verb) ;**
 
-\
+
 
 Add an existing archaeological entity to an existing relationship and
 the verb of the relation.
@@ -781,7 +750,7 @@ the verb of the relation.
 **addReln(String entityId, String relationshipId, String verb,
 SaveCallback callback) ;**
 
-\
+
 
 Create an attribute list.
 
@@ -789,7 +758,7 @@ Create an attribute list.
 
 **createAttributeList() ;**
 
-\
+
 
 Create an entity attribute to be added to the attribute list.
 
@@ -805,7 +774,7 @@ Create an entity attribute to be added to the attribute list.
 **createEntityAttribute(String name, String text, String vocab, String
 measure, String certainty);**
 
-\
+
 
 Create an entity attribute to be added to the attribute list.
 
@@ -822,7 +791,7 @@ Create an entity attribute to be added to the attribute list.
 **createEntityAttribute(String name, String text, String vocab, String
 measure, String certainty, boolean isDeleted) ;**
 
-\
+
 
 Create a relationship attribute to be added to the attribute list.
 
@@ -838,7 +807,7 @@ Create a relationship attribute to be added to the attribute list.
 **createRelationshipAttribute(String name, String text, String vocab,
 String certainty);**
 
-\
+
 
 Create a relationship attribute to be added to the attribute list.
 
@@ -855,7 +824,7 @@ Create a relationship attribute to be added to the attribute list.
 **createRelationshipAttribute(String name, String text, String vocab,
 String certainty, boolean isDeleted) ;**
 
-\
+
 
 Populate dropdown field with the given collection of values. If the
 field reference is not found a logic error dialog will appear.
@@ -865,7 +834,7 @@ field reference is not found a logic error dialog will appear.
 
 **populateDropDown(String ref, Collection values);**
 
-\
+
 
 Populate dropdown field with the given collection of values. If the
 field reference is not found a logic error dialog will appear.
@@ -876,7 +845,7 @@ field reference is not found a logic error dialog will appear.
 
 **populateDropDown(String ref, Collection values, boolean hasNull);**
 
-\
+
 
 Populate dropdown field hierarchical vocab terms of the given attribute.
 If the field reference is not found a logic error dialog will appear.
@@ -886,7 +855,7 @@ If the field reference is not found a logic error dialog will appear.
 
 **populateHierarchicalDropDown(String ref, String attributeName);**
 
-\
+
 
 Populate dropdown field hierarchical vocab terms of the given attribute.
 If the field reference is not found a logic error dialog will appear.
@@ -898,7 +867,7 @@ If the field reference is not found a logic error dialog will appear.
 **populateHierarchicalDropDown(String ref, String attributeName, boolean
 hasNull);**
 
-\
+
 
 Populate radio group field with the given collection of values. If the
 field reference is not found a logic error dialog will appear.
@@ -908,7 +877,7 @@ field reference is not found a logic error dialog will appear.
 
 **populateRadioGroup(String ref, Collection values) ;**
 
-\
+
 
 Populate checkbox group field with the given collection of values. If
 the field reference is not found a logic error dialog will appear.
@@ -919,7 +888,7 @@ the field reference is not found a logic error dialog will appear.
 
 **populateCheckBoxGroup(String ref, Collection values) ;**
 
-\
+
 
 Populate list with the given collection of values. If the field
 reference is not found a logic error dialog will appear.
@@ -929,7 +898,7 @@ reference is not found a logic error dialog will appear.
 
 **populateList(String ref, Collection values);**
 
-\
+
 
 Populate a scrolling list with a query, that dynamically adds items on
 scroll If the field reference is not found a logic error dialog will
@@ -942,7 +911,7 @@ appear. each time the scroll reaches the bottom
 
 **populateCursorList(String ref, String query, int limit) ;**
 
-\
+
 
 Populate table from a query. If the field reference is not found a logic
 error dialog will appear.
@@ -958,7 +927,7 @@ error dialog will appear.
 **populateTableRaw(String ref, String query, List headers, String
 actionName, int actionIndex, String actionCallback);**
 
-\
+
 
 Populate table from a query by applying a pivot. The query should
 returns results as id, name, and value. If the field reference is not
@@ -975,13 +944,13 @@ found a logic error dialog will appear.
 **populateTablePivot(String ref, String query, List headers, String
 actionName, int actionIndex, String actionCallback);**
 
-\
+
 
 Refresh table results while maintaining scroll position.
 
 **refreshTable(String ref);**
 
-\
+
 
 Styles the table with the supplied css file. If the field reference is
 not found a logic error dialog will appear.
@@ -991,7 +960,7 @@ not found a logic error dialog will appear.
 
 **styleTable(String ref, String cssFile) ;**
 
-\
+
 
 Scroll table to top. If the field reference is not found a logic error
 dialog will appear.
@@ -1000,7 +969,7 @@ dialog will appear.
 
 **scrollTableToTop(String ref);**
 
-\
+
 
 Scroll table to bottom. If the field reference is not found a logic
 error dialog will appear.
@@ -1009,7 +978,7 @@ error dialog will appear.
 
 **scrollTableToBottom(String ref);**
 
-\
+
 
 Scroll table to top. If the field reference is not found a logic error
 dialog will appear.
@@ -1018,7 +987,6 @@ dialog will appear.
 
 **scrollTableToRow(String ref, int row);**
 
-\
 
 Used in conjunction with the action callback for tables.
 
@@ -1026,7 +994,7 @@ Used in conjunction with the action callback for tables.
 
 **getTableRow();**
 
-\
+
 
 Used in conjunction with the action callback for tables.
 
@@ -1034,7 +1002,7 @@ Used in conjunction with the action callback for tables.
 
 **getTableValue();**
 
-\
+
 
 Used in conjunction with the click event on a list. This returns last
 selected value in the list.
@@ -1043,7 +1011,7 @@ selected value in the list.
 
 **String getListItemValue() ;**
 
-\
+
 
 Populate picture gallery field with the given collection of values. If
 the field reference is not found a logic error dialog will appear.
@@ -1054,7 +1022,6 @@ the field reference is not found a logic error dialog will appear.
 
 **populatePictureGallery(String ref, Collection values);**
 
-\
 
 Populate hierarchical picture gallery field with the vocabulary in the
 given attribute name. If the field reference is not found a logic error
@@ -1066,7 +1033,7 @@ dialog will appear.
 **populateHierarchicalPictureGallery(String ref, String
 attributeName);**
 
-\
+
 
 Populate file list field with the given collection of values. If the
 field reference is not found a logic error dialog will appear.
@@ -1076,7 +1043,7 @@ field reference is not found a logic error dialog will appear.
 
 **populateFileList(String ref, Collection values) ;**
 
-\
+
 
 Populate camera picture gallery field with the given collection of
 values. If the field reference is not found a logic error dialog will
@@ -1088,7 +1055,7 @@ appear.
 
 **populateCameraPictureGallery(String ref, Collection values);**
 
-\
+
 
 Populate video gallery field with the given collection of values. If the
 field reference is not found a logic error dialog will appear.
@@ -1099,7 +1066,6 @@ field reference is not found a logic error dialog will appear.
 
 **populateVideoGallery(String ref, Collection values);**
 
-\
 
 Populate webview with the given html source file If the file is not
 found a logic error dialog will appear.
@@ -1109,7 +1075,7 @@ found a logic error dialog will appear.
 
 **populateWebView(String ref, String sourceFile) ;**
 
-\
+
 
 Populate webview with the given html If the file is not found a logic
 error dialog will appear.
@@ -1119,7 +1085,7 @@ error dialog will appear.
 
 **populateWebViewHtml(String ref, String html) ;**
 
-\
+
 
 Back navigate webview if possible
 
@@ -1127,7 +1093,7 @@ Back navigate webview if possible
 
 **navigateWebViewBack(String ref) ;**
 
-\
+
 
 Fetch the archaeological entity record with the specified id.
 
@@ -1136,7 +1102,7 @@ Fetch the archaeological entity record with the specified id.
 
 **fetchArchEnt(String id, FetchCallback callback);**
 
-\
+
 
 Fetch the relationship record with the specified id.
 
@@ -1145,7 +1111,7 @@ Fetch the relationship record with the specified id.
 
 **fetchRel(String id, FetchCallback callback);**
 
-\
+
 
 Fetch the result of a query. This will return only a single row.
 
@@ -1153,7 +1119,7 @@ Fetch the result of a query. This will return only a single row.
 
 **fetchOne(String query);**
 
-\
+
 
 Fetch the result of a query. This will return only a single row.
 
@@ -1162,7 +1128,7 @@ Fetch the result of a query. This will return only a single row.
 
 **fetchOne(String query, FetchCallback callback);**
 
-\
+
 
 Fetch the results of a query. This will return a collection of rows.
 
@@ -1170,7 +1136,7 @@ Fetch the results of a query. This will return a collection of rows.
 
 **fetchAll(String query);**
 
-\
+
 
 Fetch the results of a query. This will return a collection of rows.
 
@@ -1178,7 +1144,7 @@ Fetch the results of a query. This will return a collection of rows.
 
 **fetchAll(String query, FetchCallback callback);**
 
-\
+
 
 Fetch a list of entities. Each row in the collection is a list with the
 first item being the id of the entity and the second the identifier of
@@ -1188,7 +1154,7 @@ the entity.
 
 **fetchEntityList(String type, FetchCallback callback);**
 
-\
+
 
 Fetch a list of relationships. Each row in the collection is a list with
 the first item being the id of the relationship and the second the
@@ -1198,14 +1164,14 @@ identifier of the relationship.
 
 **fetchRelationshipList(String type, FetchCallback callback);**
 
-### Navigation Functionality 
+### Navigation Functionality
 
 Provide functionality to go back as if the user press the hardware back
 button.
 
 **goBack();**
 
-### GPS Functionality 
+### GPS Functionality
 
 Set the GPS update interval to determine how often the GPS should
 update. Default value is 10 seconds.
@@ -1214,19 +1180,19 @@ update. Default value is 10 seconds.
 
 **setGPSUpdateInterval(int seconds);**
 
-\
+
 
 Start using the internal GPS to update the location.
 
 **startInternalGPS();**
 
-\
+
 
 ***return whether internal GPS is on***
 
 **boolean isInternalGPSOn() ;**
 
-\
+
 
 Start using the external GPS to update the location. A dialog will be
 presented to the user to choose which bluetooth device to be used as
@@ -1234,13 +1200,13 @@ external GPS.
 
 **startExternalGPS();**
 
-\
+
 
 ***return whether external GPS is on***
 
 **boolean isExternalGPSOn() ;**
 
-\
+
 
 Get the GPS position as longitude and latitude from external GPS or
 internal GPS.
@@ -1250,13 +1216,13 @@ position found***
 
 **Object getGPSPosition();**
 
-\
+
 
 Stops both internal and external gps.
 
 **stopGPS() ;**
 
-\
+
 
 Get the GPS position as longitude and latitude in the module projection
 from external GPS or internal GPS.
@@ -1266,7 +1232,6 @@ started or position found***
 
 **Object getGPSPositionProjected() ;**
 
-\
 
 Get the GPS accuracy from external GPS or internal GPS.
 
@@ -1274,7 +1239,7 @@ Get the GPS accuracy from external GPS or internal GPS.
 
 **Object getGPSEstimatedAccuracy();**
 
-\
+
 
 Get the GPS heading from external GPS or internal GPS.
 
@@ -1282,7 +1247,7 @@ Get the GPS heading from external GPS or internal GPS.
 
 **Object getGPSHeading();**
 
-\
+
 
 Get the GPS position as longitude and latitude from selected GPS.
 
@@ -1293,7 +1258,7 @@ position found***
 
 **Object getGPSPosition(String gps);**
 
-\
+
 
 Get the GPS accuracy from selected GPS.
 
@@ -1303,7 +1268,7 @@ Get the GPS accuracy from selected GPS.
 
 **Object getGPSEstimatedAccuracy(String gps);**
 
-\
+
 
 Get the GPS heading from selected GPS.
 
@@ -1313,7 +1278,7 @@ Get the GPS heading from selected GPS.
 
 **Object getGPSHeading(String gps);**
 
-\
+
 
 Start GPS track log with as either time based or distance based.
 
@@ -1325,19 +1290,19 @@ Start GPS track log with as either time based or distance based.
 
 **startTrackingGPS(String type, int value, String callback);**
 
-\
+
 
 ***return whether GPS tracking is on***
 
 **boolean isTrackingGPS() ;**
 
-\
+
 
 Stop the GPS track log.
 
 **stopTrackingGPS();**
 
-### Bluetooth Functionality 
+### Bluetooth Functionality
 
 Create bluetooth connection to read input and write output.
 
@@ -1347,43 +1312,42 @@ Create bluetooth connection to read input and write output.
 
 **createBluetoothConnection(String callback, int interval);**
 
-\
+
 
 Destroy bluetooth connection.
 
 **destroyBluetoothConnection();**
 
-\
+
 
 ***return whether bluetooth is connected***
 
 **boolean isBluetoothConnected() ;**
 
-\
+
 
 Read message from bluetooth connection.
 
 **readBluetoothMessage();**
 
-\
+
 
 Write message to bluetooth connection.
 
 **writeBluetoothMessage(message);**
 
-\
 
 Write message to bluetooth connection.
 
 **clearBluetoothMessages();**
 
-\
+
 
 Get the bluetooth message.
 
 **getBluetoothMessage();**
 
-### Map Functionality 
+### Map Functionality
 
 Bind map click and select events to the map with the following
 reference.
@@ -1396,7 +1360,7 @@ reference.
 
 **onMapEvent(String ref, String clickCallback, selectCallback) ;**
 
-\
+
 
 Used in conjunction with the map click event. This returns the last
 point clicked on the map.
@@ -1405,7 +1369,6 @@ point clicked on the map.
 
 **getMapPointClicked() ;**
 
-\
 
 Used in conjunction with the map select event. This returns the last
 element selected on the map.
@@ -1417,7 +1380,6 @@ ref)**.
 
 **getMapGeometrySelected() ;**
 
-\
 
 Save the map view configuration to the specified file. \@callback the
 callback code to execute
@@ -1428,7 +1390,6 @@ callback code to execute
 
 **saveMapViewConfiguration(String ref, String file, String callback) ;**
 
-\
 
 Setup the map with the given reference with configuration specified in
 the json file. \@callback the callback code to execute
@@ -1440,7 +1401,6 @@ the json file. \@callback the callback code to execute
 **loadMapViewConfiguration(String ref, String configFile, String
 callback) ;**
 
-\
 
 Add a raster map layer to the map view with the following reference and
 make it the base layer. You can only have a single base layer.
@@ -1452,7 +1412,6 @@ make it the base layer. You can only have a single base layer.
 
 **showBaseMap(String ref, String layerName, String filename) ;**
 
-\
 
 Add a raster map layer to the map view with the following reference. You
 can have multiple raster layers.
@@ -1464,7 +1423,6 @@ can have multiple raster layers.
 
 **showRasterMap(String ref, String layerName, String filename) ;**
 
-\
 
 Add a shape map layer to the map view with the following reference.
 
@@ -1480,7 +1438,6 @@ Add a shape map layer to the map view with the following reference.
 GeometryStyle pointStyle, GeometryStyle lineStyle, GeometryStyle
 polygonStyle) ;**
 
-\
 
 Add a vector map layer to the map view with the following reference.
 
@@ -1503,7 +1460,6 @@ tableName, String idColumn, String labelColumn, GeometryStyle
 pointStyle, GeometryStyle lineStyle, GeometryStyle polygonStyle,
 GeometryTextStyle textStyle) ;**
 
-\
 
 Add a database map layer to the map view with the following reference.
 
@@ -1523,7 +1479,6 @@ String queryName, String querySql,GeometryStyle pointStyle,
 GeometryStyle lineStyle, GeometryStyle polygonStyle, GeometryTextStyle
 textStyle) ;**
 
-\
 
 Add a canvas layer to the map view with the given reference.
 
@@ -1532,7 +1487,6 @@ Add a canvas layer to the map view with the given reference.
 
 **createCanvasLayer(String ref, String layerName) ;**
 
-\
 
 Set the focus point of the map view using longitude and latitude
 specified in the modules projection.
@@ -1543,8 +1497,6 @@ specified in the modules projection.
 
 **setMapFocusPoint(String ref, float longitude, float latitude) ;**
 
-\
-
 Set the focus point of the map view using longitude and latitude
 specified in the modules projection.
 
@@ -1554,7 +1506,7 @@ specified in the modules projection.
 
 **setMapFocusPoint(String ref, double longitude, double latitude) ;**
 
-\
+
 
 Set the rotation of the map with the given rotation.
 
@@ -1563,7 +1515,7 @@ Set the rotation of the map with the given rotation.
 
 **setMapRotation(String ref, float rotation) ;**
 
-\
+
 
 Set the zoom level of the map with the given level.
 
@@ -1572,7 +1524,6 @@ Set the zoom level of the map with the given level.
 
 **setMapZoom(String ref, float zoom) ;**
 
-\
 
 Set the tilt of the map with the given tilt.
 
@@ -1582,7 +1533,7 @@ Set the tilt of the map with the given tilt.
 
 **setMapTilt(String ref, float tilt) ;**
 
-\
+
 
 Sets the currently selected layer for the map view with the given
 reference.
@@ -1593,7 +1544,7 @@ reference.
 
 **setSelectedLayer(String ref, int layerId) ;**
 
-\
+
 
 Sets the currently selected layer for the map view with the given
 reference.
@@ -1604,7 +1555,7 @@ reference.
 
 **setSelectedLayer(String ref, String layerName) ;**
 
-\
+
 
 Remove a layer from the map view with the given reference.
 
@@ -1614,7 +1565,7 @@ Remove a layer from the map view with the given reference.
 
 **removeLayer(String ref, int layerId) ;**
 
-\
+
 
 Center the map based on the current GPS position if there is GPS
 position.
@@ -1623,7 +1574,7 @@ position.
 
 **centerOnCurrentPosition(String ref);**
 
-\
+
 
 Change the visibility of the specified layer in the map view with the
 given reference.
@@ -1635,7 +1586,7 @@ given reference.
 
 **setLayerVisible(String ref, int layerId, boolean visible) ;**
 
-\
+
 
 Change the showAlways attribute of the specified gdal layer in the map
 view with the given reference. If showAlways set to true, the GDAL layer
@@ -1651,7 +1602,7 @@ should be shown at certain zoom level.
 **setGdalLayerShowAlways(String ref, String layerName, boolean
 showAlways);**
 
-\
+
 
 Draw a point on the map view with the given reference by specifying the
 point and style.
@@ -1665,7 +1616,7 @@ point and style.
 **drawPoint(String ref, int layerId, MapPos point, GeometryStyle style)
 ;**
 
-\
+
 
 Draw a line on the map view with the given reference by specifying the
 points and style.
@@ -1679,7 +1630,7 @@ points and style.
 **drawLine(String ref, int layerId, List points, GeometryStyle style)
 ;**
 
-\
+
 
 Draw a polygon on the map view with the given reference by specifying
 the points and style.
@@ -1693,7 +1644,7 @@ the points and style.
 **drawPolygon(String ref, int layerId, List points, GeometryStyle style)
 ;**
 
-\
+
 
 Clear a geometry from the map view with the given reference by
 specifying the geometry id.
@@ -1704,7 +1655,7 @@ specifying the geometry id.
 
 **clearGeometry(String ref, int geomId) ;**
 
-\
+
 
 Clear a list of geometries from the map view with the given reference by
 specifying the list of geometry.
@@ -1715,7 +1666,7 @@ specifying the list of geometry.
 
 **clearGeometryList(String ref, List geomList) ;**
 
-\
+
 
 Create a point from longitude and latitude.
 
@@ -1726,7 +1677,7 @@ Create a point from longitude and latitude.
 
 **createPoint(String lon, String lat) ;**
 
-\
+
 
 Create a point from longitude and latitude.
 
@@ -1737,7 +1688,7 @@ Create a point from longitude and latitude.
 
 **createPoint(float lon, float lat) ;**
 
-\
+
 
 Create a point from longitude and latitude.
 
@@ -1748,7 +1699,6 @@ Create a point from longitude and latitude.
 
 **createPoint(double lon, double lat) ;**
 
-\
 
 Get all geometries in a specified layer from the map view with the given
 reference.
@@ -1761,7 +1711,7 @@ reference.
 
 **getGeometryList(String ref, int layerId) ;**
 
-\
+
 
 Get a geometry from the map view with the given reference by specifying
 the geometry id.
@@ -1774,7 +1724,7 @@ the geometry id.
 
 **getGeometry(String ref, int geomId) ;**
 
-\
+
 
 Get the layer name of the associated geometry on a canvas layer.
 \@geomId the id of the geometry
@@ -1785,7 +1735,7 @@ Get the layer name of the associated geometry on a canvas layer.
 
 **getGeometryLayerName(String ref, int geomId) ;**
 
-\
+
 
 Draw geometry on the map view with the given reference by specifying the
 geometry and style.
@@ -1801,7 +1751,7 @@ geometry and style.
 **drawGeometry(String ref, int layerId, Geometry geom, GeometryStyle
 style) ;**
 
-\
+
 
 Create a point style with the given minZoom, color, size, and pickSize.
 
@@ -1816,7 +1766,7 @@ Create a point style with the given minZoom, color, size, and pickSize.
 **createPointStyle(int minZoom, int color, float size, float pickSize)
 ;**
 
-\
+
 
 Create a line style with the given minZoom, color, width, pickWidth, and
 pointStyle.
@@ -1833,7 +1783,7 @@ pointStyle.
 **createLineStyle(int minZoom, int color, float width, float pickWidth,
 GeometryStyle pointStyle) ;**
 
-\
+
 
 Create a polygon style with the given minZoom, color, and lineStyle.
 
@@ -1846,7 +1796,7 @@ Create a polygon style with the given minZoom, color, and lineStyle.
 **createPolygonStyle(int minZoom, int color, GeometryStyle lineStyle)
 ;**
 
-\
+
 
 Create a text style with the given minZoom, color, size, and font.
 
@@ -1860,7 +1810,7 @@ Create a text style with the given minZoom, color, size, and font.
 **createTextStyle(int minZoom, int color, int size,
 android.graphics.Typeface font) ;**
 
-\
+
 
 This sets the tilt of the map to be locked at 90 degrees to give a 2D
 view of the map.
@@ -1870,7 +1820,7 @@ view of the map.
 
 **lockMapView(String ref, boolean lock) ;**
 
-\
+
 
 Add the specified geometry to the list of highlighted geometry on the
 map with the given reference.
@@ -1880,7 +1830,7 @@ map with the given reference.
 
 **addGeometryHighlight(String ref, int geomId) ;**
 
-\
+
 
 Remove the specified geometry from the list of highlighted geometry on
 the map with the given reference.
@@ -1891,7 +1841,7 @@ the map with the given reference.
 
 **removeGeometryHighlight(String ref, int geomId) ;**
 
-\
+
 
 Call this method to prepare the geometry in the highlighted list to be
 transformed to their new position.
@@ -1900,7 +1850,7 @@ transformed to their new position.
 
 **prepareHighlightTransform(String ref) ;**
 
-\
+
 
 Call this method after calling prepareHighlightTransform once your ready
 to transform the geometry to their new position.
@@ -1909,7 +1859,7 @@ to transform the geometry to their new position.
 
 **doHighlightTransform(String ref) ;**
 
-\
+
 
 Clear the highlighted geometry list for the map view with the given
 reference.
@@ -1918,7 +1868,7 @@ reference.
 
 **clearGeometryHighlights(String ref) ;**
 
-\
+
 
 Get the highlighted geometry list for the map view with the given
 reference. In the UI, highlighted geometry is indicated by an open
@@ -1930,7 +1880,7 @@ This function is not to be confused with **getMapGeometrySelected()**.
 
 **getGeometryHighlights(String ref) ;**
 
-\
+
 
 Add a database layer query to the map with the given reference which
 will then be used when loading database layers via the layer manager.
@@ -1941,7 +1891,7 @@ will then be used when loading database layers via the layer manager.
 
 **addDatabaseLayerQuery(String ref, String name, String sql) ;**
 
-\
+
 
 Add a track log layer query to the map with the given reference which
 will then be used when loading track log layers via the layer manager.
@@ -1952,7 +1902,6 @@ will then be used when loading track log layers via the layer manager.
 
 **addTrackLogLayerQuery(String ref, String name, String sql) ;**
 
-\
 
 Add a query builder to the map view which will then be used by the
 database selection tool via the tools bar.
@@ -1964,7 +1913,7 @@ database selection tool via the tools bar.
 **addSelectQueryBuilder(String ref, String name, QueryBuilder builder)
 ;**
 
-\
+
 
 Create a query builder for database selection tool by providing the sql
 query and adding parameters.
@@ -1973,7 +1922,7 @@ query and adding parameters.
 
 **createQueryBuilder(String sql) ;**
 
-\
+
 
 Add a legacy query builder to the map view which will then be used by
 the legacy selection tool via the tools bar.
@@ -1988,7 +1937,7 @@ the legacy selection tool via the tools bar.
 **addLegacySelectQueryBuilder(String ref, String name, String dbPath,
 String tableName, QueryBuilder builder) ;**
 
-\
+
 
 Create a legacy query builder for legacy selection tool by providing the
 sql query and adding parameters.
@@ -1997,7 +1946,7 @@ sql query and adding parameters.
 
 **createLegacyQueryBuilder(String sql) ;**
 
-\
+
 
 Convert a map position from one projection to another projection.
 
@@ -2007,7 +1956,6 @@ Convert a map position from one projection to another projection.
 
 **convertFromProjToProj(String fromSrid, String toSrid, MapPos p) ;**
 
-\
 
 Enable or disable map tools for the map view.
 
@@ -2016,7 +1964,7 @@ Enable or disable map tools for the map view.
 
 **setToolsEnabled(String ref, boolean enabled) ;**
 
-\
+
 
 Add tool specific events (create or load). The create event is called
 when the create point, line or polygon tools generate their geometry.
@@ -2028,28 +1976,28 @@ geometry. \@callback the callback code to execute
 
 **onToolEvent(String ref, String type, String callback) ;**
 
-\
+
 
 This is used in conjunction with the tool create event. This returns the
 last created geometry id.
 
 **getMapGeometryCreated() ;**
 
-\
+
 
 This is used in conjunction with the tool load event. This will return
 the last selected geometry id.
 
 **getMapGeometryLoaded() ;**
 
-\
+
 
 This is used in conjunction with the tool load event. This will return
 the last selected geometry type (either entity or relationship).
 
 **getMapGeometryLoadedType() ;**
 
-\
+
 
 Refresh all the layers of the map.
 
@@ -2057,7 +2005,7 @@ Refresh all the layers of the map.
 
 **refreshMap(String ref) ;**
 
-### Sync Functionality 
+### Sync Functionality
 
 Push the full database from the app to the server and execute the
 callback when finished.
@@ -2067,7 +2015,7 @@ callback when finished.
 
 **pushDatabaseToServer(String callback) ;**
 
-\
+
 
 Pull the full database from the server to the app and execute the
 callback when finished.
@@ -2077,7 +2025,7 @@ callback when finished.
 
 **pullDatabaseFromServer(String callback) ;**
 
-\
+
 
 Enable or disable syncing the database from the app to the server.
 
@@ -2085,13 +2033,13 @@ Enable or disable syncing the database from the app to the server.
 
 **setSyncEnabled(boolean value) ;**
 
-\
+
 
 ***return whether sync is enabled***
 
 **boolean isSyncEnabled() ;**
 
-\
+
 
 Bind to the sync start, success and failure events.
 
@@ -2105,7 +2053,7 @@ Bind to the sync start, success and failure events.
 **onSyncEvent(String startCallback, String successCallback, String
 failureCallback) ;**
 
-\
+
 
 Set the minimum interval for the sync to happen.
 
@@ -2113,7 +2061,7 @@ Set the minimum interval for the sync to happen.
 
 **setSyncMinInterval(float value) ;**
 
-\
+
 
 Set the maximum interval for the sync to happen.
 
@@ -2121,7 +2069,7 @@ Set the maximum interval for the sync to happen.
 
 **setSyncMaxInterval(float value) ;**
 
-\
+
 
 Set the delay interval to add to the current sync interval when a sync
 failure happens.
@@ -2130,7 +2078,7 @@ failure happens.
 
 **setSyncDelay(float value) ;**
 
-\
+
 
 Set whether files should also be synced with the database.
 
@@ -2138,13 +2086,13 @@ Set whether files should also be synced with the database.
 
 **setFileSyncEnabled(boolean enabled) ;**
 
-\
+
 
 ***return whether file sync is enabled***
 
 **boolean isFileSyncEnabled() ;**
 
-### Static Data Functionality 
+### Static Data Functionality
 
 Get the static data for current module name.
 
@@ -2152,7 +2100,7 @@ Get the static data for current module name.
 
 **String getModuleName();**
 
-\
+
 
 Get the static data for current module version.
 
@@ -2160,7 +2108,7 @@ Get the static data for current module version.
 
 **String getModuleVersion();**
 
-\
+
 
 Get the static data for current module projection.
 
@@ -2168,7 +2116,7 @@ Get the static data for current module projection.
 
 **String getModuleSrid();**
 
-\
+
 
 Get the static data for current module id.
 
@@ -2176,7 +2124,6 @@ Get the static data for current module id.
 
 **String getModuleId();**
 
-\
 
 Get the static data for current module season.
 
@@ -2184,7 +2131,7 @@ Get the static data for current module season.
 
 **String getModuleSeason();**
 
-\
+
 
 Get the static data for current module description.
 
@@ -2192,7 +2139,7 @@ Get the static data for current module description.
 
 **String getProjectDescription();**
 
-\
+
 
 Get the static data for current permit number.
 
@@ -2200,7 +2147,7 @@ Get the static data for current permit number.
 
 **String getPermitNo();**
 
-\
+
 
 Get the static data for current permit holder.
 
@@ -2208,7 +2155,7 @@ Get the static data for current permit holder.
 
 **String getPermitHolder();**
 
-\
+
 
 Get the static data for current contact and address.
 
@@ -2216,7 +2163,7 @@ Get the static data for current contact and address.
 
 **String getContactAndAddress();**
 
-\
+
 
 Get the static data for current participants.
 
@@ -2224,7 +2171,7 @@ Get the static data for current participants.
 
 **String getParticipants();**
 
-\
+
 
 Get the static data for permit issued by.
 
@@ -2232,7 +2179,7 @@ Get the static data for permit issued by.
 
 **public String getPermitIssuedBy() ;**
 
-\
+
 
 Get the static data for permit type.
 
@@ -2240,7 +2187,7 @@ Get the static data for permit type.
 
 **public String getPermitType() ;**
 
-\
+
 
 Get the static data for copyright holder.
 
@@ -2248,7 +2195,7 @@ Get the static data for copyright holder.
 
 **public String getCopyrightHolder() ;**
 
-\
+
 
 Get the static data for client/sponsor.
 
@@ -2256,7 +2203,7 @@ Get the static data for client/sponsor.
 
 **public String getClientSponsor() ;**
 
-\
+
 
 Get the static data for land owner.
 
@@ -2264,7 +2211,6 @@ Get the static data for land owner.
 
 **public String getLandOwner() ;**
 
-\
 
 Get the static data for whether containing sensitive data or not.
 
@@ -2272,7 +2218,7 @@ Get the static data for whether containing sensitive data or not.
 
 **public String hasSensitiveData() ;**
 
-### File attachment Functionality 
+### File attachment Functionality
 
 Show the file browser and execute the callback once a file is selected.
 
@@ -2280,7 +2226,7 @@ Show the file browser and execute the callback once a file is selected.
 
 **showFileBrowser(String callback) ;**
 
-\
+
 
 This is used in conjunction with showFileBrowser. This returns the
 filename of the last selected file.
@@ -2289,7 +2235,7 @@ filename of the last selected file.
 
 **getLastSelectedFilename() ;**
 
-\
+
 
 This is used in conjunction with showFileBrowser. This returns the
 filepath of the last selected file.
@@ -2298,7 +2244,7 @@ filepath of the last selected file.
 
 **getLastSelectedFilepath() ;**
 
-\
+
 
 Copy a file into the modules server or app folders. If the sync is set
 to true then the file is copied to the app folder. If the sync is set to
@@ -2314,7 +2260,7 @@ are only synced to the server.
 
 **attachFile(String filePath, boolean sync) ;**
 
-\
+
 
 Copy a file into the modules server or app folders. If the sync is set
 to true then the file is copied to the app folder. If the sync is set to
@@ -2332,7 +2278,7 @@ are only synced to the server.
 
 **attachFile(String filePath, boolean sync, String dir) ;**
 
-\
+
 
 Copy a file into the modules server or app folders. If the sync is set
 to true then the file is copied to the app folder. If the sync is set to
@@ -2353,7 +2299,7 @@ are only synced to the server.
 **attachFile(String filePath, boolean sync, String dir, String callback)
 ;**
 
-\
+
 
 Copy a file into the modules server or app folders. If the sync is set
 to true then the file is copied to the app folder. If the sync is set to
@@ -2376,14 +2322,13 @@ are only synced to the server.
 **attachFile(String filePath, boolean sync, String dir, String callback,
 String attributeName) ;**
 
-\
 
 Shows a dialog, displaying options to remove synced files to clean up
 space
 
 **cleanSyncedFiles() ;**
 
-\
+
 
 List all attached files of an archaeological entity by providing the id
 of the entity.
@@ -2392,7 +2337,7 @@ of the entity.
 
 **viewArchEntAttachedFiles(String id);**
 
-\
+
 
 List all attached files of a relationship by providing the id of the
 relationship.
@@ -2401,7 +2346,7 @@ relationship.
 
 **viewRelAttachedFiles(String id);**
 
-\
+
 
 Open the camera and then execute the callback after finish.
 
@@ -2409,7 +2354,7 @@ Open the camera and then execute the callback after finish.
 
 **openCamera(String callback);**
 
-\
+
 
 Open the video recorder and then execute the callback after finish.
 
@@ -2417,7 +2362,7 @@ Open the video recorder and then execute the callback after finish.
 
 **openVideo(String callback);**
 
-\
+
 
 Open the audio recorder and then execute the callback after finish.
 
@@ -2425,7 +2370,7 @@ Open the audio recorder and then execute the callback after finish.
 
 **recordAudio(String callback);**
 
-\
+
 
 Open the barcode scanner and then execute the callback after finish.
 
@@ -2433,7 +2378,7 @@ Open the barcode scanner and then execute the callback after finish.
 
 **scanCode(String callback);**
 
-\
+
 
 Enable hardware device debug mode, which shows a toast of the device
 name for every input.
@@ -2442,7 +2387,7 @@ name for every input.
 
 **debugHardwareDevices(boolean enabled);**
 
-\
+
 
 Returns a list of the names of all devices currently attached, includes
 defaults e.g. Virtual, Volume Buttons etc.
@@ -2451,7 +2396,7 @@ defaults e.g. Virtual, Volume Buttons etc.
 
 **getHardwareDevices();**
 
-\
+
 
 Capture key events for the given device name, and then execute the
 callback once the delimiter is read.
@@ -2463,13 +2408,13 @@ callback once the delimiter is read.
 **captureHardware(String deviceName, String delimiter, String
 callback);**
 
-\
+
 
 Clears the buffer for the device currently used with captureHardware()
 
 **clearHardwareDeviceBuffer();**
 
-\
+
 
 This is used in conjunction with openCamera. This returns the file path
 of the last picture taken.
@@ -2478,7 +2423,7 @@ of the last picture taken.
 
 **String getLastPictureFilePath();**
 
-\
+
 
 This is used in conjunction with openVideo. This returns the file path
 of the last video taken.
@@ -2487,7 +2432,7 @@ of the last video taken.
 
 **String getLastVideoFilePath();**
 
-\
+
 
 This is used in conjunction with recordVideo. This returns the file path
 of the last audio taken.
@@ -2496,7 +2441,7 @@ of the last audio taken.
 
 **String getLastAudioFilePath();**
 
-\
+
 
 This is used in conjunction with scanCode. This returns the contents of
 the last scan taken.
@@ -2505,7 +2450,7 @@ the last scan taken.
 
 **String getLastScanContents();**
 
-\
+
 
 This is used in conjunction with captureHarware. This returns the
 contents of the buffer contents.
@@ -2514,26 +2459,26 @@ contents of the buffer contents.
 
 **String getHardwareBufferContents();**
 
-\
+
 
 ***return returns true if files are currently being attached***
 
 **isAttachingFiles();**
 
-\
+
 
 ***return returns the full path to attached file***
 
 **getAttachedFilePath(String file) ;**
 
-\
+
 
 ***return returns the file path relative to the modules folder of
 file***
 
 **stripAttachedFilePath(String file) ;**
 
-\
+
 
 Add file to checkbox group.
 
@@ -2542,7 +2487,7 @@ Add file to checkbox group.
 
 **addFile(String ref, String file) ;**
 
-\
+
 
 Add picture to gallery.
 
@@ -2551,7 +2496,7 @@ Add picture to gallery.
 
 **addPicture(String ref, String file) ;**
 
-\
+
 
 Add file to checkbox group.
 
@@ -2560,7 +2505,7 @@ Add file to checkbox group.
 
 **addVideo(String ref, String file) ;**
 
-### MISC 
+### MISC
 
 Executes a given string of code.
 
@@ -2568,7 +2513,7 @@ Executes a given string of code.
 
 **execute(String code);**
 
-\
+
 
 Adds an item to the action bar with a reference name
 
@@ -2578,7 +2523,7 @@ Adds an item to the action bar with a reference name
 
 **addActionBarItem(String name, ActionButtonCallback callback) ;**
 
-\
+
 
 Remove an action item with the given reference name
 
@@ -2586,13 +2531,13 @@ Remove an action item with the given reference name
 
 **removeActionBarItem(String name) ;**
 
-\
+
 
 Refreshes the action bar menu do menu items reflect the current state
 
 **refreshActionBarMenu() ;**
 
-\
+
 
 Adds an action button to the navigation drawer
 
@@ -2601,7 +2546,7 @@ Adds an action button to the navigation drawer
 
 **addNavigationButton(String name, ActionButtonCallback callback) ;**
 
-\
+
 
 Adds an action button to the navigation drawer
 
@@ -2613,7 +2558,7 @@ Adds an action button to the navigation drawer
 **addNavigationButton(String name, ActionButtonCallback callback, String
 type) ;**
 
-\
+
 
 Remove an action button to the navigation drawer
 
@@ -2621,7 +2566,6 @@ Remove an action button to the navigation drawer
 
 **removeNavigationButton(String name) ;**
 
-\
 
 Returns the currently connected server
 
@@ -2630,7 +2574,7 @@ server. Note: doesn\'t check if connection is active***
 
 **String getConnectedServer() ;**
 
-\
+
 
 Helper method to be used with a button click event to attach files to a
 view
@@ -2640,7 +2584,7 @@ view
 
 **attachFileTo(String ref) ;**
 
-\
+
 
 Helper method to be used with a button click event to attach pictures to
 a view
@@ -2650,7 +2594,7 @@ a view
 
 **attachPictureTo(String ref) ;**
 
-\
+
 
 Helper method to be used with a button click event to attach videos to a
 view
@@ -2660,7 +2604,6 @@ view
 
 **attachVideoTo(String ref) ;**
 
-\
 
 Helper method to be used with a button click event to attach audios to a
 view
@@ -2670,7 +2613,6 @@ view
 
 **attachAudioTo(String ref) ;**
 
-\
 
 Helper method to test if a value is null or empty.
 
@@ -2678,7 +2620,6 @@ Helper method to test if a value is null or empty.
 
 **isNull(String value) ;**
 
-\
 
 Helper method to test if a value is null or empty.
 
@@ -2686,11 +2627,5 @@ Helper method to test if a value is null or empty.
 
 **isNull(List value) ;**
 
-
-
-**\
-**
-
-</div>
 
 </div>

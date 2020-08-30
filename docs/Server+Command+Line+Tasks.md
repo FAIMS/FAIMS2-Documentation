@@ -3,7 +3,7 @@ Server Command Line Tasks
 
 
 
-Server Command Line Tasks 
+Server Command Line Tasks
 =========================
 
 Use this guide to run common server tasks with the following commands.
@@ -11,31 +11,14 @@ They must be run from inside the faims-web project directory (default:
 `/var/www/faims`) and require bundle exec to run (eg:
 `bundle exec rake about`).
 
-\
 
-::: 
-[ ]
-
-::: 
 **Commands highlighted red are dangerous and could result in data loss
-or client problems.\
-**
-:::
-:::
+or client problems**
 
-::: 
-[ ]
-
-::: 
 **Commands highlighted yellow stop services that faims needs to
 function.**
-:::
-:::
 
-**\
-**
-
-Rake 
+Rake
 ----
 
 List all rake commands\
@@ -44,34 +27,28 @@ List all rake commands\
 List versions of all Rails frameworks and the environment\
 **rake about**
 
-### Admin 
+### Admin
 
 Enter new admin password**\
 rake admin:password**
 
-### App** ** 
+### App
 
-::: 
-::: 
-Generating new secret**\
-rake app:generate\_secret\
-**
-:::
-:::
 
-### Assets 
+Generating new secret\
+**rake app:generate\_secret**
 
-::: 
-::: 
-Remove compiled assets**\
-rake assets:clean**
-:::
-:::
+
+### Assets
+
+
+Remove compiled assets\
+**rake assets:clean**
 
 Compile all the assets named in config.assets.precompile\
 **rake assets:precompile**
 
-### Cucumber 
+### Cucumber
 
 Alias for cucumber:ok\
 **rake cucumber**
@@ -88,7 +65,7 @@ Record failing features and run only them if any exist\
 Run features that are being worked on\
 **rake cucumber:wip**
 
-### Database 
+### Database
 
 Backup the database\
 **rake db:backup**
@@ -96,21 +73,15 @@ Backup the database\
 show pending migrations\
 **rake db:cat\_pending\_migrations**
 
-::: 
-::: 
 Create the database from DATABASE\_URL or config/database.yml for the
 current Rails.env (use db:create:all to create all dbs\...\
 **rake db:create**
-:::
-:::
 
-::: 
-::: 
+
 Drops the database using DATABASE\_URL or the current Rails.env (use
 db:drop:all to drop all databases)\
 **rake db:drop**
-:::
-:::
+
 
 Load fixtures into the current environment\'s database\
 **rake db:fixtures:load**
@@ -121,45 +92,28 @@ Migrate the database (options: VERSION=x, VERBOSE=false)\
 Display status of migrations\
 **rake db:migrate:status**
 
-::: 
-::: 
 Populate the database with some sample data for testing\
 **rake db:populate**
-:::
-:::
 
-::: 
-::: 
 Rolls the schema back to the previous version (specify steps w/ STEP=n)\
 **rake db:rollback**
-:::
-:::
+
 
 Create a db/schema.rb file that can be portably used against any DB
 supported by AR\
 **rake db:schema:dump**
 
-::: 
-::: 
+
 Load a schema.rb file into the database\
 **rake db:schema:load**
-:::
-:::
 
-::: 
-::: 
 Load the seed data from db/seeds.rb\
 **rake db:seed**
-:::
-:::
 
-::: 
-::: 
 Create the database, load the schema, and initialize with the seed data
 (use db:reset to also drop the db first)\
 **rake db:setup**
-:::
-:::
+
 
 Dump the database structure to db/structure.sql\
 **rake db:structure:dump**
@@ -170,49 +124,42 @@ Backup the database\
 Retrieves the current schema version number\
 **rake db:version**
 
-### Discovery 
+### Discovery
 
 Start discovery server\
 **rake discovery:start\[background\]**\
-***\[background\]** is a optional parameter\
-*
+**\[background\]** is a optional parameter
+
 
 Get status of discovery server\
 **rake discovery:status**
 
-::: 
-::: 
+
 Stop discover server\
 **rake discovery:stop**
-:::
-:::
 
-### Doc 
+### Doc
 
 Generate docs for the app \-- also available doc:rails, doc:guides,
 doc:plugins (options: TEMPLATE=/rdoc-template.rb, TITLE=\...\
 **rake doc:app**
 
-### Exporters 
+### Exporters
 
-::: 
-::: 
-Clear all exporters**\
-rake exporters:clear**
-:::
-:::
 
-Install an exporter from a give tarball**\
-rake exporters:install exporter=\</path/to/exporter/tarball\>**
+Clear all exporters\
+**rake exporters:clear**
 
-::: 
-::: 
-Uninstall an exporter with the given key**\
-rake exporters:uninstall key=\<key of exporter\>**
-:::
-:::
 
-### Jobs 
+Install an exporter from a give tarball\
+**rake exporters:install exporter=\</path/to/exporter/tarball\>**
+
+
+Uninstall an exporter with the given key\
+**rake exporters:uninstall key=\<key of exporter\>**
+
+
+### Jobs
 
 Exit with error status if any jobs older than max\_age seconds haven\'t
 been attempted yet\
@@ -224,20 +171,17 @@ Clear the delayed\_job queue\
 Start a delayed\_job worker\
 **rake jobs:work**
 
-::: 
-::: 
+
 Start a delayed\_job worker and exit when all available jobs are
 complete\
 **rake jobs:workoff**
-:::
-:::
 
-### Log 
+### Log
 
 Truncates all \*.log files in log/ to zero bytes\
 **rake log:clear**
 
-### Merge daemon 
+### Merge daemon
 
 Start daemon to merge project module databases\
 **rake merge\_daemon:start\[background\]**\
@@ -246,19 +190,15 @@ Start daemon to merge project module databases\
 Get status of daemon\
 **rake merge\_daemon:status**
 
-::: 
-::: 
 Stop daemon\
 **rake merge\_daemon:stop**
-:::
-:::
 
-### Middleware 
+### Middleware
 
 Prints out your Rack middleware stack\
 **rake middleware**
 
-### Modules 
+### Modules
 
 Archive all modules**\
 rake modules:archive**
@@ -266,13 +206,9 @@ rake modules:archive**
 Archive a specific module**\
 rake modules:archive key=\<key of module\>**
 
-::: 
-::: 
 Clear all modules**\
 rake modules:clear**\
 *Note: these cannot be restored at a later time*
-:::
-:::
 
 Create a module from a given tarball\
 **rake modules:create module=\</path/to/module/tarball\>**
@@ -284,16 +220,11 @@ needed\
 Restore module from archive\
 **rake modules:restore file=\<path to file tarball\>**
 
-::: 
-[ ]
 
-::: 
 All module:settings have 2 modes, read and set, depending if the
 **value=** optional parameter is given. If it is excluded the value will
 be read from the current state, if it is given the new value will be
 set.
-:::
-:::
 
 Change module client sponsor\
 **rake modules:settings:client\_sponsor key=\<key of module\>
@@ -365,14 +296,10 @@ Undelete module\
 Upload module files\
 **rake modules:upload**
 
-::: 
-::: 
 Wipe a specific module including its files and database relationships\
 **rake modules:wipe**
-:::
-:::
 
-### Notes 
+### Notes
 
 Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)\
 **rake notes**
@@ -380,35 +307,27 @@ Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)\
 Enumerate a custom annotation, specify with ANNOTATION=CUSTOM\
 **rake notes:custom**
 
-### Rails 
+### Rails
 
-::: 
-::: 
 Applies the template\
 **rake rails:template LOCATION=\</path/to/template\> or \<URL\>**
-:::
-:::
 
-::: 
-::: 
 Update configs and some other initially generated files (or use just
 update:configs, update:scripts, or update:application\
 **rake rails:update**
-:::
-:::
 
-### Routes 
+### Routes
 
 Print out all defined routes in match order, with names\
 **rake routes**
 
-### Secret 
+### Secret
 
 Generate a cryptographically secure secret key (this is typically used
 to generate a secret for cookie sessions)\
 **rake secret**
 
-### Server 
+### Server
 
 Check for server updates. This will check if there are updates available
 from by examining the latest source code.\
@@ -420,7 +339,7 @@ Initialise server with a uuid\
 Update server. This will update the server to the latest version.\
 **rake server:update**
 
-### Spec 
+### Spec
 
 Run all specs in spec directory (excluding plugin specs)\
 **rake spec**
@@ -437,12 +356,12 @@ Run the code examples in spec/queries\
 Run the code examples in spec/tools\
 **rake spec:tools**
 
-### Stats 
+### Stats
 
 Report code statistics (KLOCs, etc) from the application\
 **rake stats**
 
-### Test 
+### Test
 
 Runs test:units, test:functionals, test:integration together (also
 available: test:benchmark, test:profile, test:plugins)\
@@ -458,26 +377,22 @@ Run tests for  / Test changes since
 last checkin (only Subversion and Git)\
 **rake test:uncommitted**
 
-### Time 
+### Time
 
 Displays all time zones, also available: time:zones:us, time:zones:local
 \-- filter with OFFSET parameter, e.g., OFFSET=-6\
 **rake time:zones:all**
 
-### Tmp 
+### Tmp
 
-::: 
-::: 
 Clear session, cache, and socket files from tmp/ (narrow w/
 tmp:sessions:clear, tmp:cache:clear, tmp:sockets:clear)\
 **rake tmp:clear**
-:::
-:::
 
 Creates tmp directories for sessions, cache, sockets, and pids\
 **rake tmp:create**
 
-### Users 
+### Users
 
 Create a user. This will then prompt you for a first name, last name,
 email and password. Note: The password must be 6-20 characters and
@@ -485,11 +400,7 @@ contain at least one uppercase letter, one lowercase letter, one digit
 and one symbol\
 **rake users:create**
 
-::: 
-::: 
 Delete a user with the given email\
 **rake users:delete email=\<user email\>**
-:::
-:::
 
 </div>
