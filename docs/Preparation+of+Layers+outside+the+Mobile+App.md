@@ -15,7 +15,7 @@ is quick and smooth.
 
 For the transformation you need a Linux computer with spatialite and
 gdal tools. You need to run the following script in a command
-line: [Importing Geotiffs](../FAIMS/Importing+GeoTiffs+into+FAIMS+Android+App.html)
+line: [Importing Geotiffs](../Importing+GeoTiffs+into+FAIMS+Android+App)
 
 ### Vector
 
@@ -25,7 +25,7 @@ include  (1) defining the projection, (2) importing of the file into
 Spatialite database, (3) indexing the
 database
 
-See: [Importing Legacy Vectors](../FAIMS/Importing+Shape+files+into+Spatialite+Database.html)
+See: [Importing Legacy Vectors](../Importing+Shape+files+into+Spatialite+Database)
 
 Once your layers are all prepared you can upload them onto the server
 into a designated folder under the project you are working on. The files
