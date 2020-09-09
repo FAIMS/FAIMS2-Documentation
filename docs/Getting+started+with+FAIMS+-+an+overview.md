@@ -91,15 +91,15 @@ FAIMS app.
 
 Follow instructions at the following web sites:
 
-*FAIMS app:* [Install Instructions.](../MobileUser/Getting+Started)
+**FAIMS app:**  [Install Instructions.](../MobileUser/Getting+Started)
 
-*FAIMS server:* For now, you should probably use
+**FAIMS server:** For now, you should probably use
 demo.fedarch.org. Once you're comfortable with that, see the
-instructions at the [server install guide](../Install+and+Run+the+FAIMS+Server).
+instructions at the [Server Install Guide](../Install+and+Run+the+FAIMS+Server).
 
 
 
 ### More Inforation
 
-See [getting started with FAIMS Guide](../MobileUser/Get+to+know+FAIMS+with+the+Demo+Library) or
+See [Getting Started with FAIMS Guide](../MobileUser/Get+to+know+FAIMS+with+the+Demo+Library) or
 [Download the PDF](attachments\3014705_attachments_FAIMS-GettingstartedwithFAIMS-anoverview-150814-0336-6.pdf).
