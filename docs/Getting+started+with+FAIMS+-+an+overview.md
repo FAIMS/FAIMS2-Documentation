@@ -1,5 +1,5 @@
 ---
-title: Getting Started with FAIMS
+title: Getting Started with FAIMS - An Overview
 ---
 
 # Getting Started with FAIMS: An Overview
@@ -91,11 +91,11 @@ FAIMS app.
 
 Follow instructions at the following web sites:
 
-FAIMS app      [Install Instructions.](../MobileUser/Getting+Started)
+*FAIMS app:* [Install Instructions.](../MobileUser/Getting+Started)
 
-FAIMS server   (For now, you should probably use
+*FAIMS server:* For now, you should probably use
 demo.fedarch.org. Once you're comfortable with that, see the
-instructions at the [server install guide](../FAIMSInstall+and+Run+the+FAIMS+Server))
+instructions at the [server install guide](../Install+and+Run+the+FAIMS+Server).
 
 
 
