@@ -1,5 +1,6 @@
-Creating Shapes
-============================================================
+---
+title: Creating Shapes
+---
 
 
 Before creating a shape you need to activate/select the layer you want
@@ -35,7 +36,7 @@ icon. ![](img/0_bottom_layers_s.png)
 
  
 
-Vector Shape Style 
+Vector Shape Style
 ------------------
 
 -   Ensure that you have selected an appropriate destination layer for

@@ -1,3 +1,7 @@
+---
+title: Editing and Deleting Shapes
+---
+
 # Editing and Deleting Shapes
 
 

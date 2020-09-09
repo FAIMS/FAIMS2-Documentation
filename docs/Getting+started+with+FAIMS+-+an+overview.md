@@ -1,13 +1,11 @@
-Getting started with FAIMS - an overview
-=====================================================================================
+---
+title: Getting started with FAIMS - an overview
+---
 
 
 
 
-
-
-Background
-==========
+# Background
 
 The arrival of low-cost smartphones and tablets is a game-changing
 event for mobile data collection, due to a
@@ -57,13 +55,11 @@ adopted.
 
 ------------------------------------------------------------------------
 
-Components of the system:
-=========================
+# Components of the system
 
 You are going to need the following:
 
-Hardware
---------
+## Hardware
 
 **Android tablet(s)**
 
@@ -85,8 +81,7 @@ locations.
 
 ![](http://www.solarjoos.com/wp-content/uploads/2010/06/product-image-4.jpg)]
 
-Software
---------
+## Software
 
 **FAIMS data collectionapp**
 
@@ -108,8 +103,7 @@ FAIMS app.
 
 
 
-Installing the software
------------------------
+### Installing the software
 
 Follow instructions at the following web sites:
 
@@ -121,8 +115,7 @@ instructions at the [server install guide](../FAIMSInstall+and+Run+the+FAIMS+Ser
 
 
 
-Getting started
----------------
+### Getting started
 
 See [getting started with FAIMS Guide](../MobileUser/Get+to+know+FAIMS+with+the+Demo+Library.html)
 

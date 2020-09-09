@@ -1,7 +1,9 @@
-App install Guide
-==============================================================
- 
-## Instructions for Mobile Application Production Release 
+---
+title: App Install Guide
+---
+
+
+## Instructions for Mobile Application Production Release
 
 
 1.  Ensure that your device is running Android 6 or higher. Switch your
@@ -49,4 +51,3 @@ install unsigned APKs. Don't do this if you don't know the risks.)
 8.  Click create
 9.  Choose structure
 10. Play
-

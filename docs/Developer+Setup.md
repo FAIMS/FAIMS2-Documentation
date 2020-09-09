@@ -1,8 +1,6 @@
-Developer Setup
-============================================================
-
-
-
+---
+title: Developer Setup
+---
 
 
 Android App Development
@@ -43,7 +41,7 @@ Android App Development
 2.  Make sure android device has USB Debugging enabled
 3.  Right-Click faims-android-app and select Run
 
-### Run Tests 
+### Run Tests
 
 1.  Right-Click the test module in
     *./faimsandroidapp/src/androidTest/java/au/org/intersect/faims/android/test*

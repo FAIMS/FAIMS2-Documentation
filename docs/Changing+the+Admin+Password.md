@@ -1,5 +1,7 @@
-Changing the Admin Password
-========================================================================
+---
+title: Changing the Admin Password
+---
+
 
 If you're logged in as any user, choose change password from the menu
 at the top right.

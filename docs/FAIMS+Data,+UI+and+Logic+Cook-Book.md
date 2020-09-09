@@ -1,6 +1,6 @@
-
-FAIMS Data, UI and Logic Cook-Book
-==================================
+---
+title: FAIMS Data, UI and Logic Cook-Book
+---
 
 Use this guide to help create your own modules by following the examples
 below.
