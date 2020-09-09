@@ -4,6 +4,8 @@ title: FAIMS User Handouts
 
 You can download these instructions from the [handout](../handout.pdf) in case you need them on the go.
 
+[toc]
+
 # FAIMS101: Getting Started
 
 * [FAIMS101 - Getting Started - with pictures](../getting-started)
