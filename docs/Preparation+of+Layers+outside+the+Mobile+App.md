@@ -1,6 +1,6 @@
-Preparation of Layers outside the Mobile App
-=========================================================================================
-
+---
+title: Preparation of Layers outside the Mobile App
+---
 
 
 ### Raster
@@ -20,10 +20,9 @@ line: [Importing Geotiffs](../Importing+GeoTiffs+into+FAIMS+Android+App)
 ### Vector
 
 The application support the rendering of legacy vectors (kml,
-shapefiles created outside of teh application). The transformations
+shapefiles created outside of the application). The transformations
 include  (1) defining the projection, (2) importing of the file into
-Spatialite database, (3) indexing the
-database
+Spatialite database, (3) indexing the database.
 
 See: [Importing Legacy Vectors](../Importing+Shape+files+into+Spatialite+Database)
 
