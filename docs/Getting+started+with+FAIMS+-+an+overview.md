@@ -117,7 +117,7 @@ FAIMS app      [Install Instructions.](../getting-started)
 
 FAIMS server   (For now, you should probably use
 demo.fedarch.org. Once you're comfortable with that, see the
-instructions at the [server install guide](../FAIMSInstall+and+Run+the+FAIMS+Server))
+instructions at the [server install guide](../Install+and+Run+the+FAIMS+Server))
 
 
 
