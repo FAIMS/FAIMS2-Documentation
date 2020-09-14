@@ -163,7 +163,7 @@ side. Modules that have not been downloaded have a server icon only.
 
 ![101_11.png](img/media/image7.png)
 
-### Alternate ways of installing FAIMS (not via Google Play) 
+### Alternate ways of installing FAIMS (not via Google Play)
 
 When Google Play installation does not work for you you can download the
 installation file (faims-android.apk with the most recent date) from our
@@ -198,7 +198,7 @@ article]](http://search.informit.com.au/documentSummary;dn=721992925861948;res=I
 titled *Creating eResearch tools for archaeologists: The federated
 archaeological information management systems project.*
 
-Contact 
+Contact
 --------
 
 Thank you for trialling FAIMS Mobile Platform! Email us at
