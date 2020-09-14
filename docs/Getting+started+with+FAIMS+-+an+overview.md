@@ -113,7 +113,7 @@ Installing the software
 
 Follow instructions at the following web sites:
 
-FAIMS app      [Install Instructions.](../MobileUser/Getting+Started)
+FAIMS app      [Install Instructions.](../MobileUser/getting-started)
 
 FAIMS server   (For now, you should probably use
 demo.fedarch.org. Once you're comfortable with that, see the
