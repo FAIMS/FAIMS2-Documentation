@@ -113,20 +113,20 @@ included when Ubuntu looks for shared libraries.
 ```
 $ sudo apt-get install rlwrap
 $ rlwrap sqlite3
-sqlite> select load_extension('libspatialite.so');
+sqlite> select load_extension('libspatialite.so')
 sqlite> select sqlite_version(), spatialite_version(), proj4_version(), geos_version()
 sqlite_version()  spatialite_version()  proj4_version()           geos_version()  
 ----------------  --------------------  ------------------------  ----------------
 3.7.17            4.1.1                 Rel. 4.8.0, 6 March 2012  3.3.8-CAPI-1.7.8
 
-sqlite> select InitSpatialMetaData();
-sqlite> select distance(makepoint(151.23346, -33.91674, 4326), makepoint(151.20435, -33.86712, 4326));
+sqlite> select InitSpatialMetaData()
+sqlite> select distance(makepoint(151.23346, -33.91674, 4326), makepoint(151.20435, -33.86712, 4326))
 distance(makepoint(151.23346, -33.91674, 4326), makepoint(151.20435, -33.86712, 4326))
-\---------------------------------------------------------------------------------------------;
+---------------------------------------------------------------------------------------------
 0.0575285711625093
-sqlite> select hasGeoCallBacks();
+sqlite> select hasGeoCallBacks()
 hasGeoCallBacks()
-\--------------------;
+--------------------
 1
 ```
 

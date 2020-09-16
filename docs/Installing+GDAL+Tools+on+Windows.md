@@ -2,18 +2,18 @@ Installing GDAL Tools on Windows
 =============================================================================
 
 
-Created: Christian Nassif-Haynes (Unlicensed) (christian\@fedarch.org) -
+Created: Christian Nassif-Haynes (Unlicensed) (christian@fedarch.org) -
 2018-06-12T07:45:11.515Z
 
 Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian\@fedarch.org) - 2018-06-12T09:01:51.576Z
+(christian@fedarch.org) - 2018-06-12T09:01:51.576Z
 
 
 *Note: This was tested on Windows 10.*
 
 1.  Download the [G](https://www.gaia-gis.it/spatialite-2.3.1/spatialite-tools-win-x86-2.3.1.zip)[DAL Tools Installer](http://download.gisinternals.com/sdk/downloads/release-1911-gdal-2-3-0-mapserver-7-0-7/gdal-203-1911-ecw-33.msi).
-2.  Follow the prompts. Select \'Typical\' when asked to choose the
-    setup type which best suits your needs:\
+2.  Follow the prompts. Select 'Typical' when asked to choose the
+    setup type which best suits your needs:
     ![](attachments/299597846_thumbnails_3.PNG)    
 3.  Once the installer is finished, do the following:
 
@@ -51,4 +51,4 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
 
 
 
--   [299597846\_attachments\_3.PNG](attachments/299597846_attachments_3.PNG)
+-   [299597846_attachments_3.PNG](attachments/299597846_attachments_3.PNG)

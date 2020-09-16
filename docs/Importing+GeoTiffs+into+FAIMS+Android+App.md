@@ -6,12 +6,9 @@ Importing GeoTiffs into FAIMS Android App
 
 ### Requirements
 
--   [Installing Spatialite on
-    Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+on+Ubuntu)
--   [Installing Spatialite Tools on
-    Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+Tools+on+Ubuntu)
--   [Installing GDAL
-    Tools](https://wiki.intersect.org.au/display/FAIMS/Installing+GDAL+Tools)
+-   [Installing Spatialite on Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+on+Ubuntu)
+-   [Installing Spatialite Tools on Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+Tools+on+Ubuntu)
+-   [Installing GDAL Tools](https://wiki.intersect.org.au/display/FAIMS/Installing+GDAL+Tools)
 -   [Install GRASS GIS](http://grass.osgeo.org/)
 
 ### Change GeoTiff projection
@@ -19,7 +16,7 @@ Importing GeoTiffs into FAIMS Android App
 1.  Change the original GeoTiff projection to 3857 for proper rendering
     in FAIMS v2.5 using the following command in your Unix shell ( in
     Windows, use Bash shell, not windows command line). Copy the code
-    below (skip the \$ symbol) and paste into your prompt:
+    below (skip the $ symbol) and paste into your prompt:
 
 
     ```
@@ -27,21 +24,21 @@ Importing GeoTiffs into FAIMS Android App
     ```
 
 
--   -s\_srs = refers to source projection
--   -t\_srs = refers to target projection
--   \<\>  = items in brackets need to be replaced with values, remove
+-   -s_srs = refers to source projection
+-   -t_srs = refers to target projection
+-   <>  = items in brackets need to be replaced with values, remove
     the brackets when replacing.
--   \<GeoTiff Projection\> = refers to the datum and projection of the
+-   <GeoTiff Projection> = refers to the datum and projection of the
     source GeoTiff, communicated as a single EPSG number (go to
     www.spatialreference.org if you need to find the right code for your
     datum and projection )
--   \<Input.tif\> = refers to the input GeoTiff filename including the
+-   <Input.tif> = refers to the input GeoTiff filename including the
     extension. Replace the entire string, e.g. KatoombaTopo.tif without
     brackets around it. 
--   \<Output.tif\> = refers to the output GeoTiff filename including the
+-   <Output.tif> = refers to the output GeoTiff filename including the
     extension
 
--   a full example is: gdalwarp -s\_srs EPSG:28356 -t\_srs EPSG:3857
+-   a full example is: gdalwarp -s_srs EPSG:28356 -t_srs EPSG:3857
     JamisonTopo.tif Jam3857.tif 
 
 
@@ -56,7 +53,7 @@ Importing GeoTiffs into FAIMS Android App
 2.  Create location in same projection as GeoTiff.
 3.  Use default mapset and create your own mapset.
 4.  Start grass session.
-5.  Import GeoTiff into grass using File \> Import raster Data \> Common
+5.  Import GeoTiff into grass using File > Import raster Data > Common
     import formats.
 6.  Choose GeoTiff to import and click Import button.
 
@@ -69,7 +66,7 @@ Importing GeoTiffs into FAIMS Android App
 
 ### Exporting GeoTiffs from GRASS
 
-1.  If maps aren\'t loaded then goto File \> Workspace \> Load map
+1.  If maps aren't loaded then goto File > Workspace > Load map
     layers and load the geotiffs
 2.  In map layers window select geotiff to export and right click
     geotiff and select Set computational region from selected maps(s).
@@ -77,7 +74,7 @@ Importing GeoTiffs into FAIMS Android App
 
     *Note: This tells GRASS the region you want to export.*
 
-3.  Now export the GeoTiff using File \> Export raster map \> Common
+3.  Now export the GeoTiff using File > Export raster map > Common
     export formats.
 4.  Select the raster you want to export and give an output filename and
     click the run button.
@@ -90,7 +87,7 @@ are needed for rendering large files, they need to be added outside the
 app using the following line of code.
 
 
-1.  Add tiling to the GeoTiff by copying the code after the \$ and
+1.  Add tiling to the GeoTiff by copying the code after the $ and
     pasting into your shell. Edit the items in brackets:
 
 
@@ -100,7 +97,7 @@ app using the following line of code.
 
 
 
--   \<\>  = items in brackets need to be replaced with values
+-   <>  = items in brackets need to be replaced with values
 -   Input.tif = refers to the input GeoTiff filename (including the
     extension)
 -   Output.tif = refers to the output GeoTiff filename (including the
@@ -114,7 +111,7 @@ outside the app using the following line of codes.
 
 
 
-1.  Add Pyramids to the GeoTiff by copying the code after the \$ and
+1.  Add Pyramids to the GeoTiff by copying the code after the $ and
     pasting into your shell. Edit the items in brackets:
 
 

@@ -26,53 +26,54 @@ software.
 
     1.  Open the web browser with your FAIMS server and login
 
-    2.  Navigate to your \"Module Actions\" \> click \"Upload Files\"\
+    2.  Navigate to your "Module Actions" > click "Upload Files"
         ![](attachments/3014710_thumbnails_UploadFilesArrow.png)        
 
-    3.  Use the existing \"Data\" directory or create additional
-        sub-directories using the \"create directory\"  button\
+    3.  Use the existing "Data" directory or create additional
+        sub-directories using the "create directory"  button
         ![](attachments/3014710_thumbnails_FilesArrow.png)        
-    4.  Upload individual files using the \"upload file\" button next to
-        \"create directory\".
-    5.  If you have multiple files, you can use the black  \"Upload\"
+    4.  Upload individual files using the "upload file" button next to
+        "create directory".
+    5.  If you have multiple files, you can use the black  "Upload"
         button after you zip **all** your files up using 7zip. The
         zipped files needs to have a .tar.gz extension for the batch
         upload to work.
 
 5.  Propagate the newly added files to all your devices by connecting
     your devices to the Server, clicking on the Module and selecting
-    \"Download\" 
+    "Download" 
 
 6.  There is a substitute way of uploading rasters onto the device via
     USB cable from your desktop, without putting them up on Server
     first. This route is explained in the note below. It is
     **disrecommended** for multiple reasons and may cause problems with
-    your raster rendering, please use it as the last resort.\
+    your raster rendering, please use it as the last resort.
 
 
 *Note that you can also transfer the ArcGIS raster files from your
 desktop onto the USB-connected device *via a File Explorer. You need to*
 navigate to the appropriate FAIMS Module folder on your Device (Internal
-memory \> Emulated \> 0 \> FAIMS \> Modules \> Module UUID; UUIDs can be
+memory > Emulated > 0 > FAIMS > Modules > Module UUID; UUIDs can be
 tricky to identify with a particular module if you have multiple modules
 loaded, as it is not a human-readable name!). Inside the module folder
-you navigate to Files\>Data folder. You can create Maps folder inside or
+you navigate to Files>Data folder. You can create Maps folder inside or
 simply deposit the rasters in the Data folder. Make sure all have
 transferred. Back on the device, open the module, navigate to Map
-screen, click on Layers \> Add Raster file \> navigate to the folder
-where you deposited the files \> click one of the files and watch it
+screen, click on Layers > Add Raster file > navigate to the folder
+where you deposited the files > click one of the files and watch it
 render. Again, this is a **disrecommended** option. Use it as the last
 resort, if you use one and only one device in the field, or if your
 network connection fails fatally.
 
 Related articles
 ----------------
+(attachments/299597846_attachments_3.PNG)
 
 -   [Install and Run the FAIMS Server](../Install+and+Run+the+FAIMS+Server)
 -   [Create a Module on the Server](../Create+a+Module+on+the+Server)
 -   [Import GeoTiffs into FAIMS App via ArcGIS](../Import+GeoTiffs+into+FAIMS+App+via+ArcGIS)
 -   [Testing Methodology](../Testing+Methodology)
--   [3014710\_attachments\_FilesArrow.png](attachments/3014710_attachments_FilesArrow.png)
--   [3014710\_attachments\_UploadFilesArrow.png](attachments/3014710_attachments_UploadFilesArrow.png)
--   [3014710\_attachments\_Files.png](attachments/3014710_attachments_Files.png)
--   [3014710\_attachments\_UploadFiles.png](attachments/3014710_attachments_UploadFiles.png)
+-   [3014710_attachments_FilesArrow.png](attachments/3014710_attachments_FilesArrow.png)
+-   [3014710_attachments_UploadFilesArrow.png](attachments/3014710_attachments_UploadFilesArrow.png)
+-   [3014710_attachments_Files.png](attachments/3014710_attachments_Files.png)
+-   [3014710_attachments_UploadFiles.png](attachments/3014710_attachments_UploadFiles.png)

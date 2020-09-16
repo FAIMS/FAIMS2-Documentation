@@ -26,15 +26,15 @@ Step 1: Is this the right process for you?
 
 Do you feel comfortable installing Ubuntu 16.04?
 
-1.  Yes \> Install Ubuntu 16.04 Desktop (if running on a laptop) or
-    Server (if you\'re comfortable with the command line). Do not
+1.  Yes > Install Ubuntu 16.04 Desktop (if running on a laptop) or
+    Server (if you're comfortable with the command line). Do not
     install on a virtual machine. Continue to [Step
     2]
 
-2.  No \> Consider purchasing a pre-configured FAIMS Server in a box
+2.  No > Consider purchasing a pre-configured FAIMS Server in a box
     (tablets, computer and more in a box with FAIMS logo on top)
 
-3.  No \> Contact us to help us beta test our virtualbox image.
+3.  No > Contact us to help us beta test our virtualbox image.
 
 Step 2: Downloading and installing the Server
 ===========================================================================
@@ -57,7 +57,7 @@ first restart, so it can update itself. 
 Step 3: Running the Server
 ======================================================================================
 
--   Navigate to your computer\'s IP address (or localhost: 127.0.0.1)
+-   Navigate to your computer's IP address (or localhost: 127.0.0.1)
     with a web browser.
 
 -   Login      `faimsadmin@intersect.org.au`

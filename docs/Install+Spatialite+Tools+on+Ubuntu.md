@@ -15,7 +15,7 @@ Follow these instructions to install Spatialite on Ubuntu.
 
 ##### Requirements:
 
--   install spatialite ([instructions can be found here](../FAIMS/Install+Spatialite+Tools+on+Ubuntu.html))
+-   install spatialite ([instructions can be found here](../Install+Spatialite+Tools+on+Ubuntu))
 -   install packages expat libexpat1-dev zlib1g-dev
 
 
@@ -58,7 +58,7 @@ cd ..
 
 Now you should have access to all the tools.
 
-Some tools may raise errors due to missing file e.g. \... missing file
+Some tools may raise errors due to missing file e.g. missing file
 libspatialite.so.2. In such cases simply add the appropriate file to
 library path.
 

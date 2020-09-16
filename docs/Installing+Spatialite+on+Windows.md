@@ -2,11 +2,11 @@ Installing Spatialite on Windows
 =============================================================================
 
 
-Created: Christian Nassif-Haynes (Unlicensed) (christian\@fedarch.org) -
+Created: Christian Nassif-Haynes (Unlicensed) (christian@fedarch.org) -
 2018-06-12T07:04:27.561Z
 
 Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian\@fedarch.org) - 2018-06-13T11:12:19.756Z
+(christian@fedarch.org) - 2018-06-13T11:12:19.756Z
 
 
 *Note: This was tested on Windows 10.*
@@ -31,6 +31,6 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
     C:\Users\mq20151400>spatialite -version
     3.8.11.1 2015-07-29 20:00:57 cf538e2783e468bbc25e7cb2a9ee64d3e0e80b2f
     ```
-  
+
 
 </div>

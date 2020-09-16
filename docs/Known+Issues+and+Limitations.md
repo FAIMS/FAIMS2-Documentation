@@ -9,10 +9,10 @@ bugs within the FAIMS system as of 29/10/2013)
 
 ### Tablet Software:
 
--   Android 4.0.3 on the Samsung 10\"  does not work (supported Android
+-   Android 4.0.3 on the Samsung 10"  does not work (supported Android
     versions are only those from 4.4.X upwards)
 -   Android 4.1.2 Crashes due to insufficient ram allocations (even if
-    the device \"has\" enough ram)
+    the device "has" enough ram)
 -   Samsung note 10.1 - the native video recorder does not record any
     video when using the default application, requiring the user to
     download an external video recording application
@@ -31,7 +31,7 @@ bugs within the FAIMS system as of 29/10/2013)
 
 ### Using web app on a tablet browser:
 
--   Don\'t. 
+-   Don't. 
 -   Attaching files to records may fail.
 -   Certain versions of the Chrome browser will not download files from
     the web app correctly from an Android device (download unsuccessful
@@ -43,7 +43,7 @@ bugs within the FAIMS system as of 29/10/2013)
 -   Two attributes with the same name are treated as the same therefore
     only the first attribute defined will be used
 
-### Map UI/performance: 
+### Map UI/performance:
 
 -   Large map file sizes/large numbers of geometry etc. causes
     significant performance issues depending on the speed of the tablet.
@@ -57,8 +57,8 @@ bugs within the FAIMS system as of 29/10/2013)
     created geometry on that area
 -   Layer manager visual bug: activating re-order in layer manager,
     dragging the top layer to the middle position and then toggling any
-    other layer\'s visibility will cause the layer highlighted to remain
-    visible as a \'sticky\' overlay on all screens
+    other layer's visibility will cause the layer highlighted to remain
+    visible as a 'sticky' overlay on all screens
 -   Tracklog features are always select-able (point select and polygon
     select tools) even if no tracklog layer exists on the map
 -   Tracklog features load into Entity layers, resulting in

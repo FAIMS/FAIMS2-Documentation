@@ -14,7 +14,7 @@ Follow these instructions to install GDAL Tools on Ubuntu.
 
 ##### Requirements:
 
--   This assumes you have installed [Spatialite](../FAIMS/Install+GDAL+Tools.html)
+-   This assumes you have installed [Spatialite](../Install+GDAL+Tools)
 
 ##### Instructions:
 

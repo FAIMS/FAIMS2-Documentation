@@ -2,17 +2,17 @@ Installing Spatialite Tool on Windows
 ==================================================================================
 
 
-Created: Christian Nassif-Haynes (Unlicensed) (christian\@fedarch.org) -
+Created: Christian Nassif-Haynes (Unlicensed) (christian@fedarch.org) -
 2018-06-13T11:09:06.150Z
 
 Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian\@fedarch.org) - 2018-06-13T11:19:07.447Z
+(christian@fedarch.org) - 2018-06-13T11:19:07.447Z
 
 
 *Note: This was tested on Windows 10.*
 
 
-1.  Download the zip file which contains the [spatialite tool    binaries](http://www.gaia-gis.it/gaia-sins/windows-bin-x86/spatialite_tool-4.3.0a-win-x86.7z).
+1.  Download the zip file which contains the [spatialite tool binaries](http://www.gaia-gis.it/gaia-sins/windows-bin-x86/spatialite_tool-4.3.0a-win-x86.7z).
 2.  Extract the contents of the downloaded zip file to a directory
     called **`C:\Program Files (x86)\Spatialite Tool`**. (You will
     probably have to make this directory.) After completing this step,
