@@ -12,12 +12,12 @@ Developer Documentation 
 ========================
 
 -   [FAIMS Data, UI and Logic Cook-Book](../FAIMS+Data,+UI+and+Logic+Cook-Book)
--   [Installing Spatialite 4 on Ubuntu](../FAIMS/Installing+Spatialite+4+on+Ubuntu.html)
--   [Installing Spatialite Tools on Ubuntu](../FAIMS/Install+Spatialite+Tools+on+Ubuntu.html)
--   [Program Logic Support](../FAIMS/Program+Logic+Support.html)
--   [Unit Testing for Modules](../FAIMS/Unit+Testing+for+Modules.html)
--   [Advanced Server Commands](../FAIMS/Server+Command+Line+Tasks.html)
--   [Known Issues and Limitations](../FAIMS/Known+Issues+and+Limitations.html)
+-   [Installing Spatialite 4 on Ubuntu](../Installing+Spatialite+4+on+Ubuntu)
+-   [Installing Spatialite Tools on Ubuntu](../Install+Spatialite+Tools+on+Ubuntu)
+-   [Program Logic Support](../Program+Logic+Support)
+-   [Unit Testing for Modules](../Unit+Testing+for+Modules)
+-   [Advanced Server Commands](../Server+Command+Line+Tasks)
+-   [Known Issues and Limitations](../Known+Issues+and+Limitations)
 
 User to Developer Documentation 
 ================================
@@ -27,23 +27,23 @@ User to Developer Documentation 
 User Documentation
 ==================
 
--   [Installing GDAL Tools](../FAIMS/Install+GDAL+Tools.html)
--   [Importing GeoTiffs into FAIMS Android    App](../FAIMS/Importing+GeoTiffs+into+FAIMS+Android+App.html)
--   [Importing Shape files into Spatialite    Database](../FAIMS/Importing+Shape+files+into+Spatialite+Database.html)
+-   [Installing GDAL Tools](../Install+GDAL+Tools)
+-   [Importing GeoTiffs into FAIMS Android    App](../Importing+GeoTiffs+into+FAIMS+Android+App)
+-   [Importing Shape files into Spatialite    Database](../Importing+Shape+files+into+Spatialite+Database)
 
 
 Installation Guides
 ===================
 
-1.  [Installing and running the FAIMS    Server](../FAIMS/Install+and+Run+the+FAIMS+Server.html)
-2.  [Installing the FAIMS Mobile    Application](../FAIMS/App+install+Guide.html)
+1.  [Installing and running the FAIMS    Server](../Install+and+Run+the+FAIMS+Server)
+2.  [Installing the FAIMS Mobile    Application](../App+install+Guide)
 
 Other Guides
 ============
 
-1.  GIS [Manual](../FAIMS/FAIMS+GIS+Instructions.html)
+1.  GIS [Manual](../FAIMS+GIS+Instructions)
 2.  Other Guides
-    1.  [Enabling Sync](../FAIMS/Enabling+Android+Synchronisation.html)
+    1.  [Enabling Sync](../Enabling+Android+Synchronisation)
 
 Other Documentation
 ===================
