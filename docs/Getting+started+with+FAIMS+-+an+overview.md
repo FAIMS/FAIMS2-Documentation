@@ -127,4 +127,4 @@ Getting started
 See [getting started with FAIMS Guide](../getting-started)
 
  
--  [Download PDF](.../FAIMS-GettingStarted).
+-  [Download PDF](.../FAIMS-GettingStarted.pdf).
