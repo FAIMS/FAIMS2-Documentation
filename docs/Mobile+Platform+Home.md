@@ -63,26 +63,17 @@ Other Documentation
 
 -   [/wiki/aa-avatar/557058:28008ffb-4bf5-4583-86cf-391453484e15 "557058:28008ffb-4bf5-4583-86cf-391453484e15"](/wiki/display/~557058%3A28008ffb-4bf5-4583-86cf-391453484e15)
 
-
-    -   [Copy of Harvard Excavation 2017 Regression Test -        AW](../FAIMS/Copy+of+Harvard+Excavation+2017+Regression+Test+-+AW.html "FAIMS Mobile Platform Documentation") [contributed 04 Sep 2019]
-
-
-    -  [FAIMS Data, UI and Logic Cook-Book](../FAIMS/FAIMS+Data%2C+UI+and+Logic+Cook-Book.html "FAIMS Mobile Platform Documentation") [contributed 06 May 2019]
+    -   [Copy of Harvard Excavation 2017 Regression Test - AW](../FAIMS/Copy+of+Harvard+Excavation+2017+Regression+Test+-+AW.html "FAIMS Mobile Platform Documentation") [contributed 04 Sep 2019]
+    -  [FAIMS Data, UI and Logic Cook-Book](../FAIMS+Data,+UI+and+Logic+Cook-Book) [contributed 06 May 2019]
 
 
 -   [/wiki/aa-avatar/557058:58b5e6ee-4037-4a06-99bc-173a6fb3ef05 "557058:58b5e6ee-4037-4a06-99bc-173a6fb3ef05"](/wiki/display/~557058%3A58b5e6ee-4037-4a06-99bc-173a6fb3ef05)
-
-    -   [Importing Shape files into Spatialite
-        Database](../FAIMS/Importing+Shape+files+into+Spatialite+Database.html "FAIMS Mobile Platform Documentation") [contributed 14 Jun 2018]
+    -   [Importing Shape files into Spatialite Database](../Importing+Shape+files+into+Spatialite+Database) [contributed 14 Jun 2018]
 
 
 -   [/wiki/aa-avatar/557058:fab6d711-5fed-4ae2-8be5-88f17ab406cf "557058:fab6d711-5fed-4ae2-8be5-88f17ab406cf"](/wiki/display/~557058%3Afab6d711-5fed-4ae2-8be5-88f17ab406cf)
-
-
-    -   [Installing Spatialite Tool on        Windows](../FAIMS/Installing+Spatialite+Tool+on+Windows.html "FAIMS Mobile Platform Documentation")[contributed 13 Jun 2018]
-
-
-    -   [Installing Spatialite on        Windows](../FAIMS/Installing+Spatialite+on+Windows.html "FAIMS Mobile Platform Documentation") [contributed 13 Jun 2018]
+    -   [Installing Spatialite Tool on Windows](../Installing+Spatialite+Tool+on+Windows)[contributed 13 Jun 2018]
+    -   [Installing Spatialite on Windows](../Installing+Spatialite+on+Windows) [contributed 13 Jun 2018]
 
 
 
