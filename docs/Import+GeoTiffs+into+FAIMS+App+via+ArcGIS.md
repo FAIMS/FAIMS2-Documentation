@@ -68,21 +68,10 @@ network connection fails fatally.
 Related articles
 ----------------
 
--      [Install and Run the FAIMS
-    Server](../FAIMS/Install+and+Run+the+FAIMS+Server.html)
-
-
--       [Create a Module on the
-    Server](../FAIMS/Create+a+Module+on+the+Server.html)
-
-
--       [Import GeoTiffs into FAIMS App via
-    ArcGIS](../FAIMS/Import+GeoTiffs+into+FAIMS+App+via+ArcGIS.html)
-
-
--      [Testing Methodology](../FAIMS/Testing+Methodology.html)
-
-
+-   [Install and Run the FAIMS Server](../Install+and+Run+the+FAIMS+Server)
+-   [Create a Module on the Server](../Create+a+Module+on+the+Server)
+-   [Import GeoTiffs into FAIMS App via ArcGIS](../Import+GeoTiffs+into+FAIMS+App+via+ArcGIS)
+-   [Testing Methodology](../Testing+Methodology)
 -   [3014710\_attachments\_FilesArrow.png](attachments/3014710_attachments_FilesArrow.png)
 -   [3014710\_attachments\_UploadFilesArrow.png](attachments/3014710_attachments_UploadFilesArrow.png)
 -   [3014710\_attachments\_Files.png](attachments/3014710_attachments_Files.png)
