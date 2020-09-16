@@ -19,15 +19,15 @@ follows:
 
 [Ubuntu:]
 
--   [Installing Spatialite on    Ubuntu](https://faimsproject.atlassian.net../FAIMS/Installing+Spatialite+4+on+Ubuntu.html)
--   [Installing Spatialite Tools on    Ubuntu](https://faimsproject.atlassian.net../FAIMS/Install+Spatialite+Tools+on+Ubuntu.html)
--   [Installing GDAL    Tools](https://faimsproject.atlassian.net../FAIMS/Install+GDAL+Tools.html)
+-   [Installing Spatialite on    Ubuntu](.../Installing+Spatialite+4+on+Ubuntu)
+-   [Installing Spatialite Tools on    Ubuntu](.../Install+Spatialite+Tools+on+Ubuntu)
+-   [Installing GDAL    Tools](.../Install+GDAL+Tools)
 
 [Windows:]
 
--   [Installing Spatialite on    Windows](https://faimsproject.atlassian.net../FAIMS/Installing+Spatialite+on+Windows.html)
--   [Installing Spatialite Tool on    Windows](https://faimsproject.atlassian.net../FAIMS/Installing+Spatialite+Tool+on+Windows.html)
--   [Installing GDAL Tools on    Windows](https://faimsproject.atlassian.net../FAIMS/Installing+GDAL+Tools+on+Windows.html)
+-   [Installing Spatialite on    Windows](.../Installing+Spatialite+on+Windows)
+-   [Installing Spatialite Tool on    Windows](.../Installing+Spatialite+Tool+on+Windows)
+-   [Installing GDAL Tools on    Windows](.../FAIMS/Installing+GDAL+Tools+on+Windows)
 
 ### 1. Change shape file projection
 
