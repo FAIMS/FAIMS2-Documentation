@@ -49,7 +49,7 @@ Other Documentation
 ===================
 
 1.  [Heurist Documentation on this Wiki](/wiki/spaces/HEURIST/overview)
-    1.  [FAIMS - Heurist Howto Guide        1](../HEURIST/Building+FAIMS+modules+from+scratch+with+Heurist%3A+a+how-to+guide.html)
+    1.  [FAIMS - Heurist Howto Guide        1](../HEURIST/Building+FAIMS+modules+from+scratch+with+Heurist%3A+a+how-to+guide)
     2.  [FAIMS - Heurist Howto Guide        2](../HEURIST/Building+a+FAIMS+Project%3A+a+how-to+guide.html)
 2.  [Heurist    CHM](http://heuristscholar.org/help/index.html)
 3.  [Repository Documentation on this Wiki](/wiki/spaces/Repo/overview)
