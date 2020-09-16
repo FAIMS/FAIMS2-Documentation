@@ -72,7 +72,7 @@ Digital 'scribbling on the margin' lets you collect additional info about your o
 
 ## Certainty sliders:
 
-Let you set the confidence with which you made your observation. Use when you are not 100\% sure about the value of a given attribute.
+Let you set the confidence with which you made your observation. Use when you are not 100% sure about the value of a given attribute.
 
 ## Info Buttons:
 
@@ -91,7 +91,7 @@ Allow you to progress through a series of embedded dropdown lists until you reac
 
 Modules can be deployed in multiple languages. On the 'Load Module' screen, available translations appear in a dropdown. Each user can choose a preferred language.
 
-## Attach Photos to Records (\& vice versa):
+## Attach Photos to Records (& vice versa):
 
 'Take a Picture' button connects you to the device's camera to snap a as many shots as you like. Pictures are attached to your record and inherit its data upon export. To delete an attached picture, press it and hold, go to 'Picture management' and 'Delete'
 
