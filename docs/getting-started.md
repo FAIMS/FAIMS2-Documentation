@@ -1,5 +1,7 @@
 # FAIMS 101 - Getting Started
 
+[TOC]
+
 The best way to get started with FAIMS Mobile is to look at some of the
 digital recording modules we have developed and posted in our online
 Module Library. Here is what you need to look at them:

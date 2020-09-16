@@ -17,13 +17,13 @@ You must have either Ubuntu (recommended) or Windows installed on your
 computer to follow this article. The requirements for each are as
 follows:
 
-[Ubuntu:]
+Ubuntu:
 
 -   [Installing Spatialite on    Ubuntu](.../Installing+Spatialite+4+on+Ubuntu)
 -   [Installing Spatialite Tools on    Ubuntu](.../Install+Spatialite+Tools+on+Ubuntu)
 -   [Installing GDAL    Tools](.../Install+GDAL+Tools)
 
-[Windows:]
+Windows:
 
 -   [Installing Spatialite on    Windows](.../Installing+Spatialite+on+Windows)
 -   [Installing Spatialite Tool on    Windows](.../Installing+Spatialite+Tool+on+Windows)
