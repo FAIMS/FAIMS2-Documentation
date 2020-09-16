@@ -86,7 +86,7 @@ The android application serves as the collector of data. Users can
 download a project from the web application and then start collecting
 data in the field.
 
-### Key Features
+### Key Features 
 
 -   Customisable UI
 

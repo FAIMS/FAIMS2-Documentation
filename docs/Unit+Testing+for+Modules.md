@@ -1,9 +1,9 @@
 Unit Testing for Modules
 =====================================================================
 
+[TOC]
 
-
-Overview 
+Overview
 ========
 
 This wiki article describes how to implement unit tests for modules
@@ -34,7 +34,7 @@ compiled. These are placed in the `tests` directory, relative to your
 Of note are `mock.bsh` and `test.bsh`. (`ModuleUtil.java` is used for UI
 testing, which is outside the scope of this wiki article.)
 
-mock.bsh 
+mock.bsh
 --------
 
 `mock.bsh` contains function and class definitions. For modules that run
@@ -48,7 +48,7 @@ primary purpose of this file is to allow the module\'s `ui_logic.bsh`
 file to run during a test without triggering exceptions due to undefined
 functions.
 
-test.bsh 
+test.bsh
 --------
 
 `test.bsh` executes the unit tests. (This involves running the scripts
@@ -56,7 +56,7 @@ test.bsh
 script itself should be invoked by running `test.sh` (which initialises
 Java\'s `CLASSPATH` variable.)
 
-Running a Trivial Test 
+Running a Trivial Test
 ======================
 
 Suppose that our module has the following directory structure:
@@ -109,11 +109,11 @@ following output:
 
     a
     b
-    Sourced file: /tmp/tmp/tests/tests.bsh : TargetError : at Line: 49 : in file: /tmp/tmp/module/ui_logic.bsh : throw new Exception ( msg ) ; 
+    Sourced file: /tmp/tmp/tests/tests.bsh : TargetError : at Line: 49 : in file: /tmp/tmp/module/ui_logic.bsh : throw new Exception ( msg ) ;
 
-    Called from method: assert : at Line: 4 : in file: /tmp/tmp/tests/tests.bsh : assert ( false ) 
+    Called from method: assert : at Line: 4 : in file: /tmp/tmp/tests/tests.bsh : assert ( false )
     Target exception: java.lang.Exception: Test failed: Line: 4: assert ( false ) . CallStack:
-        NameSpace: assert (bsh.NameSpace@24273305) (method) 
+        NameSpace: assert (bsh.NameSpace@24273305) (method)
         NameSpace: global (bsh.NameSpace@5b1d2887)
 
 
@@ -132,7 +132,7 @@ chance to execute. If we replace `assert("false")` with
     c
     === ALL TESTS PASSED ===
 
-Testing Code from ui\_logic.bsh 
+Testing Code from ui\_logic.bsh
 ===============================
 
 Because `test.bsh` runs the code from `ui_logic.bsh` before running
@@ -147,24 +147,24 @@ following:
     assert("ew"    .equals(banana("spinach")));
     assert("ew"    .equals(banana("BANANA!")));
 
-Mocking by Redefining Functions 
+Mocking by Redefining Functions
 ===============================
 
 Functions in Beanshell can be redefined. This allows their functionality
 to be mocked at test time. It is often useful to write something like
 the following in unit tests:
 
-    
+
       // Call functions which depend on mockedFunction
       // Assert stuff
     }
 
-    
+
       // Call functions which depend on mockedFunction again
       // Assert more stuff
     }
 
-Useful Functions 
+Useful Functions
 ================
 
 -   `assert(boolean)` -- Defined in `ui_logic.bsh`. Verifies that a
@@ -204,7 +204,7 @@ Useful Functions
 Many of the functions defined by the autogen under the \"DOCUMENT OBJECT
 MODEL\" section of `ui_logic.bsh` are useful.
 
-Advantages of This Unit Testing Methodology 
+Advantages of This Unit Testing Methodology
 ===========================================
 
 Testing as described herein confers all the usual befits of unit
@@ -215,7 +215,7 @@ some caveats) the `ui_logic.bsh` file is run on the development machine.
 Not having to upload the logic to a server and download it to a device
 allows for vastly hastened development, especially on large modules.
 
-Limitations of This Unit Testing Methodology 
+Limitations of This Unit Testing Methodology
 ============================================
 
 A major limitation of this testing approach is that records cannot be

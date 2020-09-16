@@ -3,7 +3,7 @@ title: Preparation of Layers outside the Mobile App
 ---
 
 
-### Raster
+### Raster  
 
 The safest format to use with the FAIMS app is a geotiff (georeferenced
 image in an uncompressed .tiff format). All rasters need to be uploaded

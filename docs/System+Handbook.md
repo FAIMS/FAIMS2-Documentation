@@ -6,12 +6,12 @@ System Handbook
 Overview
 --------
 
-[The FAIMS Mobile Platform is an Android application and Ruby server
+The FAIMS Mobile Platform is an Android application and Ruby server
 built by intersect for the Federated Archaeological Information
 Management Systems (FAIMS) Project, funded by the National eResearch
 Collaboration Tools and Resources (NeCTAR) program. FAIMS is used by
 Archaeologists to collect Survey and GIS data in the
-field.]
+field.
 
 Components
 ----------
@@ -55,11 +55,11 @@ Deployment
 
 #### Deployment Procedures
 
-See [System Handbook](../FAIMS/System+Handbook.html)
+See [System Handbook](../System+Handbook)
 
 #### Post Release Verification
 
-See [System Handbook](../FAIMS/System+Handbook.html)
+See [System Handbook](../System+Handbook)
 
 #### Monitoring and Maintenance
 
@@ -69,7 +69,7 @@ performed. Who does it?*
 Support
 -------
 
-See [System Handbook](../FAIMS/System+Handbook.html)
+See [System Handbook](../System+Handbook)
 
 Production Environment(s)
 -------------------------
@@ -116,7 +116,7 @@ Production Environment(s)
 Release Notes
 -------------
 
-See [Release Notes](../FAIMS/Release+Notes.html)
+See [Release Notes](../Release+Notes)
 
 Test/Demo Environments
 
@@ -124,6 +124,6 @@ Test/Demo Environments
 
 Developer Setup
 
-See [Developer Setup](../FAIMS/Developer+Setup.html)
+See [Developer Setup](../Developer+Setup)
 
 </div>

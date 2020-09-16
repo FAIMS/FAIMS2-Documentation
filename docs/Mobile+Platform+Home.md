@@ -1,6 +1,7 @@
 Mobile Platform Home
 =================================================================
 
+[TOC]
 
 Created: Anonymous (None) - 2013-08-19T14:55:54.099Z
 
@@ -10,7 +11,7 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
 Developer Documentation 
 ========================
 
--   [FAIMS Data, UI and Logic Cook-Book](../FAIMS/FAIMS+Data%2C+UI+and+Logic+Cook-Book.html)
+-   [FAIMS Data, UI and Logic Cook-Book](../FAIMS+Data,+UI+and+Logic+Cook-Book)
 -   [Installing Spatialite 4 on Ubuntu](../FAIMS/Installing+Spatialite+4+on+Ubuntu.html)
 -   [Installing Spatialite Tools on Ubuntu](../FAIMS/Install+Spatialite+Tools+on+Ubuntu.html)
 -   [Program Logic Support](../FAIMS/Program+Logic+Support.html)

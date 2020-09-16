@@ -5,7 +5,7 @@ Navigation
 
 
 
-Navigation
+Navigation 
 ----------
 
 In order to navigate you need to have loaded a vector file with a point

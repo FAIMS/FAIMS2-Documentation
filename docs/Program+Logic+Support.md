@@ -1,7 +1,7 @@
 Program Logic Support
 ==================================================================
 
-
+[TOC]
 
 ### Persist Functionality
 
@@ -251,22 +251,22 @@ triggerred when tab group checks if something needs to be saved.
 
 
 Close the tab group with the following reference with an option to show
-a warning dialog if there are changes that haven\'t been saved.
+a warning dialog if there are changes that haven't been saved.
 
 -   **ref **the reference to the tab group
 -   **warn **set to true to show a warning dialog if there are changes
-    that haven\'t been saved
+    that haven't been saved
 
 **cancelTabGroup(String ref, boolean warn);**
 
 
 
 Close the tab with the following reference with an option to show a
-warning dialog if there are changes that haven\'t been saved.
+warning dialog if there are changes that haven't been saved.
 
 -   **ref **the reference to the tab
 -   **warn **set to true to show a warning dialog if there are changes
-    that haven\'t been saved
+    that haven't been saved
 
 **cancelTab(String ref, boolean warn);**
 
@@ -467,11 +467,11 @@ from the last time alert shown.
 [Show a dialog to the user allowing them to sign in to a password
 protected, signup-enabled module.]
 
--   **[successCallback]**[ the callback to execute if the user provided email address and password match what\'s recorded in the module\'s database, typically the newTab() call made in non-password protected modules when a user is selected]
+-   **[successCallback]**[ the callback to execute if the user provided email address and password match what's recorded in the module's database, typically the newTab() call made in non-password protected modules when a user is selected]
 
-[Caveats: The module database\'s user table must contain password and
-email fields.  The implemented selectUser() method in the module\'s
-ui\_logic.bsh must retrieve the password field in addition to the email
+[Caveats: The module database's user table must contain password and
+email fields.  The implemented selectUser() method in the module's
+ui_logic.bsh must retrieve the password field in addition to the email
 field.  The Select User dropdown must be populated before calling this
 so the user can select their account - the dialog only prompts for the
 password.]
@@ -491,9 +491,9 @@ password.]
     appears immediately and they can select it to log
     in.]
 
-Caveats: [The module database\'s user table must contain password and
-email fields.  The implemented selectUser() method in the module\'s
-ui\_logic.bsh must retrieve the password field in addition to the email
+Caveats: [The module database's user table must contain password and
+email fields.  The implemented selectUser() method in the module's
+ui_logic.bsh must retrieve the password field in addition to the email
 field.]
 
 [Syncing must be enabled in order for the user to be created. If syncing
@@ -511,7 +511,7 @@ successCallback);]**
 Set the field with the following reference to the given value. If the
 field reference is not found a logic error dialog will appear.
 
-For radio groups, this function triggers a \"click\" event.
+For radio groups, this function triggers a "click" event.
 
 For more information on how to use this function please look at the
 cookbook.
@@ -1251,7 +1251,7 @@ Get the GPS heading from external GPS or internal GPS.
 
 Get the GPS position as longitude and latitude from selected GPS.
 
--   **gps **the type of gps used, one of \"internal\" or \"external\"
+-   **gps **the type of gps used, one of "internal" or "external"
 
 ***return GPSPosition if starting GPS or null if no GPS started or
 position found***
@@ -1262,7 +1262,7 @@ position found***
 
 Get the GPS accuracy from selected GPS.
 
--   **gps **the type of gps used, one of \"internal\" or \"external\"
+-   **gps **the type of gps used, one of "internal" or "external"
 
 ***return accuracy of the selected gps or null***
 
@@ -1272,7 +1272,7 @@ Get the GPS accuracy from selected GPS.
 
 Get the GPS heading from selected GPS.
 
--   **gps **the type of gps used, one of \"internal\" or \"external\"
+-   **gps **the type of gps used, one of "internal" or "external"
 
 ***return heading of the selected gps or null***
 
@@ -1282,9 +1282,9 @@ Get the GPS heading from selected GPS.
 
 Start GPS track log with as either time based or distance based.
 
--   **type **either \"distance\" or \"time\"
--   **value **the value of the tracking, if type is \"distance\", the
-    value will be in meter, if type is \"time\", the value will be in
+-   **type **either "distance" or "time"
+-   **value **the value of the tracking, if type is "distance", the
+    value will be in meter, if type is "time", the value will be in
     seconds
 -   **callback **code to execute when interval limit is reached
 
@@ -1381,7 +1381,7 @@ ref)**.
 **getMapGeometrySelected() ;**
 
 
-Save the map view configuration to the specified file. \@callback the
+Save the map view configuration to the specified file. @callback the
 callback code to execute
 
 -   **ref **the reference to the map view
@@ -1392,7 +1392,7 @@ callback code to execute
 
 
 Setup the map with the given reference with configuration specified in
-the json file. \@callback the callback code to execute
+the json file. @callback the callback code to execute
 
 -   **ref **the reference to the map view
 -   **configFile **the json file with map view configuration, will show
@@ -1727,7 +1727,7 @@ the geometry id.
 
 
 Get the layer name of the associated geometry on a canvas layer.
-\@geomId the id of the geometry
+@geomId the id of the geometry
 
 -   **ref **the reference to the map view
 
@@ -1969,7 +1969,7 @@ Enable or disable map tools for the map view.
 Add tool specific events (create or load). The create event is called
 when the create point, line or polygon tools generate their geometry.
 The load event is called when the load data tool is used to select
-geometry. \@callback the callback code to execute
+geometry. @callback the callback code to execute
 
 -   **ref **the reference to the map view
 -   **type **the event type (create or load)
@@ -2570,7 +2570,7 @@ Remove an action button to the navigation drawer
 Returns the currently connected server
 
 ***return IP and port of the connected server, null if no connected
-server. Note: doesn\'t check if connection is active***
+server. Note: doesn't check if connection is active***
 
 **String getConnectedServer() ;**
 

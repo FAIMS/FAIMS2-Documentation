@@ -34,7 +34,7 @@ Step-by-step guide
 
     </div>
 
-    [Testing Methodology](../FAIMS/Testing+Methodology.html)
+    [Testing Methodology](../Testing+Methodology)
 
 
 </div>

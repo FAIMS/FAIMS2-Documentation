@@ -17,7 +17,7 @@ tag as a zip file.
 
   Tag                 Date of Release
   ------------------- -----------------
-  20130813\_BETA\_1   13/08/2013
+  20130813_BETA_1   13/08/2013
 
 
 Android Application
@@ -28,7 +28,7 @@ The android app is installed via the google play store. 
 
   Tag                 Date of Release
   ------------------- -----------------
-  20130813\_BETA\_1   13/08/2013
+  20130813_BETA_1   13/08/2013
 
 
 </div>
