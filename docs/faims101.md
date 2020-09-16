@@ -4,6 +4,8 @@ The best way to get started with FAIMS Mobile is to look at some of the
 digital recording modules we have developed and posted in our online
 Module Library. Here is what you need to look at them:
 
+[TOC]
+
 ### Prerequisites:
 
 -   An device running Android 5.x or higher (any device >2Gb of RAM,
@@ -106,8 +108,7 @@ User Guidelines
 
 For Guidelines on how to use the Mobile Platform (create, edit, modify
 and administer the modules as well as the server), please refer to our
-[[online User
-Guide.]{.underline}](https://faimsproject.atlassian.net/wiki/display/MobileUser/Home)
+[[online User Guide.]{.underline}](https://faimsproject.atlassian.net/wiki/display/MobileUser/Home)
 Alternative path to these manuals exists via the Support tab on our
 website [[www.fedarch.org]{.underline}](http://www.fedarch.org/) or by
 using the Getting Started button on the Mobile Platform subsections
@@ -163,7 +164,7 @@ side. Modules that have not been downloaded have a server icon only.
 
 ![101_11.png](img/media/image7.png)
 
-### Alternate ways of installing FAIMS (not via Google Play) 
+### Alternate ways of installing FAIMS (not via Google Play)
 
 When Google Play installation does not work for you you can download the
 installation file (faims-android.apk with the most recent date) from our
@@ -198,7 +199,7 @@ article]{.underline}](http://search.informit.com.au/documentSummary;dn=721992925
 titled *Creating eResearch tools for archaeologists: The federated
 archaeological information management systems project.*
 
-Contact 
+Contact
 --------
 
 Thank you for trialling FAIMS Mobile Platform! Email us at

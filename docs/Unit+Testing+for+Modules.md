@@ -39,12 +39,12 @@ mock.bsh
 
 `mock.bsh` contains function and class definitions. For modules that run
 within the FAIMS APK, these functions would ordinarily be defined by
-[ui\_commands.bsh](https://github.com/FAIMS/faims-android/blob/master/faimsandroidapp/src/main/assets/ui_commands.bsh).
+[ui_commands.bsh](https://github.com/FAIMS/faims-android/blob/master/faimsandroidapp/src/main/assets/ui_commands.bsh).
 However, instead of running in the FAIMS APK, unit tests run on the
 desktop, directly from within the Beanshell interpreter.
 
 The functions defined in `mock.bsh` are not very true-to-life; The
-primary purpose of this file is to allow the module\'s `ui_logic.bsh`
+primary purpose of this file is to allow the module's `ui_logic.bsh`
 file to run during a test without triggering exceptions due to undefined
 functions.
 
@@ -54,7 +54,7 @@ test.bsh
 `test.bsh` executes the unit tests. (This involves running the scripts
 `mock.bsh`, `ui_logic.bsh` and `test.bsh`, respectively.) The `test.bsh`
 script itself should be invoked by running `test.sh` (which initialises
-Java\'s `CLASSPATH` variable.)
+Java's `CLASSPATH` variable.)
 
 Running a Trivial Test
 ======================
@@ -80,8 +80,8 @@ Suppose that our module has the following directory structure:
         └── test.sh
 
 Suppose also that our current working directory is `path/to/module`.
-Now, we\'d like to run our unit tests, so we execute `tests/test.sh`
-from the terminal. Assuming that our ui\_logic.bsh file can run without
+Now, we'd like to run our unit tests, so we execute `tests/test.sh`
+from the terminal. Assuming that our ui_logic.bsh file can run without
 exceptions, we will see something like the following:
 
     $ tests/test.sh
@@ -132,15 +132,15 @@ chance to execute. If we replace `assert("false")` with
     c
     === ALL TESTS PASSED ===
 
-Testing Code from ui\_logic.bsh
+Testing Code from ui_logic.bsh
 ===============================
 
 Because `test.bsh` runs the code from `ui_logic.bsh` before running
 `tests.bsh`, we can call any of the functions defined in `ui_logic.bsh`
 from within `tests.bsh`. For instance, if we wanted to test a function
 defined in `ui_logic.bsh` called `banana(String)`, which should return
-the `String` \"om nom\" if the input argument was the `String`
-\"banana\", and \"ew\" otherwise, our `tests.bsh` might be the
+the `String` "om nom" if the input argument was the `String`
+"banana", and "ew" otherwise, our `tests.bsh` might be the
 following:
 
     assert("om nom".equals(banana("banana" )));
@@ -173,7 +173,7 @@ Useful Functions
     Triggers functions that would ordinarily happen upon an event.
 -   `getDisplayedTabGroup(String)` -- Defined in `ui_logic.bsh`.
     Sometimes calling `executeOnEvent` is meant to result in a change of
-    tab groups. Depending on the way you\'ve written your module, using
+    tab groups. Depending on the way you've written your module, using
     `getDisplayedTabGroup(String)` can help to verify that the tab group
     has changed.
 -   `getFieldValue(String)` -- Defined in `mock.bsh`. Allows a mock
@@ -194,15 +194,15 @@ Useful Functions
 -   `Fetch.useDatabase(String)` -- Defined in `Fetch.java`. Uses the
     database whose path is provided as the argument in order to execute
     `fetchAll` and `fetchOne` queries. If the empty string is given as
-    the argument, or `useDatabase(String)` wasn\'t called, a transient
+    the argument, or `useDatabase(String)` wasn't called, a transient
     in-memory database is used.
 -   `Fetch.importFromDatabase(String)` -- Defined in `Fetch.java`.
     Imports data from the database whose path is provided as the
     argument. The imported data is added to the database given by
     `Fetch.useDatabase(String)`.
 
-Many of the functions defined by the autogen under the \"DOCUMENT OBJECT
-MODEL\" section of `ui_logic.bsh` are useful.
+Many of the functions defined by the autogen under the "DOCUMENT OBJECT
+MODEL" section of `ui_logic.bsh` are useful.
 
 Advantages of This Unit Testing Methodology
 ===========================================

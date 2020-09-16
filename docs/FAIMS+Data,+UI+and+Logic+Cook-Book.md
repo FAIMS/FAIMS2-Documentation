@@ -30,7 +30,7 @@ required files
 
 This is an example of a simple module that renders a single text view
 
-**data\_schema.xml**
+**data_schema.xml**
 
 
 
@@ -43,7 +43,7 @@ This is an example of a simple module that renders a single text view
 
 
 
-**ui\_schema.xml**
+**ui_schema.xml**
 
 
 
@@ -86,7 +86,7 @@ This is an example of a simple module that renders a single text view
 
 
 
-**ui\_logic.bsh**
+**ui_logic.bsh**
 
 
 
@@ -100,16 +100,16 @@ setFieldValue("tabgroup1/tab1/text", "Hello World!");
 
 -   Use the module files to create a module on the server. Then download
     the module onto the android app.
--   The data\_schema.xml specifies what archaeological entities and
+-   The data_schema.xml specifies what archaeological entities and
     relationships to store. This data schema is empty as we are not
     saving any data at the moment.
--   The ui\_schema.xml specifies how the ui should render. More
+-   The ui_schema.xml specifies how the ui should render. More
     information on how to construct these will be provided in later
     examples. Currently this specifies a single tabgroup, a single tab
     and a single text view.
--   The ui\_logic.bsh specifies how ui elements interact on screen and
+-   The ui_logic.bsh specifies how ui elements interact on screen and
     with the database. Current this example simply sets the value of the
-    text view to \"Hello World!\".
+    text view to "Hello World!".
 
 ### Data Schema Construction
 
@@ -216,7 +216,7 @@ Static UI
 ---------
 
 The following examples of UI elements demonstrate how these UI elements
-(known as views) can be statically embedded within the ui\_schema.xml
+(known as views) can be statically embedded within the ui_schema.xml
 file.
 
 ### Constructing a UI
@@ -245,11 +245,11 @@ views. The full list of supported views are:
 
 ### Creating a Text View
 
-The ui\_schema.xml is used to define what to render on screen. There are
+The ui_schema.xml is used to define what to render on screen. There are
 two parts to the ui schema. The first part defines the overall structure
 of the ui and second part defines the elements on screen to render.
 
-Look at this example ui\_schema.xml where each part is labeled as
+Look at this example ui_schema.xml where each part is labeled as
 comments.
 
 
@@ -295,9 +295,9 @@ comments.
 
 
 
-In this example part 1 defines a tabgroup called \"tabgroup1\", a tab
-inside the tabgroup called \"tab1\" and a text element inside the tab
-called \"text\".
+In this example part 1 defines a tabgroup called "tabgroup1", a tab
+inside the tabgroup called "tab1" and a text element inside the tab
+called "text".
 
 
 
@@ -319,7 +319,7 @@ In the second part it defines how the structure is to be rendered.
 
 
 
-These lines in the xml document define a group element \"tabgroup1\"
+These lines in the xml document define a group element "tabgroup1"
 (referenced using the ref attribute) which will be used to render it as
 a tabgroup. The label is currently not used but is needed to ensure a
 valid ui schema.
@@ -334,7 +334,7 @@ valid ui schema.
 
 
 These lines in the xml document nested inside the parent group define a
-group element \"tab1\" which will be used to rendered it as a tab. The
+group element "tab1" which will be used to rendered it as a tab. The
 label is used to label the tab in the ui.
 
 
@@ -363,7 +363,7 @@ is used to label the text element.
 ### Creating a Number Text View
 
 Following from the previous example the example below defines an
-additional text view \"number\" that is of decimal format.
+additional text view "number" that is of decimal format.
 
 
 
@@ -626,7 +626,7 @@ Notice that the select1 has appearance set to compact.
 
 Since list are scrollable views they cannot be placed into normal tabs
 as tabs themselves are scrollable. Therefore you set tabs to not scroll
-by using the faims\_scrollable attribute to make a tab not scroll.
+by using the faims_scrollable attribute to make a tab not scroll.
 
 ### Creating a Date Picker
 
@@ -743,7 +743,7 @@ This example creates a map view.
 
 
 
-Notice set faims\_map to true to make it a map view.
+Notice set faims_map to true to make it a map view.
 
 
 
@@ -1017,7 +1017,7 @@ The following shows how to create dynamic UI in the module via logic.
 
 Note: Any attributes for dynamic views that are to be autosaved with a
 tabgroup need to be present when that tabgroup is first saved. If an
-attribute is added after the tab group is first saved, then it won\'t
+attribute is added after the tab group is first saved, then it won't
 auto save and will need to be added to the entity attributes each time
 saving occurs. To avoid this ensure that all dynamic views are present
 when the tabgroup is first saved, or do a manual first save of the
@@ -1353,7 +1353,7 @@ include an empty label node for the ui schema to be valid.
 ### Tab Scrolling
 
 Tabs are set to scroll by default but to make them stop scrolling then
-set the faims\_scrollable attribute in the tab group element to false.
+set the faims_scrollable attribute in the tab group element to false.
 e.g.
 
 
@@ -1368,7 +1368,7 @@ e.g.
 
 ### Hiding Tabs
 
-To hide tabs when they are first shown you can use the faims\_hidden
+To hide tabs when they are first shown you can use the faims_hidden
 attribute to make tabs hidden. By default tabs are visible.
 
 
@@ -1381,7 +1381,7 @@ attribute to make tabs hidden. By default tabs are visible.
 
 ### Making Text Views readonly
 
-Text views can be made readonly by setting faims\_readonly attribute to
+Text views can be made readonly by setting faims_readonly attribute to
 true.
 
 
@@ -1401,7 +1401,7 @@ true.
 Binding a TabGroup to an arch entity allows you to do automatic loading
 and saving of the entity defined within a TabGroup via the logic script.
 To tell which entity type the TabGroup belongs to you can use the
-faims\_archent\_type attribute to specify the entity type.
+faims_archent_type attribute to specify the entity type.
 
 
 
@@ -1425,7 +1425,7 @@ This will be shown in the saving and loading entities example.
 Binding a TabGroup to a relationship allows you to do automatic loading
 and saving of the relationship defined within a TabGroup via the logic
 script. To tell which relationship type the TabGroup belongs to you can
-use the faims\_rel\_type attribute to specify the entity type.
+use the faims_rel_type attribute to specify the entity type.
 
 
 
@@ -1449,8 +1449,8 @@ example.
 
 Once a TabGroup is bound to an entity/relationship type you need to
 specify how the views map to the attributes of the entity/relationship.
-You can do this by specifying the faims\_attribute\_name and
-faims\_attribute\_type.
+You can do this by specifying the faims_attribute_name and
+faims_attribute_type.
 
 
 
@@ -1477,7 +1477,7 @@ entities/relationships example.
 By default all views in TabGroups that are bound to entities or
 relationships show an certainty button. This button allows views to set
 certainty values to them. If you want to disable them you can simply set
-the faims\_certainty attribute of the view to false.
+the faims_certainty attribute of the view to false.
 
 
 
@@ -1492,7 +1492,7 @@ the faims\_certainty attribute of the view to false.
 By default all non-text views in TabGroups that are bound to entities or
 relationships show an annotation button. This button allows views to set
 annotation values to them. If you want to disable them you can simply
-set the faims\_annotation attribute of the view to false.
+set the faims_annotation attribute of the view to false.
 
 
 
@@ -1505,7 +1505,7 @@ set the faims\_annotation attribute of the view to false.
 ### Syncing files
 
 For view that are bound to attributes that a file type then you can
-specify a faims\_sync attribute to indicate if those files are to sync
+specify a faims_sync attribute to indicate if those files are to sync
 to the server only or other apps as well.  More on this in the saving
 and loading entities/relationships example.
 
@@ -1621,7 +1621,7 @@ be defined at the top of the tabgroup definition.
 The example of styling shows that we can define a style for making a
 container with certain orientation and certain layout weight to divide
 it even. The styling should be applied to the using the attribute
-faims\_style to the group tag.
+faims_style to the group tag.
 
 Using Logic
 ===========
@@ -1656,7 +1656,7 @@ Define a archaeological entity in the data schema.
 
 
 This data schema defines a single archaeological entity called
-\"Simple\" with two properties name and value.
+"Simple" with two properties name and value.
 
 Now we define a ui schema to save this entity.
 
@@ -1771,8 +1771,8 @@ update();
 -   The ui schema defines a ui with a single tab group and 2 tabs. The
     first tab contains a name text view and a value text view. These are
     mapped to the Simple archaeological element using the
-    faims\_arch\_ent\_type attribute and faims\_attribute\_name &
-    faims\_attribute\_type attributes.
+    faims_arch_ent_type attribute and faims_attribute_name &
+    faims_attribute_type attributes.
 -   The ui logic now uses the api calls
     provided [here](/wiki/pages/resumedraft.action?draftId=3014726) to
     save the data to the database and load data back from the database.
@@ -1819,7 +1819,7 @@ Define a relationship in the data schema.
 
 
 
-This data schema defines a single relationship called \"Simple\" with
+This data schema defines a single relationship called "Simple" with
 one attribute called name.
 
 Now we define a ui schema to save this relationship.
@@ -1923,7 +1923,7 @@ update();
 
 ### Automated TabGroup Saving
 
-With automated saving you don\'t require the users to manually click a
+With automated saving you don't require the users to manually click a
 button to call the saveTabGroup api call. You just need to call the
 automated saving api once and the TabGroup will automatically save
 when inputs are changed or the TabGroup is cleared, hidden or changed.
@@ -2165,7 +2165,7 @@ attribute = createEntityAttribute('name', null, null, null, null, true);
 
 
 
-This will create an attribute for \'name\' with deleted set to true. Add
+This will create an attribute for 'name' with deleted set to true. Add
 this to the attribute list when you save the entity and it will mark the
 name attribute as deleted.
 
@@ -2179,7 +2179,7 @@ attribute = createRelationshipAttribute('name', null, null, null, true);
 
 
 
-This will create an attribute for \'name\' with deleted set to true. Add
+This will create an attribute for 'name' with deleted set to true. Add
 this to the attribute list when you save the relationship and it will
 mark the name attribute as deleted.
 
@@ -2202,7 +2202,7 @@ addReln('10000112441409729', '10000112441409730', 'Above', new SaveCallbac()
 
 
 This will add entity with uuid 10000112441409729 to relationship with
-relationshipid 10000112441409730 with the verb \'Above\'.
+relationshipid 10000112441409730 with the verb 'Above'.
 
 ### Getting Field Values, Annotations and Certainty
 
@@ -2254,7 +2254,7 @@ getFieldCertainty("tabgroup1/tab1/name")
 
 
 The input string references the view in the ui schema. The path matches
-\<tabgroup\>/\<tab\>/\<name\>. For more information on what these
+<tabgroup>/<tab>/<name>. For more information on what these
 functions do please refer to the api calls
 provided [here](https://wiki.intersect.org.au/display/FAIMS/Program+Logic+Support#ProgramLogicSupport-FieldValues).
 
@@ -2334,7 +2334,7 @@ onEvent("tabgroup1/tab1/save", "click", "saveEntity()");
 
 
 OnEvent supports delayclick, click, load, select and show events. In the
-example, it shows that when \"tabgroup1/tab1/save\" is clicked, the
+example, it shows that when "tabgroup1/tab1/save" is clicked, the
 saveEntity will be called. The click event is dispatched when a view is
 touched, the load event is dispatched when a tabgroup is first shown,
 the select event is dispatched when an item in the view is
@@ -2347,14 +2347,14 @@ e.g. onFocus
 
 
 ```
-onFocus("tabgroup1/tab1/name","showWarning(\"focus\",\"it is focus\")", "showWarning(\"blur\",\"it is blur\")");
+onFocus("tabgroup1/tab1/name","showWarning("focus","it is focus")", "showWarning("blur","it is blur")");
 ```
 
 
 
 OnFocus supports focus and blur events. The example shows that when the
-field \"tabgroup1/tab1/name\" is focused, the warning dialog \"focus\"
-will appear, meanwhile when it is blurred, the warning dialog \"blur\"
+field "tabgroup1/tab1/name" is focused, the warning dialog "focus"
+will appear, meanwhile when it is blurred, the warning dialog "blur"
 will appear.
 
 
@@ -2401,7 +2401,7 @@ The second example is the toggle item and uses a
 ToggleActionButtonCallback which is used to specify two item labels and
 corresponding callback actions as well as a boolean expression to
 determine which of the two states to show. In this example, it checks
-whether sync is enabled and shows a \"Turn on\" or \"Turn off\" action
+whether sync is enabled and shows a "Turn on" or "Turn off" action
 item as required
 
 ### Customising the Navigation Drawer Menu
@@ -2528,7 +2528,7 @@ e.g showTextAlert
 
 
 ```
-showTextAlert("Alert", "Entity to Load:", "loadAlertEntity()", "showToast(\"Dialog cancelled\")")
+showTextAlert("Alert", "Entity to Load:", "loadAlertEntity()", "showToast("Dialog cancelled")")
 ...
 loadAlertEntity()
 ```
@@ -2538,7 +2538,7 @@ loadAlertEntity()
 When showTextAlert is called, a dialog will appear and shows the title
 and message as specified and have an input field for the user to enter
 some text. The function call also takes two callbacks, one for the
-\"OK\" button of the dialog and one for the \"Cancel\" button. The first
+"OK" button of the dialog and one for the "Cancel" button. The first
 callback can then use the getLastTextAlertInput() api call to get the
 input entered and do something with it. Note that the cancel callback
 cannot get access to the input entered
@@ -2552,7 +2552,7 @@ e.g showDateAlert
 
 
 ```
-showDateAlert("Alert", "Set Date:", "showToast(getLastDateAlertInput())", "showToast(\"Dialog cancelled\")")
+showDateAlert("Alert", "Set Date:", "showToast(getLastDateAlertInput())", "showToast("Dialog cancelled")")
 ```
 
 
@@ -2564,7 +2564,7 @@ e.g showTimeAlert
 
 
 ```
-showTimeAlert("Alert", "Set Time:", "showToast(getLastTimeAlertInput())", "showToast(\"Dialog cancelled\")")
+showTimeAlert("Alert", "Set Time:", "showToast(getLastTimeAlertInput())", "showToast("Dialog cancelled")")
 ```
 
 
@@ -2642,7 +2642,7 @@ e.g. populateList and getListItemValue
 ```
 fetchAll("select userid,(fname || ' ' || lname) as name from user where userdeleted is NULL;", new FetchCallback();
 
-onEvent("user/tab1/userlist","click","showToast(\"getListItemValue()\")"
+onEvent("user/tab1/userlist","click","showToast("getListItemValue()")"
 ```
 
 
@@ -2681,7 +2681,7 @@ needs to specify limit and offset as above.
 
 
 If the module has css styling and lists are being called to populate
-multiple times, a call should be made to refresh the tabgroup\'s CSS
+multiple times, a call should be made to refresh the tabgroup's CSS
 
 e.g.
 
@@ -2710,8 +2710,8 @@ fetchAll("select vocabid, vocabname, pictureurl from vocabulary left join attrib
 
 
 Note: The picture gallery is populated in the same order that the vocab
-id\'s are retrieved. To ensure that the pictures in the picture gallery
-have the same order as defined in the data\_schema, the query needs to
+id's are retrieved. To ensure that the pictures in the picture gallery
+have the same order as defined in the data_schema, the query needs to
 me be modified to preserve a specific order.
 
 
@@ -2865,13 +2865,13 @@ onClicked()
 
 ### Web View Events
 
-A web view can be called to navigate back (emulating a browser\'s back
+A web view can be called to navigate back (emulating a browser's back
 button)
 
 
 
 ```
-onEvent("tabgroup1/tab2/back", "click", "navigateWebViewBack(\"tabgroup1/tab2/web\")");
+onEvent("tabgroup1/tab2/back", "click", "navigateWebViewBack("tabgroup1/tab2/web")");
 ```
 
 
@@ -2879,7 +2879,7 @@ onEvent("tabgroup1/tab2/back", "click", "navigateWebViewBack(\"tabgroup1/tab2/we
 ### Dropdown and Picture Gallery Select Events
 
 Dropdowns and picture galleries (and their hierarchical counterparts)
-and radio groups all support \"select events\" e.g.
+and radio groups all support "select events" e.g.
 
 
 
@@ -2908,7 +2908,7 @@ newTab("tabgroup1/tab2")
 
 
 The newTab will open the tab specified in the path
-\<tabgroupname\>/\<tabname\> and clear out the values if it has been
+<tabgroupname>/<tabname> and clear out the values if it has been
 answered.
 
 e.g. newTabGroup
@@ -2922,7 +2922,7 @@ newTabGroup("tabgroup1")
 
 
 The newTabGroup will open the tab group specified in the path
-\<tabgroupname\> and clear out the values if it has been answered.
+<tabgroupname> and clear out the values if it has been answered.
 
 e.g. showTab
 
@@ -2935,7 +2935,7 @@ showTab("tabgroup1/tab1")
 
 
 The showTab will open the tab specified in the path
-\<tabgroupname\>/\<tabname\> and reserve the values for each fields if
+<tabgroupname>/<tabname> and reserve the values for each fields if
 it has been answered.
 
 e.g. showTab with uuid
@@ -2949,7 +2949,7 @@ showTab("tabgroup1/tab1","100001242124")
 
 
 The showTab with uuid will open the tab specified in the path
-\<tabgroupname\>/\<tabname\> and load the values from the records
+<tabgroupname>/<tabname> and load the values from the records
 specified by the id to the related fields in the tab. So it would not
 change the value in other tabs.
 
@@ -2964,7 +2964,7 @@ showTabGroup("tabgroup1")
 
 
 The showTabGroup will open the tab group specified in the path
-\<tabgroupname\> and reserve the values for each fields if it has been
+<tabgroupname> and reserve the values for each fields if it has been
 answered.
 
 e.g. showTabGroup with uuid
@@ -2981,7 +2981,7 @@ showTabGroup("tabgroup1","100001242124", new FetchCallback()  
 
 
 The showTabGroup with uuid will open the tab group specified in the path
-\<tabgroupname\> and load the values from the records specified by the
+<tabgroupname> and load the values from the records specified by the
 id to the related fields in the tabgroup.
 
 
@@ -2989,7 +2989,7 @@ id to the related fields in the tabgroup.
 
 
 Tab showing and closing actions generally should be embedded within an
-event handler for that tab, as rendering doesn\'t occur immediately
+event handler for that tab, as rendering doesn't occur immediately
 after the code is read.
 
 e.g.
@@ -3032,7 +3032,7 @@ cancelTab("tabgroup1/tab1", true)
 
 
 The cancelTab will close the tab specified in the path
-\<tabgroupname\>/\<tabname\>. If the warn argument is set to true and if
+<tabgroupname>/<tabname>. If the warn argument is set to true and if
 there are any new changes to the fields (value, annotation, certainty) a
 dialog will pop up asking whether the user wants to cancel the tab or
 not. If the user chooses OK then the tab will close else it remains
@@ -3058,14 +3058,14 @@ cancelTabGroup("tabgroup1", true)
 
 
 The cancelTabGroup will close the tab group specified in the path
-\<tabgroupname\>. It works similar to cancelTab but instead of closing
+<tabgroupname>. It works similar to cancelTab but instead of closing
 the tab it closes the entire tab group.
 
 
 
 
 Tab showing and closing actions generally should be embedded within an
-event handler for that tab, as rendering doesn\'t occur immediately
+event handler for that tab, as rendering doesn't occur immediately
 after the code is read.
 
 e.g.
@@ -3095,7 +3095,7 @@ ht: auto;vertical-align: baseline;background-image: none;
 
 There is a special method to show the current time to the ui that can be
 specified from the logic by calling getCurrentTime. GetCurrentTime
-returns a string containing current time in the format of \'YYYY-MM-dd
+returns a string containing current time in the format of 'YYYY-MM-dd
 hh:mm:ss
 
 e.g. getCurrentTime
@@ -3110,7 +3110,7 @@ setFieldValue("tabgroup5/tab3/lastsuccess", time);
 
 
 The example shows that we can set a field with the current time and the
-field should have faims\_read\_only attribute set to be true since the
+field should have faims_read_only attribute set to be true since the
 current time should not be editable by the user.
 
 ### Module Metadata
@@ -3143,7 +3143,7 @@ setFieldValue("tabgroup1/tab1/module_srid", getModuleSrid());
 
 
 In the example, the module metadata is obtained and shown on the fields.
-It is important to give the field faims\_read\_only attribute to be true
+It is important to give the field faims_read_only attribute to be true
 since we do not want the user to be able to edit the module metadata on
 the device.
 
@@ -3153,7 +3153,7 @@ The server will have the ability to edit the module metadata.
 
 The currently connected server can be obtained by using the following
 call. It will return something similar to
-\"[demo.fedarch.org](http://demo.fedarch.org):3000\"
+"[demo.fedarch.org](http://demo.fedarch.org):3000"
 
 
 
@@ -3205,7 +3205,7 @@ all the configuration as a json file as specified in the API call:
 
 ```
 file = getAttachedFilePath("files/data/saved_config.json");
-saveMapViewConfiguration("main/map/map", file, "showToast(\"Saved map configuration\")");
+saveMapViewConfiguration("main/map/map", file, "showToast("Saved map configuration")");
 ```
 
 
@@ -3219,7 +3219,7 @@ To load a map view up with an existing configuration use the following:
 
 ```
 jsonFile = getAttachedFilePath("files/data/saved_config.json");
-loadMapViewConfiguration("main/map/map", jsonFile, "showToast(\"Loaded map configuration\")");
+loadMapViewConfiguration("main/map/map", jsonFile, "showToast("Loaded map configuration")");
 ```
 
 
@@ -3713,11 +3713,11 @@ manager use the following.
 isEntity = true;
 queryName = "All entities";
 querySQL =
-    "SELECT uuid, max(aenttimestamp) as aenttimestamp\n" +
-    " FROM archentity join aenttype using (aenttypeid)\n" +
-    " where archentity.deleted is null\n" +
-    "   and lower(aenttypename) != lower('gps_track')\n" +
-    " group by uuid\n" +
+    "SELECT uuid, max(aenttimestamp) as aenttimestampn" +
+    " FROM archentity join aenttype using (aenttypeid)n" +
+    " where archentity.deleted is nulln" +
+    "   and lower(aenttypename) != lower('gps_track')n" +
+    " group by uuidn" +
     " having max(aenttimestamp)";
 addDatabaseLayerQuery("control/map/map", queryName, querySQL);
 ```
@@ -3733,11 +3733,11 @@ manager use the following.
 
 ```
 addTrackLogLayerQuery("control/map/map", "track log entities",
-    "SELECT uuid, max(aenttimestamp) as aenttimestamp\n" +
-    " FROM archentity join aenttype using (aenttypeid)\n" +
-    " where archentity.deleted is null\n" +
-    "   and lower(aenttypename) = lower('gps_track')\n" +
-    " group by uuid\n" +
+    "SELECT uuid, max(aenttimestamp) as aenttimestampn" +
+    " FROM archentity join aenttype using (aenttypeid)n" +
+    " where archentity.deleted is nulln" +
+    "   and lower(aenttypename) = lower('gps_track')n" +
+    " group by uuidn" +
     " having max(aenttimestamp)");
 ```
 
@@ -3752,12 +3752,12 @@ To add database and legacy selection queries use the following.
 ```
 // create a query builder
 queryBuilder = createQueryBuilder(
-        "select uuid\n" +
-        "  from latestNonDeletedArchent\n" +
-        "  JOIN latestNonDeletedAentValue using (uuid)\n" +
-        "  join aenttype using (aenttypeid)\n" +
-        "  LEFT OUTER JOIN vocabulary using (vocabid, attributeid) \n" +
-        "  where lower(aenttypename) = lower(?) \n" +
+        "select uuidn" +
+        "  from latestNonDeletedArchentn" +
+        "  JOIN latestNonDeletedAentValue using (uuid)n" +
+        "  join aenttype using (aenttypeid)n" +
+        "  LEFT OUTER JOIN vocabulary using (vocabid, attributeid) n" +
+        "  where lower(aenttypename) = lower(?) n" +
         "   group by uuid");
  
 // add a parameter type with default argument
@@ -4002,8 +4002,8 @@ e.g. startTrackingGPS and stopTrackingGPS
 
 
 ```
-onEvent("controls/tab1/starttrackingtime", "click", "startTrackingGPS(\"time\", 10, \"saveTimeGPSTrack()\")");
-onEvent("controls/tab1/starttrackingdistance", "click", "startTrackingGPS(\"distance\", 10, \"saveDistanceGPSTrack()\")");
+onEvent("controls/tab1/starttrackingtime", "click", "startTrackingGPS("time", 10, "saveTimeGPSTrack()")");
+onEvent("controls/tab1/starttrackingdistance", "click", "startTrackingGPS("distance", 10, "saveDistanceGPSTrack()")");
 onEvent("controls/tab1/stoptracking", "click", "stopTrackingGPS()");
 
 saveTimeGPSTrack()
@@ -4227,7 +4227,7 @@ To attach files, photos, videos and audios use the following apis.
 
 ### Saving Files to Records
 
-To save files to an entity modify the data\_schema.xml to have the file
+To save files to an entity modify the data_schema.xml to have the file
 attribute set to true. e.g.
 
 
@@ -4346,22 +4346,22 @@ Here is an example to quickly setup saving photos, videos, audios and
 files.
 
 When saving files to an entity you must save each file to an attribute
-with type \'file\'.
+with type 'file'.
 
 
 
 ```
 // attach files to file list view
-onEvent("tabgroup1/tab1/attachFile", "attachFileTo(\"tabgroup1/tab1/files\");");
+onEvent("tabgroup1/tab1/attachFile", "attachFileTo("tabgroup1/tab1/files");");
  
 // attach audios to file list view
-onEvent("tabgroup1/tab1/attachAudio", "attachAudioTo(\"tabgroup1/tab1/audios\");");
+onEvent("tabgroup1/tab1/attachAudio", "attachAudioTo("tabgroup1/tab1/audios");");
  
 // attach picture to camera picture gallery
-onEvent("tabgroup1/tab1/attachPicture", "attachPictureTo(\"tabgroup1/tab1/pictures\");");
+onEvent("tabgroup1/tab1/attachPicture", "attachPictureTo("tabgroup1/tab1/pictures");");
  
 // attach video to camera picture gallery
-onEvent("tabgroup1/tab1/attachVideo", "attachVideoTo(\"tabgroup1/tab1/videos\");");
+onEvent("tabgroup1/tab1/attachVideo", "attachVideoTo("tabgroup1/tab1/videos");");
 ```
 
 
@@ -4443,18 +4443,18 @@ call:
 
 
 ```
-captureHardware("Microsoft Wired Keyboard 600", "\n", "showHardwareBuffer()");
+captureHardware("Microsoft Wired Keyboard 600", "n", "showHardwareBuffer()");
  
 showHardwareBuffer()
 ```
 
 
 
-In the above example,  \"Microsoft Wired Keyboard 600\" is the name of
-the device, \"\\n\" is the delimiter character used to recognise end of
+In the above example,  "Microsoft Wired Keyboard 600" is the name of
+the device, "n" is the delimiter character used to recognise end of
 input, and the final argument is the callback to be used. In this case,
 the callback gets the contents of the buffer for the device using the
-specified API call \'getHardwareBufferContents()\' and shows it as a
+specified API call 'getHardwareBufferContents()' and shows it as a
 toast.
 
 There are also two related API calls which help with discovering
@@ -4509,7 +4509,7 @@ Use the following to execute code.
 
 
 ```
-callback = "showToast(\"this is a test\")";
+callback = "showToast("this is a test")";
 execute(callback);
 ```
 
@@ -4520,15 +4520,15 @@ Users
 
 ### Enabling User Signup Example
 
-Firstly, define the Signup UI elements in ui\_schema.xml so the \'Sign
-up\' button appears in the User tab along with the \'Select User\'
+Firstly, define the Signup UI elements in ui_schema.xml so the 'Sign
+up' button appears in the User tab along with the 'Select User'
 dropdown.  This can be given a language specific label using the
-\'Signup\' label name in the relevant Arch16n language files as shown
+'Signup' label name in the relevant Arch16n language files as shown
 below.
 
 
 
-**ui\_schema.xml**
+**ui_schema.xml**
 
 
 
@@ -4591,7 +4591,7 @@ re-populate the Select User dropdown if account creation is successful
 
 
 
-**ui\_logic.bsh**
+**ui_logic.bsh**
 
 
 
@@ -4606,13 +4606,13 @@ onClickUserSignup ()
 
 ### Enabling User Authentication Example
 
-Add a Login button UI element to ui\_schema.xml and its related trigger
+Add a Login button UI element to ui_schema.xml and its related trigger
 definition.  This can also be labelled via Arch16n as with the Sign Up
 button in the section above using the Login label name.
 
 
 
-**ui\_schema.xml**
+**ui_schema.xml**
 
 
 
@@ -4654,7 +4654,7 @@ verify the user provided password matches.
 
 
 
-**ui\_logic.bsh**
+**ui_logic.bsh**
 
 
 
@@ -4674,7 +4674,7 @@ the callback to run when authentication is successful
 
 
 
-**ui\_logic.bsh**
+**ui_logic.bsh**
 
 
 
@@ -5001,7 +5001,7 @@ it has to return something
 
 
 
-the second argument is the \"failure string\"
+the second argument is the "failure string"
 
 
 
@@ -5026,7 +5026,7 @@ string
 
 
 
-okay. And can this be in the \"inner\" query?
+okay. And can this be in the "inner" query?
 
 
 
@@ -5044,14 +5044,14 @@ so when you construct a validator of type queryChecker
 
 
 
-the query you pass needs to be column1 (with correct\|0 for not correct)
+the query you pass needs to be column1 (with correct|0 for not correct)
 and column2 with (validation string)
 
 
 
 
 
-the query I pass with \<query\> foo \</query\> ?
+the query I pass with <query> foo </query> ?
 
 
 
@@ -5067,13 +5067,13 @@ its inputs are the param values
 
 
 so therefore, to pass uuid as an input, I have to do the shennagans
-I\'ve already done (a param that exports the uuid)
+I've already done (a param that exports the uuid)
 
 
 
 
 
-And query=\"foo\" is equivalent to the query tag
+And query="foo" is equivalent to the query tag
 
 
 
@@ -5190,13 +5190,13 @@ what stylings work for each are:
 |                       | lists                 |                       |
 +-----------------------+-----------------------+-----------------------+
 | dropdown              | Dropdowns,            | all (text stylings    |
-|                       | hierarchical          | don\'t work for       |
+|                       | hierarchical          | don't work for       |
 |                       | dropdowns             | hierarchical          |
 |                       |                       | dropdowns)            |
 +-----------------------+-----------------------+-----------------------+
 | checkbox-group        | Group of checkboxes   | backgrounds, borders, |
 |                       | NB: file list groups  | text styings          |
-|                       | don\'t have a class   |                       |
+|                       | don't have a class   |                       |
 +-----------------------+-----------------------+-----------------------+
 | checkbox              | Any checkbox inside a | backgrounds, borders, |
 |                       | checkbox group or     | text stylings         |
@@ -5239,7 +5239,7 @@ e.g. by id reference
 
 Views can also be individually styled using their reference id as
 specified in the UI schema. This is done by a hash followed by the id,
-with labels having \"-label\" appended:
+with labels having "-label" appended:
 
 
 
@@ -5255,9 +5255,9 @@ e.g. by custom class name
 
 Views can also be assigned a class name in the UI schema. This can then
 be used to style a number of different views with the same styling. A
-class name can be assigned by adding a \"faims\_style\_class\" attribute
+class name can be assigned by adding a "faims_style_class" attribute
 to a view. Labels for this view will have the same class name but with
-\"-label\" appended:
+"-label" appended:
 
 
 
@@ -5321,11 +5321,11 @@ Adding Arch16n properties file to the module will allow you to translate
 reserved terms in view labels, buttons, popup messages and vocabulary.
 You can add a single file or a tarball of multiple files. For multiple
 arch16n properties files, each file inside the tarball must have a
-\'.properties\' extension. The user will see a dropdown on the app prior
+'.properties' extension. The user will see a dropdown on the app prior
 to loading the module where they can select the desired arch16n file to
 use. This dropdown can be sorted by applying a sort order in the
 filenames of the files in the form:
-\"\<name\>.\<sort\_order\>.properties\". For example:
+"<name>.<sort_order>.properties". For example:
 
 
 
@@ -5470,7 +5470,7 @@ e.g.
 
 
 Textboxes require just a label, and can take in an optional argument
-defining if it\'s required or not
+defining if it's required or not
 
 Checkboxes require a label and an array of items.
 
@@ -5574,7 +5574,7 @@ git push -u origin master
 
 
 
-3\. Tar the exporter and upload it to the server.
+3. Tar the exporter and upload it to the server.
 
 
 
@@ -5585,7 +5585,7 @@ tar jcf exporter-test.tar.gz exporter-test
 
 
 
-4\. Now you can update the exporter at anytime by pressing the update
+4. Now you can update the exporter at anytime by pressing the update
 button in the plugin-manager. This will pull from the master branch the
 latest changes and re-run the installer on the exporter.
 
@@ -5639,7 +5639,7 @@ examples.
 | Example     | Description | Variables   | Format      | Result      |
 |             |             |             | String      |             |
 +=============+=============+=============+=============+=============+
-| Plain text  | A format    | \           | Hello World | Hello World |
+| Plain text  | A format    |            | Hello World | Hello World |
 |             | string with |             |             |             |
 |             | no          |             |             |             |
 |             | conditions  |             |             |             |
@@ -5658,7 +5658,7 @@ examples.
 |             | (not very   |             |             |             |
 |             | useful).    |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain text  | To use data | \$1 =\>     | Hello \$1   | Hello World |
+| Plain text  | To use data | $1 =>     | Hello $1   | Hello World |
 | with        | from the    | World       |             |             |
 | variables   | attribute   |             |             |             |
 |             | within your |             |             |             |
@@ -5680,29 +5680,29 @@ examples.
 |             | in your     |             |             |             |
 |             | attribute   |             |             |             |
 |             |             |             |             |             |
-|             | i.e. \$1    |             |             |             |
-|             | =\>         |             |             |             |
+|             | i.e. $1    |             |             |             |
+|             | =>         |             |             |             |
 |             | Vocabname,  |             |             |             |
-|             | \$2 =\>     |             |             |             |
+|             | $2 =>     |             |             |             |
 |             | Measure,    |             |             |             |
-|             | \$3 =\>     |             |             |             |
+|             | $3 =>     |             |             |             |
 |             | Freetext    |             |             |             |
-|             | and \$4 =\> |             |             |             |
+|             | and $4 => |             |             |             |
 |             | Certainty   |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain Text  | A format    | \$1 =\> Foo | (\$1) \$2,  | (Foo) Bar,  |
-| with        | string can  |             | \$3, \$4    | Something,  |
-| multiple    | reference   | \$2 =\> Bar | (\$1)       | Else (Foo)  |
+| Plain Text  | A format    | $1 => Foo | ($1) $2,  | (Foo) Bar,  |
+| with        | string can  |             | $3, $4    | Something,  |
+| multiple    | reference   | $2 => Bar | ($1)       | Else (Foo)  |
 | variables   | multiple    |             |             |             |
-|             | variables   | \$3 =\>     |             |             |
+|             | variables   | $3 =>     |             |             |
 |             | and can     | Something   |             |             |
 |             | reference   |             |             |             |
-|             | the same    | \$4 =\>     |             |             |
+|             | the same    | $4 =>     |             |             |
 |             | variable    | Else        |             |             |
 |             | multiple    |             |             |             |
 |             | times.      |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain Text  | To control  | \$1         | This is }  |             |
+| Plain Text  | To control  | $1         | This is }  |             |
 |             | conditional |             |             |             |
 |             | expressions |             |             |             |
 |             | .           |             |             |             |
@@ -5762,12 +5762,12 @@ examples.
 |             | reference   |             |             |             |
 |             |             |             |             |             |
 |             | e.g.        |             |             |             |
-|             | \"Hello     |             |             |             |
-|             | World\",    |             |             |             |
-|             | 1.123, \$1  |             |             |             |
+|             | "Hello     |             |             |             |
+|             | World",    |             |             |             |
+|             | 1.123, $1  |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain text  | A format    | \$1 =\>     | This is } |             |
-|             | conditional | \$2 =\>     | } |             |
+| Plain text  | A format    | $1 =>     | This is } |             |
+|             | conditional | $2 =>     | } |             |
 +-------------+-------------+-------------+-------------+-------------+
 
 
@@ -5789,17 +5789,17 @@ above.
 +===================================+===================================+
 | equal(x, y)                       | x == y                            |
 +-----------------------------------+-----------------------------------+
-| greaterThan(x, y)                 | x \> y                            |
+| greaterThan(x, y)                 | x > y                            |
 +-----------------------------------+-----------------------------------+
-| greaterThanEqual(x, y)            | x \>= y                           |
+| greaterThanEqual(x, y)            | x >= y                           |
 +-----------------------------------+-----------------------------------+
-| lessThan(x, y)                    | x \< y                            |
+| lessThan(x, y)                    | x < y                            |
 +-----------------------------------+-----------------------------------+
-| lessThanEqual(x, y)               | x \<= y                           |
+| lessThanEqual(x, y)               | x <= y                           |
 +-----------------------------------+-----------------------------------+
-| between(x, y, z)                  | x \< y && y \< z                  |
+| between(x, y, z)                  | x < y && y < z                  |
 +-----------------------------------+-----------------------------------+
-| in(x, \[a, b, c\])                | x in list \[a, b, c\]             |
+| in(x, [a, b, c])                | x in list [a, b, c]             |
 +-----------------------------------+-----------------------------------+
 | not(x)                            | !x                                |
 +-----------------------------------+-----------------------------------+
@@ -5811,51 +5811,51 @@ above.
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Example                                           Variables              Format String                                                                                     Result
   ------------------------------------------------- ---------------------- ------------------------------------------------------------------------------------------------- --------------
-  Null                                              \$1=Hello, \$2=World   NULL                                                                                              Hello, World
+  Null                                              $1=Hello, $2=World   NULL                                                                                              Hello, World
 
-  Empty                                             \$1=Hello, \$2=World   \                                                                                                 \
+  Empty                                             $1=Hello, $2=World                                                                                                    
 
-  Plain text                                        \$1=Hello, \$2=World   Test                                                                                              Test
+  Plain text                                        $1=Hello, $2=World   Test                                                                                              Test
 
-  Variables                                         \$1=Hello, \$2=World   \$1 \$2                                                                                           Hello World
+  Variables                                         $1=Hello, $2=World   $1 $2                                                                                           Hello World
 
-  Single condition                                  \$1=Hello, \$2=World   \$1 }                                                                  Hello World
+  Single condition                                  $1=Hello, $2=World   $1 }                                                                  Hello World
 
-  Parser Error                                      \$1=Hello, \$2=World   \$1 }                                                                        \
+  Parser Error                                      $1=Hello, $2=World   $1 }                                                                        
 
-  Null check                                        \$1=Hello, \$2=World   }                                                                             World
+  Null check                                        $1=Hello, $2=World   }                                                                             World
 
-  Number condition and double quote string result   \$1=Hello, \$2=World   }                                                        Hello World
+  Number condition and double quote string result   $1=Hello, $2=World   }                                                        Hello World
 
-  Number condition and single quote string result   \$1=Hello, \$2=World   }                                                        Hello World
+  Number condition and single quote string result   $1=Hello, $2=World   }                                                        Hello World
 
-  Number condition and number result                \$1=Hello, \$2=World   }                                                               1.01
+  Number condition and number result                $1=Hello, $2=World   }                                                               1.01
 
-  Number condition and variable result              \$1=Hello, \$2=World   }                                                               Hello
+  Number condition and variable result              $1=Hello, $2=World   }                                                               Hello
 
-  Int condition                                     \$1=Hello, \$2=World   }                                                              Hello World
+  Int condition                                     $1=Hello, $2=World   }                                                              Hello World
 
-  String condition                                  \$1=Hello, \$2=World   }                                                        Hello
+  String condition                                  $1=Hello, $2=World   }                                                        Hello
 
-  Variable condition                                \$1=Hello, \$2=World   }                                                                  Hello
+  Variable condition                                $1=Hello, $2=World   }                                                                  Hello
 
-  Between condition                                 \$1=Hello, \$2=World   }                                                        Hello
+  Between condition                                 $1=Hello, $2=World   }                                                        Hello
 
-  Not condition                                     \$1=Hello, \$2=World   }                                                   World
+  Not condition                                     $1=Hello, $2=World   }                                                   World
 
-  In condition                                      \$1=Hello, \$2=World   }                                       Hello
+  In condition                                      $1=Hello, $2=World   }                                       Hello
 
-  In condition with int                             \$1=Hello, \$2=World   }                                               World
+  In condition with int                             $1=Hello, $2=World   }                                               World
 
-  In condition with variable                        \$1=Hello, \$2=World   }                                             Hello
+  In condition with variable                        $1=Hello, $2=World   }                                             Hello
 
-  And condition                                     \$1=Hello, \$2=World   }                            Hello
+  And condition                                     $1=Hello, $2=World   }                            Hello
 
-  Or and condition                                  \$1=Hello, \$2=World   }             Hello
+  Or and condition                                  $1=Hello, $2=World   }             Hello
 
-  Plain text and condition                          \$1=Hello, \$2=World   Blah }        Blah Hello
+  Plain text and condition                          $1=Hello, $2=World   Blah }        Blah Hello
 
-  Plain text and condition with spaces              \$1=Hello, \$2=World   Blah }   Blah Hello
+  Plain text and condition with spaces              $1=Hello, $2=World   Blah }   Blah Hello
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -5948,7 +5948,7 @@ which will then generate a predefined html template for the info tab.
 After adding in the html descriptions you must then flag the view to use
 html descriptions via the ui schema or dynamic ui e.g.
 
-In the ui schema you have to set the faims\_html\_description to be
+In the ui schema you have to set the faims_html_description to be
 true.
 
 
@@ -5984,7 +5984,7 @@ Now the info tab will render you custom html. 
 
 
 Tab showing and closing actions generally should be embedded within an
-event handler for that tab, as rendering doesn\'t occur immediately
+event handler for that tab, as rendering doesn't occur immediately
 after the code is read.
 
 e.g.
@@ -6011,5 +6011,5 @@ ht: auto;vertical-align: baseline;background-image: none;
 #### Arch16n
 
 
--   ![3014726\_attachments\_faims\_format\_box\_diagram
+-   ![3014726_attachments_faims_format_box_diagram
     (1).jpg](attachments/3014726_attachments_faims_format_box_diagram%20%281%29.jpg)

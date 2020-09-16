@@ -2,14 +2,14 @@ The Zebra P4T Printer - Connecting and Calibrating
 ===============================================================================================
 
 
-Created: Christian Nassif-Haynes (Unlicensed) (christian\@fedarch.org) -
+Created: Christian Nassif-Haynes (Unlicensed) (christian@fedarch.org) -
 2017-09-19T09:17:24.186Z
 
 Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian\@fedarch.org) - 2017-09-19T13:31:09.368Z
+(christian@fedarch.org) - 2017-09-19T13:31:09.368Z
 
 
- 
+
 
 Connecting
 ========================================
@@ -21,11 +21,11 @@ Connecting
 
         rfcomm0
 
-    Make sure to replace \"00:07:80:44:4F:37\" with the MAC address of
+    Make sure to replace "00:07:80:44:4F:37" with the MAC address of
     the printer.
 
 3.  Run `sudo rfcomm connect rfcomm0 00:07:80:44:4F:37`. Make sure to
-    replace \"00:07:80:44:4F:37\" with the MAC address of the
+    replace "00:07:80:44:4F:37" with the MAC address of the
     printer.
 4.  Use [this](http://sourceforge.net/p/pyserial/code/HEAD/tree/trunk/pyserial/serial/tools/miniterm.py)
     Python script to connect to the printer like
@@ -44,8 +44,8 @@ Connecting
         FORM
         PRINT
 
-    The printer should print a label containing the text \'Hello
-    World\'.
+    The printer should print a label containing the text 'Hello
+    World'.
 
 Calibrating
 =========================================
@@ -65,8 +65,8 @@ paper with a 19 mm core and no
 perforations.
 
 If this command ran successfully, the printer should feed the labels
-through in regular intervals so that the label\'s gap is lined up with
-the printer\'s cutter. In other words, pressing the feed button should
+through in regular intervals so that the label's gap is lined up with
+the printer's cutter. In other words, pressing the feed button should
 feed exactly one label.
 
 
