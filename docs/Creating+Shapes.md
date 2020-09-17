@@ -14,22 +14,15 @@ icon. ![](img/0_bottom_layers_s.png)
 -   Ensure that you have selected an appropriate destination layer for
     editing
 
--   Click on "Create" tool in the tool menu. Hold to roll out a menu
-    with
-    point ![](https://lh3.googleusercontent.com/II5jOYDFkEWFBum0EOY_Jxr02eucdtThz-IeW7jcAi-veUUZfAVGRkM0JwsnUxkKl4GrsZ3ObZA4FUG27NwbsPeJWWzUuH6K9UnW6zcKiI81wr6UyGgidNOa),
-    line ![](https://lh4.googleusercontent.com/61NAhjXQP5rDqa17uN2uFoOMDmT7C_UKziNvS0x-Tdy_NEUhrTmSzvSX8g161959KUGT0Hw0N3vbmFak3DuQ6DgqcCB3QmK_MV-rJfvkl7-yhxYbe7lO14YN) or
-    polygon ![](https://lh3.googleusercontent.com/57U2LJF7KlFpOOpxDaXLvWLstO8L9JH4eV1NrFoWOPkP3vUH41_63chvDhYPuRaGkQWWMfhjl8-AawN3r3d5BlCRzvFnvqrVjcHDlC0uMDIWBB5eFY7VZgBQAg) tool.
-    Select whichever you need. Your last selection will be saved in the
+-   Click on "Create" tool in the tool menu. Hold to roll out a menu    with     point ![](https://lh3.googleusercontent.com/II5jOYDFkEWFBum0EOY_Jxr02eucdtThz-IeW7jcAi-veUUZfAVGRkM0JwsnUxkKl4GrsZ3ObZA4FUG27NwbsPeJWWzUuH6K9UnW6zcKiI81wr6UyGgidNOa),    line ![](https://lh4.googleusercontent.com/61NAhjXQP5rDqa17uN2uFoOMDmT7C_UKziNvS0x-Tdy_NEUhrTmSzvSX8g161959KUGT0Hw0N3vbmFak3DuQ6DgqcCB3QmK_MV-rJfvkl7-yhxYbe7lO14YN) or    polygon ![](https://lh3.googleusercontent.com/57U2LJF7KlFpOOpxDaXLvWLstO8L9JH4eV1NrFoWOPkP3vUH41_63chvDhYPuRaGkQWWMfhjl8-AawN3r3d5BlCRzvFnvqrVjcHDlC0uMDIWBB5eFY7VZgBQAg) tool.    Select whichever you need. Your last selection will be saved in the
     tool menu.
 
 -   Draw the shape
 
--   Use
-    "Undo"![](https://lh3.googleusercontent.com/X2og5PQ1m5fcH1ZPndUmuq-wMjn4pcFtdyX-SdfKA3108jbwbjsPgrhj4l5Z_DFMLQYtF2tl0Md4gRzvlIOTp-rDPGIgjN-BtbcBToeKDQp8o4_hHLh9B8xZ) to
+-   Use    "Undo"![](https://lh3.googleusercontent.com/X2og5PQ1m5fcH1ZPndUmuq-wMjn4pcFtdyX-SdfKA3108jbwbjsPgrhj4l5Z_DFMLQYtF2tl0Md4gRzvlIOTp-rDPGIgjN-BtbcBToeKDQp8o4_hHLh9B8xZ) to
     delete the point you just made
 
--   Press
-    "Finish" ![](https://lh5.googleusercontent.com/sjtvPmzLCCQ9o6f658ikUDzAZKJu6x854IHX8cZS_L4IlXgYBHtuHUVjNLWbahBbOwkF_7I7Wcxw8GVi_C4rEGGOsYuTyAW__w6BFxz_1_0JNMNyAw-wUWJE) to
+-   Press    "Finish" ![](https://lh5.googleusercontent.com/sjtvPmzLCCQ9o6f658ikUDzAZKJu6x854IHX8cZS_L4IlXgYBHtuHUVjNLWbahBbOwkF_7I7Wcxw8GVi_C4rEGGOsYuTyAW__w6BFxz_1_0JNMNyAw-wUWJE) to
     close the shape
 
  

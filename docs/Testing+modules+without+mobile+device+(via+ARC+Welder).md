@@ -51,7 +51,7 @@ you to download and install Chrome.)
 2.  Once you have ARC Welder running, click the "Add your APK" button
     and select the file you just downloaded.
 3.  Select Portrait, Tablet and Yes (for Clipboard Access) as shown in
-    the following screenshot:[![Inline images 1](https://mail.google.com/mail/u/0/?ui=2&ik=b146ced06a&view=fimg&th=14de5337a7556b28&attid=0.1&disp=emb&realattid=ii_14cdfc5223f093cc&attbid=ANGjdJ_CEADEpnSAwAQkEccKk03w4OfLqz_YB1WAk6uJumoGDX9GLL3YNfwmAbr5HcPymLmyQj4jKAmDmu6pxpKG_YXgG_icw5T4Ec6W7OmfbEau1SmaWFL9T0l3MpU&sz=w490-h824&ats=1434069473953&rm=14de5337a7556b28&zw&atsh=1)    
+    the following screenshot:[!][Inline images 1](https://mail.google.com/mail/u/0/?ui=2&ik=b146ced06a&view=fimg&th=14de5337a7556b28&attid=0.1&disp=emb&realattid=ii_14cdfc5223f093cc&attbid=ANGjdJ_CEADEpnSAwAQkEccKk03w4OfLqz_YB1WAk6uJumoGDX9GLL3YNfwmAbr5HcPymLmyQj4jKAmDmu6pxpKG_YXgG_icw5T4Ec6W7OmfbEau1SmaWFL9T0l3MpU&sz=w490-h824&ats=1434069473953&rm=14de5337a7556b28&zw&atsh=1)    
 
 4.  Click the "Launch App" button.
 

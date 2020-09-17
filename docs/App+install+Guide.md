@@ -9,8 +9,7 @@ title: App Install Guide
 1.  Ensure that your device is running Android 6 or higher. Switch your
     wifi on.
 2.  Go to Google Play Store
-3.  Search for [FAIMS
-    Mobile](https://play.google.com/store/apps/details?id=au.edu.faims.mq.fieldresearch2)
+3.  Search for [FAIMS h Mobile](https://play.google.com/store/apps/details?id=au.edu.faims.mq.fieldresearch2)
 4.  Download the app. 
 5.  Upon installing the app you will be prompted to download sample
     modules from our server at
@@ -20,8 +19,7 @@ title: App Install Guide
     different time to download depending on whether they contain any
     image data or not. 
 6.  If you have made arrangements about your own customized module,
-    please contact [our
-    team](mailto:enquiries@fedarch.org) for instructions
+    please contact [our  team](mailto:enquiries@fedarch.org) for instructions
     to its whereabouts. You can have as many modules on your device as
     you wish
 ---
@@ -29,8 +27,7 @@ title: App Install Guide
 
 If the download from Google Play
 fails, download the app by going to fedarch.org/apk/
-or [click here to
-download](https://www.fedarch.org/apk/faims-android-latest.apk)
+or [click here to download](https://www.fedarch.org/apk/faims-android-latest.apk)
 directly. (We strongly disrecommend this method unless you're aware
 of the risks of installing .apks directly from the internet.
 Therefore we are intentionally leaving out instructions on how to
