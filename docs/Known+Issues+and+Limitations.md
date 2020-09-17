@@ -1,7 +1,12 @@
+---
+title: Known Issues and Limitations
+---
+
+
 Known Issues and Limitations
 =========================================================================
 
- 
+
 This page was requested by Brian to detail known limitations of the
 hardware and software associated with FAIMS. (This includes all known
 bugs within the FAIMS system as of 29/10/2013)

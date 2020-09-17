@@ -1,3 +1,7 @@
+---
+title: Installing Spatialite Tool on Windows
+---
+
 Installing Spatialite Tool on Windows
 ==================================================================================
 
@@ -26,7 +30,7 @@ Last Updated: Christian Nassif-Haynes (Unlicensed)
     typing `spatialite_tool --help` and pressing enter. If you see
     something like the following, installation was successful:
 
- 
+
     ```
     C:\Users\mq20151400>spatialite_tool --help
 

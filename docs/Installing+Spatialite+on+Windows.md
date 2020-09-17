@@ -1,3 +1,8 @@
+---
+title: Installing Spatialite on Windows
+---
+
+
 Installing Spatialite on Windows
 =============================================================================
 
@@ -7,7 +12,7 @@ Created: Christian Nassif-Haynes (Unlicensed) (christian@fedarch.org) -
 
 Last Updated: Christian Nassif-Haynes (Unlicensed)
 (christian@fedarch.org) - 2018-06-13T11:12:19.756Z
- 
+
 
 *Note: This was tested on Windows 10.*
 

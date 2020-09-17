@@ -1,3 +1,7 @@
+---
+title: Install Spatialite Tools on Ubuntu
+---
+
 Install Spatialite Tools on Ubuntu
 ===============================================================================
 

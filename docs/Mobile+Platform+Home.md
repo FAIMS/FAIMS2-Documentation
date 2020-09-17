@@ -1,3 +1,7 @@
+---
+title: Mobile Platform Home
+---
+
 Mobile Platform Home
 =================================================================
 

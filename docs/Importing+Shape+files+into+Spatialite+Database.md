@@ -1,3 +1,7 @@
+---
+title: Importing Shape files into Spatialite Database
+---
+
 Importing Shape files into Spatialite Database
 ==============================================
 

@@ -1,3 +1,7 @@
+---
+title: Install and Run the FAIMS Server
+---
+
 Install and Run the FAIMS Server
 =============================================================================
 

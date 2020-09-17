@@ -1,9 +1,9 @@
+---
+title: Label Control
+---
+
 Label Control
 ==========================================================
-
-
-
-
 
 
 Switch off the labels in the Vector layer.
