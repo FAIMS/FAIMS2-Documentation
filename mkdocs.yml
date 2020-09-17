@@ -7,5 +7,4 @@ plugins:
 markdown_extensions:
   - admonition
   - toc:
-      toc_depth: 2
       permalink: True
