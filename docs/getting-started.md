@@ -194,9 +194,9 @@ Much more! The sample recording modules illustrate some of the Mobile
 Platform functionality. The App can actually do much more, though, so if
 you have specific needs and requirements, please contact us.
 
-To learn more about FAIMS project in general, please see [[Australian
+To learn more about FAIMS project in general, please see [Australian
 Archaeology 2013 (77)
-article]](http://search.informit.com.au/documentSummary;dn=721992925861948;res=IELHSS)*,*
+article](http://search.informit.com.au/documentSummary;dn=721992925861948;res=IELHSS)*,*
 titled *Creating eResearch tools for archaeologists: The federated
 archaeological information management systems project.*
 
