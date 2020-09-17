@@ -5,7 +5,8 @@ Map Zooming
 
 
 
-[Zoom]
+Zoom
+---------------------
 
 -   zoom in by tapping the screen with two fingers and slowly spreading
     them apart. Notice the changing scale in the bottom frame.

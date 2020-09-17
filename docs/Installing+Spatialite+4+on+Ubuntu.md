@@ -2,7 +2,7 @@ Installing Spatialite 4 on Ubuntu
 ==============================================================================
 
 
-
+ 
 
 
 ### Installing Spatialite on Ubuntu
