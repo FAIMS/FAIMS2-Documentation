@@ -57,9 +57,6 @@ you to download and install Chrome.)
 
 ### Load the FAIMS module
 
-</div>
-
-
 
 1.  Once the FAIMS app is running, click the green "Enter Server
     Details" button.
