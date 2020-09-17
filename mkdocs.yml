@@ -1,13 +1,11 @@
 site_name: FAIMS 2.6 User and Module Documentation
-nav:
-  - Home: /
-  - User Documentation and Handouts: Handout
-  - Developer Usage: Developer+Usage/
-  - Cookbook: FAIMS+Data%2C+UI+and+Logic+Cook-Book/
-  - Module API: Program+Logic+Support/
-theme: readthedocs
+theme: 
+  name: readthedocs
+  custom_dir: readthedocs
+plugins:
+  - search
 markdown_extensions:
   - admonition
   - toc:
-      toc_depth: 1
+      toc_depth: 2
       permalink: True

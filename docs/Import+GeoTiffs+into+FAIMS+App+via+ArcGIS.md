@@ -2,9 +2,6 @@
 title: Import GeoTiffs into FAIMS App via ArcGIS
 ---
 
-Import GeoTiffs into FAIMS App via ArcGIS
-======================================================================================
-
 *For ArcGIS 10.1 users, here are the instructions on how to prepare
 GeoTiffs for use in the FAIMS app using the ArcGIS tools.*
 

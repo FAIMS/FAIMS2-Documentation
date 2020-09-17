@@ -2,7 +2,7 @@
 title: FAIMS User Handouts
 ---
 
-You can download these instructions from the [handout](../handout.pdf) in case you need them on the go.
+You can download these instructions from the [handout](handout.pdf) in case you need them on the go.
 
 [TOC]
 

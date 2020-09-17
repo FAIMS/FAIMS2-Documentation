@@ -7,8 +7,7 @@ title: Installing GDAL Tools on Windows
 
 1.  Download the [GDAL Tools Installer](http://download.gisinternals.com/sdk/downloads/release-1911-gdal-2-3-0-mapserver-7-0-7/gdal-203-1911-ecw-33.msi).
 2.  Follow the prompts. Select 'Typical' when asked to choose the
-    setup type which best suits your needs:
-    ![](../attachments/299597846_thumbnails_3.PNG)    
+    setup type which best suits your needs
 3.  Once the installer is finished, do the following:
 
     1.  Add the directory `C:\Program Files (x86)\GDAL` to your system
@@ -43,6 +42,3 @@ title: Installing GDAL Tools on Windows
         C:\Program Files (x86)\GDAL\gdal-data
         ```
 
-
-
--   [299597846_attachments_3.PNG](attachments/299597846_attachments_3.PNG)

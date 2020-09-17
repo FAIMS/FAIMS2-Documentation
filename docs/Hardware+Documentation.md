@@ -3,7 +3,7 @@ title: Hardware Documentation
 ---
 
 
-![](../attachments/3014719_attachments_FAIMS Hardware Diagram - New Page.png)
+![](attachments/3014719_attachments_FAIMS Hardware Diagram.png)
 
 USB drive attached to the NUC is intended for backups and recovery.
 
@@ -32,5 +32,3 @@ The access point provides connection for mobile devices to the network.
  
 
 
--   [3014719\_attachments\_FAIMS Hardware Diagram - New
-    Page.png](attachments3014719_attachments_FAIMS%20Hardware%20Diagram%20-%20New%20Page.png)

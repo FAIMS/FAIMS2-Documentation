@@ -5776,7 +5776,7 @@ examples.
 The railroad diagram below shows how to construct a conditional
 statement.
 
-![](../attachments/3014726_attachments_faims_format_box_diagram.jpg)]
+![](attachments/3014726_attachments_faims_format_box_diagram.jpg)]
 
 ### Format Statement Functions
 
@@ -6012,4 +6012,4 @@ ht: auto;vertical-align: baseline;background-image: none;
 
 
 -   ![3014726_attachments_faims_format_box_diagram
-    (1).jpg](attachments/3014726_attachments_faims_format_box_diagram%20%281%29.jpg)
+    (1).jpg](attachments/3014726_attachments_faims_format_box_diagram.jpg)
