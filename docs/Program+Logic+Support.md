@@ -2,10 +2,6 @@
 title: Program Logic Support
 ---
 
-
-Program Logic Support
-==================================================================
-
 [TOC]
 
 ### Persist Functionality
@@ -2632,5 +2628,3 @@ Helper method to test if a value is null or empty.
 
 **isNull(List value) ;**
 
-
-</div>

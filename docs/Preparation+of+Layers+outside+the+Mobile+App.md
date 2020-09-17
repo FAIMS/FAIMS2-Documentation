@@ -2,9 +2,6 @@
 title: Preparation of Layers outside the Mobile App
 ---
 
-Preparation of Layers outside the Mobile App
-==========================================================
-
 
 ### Raster  
 
@@ -33,6 +30,3 @@ Once your layers are all prepared you can upload them onto the server
 into a designated folder under the project you are working on. The files
 will be automatically downloaded onto the mobile devices when you finish
 project creation and download the recording module to a device.
-
-
-</div>

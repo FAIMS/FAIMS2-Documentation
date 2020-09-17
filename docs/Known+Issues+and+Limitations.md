@@ -3,10 +3,6 @@ title: Known Issues and Limitations
 ---
 
 
-Known Issues and Limitations
-=========================================================================
-
-
 This page was requested by Brian to detail known limitations of the
 hardware and software associated with FAIMS. (This includes all known
 bugs within the FAIMS system as of 29/10/2013)
@@ -69,5 +65,3 @@ bugs within the FAIMS system as of 29/10/2013)
     double-plotting if Tracklog layer is also added to map
 -   Hidden layers will always be selected if they match the criteria
     despite not being visible
-
-</div>

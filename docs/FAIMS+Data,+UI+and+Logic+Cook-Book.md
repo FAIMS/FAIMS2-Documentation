@@ -1774,7 +1774,7 @@ update();
     faims_arch_ent_type attribute and faims_attribute_name &
     faims_attribute_type attributes.
 -   The ui logic now uses the api calls
-    provided [here](/wiki/pages/resumedraft.action?draftId=3014726) to
+    provided to
     save the data to the database and load data back from the database.
 
 
@@ -5776,7 +5776,7 @@ examples.
 The railroad diagram below shows how to construct a conditional
 statement.
 
-![](attachments/3014726_attachments_faims_format_box_diagram%20(1).jpg)]
+![](../attachments/3014726_attachments_faims_format_box_diagram.jpg)]
 
 ### Format Statement Functions
 

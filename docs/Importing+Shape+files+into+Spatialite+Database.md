@@ -23,15 +23,15 @@ follows:
 
 Ubuntu:
 
--   [Installing Spatialite on    Ubuntu](.../Installing+Spatialite+4+on+Ubuntu)
--   [Installing Spatialite Tools on    Ubuntu](.../Install+Spatialite+Tools+on+Ubuntu)
--   [Installing GDAL    Tools](.../Install+GDAL+Tools)
+-   [Installing Spatialite on    Ubuntu](../Installing+Spatialite+4+on+Ubuntu)
+-   [Installing Spatialite Tools on    Ubuntu](../Install+Spatialite+Tools+on+Ubuntu)
+-   [Installing GDAL    Tools](../Install+GDAL+Tools)
 
 Windows:
 
--   [Installing Spatialite on    Windows](.../Installing+Spatialite+on+Windows)
--   [Installing Spatialite Tool on    Windows](.../Installing+Spatialite+Tool+on+Windows)
--   [Installing GDAL Tools on    Windows](.../FAIMS/Installing+GDAL+Tools+on+Windows)
+-   [Installing Spatialite on    Windows](../Installing+Spatialite+on+Windows)
+-   [Installing Spatialite Tool on    Windows](../Installing+Spatialite+Tool+on+Windows)
+-   [Installing GDAL Tools on    Windows](../FAIMS/Installing+GDAL+Tools+on+Windows)
 
 ### 1. Change shape file projection
 
@@ -79,7 +79,7 @@ Windows:
     Note that to successfully run the above command, sqlite3 must have
     the spatialite extension loaded. If you do not have the spatialite
     extension loaded (e.g. if you installed spatialite following the
-    instructions in [Installing Spatialite on   Windows](.../Installing+Spatialite+on+Windows)),
+    instructions in [Installing Spatialite on   Windows](../Installing+Spatialite+on+Windows)),
     you may use the spatialite executable instead. To do so, run the
     above command by replacing `sqlite3` with `spatialite`.
 
@@ -93,5 +93,3 @@ Windows:
 
 -   SpatialiteDB.sqlite = spatialite database
 -   Table = table name added
-
-</div>

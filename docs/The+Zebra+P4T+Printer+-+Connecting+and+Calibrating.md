@@ -2,17 +2,6 @@
 title: The Zebra P4T Printer - Connecting and Calibrating
 ---
 
-The Zebra P4T Printer - Connecting and Calibrating
-===============================================================================================
-
-
-Created: Christian Nassif-Haynes (Unlicensed) (christian@fedarch.org) -
-2017-09-19T09:17:24.186Z
-
-Last Updated: Christian Nassif-Haynes (Unlicensed)
-(christian@fedarch.org) - 2017-09-19T13:31:09.368Z
-
-
 
 
 Connecting
@@ -75,4 +64,3 @@ feed exactly one label.
 
 
 
-</div>

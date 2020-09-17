@@ -3,12 +3,6 @@ title: Testing Methodology
 ---
 
 
-Testing Methodology
-================================================================
-
-
-
-
 
 This guide specifies the method used for testing a completed module.
 
@@ -33,13 +27,3 @@ Step-by-step guide
     with each element on the Android device, and ensuring that the code
     instructs that element to behave as is expected.
 
--   
-
-    Page:
-
-    </div>
-
-    [Testing Methodology](../Testing+Methodology)
-
-
-</div>

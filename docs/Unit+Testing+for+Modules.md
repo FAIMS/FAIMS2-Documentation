@@ -2,9 +2,6 @@
 title: Unit Testing for Modules
 ---
 
-Unit Testing for Modules
-=====================================================================
-
 [TOC]
 
 Overview
@@ -232,4 +229,3 @@ as they would when the module runs in the FAIMS APK. It is incumbent
 upon the developer to ensure that the mocked functions really do mock
 the desired behaviour of the FAIMS APK.
 
-</div>

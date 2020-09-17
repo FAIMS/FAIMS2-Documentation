@@ -2,11 +2,6 @@
 title: Map Zooming
 ---
 
-Map Zooming
-========================================================
-
-
-
 
 
 Zoom
@@ -18,5 +13,3 @@ Zoom
 -   when you zoom in and out, allow your raster time to adjust to the
     new scale. It may flicker on and off if you keep moving the screen
     constantly 
-
-</div>

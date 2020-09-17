@@ -2,12 +2,6 @@
 title: Navigation
 ---
 
-Navigation
-=======================================================
-
-
-Navigation
-----------
 
 In order to navigate you need to have loaded a vector file with a point
 or you can create a point in the Data Entry or New Canvas layer on the
@@ -33,5 +27,3 @@ app. Once you have the point
     on the top bar)  and follow them.
 
  
-
-</div>

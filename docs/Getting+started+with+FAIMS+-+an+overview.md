@@ -2,12 +2,7 @@
 title: Getting started with FAIMS - an overview
 ---
 
-
-
-
-Getting started with FAIMS - an overview
-=====================================================================================
-
+[TOC]
 
 
 
@@ -87,10 +82,6 @@ Access Point. The server needs to run Ubuntu Linux. You can also use an
 Internet server if the field house/lab is Internet connected, which
 today is often the case except in remote
 locations.
-
-![](http://www.simplybetterit.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/b/eb10071_2.jpg)
-
-![](http://www.solarjoos.com/wp-content/uploads/2010/06/product-image-4.jpg)
 
 Software
 --------

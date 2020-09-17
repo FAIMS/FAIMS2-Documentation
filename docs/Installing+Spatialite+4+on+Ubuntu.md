@@ -3,12 +3,6 @@ title: Installing Spatialite 4 on Ubuntu
 ---
 
 
-Installing Spatialite 4 on Ubuntu
-==============================================================================
-
-
-
-
 
 ### Installing Spatialite on Ubuntu
 
@@ -135,5 +129,3 @@ hasGeoCallBacks()
 1
 ```
 
-
-</div>

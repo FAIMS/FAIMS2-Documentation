@@ -30,7 +30,7 @@ sudo apt-get install expat libexpat1-dev zlib1g-dev
 
 ##### Instructions:
 
--   download and compile [readosm    (1.0.0b)](http://www.gaia-gis.it/gaia-sins/readosm-1.0.0b.tar.gz)
+-   download and compile [readosm    (1.0.0b)](http://www.gaia-gis.it/gaia-sins/)
 
 
 ```
@@ -44,7 +44,7 @@ cd ..
 ```
 
 
--   download and compile [spatialite-tools    (4.1.1)](http://www.gaia-gis.it/gaia-sins/spatialite-tools-4.1.1.tar.gz)
+-   download and compile [spatialite-tools    (4.1.1)](http://www.gaia-gis.it/gaia-sins/)
 
 
 ```

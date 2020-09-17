@@ -2,13 +2,8 @@
 title: Hardware Documentation
 ---
 
-Hardware Documentation
-===================================================================
 
-
-
-
-![](attachments/3014719_attachments_FAIMS Hardware Diagram - New Page.png)
+![](../attachments/3014719_attachments_FAIMS Hardware Diagram - New Page.png)
 
 USB drive attached to the NUC is intended for backups and recovery.
 

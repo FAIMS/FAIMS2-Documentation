@@ -2,13 +2,9 @@
 title: Install and Run the FAIMS Server
 ---
 
-Install and Run the FAIMS Server
-=============================================================================
 
-
-
-Here are the instructions on how to independently install the [FAIMS
-Server](/wiki/spaces/FAIMS/pages/3014723) locally and for free. Please
+Here are the instructions on how to independently install the FAIMS
+Server locally and for free. Please
 follow the decision tree below to assess your situation and contact
 FAIMS leadership should you experience any issues. We are happy to offer
 pre-installed Cloud and local server solutions to fit (almost) any time

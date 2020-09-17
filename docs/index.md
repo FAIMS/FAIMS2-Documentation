@@ -1,5 +1,6 @@
-FAIMS Mobile Platform Documentation
-============================================================
+---
+title: FAIMS Mobile Platform Documentation
+---
 
 ## For Users
 
@@ -36,7 +37,6 @@ FAIMS Mobile Platform Documentation
 -   [Known Issues and Limitations](Known+Issues+and+Limitations/)
 -   [Technical Overview](Technical+Overview/)
 -   [Testing Methodology](Testing+Methodology/)
--   [What is the FAIMS Mobile Application and Server?](What+is+the+FAIMS+Mobile+Application+and+Server_/)
 -   [Hardware Documentation](Hardware+Documentation/)
 -   [Map Zoom](Map+Zoom/)
 -   [The Zebra P4T Printer - Connecting and    Calibrating](The+Zebra+P4T+Printer+-+Connecting+and+Calibrating/)

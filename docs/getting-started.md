@@ -1,4 +1,6 @@
-# FAIMS 101 - Getting Started
+---
+title: FAIMS 101 - Getting Started
+---
 
 [TOC]
 
@@ -32,7 +34,7 @@ Step-by-Step
     b.  Connect your Android device to your computer and install the
         > FAIMS app from Google Play by visiting the [[FAIMS page on the
         > Google Play
-        > Store]](https://play.google.com/store/apps/details?id=au.org.intersect.faims.android&hl=en)
+        > Store]](https://play.google.com/store/apps/details?id=au.edu.faims.mq.fieldresearch2&hl=en_AU)
         > ![Screen Shot 2015-03-06 at 12.03.17
         > pm.png](img/media/image9.png)
 
@@ -108,8 +110,9 @@ User Guidelines
 
 For Guidelines on how to use the Mobile Platform (create, edit, modify
 and administer the modules as well as the server), please refer to our
-[[online User
-Guide.]](https://faimsproject.atlassian.net/wiki/display/MobileUser/Home)
+online User
+Guide.
+
 Alternative path to these manuals exists via the Support tab on our
 website [[www.fedarch.org]](http://www.fedarch.org/) or by
 using the Getting Started button on the Mobile Platform subsections

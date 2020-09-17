@@ -2,13 +2,7 @@
 title: Server Command Line Tasks
 ---
 
-Server Command Line Tasks
-======================================================================
-
 [TOC]
-
-Server Command Line Tasks
-=========================
 
 Use this guide to run common server tasks with the following commands.
 They must be run from inside the faims-web project directory (default:
@@ -406,5 +400,3 @@ and one symbol
 
 Delete a user with the given email
 **rake users:delete email=<user email>**
-
-</div>

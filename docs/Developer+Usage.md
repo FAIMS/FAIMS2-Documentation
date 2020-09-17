@@ -2,8 +2,6 @@
 title: Developer Usage
 ---
 
-Developer Usage
-===============
 
 This page describes how to use the server and android app.
 

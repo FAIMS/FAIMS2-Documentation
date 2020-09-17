@@ -2,11 +2,7 @@
 title: Loading Layers inside the Map View
 ---
 
-
-Loading Layers inside the Map View
-===============================================================================
-
-
+[TOC]
 
 
 
@@ -85,6 +81,3 @@ map
 
  
 
- 
-
-</div>

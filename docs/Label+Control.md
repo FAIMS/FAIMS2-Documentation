@@ -2,9 +2,6 @@
 title: Label Control
 ---
 
-Label Control
-==========================================================
-
 
 Switch off the labels in the Vector layer.
 ------------------------------------------
@@ -24,5 +21,3 @@ To turn the labels off:
 If you later want to turn the labels on again, just follow this same
 path and click "Show labels".
 
-
-</div>

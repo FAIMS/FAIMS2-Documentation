@@ -2,16 +2,8 @@
 title: Measurements
 ---
 
+[TOC]
 
-Measurements
-=========================================================
-
-
-
-
-
-Measurements
-------------
 
 To measure distances between points use the
 "Measure" ![](https://lh4.googleusercontent.com/WtUB9y6QlscOjWH3uiDWmr5JNALrVwpZO_F94Z2SnTPSH-Ye_EYzkH0wzS4NHVR3qDg2aCxTXczOXWHrhqYBj5d8lOK5VRm1DNchGF4dADc6mphB43fsD6YI)tool
@@ -22,7 +14,7 @@ polygon.
 
  
 
-Point Distance
+## Point Distance
  
 
 -   Select "Point     Distance" ![](https://lh6.googleusercontent.com/xYKcbhIePpGnVjePD0I97czcRWW3a19lqGPMVx9nZiDRxQk4Auc4w-wtBRdYo6BerfPwJgPMyFsuSL8uiS7HaS4EYMhxVT9xGbNYPMjfdBQ2vbio_LZOQJaz)    from the Measure tool dropdown
@@ -38,7 +30,7 @@ Point Distance
 -   Click "Clear" to clear the calculation
 
 
- Azimuth between point A and B.
+## Azimuth between point A and B.
 
 
 -   Select "Azimuth"
@@ -57,7 +49,7 @@ Point Distance
 -   Click "Clear" to clear the calculation
 
 
- Line distance
+## Line distance
  
 
 -   Select "Line Distance" tool ![](https://lh5.googleusercontent.com/u0gR1R22u2qubZYXnqqfQF0BCQRYo0BUiehYSF_H6Co2ofN-mqRjh4l2S9SRFz52jZdCOZGXBM5cpYnY45D0T1Zm7fALw0KMeFj3irzB30C9jTUst_U7oyParw)    from
@@ -72,7 +64,7 @@ Point Distance
 -   Click "Clear" to clear the calculation 
 
 
-Area of the polygon
+## Area of the polygon
 
 
 -   Select "Area"
@@ -89,7 +81,3 @@ Area of the polygon
 -   Click "Clear" to clear the calculation
 
  
-
-
-
-</div>
