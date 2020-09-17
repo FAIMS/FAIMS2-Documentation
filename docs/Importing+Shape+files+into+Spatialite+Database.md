@@ -31,7 +31,7 @@ Windows:
 
 -   [Installing Spatialite on    Windows](../Installing+Spatialite+on+Windows)
 -   [Installing Spatialite Tool on    Windows](../Installing+Spatialite+Tool+on+Windows)
--   [Installing GDAL Tools on    Windows](../FAIMS/Installing+GDAL+Tools+on+Windows)
+-   [Installing GDAL Tools on    Windows](../Installing+GDAL+Tools+on+Windows)
 
 ### 1. Change shape file projection
 
