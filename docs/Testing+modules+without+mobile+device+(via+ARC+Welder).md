@@ -62,7 +62,7 @@ you to download and install Chrome.)
     Details" button.
 2.  Underneath the Server Host heading, enter
     "[faims2.fedarch.org](http://faims2.fedarch.org/)"
-    (or any other) as shown in the following screenshot.![Inline images 3](https://mail.google.com/mail/u/0/?ui=2&ik=b146ced06a&view=fimg&th=14de5337a7556b28&attid=0.2&disp=emb&realattid=ii_14cdfc8ff105862e&attbid=ANGjdJ8RdCx_8FJAny2bgKuw_r_Fq88WFJoHbgaNTDyDjREHG0ZkO_dShLenXJe3yXuNnzGcR0_sx-8LLoFtMbZO0ayFmy2NB8j8KYjS8qzHQlYGj_VkatMQYyNXh4g&sz=w524-h824&ats=1434069473954&rm=14de5337a7556b28&zw&atsh=1)    
+    (or any other) as shown in the following screenshot.[Inline images 3](https://mail.google.com/mail/u/0/?ui=2&ik=b146ced06a&view=fimg&th=14de5337a7556b28&attid=0.2&disp=emb&realattid=ii_14cdfc8ff105862e&attbid=ANGjdJ8RdCx_8FJAny2bgKuw_r_Fq88WFJoHbgaNTDyDjREHG0ZkO_dShLenXJe3yXuNnzGcR0_sx-8LLoFtMbZO0ayFmy2NB8j8KYjS8qzHQlYGj_VkatMQYyNXh4g&sz=w524-h824&ats=1434069473954&rm=14de5337a7556b28&zw&atsh=1)    
 3.  Click the "Connect" button.
 4.  Click the desired module from the list and when prompted, select
     "Yes" to download. (Note that downloading can take a few minutes
