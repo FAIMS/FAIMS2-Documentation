@@ -1,3 +1,7 @@
+---
+title: System Handbook
+---
+
 System Handbook
 ============================================================
 
@@ -113,7 +117,7 @@ Production Environment(s)
 +-----------+-----------+-----------+-----------+-----------+-----------+
 ```
 
-Release Notes 
+Release Notes
 -------------
 
 See [Release Notes](../Release+Notes)

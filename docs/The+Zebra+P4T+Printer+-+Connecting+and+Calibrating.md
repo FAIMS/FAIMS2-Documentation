@@ -1,3 +1,7 @@
+---
+title: The Zebra P4T Printer - Connecting and Calibrating
+---
+
 The Zebra P4T Printer - Connecting and Calibrating
 ===============================================================================================
 

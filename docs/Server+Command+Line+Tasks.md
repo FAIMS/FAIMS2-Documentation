@@ -1,3 +1,7 @@
+---
+title: Server Command Line Tasks
+---
+
 Server Command Line Tasks
 ======================================================================
 
