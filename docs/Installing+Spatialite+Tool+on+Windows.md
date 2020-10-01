@@ -21,7 +21,7 @@ title: Installing Spatialite Tool on Windows
     something like the following, installation was successful:
 
 
-
+```
     C:\Users\mq20151400>spatialite_tool --help
 
 
@@ -56,3 +56,4 @@ title: Installing Spatialite Tool on Windows
     spatialite_tool -i -shp abc -d db.sqlite -t tbl -c CP1252 [-s 4326] [-2] [-k]
     spatialite_tool -e -shp abc -d db.sqlite -t tbl -g geom -c CP1252 [--type POINT]
 
+```
