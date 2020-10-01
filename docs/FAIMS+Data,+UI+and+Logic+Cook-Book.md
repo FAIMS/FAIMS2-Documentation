@@ -5565,7 +5565,7 @@ examples.
 | Example     | Description | Variables   | Format      | Result      |
 |             |             |             | String      |             |
 +=============+=============+=============+=============+=============+
-| Plain text  | A format    |            | Hello World | Hello World |
+| Plain text  | A format    |             | Hello World | Hello World |
 |             | string with |             |             |             |
 |             | no          |             |             |             |
 |             | conditions  |             |             |             |
@@ -5584,7 +5584,7 @@ examples.
 |             | (not very   |             |             |             |
 |             | useful).    |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain text  | To use data | $1 =>     | Hello $1   | Hello World |
+| Plain text  | To use data | $1 =>       | Hello $1    | Hello World |
 | with        | from the    | World       |             |             |
 | variables   | attribute   |             |             |             |
 |             | within your |             |             |             |
@@ -5606,29 +5606,29 @@ examples.
 |             | in your     |             |             |             |
 |             | attribute   |             |             |             |
 |             |             |             |             |             |
-|             | i.e. $1    |             |             |             |
-|             | =>         |             |             |             |
+|             | i.e. $1     |             |             |             |
+|             | =>          |             |             |             |
 |             | Vocabname,  |             |             |             |
-|             | $2 =>     |             |             |             |
+|             | $2 =>       |             |             |             |
 |             | Measure,    |             |             |             |
-|             | $3 =>     |             |             |             |
+|             | $3 =>       |             |             |             |
 |             | Freetext    |             |             |             |
-|             | and $4 => |             |             |             |
+|             | and $4 =>   |             |             |             |
 |             | Certainty   |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain Text  | A format    | $1 => Foo | ($1) $2,  | (Foo) Bar,  |
-| with        | string can  |             | $3, $4    | Something,  |
-| multiple    | reference   | $2 => Bar | ($1)       | Else (Foo)  |
+| Plain Text  | A format    | $1 => Foo   | ($1) $2,    | (Foo) Bar,  |
+| with        | string can  |             | $3, $4      | Something,  |
+| multiple    | reference   | $2 => Bar   | ($1)        | Else (Foo)  |
 | variables   | multiple    |             |             |             |
-|             | variables   | $3 =>     |             |             |
+|             | variables   | $3 =>       |             |             |
 |             | and can     | Something   |             |             |
 |             | reference   |             |             |             |
-|             | the same    | $4 =>     |             |             |
+|             | the same    | $4 =>       |             |             |
 |             | variable    | Else        |             |             |
 |             | multiple    |             |             |             |
 |             | times.      |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain Text  | To control  | $1         | This is }  |             |
+| Plain Text  | To control  | $1          | This is }   |             |
 |             | conditional |             |             |             |
 |             | expressions |             |             |             |
 |             | .           |             |             |             |
@@ -5648,7 +5648,7 @@ examples.
 |             | handle      |             |             |             |
 |             | bars.       |             |             |             |
 |             |             |             |             |             |
-|             | i.e. }          |             |             |             |
+|             | i.e. }      |             |             |             |
 |             |             |             |             |             |
 |             | Each        |             |             |             |
 |             | condition   |             |             |             |
@@ -5658,7 +5658,7 @@ examples.
 |             | program     |             |             |             |
 |             | flow        |             |             |             |
 |             |             |             |             |             |
-|             | i.e. }          |             |             |             |
+|             | i.e. }      |             |             |             |
 |             |             |             |             |             |
 |             | Each        |             |             |             |
 |             | expression  |             |             |             |
@@ -5688,12 +5688,12 @@ examples.
 |             | reference   |             |             |             |
 |             |             |             |             |             |
 |             | e.g.        |             |             |             |
-|             | "Hello     |             |             |             |
-|             | World",    |             |             |             |
-|             | 1.123, $1  |             |             |             |
+|             | "Hello      |             |             |             |
+|             | World",     |             |             |             |
+|             | 1.123, $1   |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-| Plain text  | A format    | $1 =>     | This is } |             |
-|             | conditional | $2 =>     | } |             |
+| Plain text  | A format    | $1 =>       | This is }   |             |
+|             | conditional | $2 =>       | }           |             |
 +-------------+-------------+-------------+-------------+-------------+
 ```
 
@@ -5715,17 +5715,17 @@ above.
 +===================================+===================================+
 | equal(x, y)                       | x == y                            |
 +-----------------------------------+-----------------------------------+
-| greaterThan(x, y)                 | x > y                            |
+| greaterThan(x, y)                 | x > y                             |
 +-----------------------------------+-----------------------------------+
-| greaterThanEqual(x, y)            | x >= y                           |
+| greaterThanEqual(x, y)            | x >= y                            |
 +-----------------------------------+-----------------------------------+
-| lessThan(x, y)                    | x < y                            |
+| lessThan(x, y)                    | x < y                             |
 +-----------------------------------+-----------------------------------+
-| lessThanEqual(x, y)               | x <= y                           |
+| lessThanEqual(x, y)               | x <= y                            |
 +-----------------------------------+-----------------------------------+
-| between(x, y, z)                  | x < y && y < z                  |
+| between(x, y, z)                  | x < y && y < z                    |
 +-----------------------------------+-----------------------------------+
-| in(x, [a, b, c])                | x in list [a, b, c]             |
+| in(x, [a, b, c])                  | x in list [a, b, c]               |
 +-----------------------------------+-----------------------------------+
 | not(x)                            | !x                                |
 +-----------------------------------+-----------------------------------+
