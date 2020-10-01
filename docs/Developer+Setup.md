@@ -64,12 +64,9 @@ Web App Development
 
 ### Requirements
 
--   [Installing Spatialite on
-    Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+on+Ubuntu)
--   [Installing Spatialite Tools on
-    Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+Tools+on+Ubuntu)
--   [Installing GDAL
-    Tools](https://wiki.intersect.org.au/display/FAIMS/Installing+GDAL+Tools)
+-   [Installing Spatialite on Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+on+Ubuntu)
+-   [Installing Spatialite Tools on Ubuntu](https://wiki.intersect.org.au/display/FAIMS/Installing+Spatialite+Tools+on+Ubuntu)
+-   [Installing GDAL Tools](https://wiki.intersect.org.au/display/FAIMS/Installing+GDAL+Tools)
 -   You will need to have RVM installed on your system.
 
 
@@ -111,7 +108,7 @@ foreman start
 
 
 
--   For more server usage commands follow the [Developer Setup](../Developer+Setup) guide
+-   For more server usage commands follow the [Developer Setup](../Developer+Setup) guide.
 
 ### Troubleshooting
 

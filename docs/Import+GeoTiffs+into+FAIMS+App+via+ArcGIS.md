@@ -68,7 +68,6 @@ network connection fails fatally.
 
 Related articles
 ----------------
-(attachments/299597846_attachments_3.PNG)
 
 -   [Install and Run the FAIMS Server](../Install+and+Run+the+FAIMS+Server)
 -   [Create a Module on the Server](../Create+a+Module+on+the+Server)

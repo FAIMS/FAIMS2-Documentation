@@ -69,7 +69,7 @@ Hardware
 
 **Android tablet(s)**
 
-A decent size for field use, eg. 7\", with GPS and
+A decent size for field use, eg. 7", with GPS and
 camera. 
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeq9d-b2wJastJ3DVuiTWQqQ5phyW2_nrjX7qVAWAOb8s7kYLt)

@@ -22,7 +22,7 @@ Follow these instructions to install GDAL Tools on Ubuntu.
 
 ##### Instructions:
 
--   download and compile [gdal     (1.10.0)](http://download.osgeo.org/gdal/1.10.0/gdal-1.10.0.tar.gz)
+-   Download and compile [gdal (1.10.0)](http://download.osgeo.org/gdal/1.10.0/gdal-1.10.0.tar.gz)
 
 
 ```

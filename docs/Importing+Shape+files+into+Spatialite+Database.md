@@ -71,7 +71,6 @@ Windows:
 
 1.  Open database file
 
-
     ```
     $ sqlite3 <SpatialiteDB.sqlite>
     ```
@@ -85,11 +84,11 @@ Windows:
 
 
 2.  Create index for each table added
-
-
     ```
     > SELECT CreateSpatialIndex('<table>', 'Geometry');
     ```
 
--   SpatialiteDB.sqlite = spatialite database
--   Table = table name added
+
+- SpatialiteDB.sqlite = spatialite database
+
+- Table = table name added

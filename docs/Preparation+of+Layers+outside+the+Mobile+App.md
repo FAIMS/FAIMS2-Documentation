@@ -15,7 +15,7 @@ is quick and smooth.
 
 For the transformation you need a Linux computer with spatialite and
 gdal tools. You need to run the following script in a command
-line: [Importing Geotiffs](../Importing+GeoTiffs+into+FAIMS+Android+App)
+line: [Importing Geotiffs](../Importing+GeoTiffs+into+FAIMS+Android+App).
 
 ### Vector
 

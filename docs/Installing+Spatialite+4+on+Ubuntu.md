@@ -14,7 +14,7 @@ Follow these instructions to install Spatialite  on Ubuntu.
 
 ##### Requirements
 
--   install packages build-essential, g++
+-   Install packages build-essential, g++
 
 ```
 sudo apt-get install build-essential g++ libc6-dev zlib1g-dev
@@ -46,7 +46,7 @@ cd ..
 
 ##### Instructions:
 
--   download and compile [proj4    (4.8.0)](https://trac.osgeo.org/proj/)
+-   Download and compile [proj4 (4.8.0)](https://trac.osgeo.org/proj/)
 
 
 ```
@@ -59,7 +59,7 @@ sudo make install
 ```
 
 
--   download and compile [geos    (3.3.8)](https://trac.osgeo.org/geos/)
+-   Download and compile [geos (3.3.8)](https://trac.osgeo.org/geos/)
 
 ```
 wget http://download.osgeo.org/geos/geos-3.3.8.tar.bz2
@@ -73,7 +73,7 @@ cd ..
 ```
 
 
--   download and compile [freexl    (1.0.0e)](https://www.gaia-gis.it/fossil/freexl/index)
+-   Download and compile [freexl (1.0.0e)](https://www.gaia-gis.it/fossil/freexl/index)
 
 
 ```
@@ -88,7 +88,7 @@ cd ..
 ```
 
 
--   download and compile [libspatialite    (4.1.1)](http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.1.1.tar.gz)
+-   Download and compile [libspatialite (4.1.1)](http://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.1.1.tar.gz)
 
 
 ```
@@ -128,4 +128,3 @@ hasGeoCallBacks()
 --------------------
 1
 ```
-

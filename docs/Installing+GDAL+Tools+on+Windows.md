@@ -12,13 +12,11 @@ title: Installing GDAL Tools on Windows
 
     1.  Add the directory `C:\Program Files (x86)\GDAL` to your system
         path. A tutorial for adding directories to your system path can
-        be found
-        [here](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/).
+        be found [here](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/).
 
     2.  Add an environment variable named `GDAL_DATA` and set it to the
         directory `C:\Program Files (x86)\GDAL\gdal-data`. A tutorial
-        for adding environment variables can be found
-        [here](https://www.howtogeek.com/51807/how-to-create-and-use-global-system-environment-variables/).
+        for adding environment variables can be found  [here](https://www.howtogeek.com/51807/how-to-create-and-use-global-system-environment-variables/).
 
 4.  Test your installation by doing the following:
 
@@ -41,4 +39,3 @@ title: Installing GDAL Tools on Windows
         C:\Users\mq20151400>echo %GDAL_DATA%
         C:\Program Files (x86)\GDAL\gdal-data
         ```
-

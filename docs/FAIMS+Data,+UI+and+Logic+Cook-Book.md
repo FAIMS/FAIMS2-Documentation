@@ -4978,127 +4978,59 @@ This checks if the values are valid when running a query against the
 given params.
 
 
-
-
-
 if your query returns nothing it fails
-
-
-
-
 
 
 you probably need to do a count
 
 
-
-
-
-
 it has to return something
-
-
-
 
 
 the second argument is the "failure string"
 
 
-
-
-
 the first argument resolve to 0 / non-zero?
 
 
-
-
 if the first value is false then it raises an error
-
-
-
 
 
 or causes the validator to output the second value which is the error
 string
 
 
-
-
-
-
 okay. And can this be in the "inner" query?
-
-
-
 
 
 or do I need to write an outer query?
 
 
-
-
-
 so when you construct a validator of type queryChecker
-
-
-
 
 
 the query you pass needs to be column1 (with correct|0 for not correct)
 and column2 with (validation string)
 
 
-
-
-
 the query I pass with <query> foo </query> ?
 
 
-
-
-
-
-
 its inputs are the param values
-
-
-
-
 
 
 so therefore, to pass uuid as an input, I have to do the shennagans
 I've already done (a param that exports the uuid)
 
 
-
-
-
 And query="foo" is equivalent to the query tag
-
-
-
-
 
 
 yes the element is better because you can use cdata which handle any
 string data where as the attribute string has restrictions on it 
 
 
-
-
-
-
-
-
 just lookup xml attribute string restrictions
-
-
-
-
-
-
-
-
 
 
 
@@ -5143,7 +5075,7 @@ view it is. Styling a standard class name will style all views matching
 this class name. The list of mappings between views and class names, and
 what stylings work for each are:
 
-
+```
 +-----------------------+-----------------------+-----------------------+
 | Class name            | Views                 | Stylings that work    |
 |                       |                       | for this view         |
@@ -5230,7 +5162,7 @@ what stylings work for each are:
 |                       | below for styling     |                       |
 |                       | tables                |                       |
 +-----------------------+-----------------------+-----------------------+
-
+```
 
 Examples of this can be seen in the example CSS styling file above.
 
@@ -5436,9 +5368,6 @@ the following:
 
 -   parent folder
     -   config.json
-
-    <!-- -->
-
     -   install.sh 
     -   uninstall.sh
     -   export.sh
@@ -5448,11 +5377,11 @@ the following:
 This file contains the configuration properties of the exporter
 specified as json. The properties include:
 
--   name: A string to represent the name of the exporter (required)
+-   name: A string to represent the name of the exporter (required).
 -   version: An int to represent version of the exporter. Exporters can
-    be upgraded using the version value. (required) 
+    be upgraded using the version value. (required). 
 -   key: A string to represent the unique id of the exporter (required)
--   interface: An array of items to be displayed as the exporter
+-   interface: An array of items to be displayed as the exporter.
     interface. The options are text, checkbox and dropdown.
 
 e.g.
@@ -5460,9 +5389,6 @@ e.g.
 
 
 ```
-,
-    ,
-
 
 
 ```
@@ -5634,7 +5560,7 @@ grammar. A format string is composed of a plain text combined with
 conditional statements and variable substitution. Below are some
 examples.
 
-
+```
 +-------------+-------------+-------------+-------------+-------------+
 | Example     | Description | Variables   | Format      | Result      |
 |             |             |             | String      |             |
@@ -5769,21 +5695,21 @@ examples.
 | Plain text  | A format    | $1 =>     | This is } |             |
 |             | conditional | $2 =>     | } |             |
 +-------------+-------------+-------------+-------------+-------------+
-
+```
 
 ### Railroad Diagram
 
 The railroad diagram below shows how to construct a conditional
 statement.
 
-![](attachments/3014726_attachments_faims_format_box_diagram.jpg)]
+![](attachments/3014726_attachments_faims_format_box_diagram.jpg)
 
 ### Format Statement Functions
 
 You can use the following functions in your format string described
 above.
 
-
+```
 +-----------------------------------+-----------------------------------+
 | Function                          | Description                       |
 +===================================+===================================+
@@ -5803,7 +5729,7 @@ above.
 +-----------------------------------+-----------------------------------+
 | not(x)                            | !x                                |
 +-----------------------------------+-----------------------------------+
-
+```
 
 ### Examples
 
@@ -6011,5 +5937,4 @@ ht: auto;vertical-align: baseline;background-image: none;
 #### Arch16n
 
 
--   ![3014726_attachments_faims_format_box_diagram
-    (1).jpg](attachments/3014726_attachments_faims_format_box_diagram.jpg)
+![3014726_attachments_faims_format_box_diagram (1).jpg](attachments/3014726_attachments_faims_format_box_diagram.jpg)

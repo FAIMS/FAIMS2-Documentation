@@ -28,11 +28,10 @@ Do you feel comfortable installing Ubuntu 16.04?
 
 1.  Yes > Install Ubuntu 16.04 Desktop (if running on a laptop) or
     Server (if you're comfortable with the command line). Do not
-    install on a virtual machine. Continue to [Step
-    2]
+    install on a virtual machine. Continue to [Step 2].
 
 2.  No > Consider purchasing a pre-configured FAIMS Server in a box
-    (tablets, computer and more in a box with FAIMS logo on top)
+    (tablets, computer and more in a box with FAIMS logo on top).
 
 3.  No > Contact us to help us beta test our virtualbox image.
 
@@ -47,9 +46,10 @@ first restart, so it can update itself. 
 
 -   Now that you have installed Ubuntu 16.04, make sure you have some
     internet browser. Firefox or Chrome is fine.
--   In a terminal, type: 
 
-    -   wget fedarch.org/install
+-   In a terminal, type: 
+  -   wget fedarch.org/install
+
 
 -   Then type:
     -   bash install
