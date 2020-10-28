@@ -106,23 +106,17 @@ FAIMS app.
 
 
 
-Installing the software
+Installing the Software
 -----------------------
 
-Follow instructions at the following web sites:
-
-FAIMS app      [Install Instructions.](../getting-started)
-
-FAIMS server   (For now, you should probably use
-demo.fedarch.org. Once you're comfortable with that, see the
-instructions at the [server install guide](../Install+and+Run+the+FAIMS+Server))
+1. FAIMS **app**: [Install Instructions.](../getting-started)
+2. FAIMS **server**: For beginners, we recommend using demo.fedarch.org. For advanced users, see the [Server installation guide](../Install+and+Run+the+FAIMS+Server).
 
 
 
-Getting started
+Next Steps
 ---------------
 
-See [getting started with FAIMS Guide](../getting-started)
-
+See [Getting started with FAIMS Guide](../getting-started) or
+[Download the PDF](attachments/FAIMS-GettingStarted.pdf).
  
-[Download PDF](attachments/FAIMS-GettingStarted.pdf)
